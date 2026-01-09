@@ -1,11 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BookOpen, Search, Menu } from 'lucide-react';
 import { categories } from '../data/mockData';
 import styles from './Header.module.css';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [searchQuery, setSearchQuery] = React.useState('');
+    const navigate = useNavigate();
+
+    const handleSearch = () => {
+        if (searchQuery.trim()) {
+            navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+            setIsMenuOpen(false);
+        }
+    };
 
     return (
         <header className={styles.header}>
@@ -16,8 +25,15 @@ export default function Header() {
                 </Link>
 
                 <div className={styles.search}>
-                    <input type="text" placeholder="搜索书名、作者..." className={styles.searchInput} />
-                    <button className={styles.searchBtn}>
+                    <input
+                        type="text"
+                        placeholder="搜索书名、作者..."
+                        className={styles.searchInput}
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                    />
+                    <button className={styles.searchBtn} onClick={handleSearch}>
                         <Search size={20} />
                     </button>
                 </div>

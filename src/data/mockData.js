@@ -30,6 +30,30 @@ export const books = [
     size: "10MB",
     format: "epub, mobi, azw3, pdf",
     publishYear: "2000-2007",
+  },
+  {
+    id: 2,
+    title: "明朝那些事儿(套装全7册)",
+    author: "当年明月",
+    authorDetail: "当年明月 [中]",
+    year: "2006-2009",
+    cover: "https://img.aqifei.top/img/2026/01/20260109162804278",
+    description: "《明朝那些事儿》主要讲述的是从1344年到1644年这三百年间关于明朝的一些故事。以史料为基础，以年代和具体人物为主线，并加入了小说的笔法，语言幽默风趣。对明朝十七帝和其他王公权贵和小人物的命运进行全景展示，尤其对官场政治、战争、帝王心术着墨最多，并加入对当时政治经济制度、人伦道德的演义。",
+    category: "历史传记",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/4d8bfc5c0bfe"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1nVmUXsXNyx2pq8GQIs_zug?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "Unknown",
+    format: "epub, mobi, azw3, pdf",
+    publishYear: "2006-2009",
   }
 ];
 

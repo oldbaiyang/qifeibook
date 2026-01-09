@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import BookDetail from './pages/BookDetail';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/category/:id" element={<Category />} />
             <Route path="/book/:id" element={<BookDetail />} />
+            <Route path="/search" element={<Search />} />
           </Routes>
         </main>
         <Footer />
