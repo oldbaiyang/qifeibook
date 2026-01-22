@@ -126,6 +126,406 @@ export const books = [
     size: "Unknown",
     format: "epub, mobi, azw3, pdf",
     publishYear: "1791",
+  },
+  {
+    id: 6,
+    title: "活着",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/002_",
+    description: "活着",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3ef7601d780d",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1cLqbOh1ZUjw7dkJ1fNeRKA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 7,
+    title: "三体全集",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/005_",
+    description: "三体全集",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/0bc4efa3a22d",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ImUoyRme7Kto_520jn3wjA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 8,
+    title: "百年孤独",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/006_",
+    description: "百年孤独",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/91903cd664b7",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1z6r98_pIv1m6SRAanqx4ng",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 9,
+    title: "飘",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/007_",
+    description: "飘",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/fbb2fb362c85",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1gu-vTvY8XI3G1ocn1FBZog",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 10,
+    title: "动物农场",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/008_",
+    description: "动物农场",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/7a292b491c0e",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/12G71NXNtGWe8ji7WM7ja9w",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 11,
+    title: "房思琪的初恋乐园",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/009_",
+    description: "房思琪的初恋乐园",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3d6b0f692dc8",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1k3mnJIDrxWRrORhlmpjPtQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 12,
+    title: "三国演义（全二册）",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/010_",
+    description: "三国演义（全二册）",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/ecb69f8fdfb4",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1D1Rt6id3GtbIrsg-fVcCHg",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 13,
+    title: "福尔摩斯探案全集（上中下）",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/011_",
+    description: "福尔摩斯探案全集（上中下）",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/192a5978a1d1",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ISC1Ma6X-Wrf06GhkbMFcw",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 14,
+    title: "白夜行",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/012_",
+    description: "白夜行",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1b5f8805ac56",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1fgKH8JE92uz0teC2ebjqUA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 15,
+    title: "呐喊",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/014_",
+    description: "呐喊",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/23c14a222059",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1KQ_cehgyDboDYRNgu7pLaQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 16,
+    title: "小王子",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/015_",
+    description: "小王子",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/7008bdde6339",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1yROrPfvs8IfWG5qpRRDH8w",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 17,
+    title: "安徒生童话故事集",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/016_",
+    description: "安徒生童话故事集",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/9b93b29f8e27",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1HXzAYXSDjUoodcfK99CBFQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 18,
+    title: "撒哈拉的故事",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/017_",
+    description: "撒哈拉的故事",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/d9df6e2a26da",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1P_KEd37SxbLjtT6BP96jXw",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 19,
+    title: "失踪的孩子",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/018_",
+    description: "失踪的孩子",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/aaf04d88373a",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ToiBGAfyT8JCkQaQD6Gr_A",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 20,
+    title: "天龙八部",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/019_",
+    description: "天龙八部",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f869c985a33b",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1YKfIjHTAD-7QBbzLsotfyA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 21,
+    title: "卡拉马佐夫兄弟",
+    author: "待补充",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/020_",
+    description: "卡拉马佐夫兄弟",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f2b20745310f",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/12pJ3jxyPmey6PfTBObx2-A",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
   }
 ];
 
