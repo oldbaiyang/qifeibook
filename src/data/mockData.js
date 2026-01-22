@@ -358,7 +358,7 @@ export const books = [
     author: "鲁迅",
     authorDetail: "鲁迅,中国现代文学的奠基人之一,伟大的文学家、思想家、革命家",
     year: "1923",
-    cover: "https://img.aqifei.top/img/2026/01/014_呐喊",
+    cover: "https://img.aqifei.top/img/2026/01/nahan_cover_1769101171677",
     description: "《呐喊》是鲁迅1918年至1922年所作的短篇小说的结集,收有《狂人日记》《孔乙己》《药》《阿Q正传》《故乡》等14篇作品。当时正值'五四运动'时期,作者创作小说意在描写'病态社会的不幸的人们',揭示旧中国的社会问题,唤醒麻木的中国民众。",
     category: "小说文学",
     downloadLinks: [
@@ -483,7 +483,7 @@ export const books = [
     author: "金庸",
     authorDetail: "金庸,本名查良镛,武侠小说泰斗,香港'四大才子'之一",
     year: "1963",
-    cover: "https://img.aqifei.top/img/2026/01/019_天龙八部",
+    cover: "https://img.aqifei.top/img/2026/01/tianlong_cover_1769101187012",
     description: "《天龙八部》以宋哲宗时代为背景,通过宋、辽、大理、西夏、吐蕃等王国之间的武林恩怨和民族矛盾,从哲学的高度对人生和社会进行审视和描写,展示了一幅波澜壮阔的生活画卷,将人性、情感和浩 然正气发挥到了极致。其故事之离奇曲折、涉及人物之众多、历史背景之广泛、武侠战役之庞大、想象力之丰富,当属'金书'之最。",
     category: "小说文学",
     downloadLinks: [
@@ -508,7 +508,7 @@ export const books = [
     author: "[俄] 陀思妥耶夫斯基",
     authorDetail: "陀思妥耶夫斯基,19世纪俄国批判现实主义作家",
     year: "1880",
-    cover: "https://img.aqifei.top/img/2026/01/020_卡拉马佐夫兄弟",
+    cover: "https://img.aqifei.top/img/2026/01/karamazov_cover_1769101204306",
     description: "《卡拉马佐夫兄弟》是陀思妥耶夫斯基的代表作之一,也是他的最后一部小说。小说通过一桩真实发生过的弑父案,描写老卡拉马佐夫同三个儿子即两代人之间的尖锐冲突。老卡拉马佐夫贪婪好色,独占妻子留给儿子们的遗产,并与长子德米特里为一个风流女子争风吃醋。",
     category: "小说文学",
     downloadLinks: [
