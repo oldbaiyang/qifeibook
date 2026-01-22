@@ -158,7 +158,7 @@ export const books = [
     author: "刘慈欣",
     authorDetail: "刘慈欣,中国科幻小说代表作家,雨果奖得主",
     year: "2008",
-    cover: "https://img.aqifei.top/img/2026/01/005_三体全集",
+    cover: "https://img.aqifei.top/img/2026/01/santi_cover_1769100754655",
     description: "文化大革命如火如荼地进行,天文学家叶文洁在其间历经劫难,被带到军方绝秘计划'红岸工程'。叶文洁以太阳为天线,向宇宙发出地球文明的第一声啼鸣,取得了探寻外星文明的突破性进展。三颗无规则运行的太阳主导下,四光年外的'三体文明'百余次毁灭与重生,正被逼迫不得不逃离母星,而恰在此时,他们接收到了地球发来的信息……",
     category: "小说文学",
     downloadLinks: [
