@@ -54,6 +54,30 @@ export const books = [
     size: "Unknown",
     format: "epub, mobi, azw3, pdf",
     publishYear: "2006-2009",
+  },
+  {
+    id: 3,
+    title: "膝盖之上",
+    author: "小春多梦",
+    authorDetail: "小春多梦 [中]",
+    year: "2023",
+    cover: "https://img.aqifei.top/img/2026/01/20260122155108270",
+    description: "《膝盖之上》讲述了留学生陈斯绒在法拉利F1车队实习期间，与她的顶头上司罗曼·凯撒（Roman Caesar）之间发生的一段充满张力的爱情故事。陈斯绒在职场压力下寻求心理寄托，意外发现她在网络上依赖的Dom竟然就是她在现实生活中敬畏的上司。两人在从“上下级”到“恋人”的关系转变中，共同面对内心的挣扎与职业的挑战，最终治愈彼此。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3e05c115e989"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1fZmaPE4Z5qKk-o_8l7zlCA?pwd=tm7p",
+        code: "tm7p"
+      }
+    ],
+    size: "Unknown",
+    format: "epub, mobi, azw3, pdf",
+    publishYear: "2023",
   }
 ];
 
