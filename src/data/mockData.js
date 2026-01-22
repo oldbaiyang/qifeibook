@@ -133,7 +133,7 @@ export const books = [
     author: "余华",
     authorDetail: "余华,当代著名作家,中国先锋文学代表人物",
     year: "1993",
-    cover: "https://img.aqifei.top/img/2026/01/temp_huozhe",
+    cover: "https://img.aqifei.top/img/2026/01/huozhe_cover_1769100595309",
     description: "地主少爷富贵嗜赌成性,终于赌光了家业一贫如洗。穷困之中的富贵因为母亲生病前去求医,没想到半路上被国民党部队抓了壮丁,后被解放军所俘虏,回到家乡他才知道母亲已经去世,妻子家珍含辛茹苦带大了一双儿女,但女儿不幸变成了聋哑人,儿子机灵活泼……",
     category: "小说文学",
     downloadLinks: [
