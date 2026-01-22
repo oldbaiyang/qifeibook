@@ -78,6 +78,30 @@ export const books = [
     size: "Unknown",
     format: "epub, mobi, azw3, pdf",
     publishYear: "2023",
+  },
+  {
+    id: 4,
+    title: "九诗心",
+    author: "黄晓丹",
+    authorDetail: "黄晓丹 [中]",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/20260122160753650",
+    description: "《九诗心：暗夜里的文学启明》是一部古典诗歌研究著作，探讨了古诗如何回应时代的变局和生活的处境。书中选取了屈原、李陵、曹丕、陶渊明、杜甫、欧阳修、李清照、文天祥、吴梅村等九位在动荡中求索人生方向的诗人，以细腻的笔触挖掘他们不为人知的一面。作者通过扎实的文献校勘和文史互证，展现了这些诗人在面对孤独、流亡、生死等困境时，如何将痛苦转化为文学表达，并在大的时代纷乱中获得个体的从容和内心的稳定。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/ba20aa8982ff"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Bg6vPQKRn-6JX0OKpsaqFA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "Unknown",
+    format: "epub, mobi, azw3, pdf",
+    publishYear: "2024",
   }
 ];
 
