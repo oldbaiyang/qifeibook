@@ -130,11 +130,11 @@ export const books = [
   {
     id: 6,
     title: "活着",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "余华",
+    authorDetail: "余华,当代著名作家,中国先锋文学代表人物",
+    year: "1993",
     cover: "https://img.aqifei.top/img/2026/01/002_",
-    description: "活着",
+    description: "地主少爷富贵嗜赌成性,终于赌光了家业一贫如洗。穷困之中的富贵因为母亲生病前去求医,没想到半路上被国民党部队抓了壮丁,后被解放军所俘虏,回到家乡他才知道母亲已经去世,妻子家珍含辛茹苦带大了一双儿女,但女儿不幸变成了聋哑人,儿子机灵活泼……",
     category: "文学",
     downloadLinks: [
       {
@@ -155,11 +155,11 @@ export const books = [
   {
     id: 7,
     title: "三体全集",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "刘慈欣",
+    authorDetail: "刘慈欣,中国科幻小说代表作家,雨果奖得主",
+    year: "2008",
     cover: "https://img.aqifei.top/img/2026/01/005_",
-    description: "三体全集",
+    description: "文化大革命如火如荼地进行,天文学家叶文洁在其间历经劫难,被带到军方绝秘计划'红岸工程'。叶文洁以太阳为天线,向宇宙发出地球文明的第一声啼鸣,取得了探寻外星文明的突破性进展。三颗无规则运行的太阳主导下,四光年外的'三体文明'百余次毁灭与重生,正被逼迫不得不逃离母星,而恰在此时,他们接收到了地球发来的信息……",
     category: "文学",
     downloadLinks: [
       {
@@ -180,11 +180,11 @@ export const books = [
   {
     id: 8,
     title: "百年孤独",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[哥伦比亚] 加西亚·马尔克斯",
+    authorDetail: "加西亚·马尔克斯,哥伦比亚作家,诺贝尔文学奖得主,魔幻现实主义文学代表",
+    year: "1967",
     cover: "https://img.aqifei.top/img/2026/01/006_",
-    description: "百年孤独",
+    description: "《百年孤独》是魔幻现实主义文学的代表作,描写了布恩迪亚家族七代人的传奇故事,以及加勒比海沿岸小镇马孔多的百年兴衰,反映了拉丁美洲一个世纪以来风云变幻的历史。作品融入神话传说、民间故事、宗教典故等因素,巧妙地糅合了现实与虚幻,展现出一个瑰丽的想象世界。",
     category: "文学",
     downloadLinks: [
       {
@@ -205,11 +205,11 @@ export const books = [
   {
     id: 9,
     title: "飘",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[美] 玛格丽特·米切尔",
+    authorDetail: "玛格丽特·米切尔,美国作家,《飘》是其唯一的长篇小说",
+    year: "1936",
     cover: "https://img.aqifei.top/img/2026/01/007_",
-    description: "飘",
+    description: "《飘》是一部有关战争的小说,但作者没有把着眼点放在战场上。除了亚特兰大之围,作者详细描述过战争,其余的战争场面几乎都是一笔带过。她以女性特有的细腻、真切和委婉,从女主人公的心理感受上反映战争的动荡和残酷,塑造了郝思嘉这个性格复杂、极富魅力的女性形象。",
     category: "文学",
     downloadLinks: [
       {
@@ -230,11 +230,11 @@ export const books = [
   {
     id: 10,
     title: "动物农场",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[英] 乔治·奥威尔",
+    authorDetail: "乔治·奥威尔,英国作家,《1984》《动物农场》作者",
+    year: "1945",
     cover: "https://img.aqifei.top/img/2026/01/008_",
-    description: "动物农场",
+    description: "农场的一群动物成功地进行了一场'革命',将压榨他们的人类东家赶出农场,建立起一个平等的动物社会。然而,动物领袖,那些聪明的猪们最终却篡夺了革命的果实,成为比人类东家更加独裁和极权的统治者。",
     category: "文学",
     downloadLinks: [
       {
@@ -255,11 +255,11 @@ export const books = [
   {
     id: 11,
     title: "房思琪的初恋乐园",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "林奕含",
+    authorDetail: "林奕含,台湾作家,本书是其唯一一部长篇小说",
+    year: "2017",
     cover: "https://img.aqifei.top/img/2026/01/009_",
-    description: "房思琪的初恋乐园",
+    description: "令人心碎却无能为力的真实故事。向死而生的文学绝唱。李银河、张悦然、冯唐、詹宏志、蒋方舟 万千读者 强力推荐!这是一部惊人而特别的小说,小说作者既具有高度敏锐的感受力、又是一个近乎疯狂的语言天才。",
     category: "文学",
     downloadLinks: [
       {
@@ -330,11 +330,11 @@ export const books = [
   {
     id: 14,
     title: "白夜行",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[日] 东野圭吾",
+    authorDetail: "东野圭吾,日本推理小说家,代表作《白夜行》《嫌疑人X的献身》等",
+    year: "1999",
     cover: "https://img.aqifei.top/img/2026/01/012_",
-    description: "白夜行",
+    description: "《白夜行》将无望却坚守的凄凉爱情和执著而缜密的冷静推理完美结合。一九七三年,大阪一栋废弃建筑内发现一名遭利器刺死的男子。此后十九年,嫌疑人之女雪穗与被害者之子桐原亮司走上截然不同的人生道路,一个跻身上流社会,一个却在底层游走,而他们身边的人,却接二连三地离奇死去,警察经过十九年的艰辛追踪,终于使真相大白……",
     category: "文学",
     downloadLinks: [
       {
@@ -355,11 +355,11 @@ export const books = [
   {
     id: 15,
     title: "呐喊",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "鲁迅",
+    authorDetail: "鲁迅,中国现代文学的奠基人之一,伟大的文学家、思想家、革命家",
+    year: "1923",
     cover: "https://img.aqifei.top/img/2026/01/014_",
-    description: "呐喊",
+    description: "《呐喊》是鲁迅1918年至1922年所作的短篇小说的结集,收有《狂人日记》《孔乙己》《药》《阿Q正传》《故乡》等14篇作品。当时正值'五四运动'时期,作者创作小说意在描写'病态社会的不幸的人们',揭示旧中国的社会问题,唤醒麻木的中国民众。",
     category: "文学",
     downloadLinks: [
       {
@@ -380,11 +380,11 @@ export const books = [
   {
     id: 16,
     title: "小王子",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[法] 圣埃克苏佩里",
+    authorDetail: "圣埃克苏佩里,法国作家、飞行员,《小王子》作者",
+    year: "1943",
     cover: "https://img.aqifei.top/img/2026/01/015_",
-    description: "小王子",
+    description: "小王子是一个超凡脱俗的仙童,他住在一颗只比他大一丁点儿的小行星上。陪伴他的是一朵他非常喜爱的小玫瑰花。但玫瑰花的虚荣心伤害了小王子对她的感情。小王子告别小行星,开始了遨游太空的旅行。他先后访问了六个行星,各种见闻使他陷入忧伤,他感到大人们荒唐可笑、太不正常。",
     category: "文学",
     downloadLinks: [
       {
@@ -405,11 +405,11 @@ export const books = [
   {
     id: 17,
     title: "安徒生童话故事集",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[丹麦] 安徒生",
+    authorDetail: "安徒生,丹麦作家,世界著名童话作家",
+    year: "1835-1872",
     cover: "https://img.aqifei.top/img/2026/01/016_",
-    description: "安徒生童话故事集",
+    description: "《安徒生童话》是丹麦作家安徒生创作的童话集。该作爱憎分明,热情歌颂劳动人民、赞美他们的善良和纯洁的优秀品德;无情地揭露和批判王公贵族们的愚蠢、无能、贪婪和残暴。其中较为闻名的故事有《小美人鱼》、《丑小鸭》、《卖火柴的小女孩》、《拇指姑娘》等。",
     category: "文学",
     downloadLinks: [
       {
@@ -430,11 +430,11 @@ export const books = [
   {
     id: 18,
     title: "撒哈拉的故事",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "三毛",
+    authorDetail: "三毛,台湾著名女作家,本名陈懋平",
+    year: "1976",
     cover: "https://img.aqifei.top/img/2026/01/017_",
-    description: "撒哈拉的故事",
+    description: "三毛作品中最膾炙人口的《撒哈拉的故事》,是她在撒哈拉沙漠生活时的见闻,以及她思考和感怀的结晶。不论是爱情、友谊、还是对大自然的热爱,都反映在她的作品里,广受读者喜爱。",
     category: "文学",
     downloadLinks: [
       {
@@ -455,11 +455,11 @@ export const books = [
   {
     id: 19,
     title: "失踪的孩子",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[意] 埃莱娜·费兰特",
+    authorDetail: "埃莱娜·费兰特,意大利作家,'那不勒斯四部曲'作者",
+    year: "2014",
     cover: "https://img.aqifei.top/img/2026/01/018_",
-    description: "失踪的孩子",
+    description: "《失踪的孩子》是'那不勒斯四部曲'的第四部,也是完结篇。时间跨度长达半个世纪。通过莉拉和埃莱娜的个人命运、恩怨纠葛,描绘了二战后意大利政治、经济和社会状况的变迁,展现了一幅意大利现当代的史诗画卷。",
     category: "文学",
     downloadLinks: [
       {
@@ -480,11 +480,11 @@ export const books = [
   {
     id: 20,
     title: "天龙八部",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "金庸",
+    authorDetail: "金庸,本名查良镛,武侠小说泰斗,香港'四大才子'之一",
+    year: "1963",
     cover: "https://img.aqifei.top/img/2026/01/019_",
-    description: "天龙八部",
+    description: "《天龙八部》以宋哲宗时代为背景,通过宋、辽、大理、西夏、吐蕃等王国之间的武林恩怨和民族矛盾,从哲学的高度对人生和社会进行审视和描写,展示了一幅波澜壮阔的生活画卷,将人性、情感和浩 然正气发挥到了极致。其故事之离奇曲折、涉及人物之众多、历史背景之广泛、武侠战役之庞大、想象力之丰富,当属'金书'之最。",
     category: "文学",
     downloadLinks: [
       {
@@ -505,11 +505,11 @@ export const books = [
   {
     id: 21,
     title: "卡拉马佐夫兄弟",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "[俄] 陀思妥耶夫斯基",
+    authorDetail: "陀思妥耶夫斯基,19世纪俄国批判现实主义作家",
+    year: "1880",
     cover: "https://img.aqifei.top/img/2026/01/020_",
-    description: "卡拉马佐夫兄弟",
+    description: "《卡拉马佐夫兄弟》是陀思妥耶夫斯基的代表作之一,也是他的最后一部小说。小说通过一桩真实发生过的弑父案,描写老卡拉马佐夫同三个儿子即两代人之间的尖锐冲突。老卡拉马佐夫贪婪好色,独占妻子留给儿子们的遗产,并与长子德米特里为一个风流女子争风吃醋。",
     category: "文学",
     downloadLinks: [
       {
