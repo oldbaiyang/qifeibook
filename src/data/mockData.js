@@ -102,6 +102,30 @@ export const books = [
     size: "Unknown",
     format: "epub, mobi, azw3, pdf",
     publishYear: "2024",
+  },
+  {
+    id: 5,
+    title: "红楼梦",
+    author: "曹雪芹",
+    authorDetail: "曹雪芹 [清]",
+    year: "1791",
+    cover: "https://img.aqifei.top/img/2026/01/20260122204247304",
+    description: "《红楼梦》，中国古代章回体长篇小说，中国古典四大名著之一，一般认为是清代作家曹雪芹所著。小说以贾、史、王、薛四大家族的兴衰为背景，以富贵公子贾宝玉为视角，以贾宝玉与林黛玉、薛宝钗的爱情婚姻悲剧为主线，描绘了一批举止见识出于须眉之上的闺阁佳人的人生百态，展现了真正的人性美和悲剧美，可以说是一部从各个角度展现女性美以及中国古代社会世态百相的史诗性著作。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/8f9236a8436e"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1_haN-On6B4ajnlr1LACx-w?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "Unknown",
+    format: "epub, mobi, azw3, pdf",
+    publishYear: "1791",
   }
 ];
 
