@@ -8,7 +8,7 @@ import datetime
 from pathlib import Path
 
 # 站点域名 - 请修改为实际域名
-SITE_DOMAIN = "https://qifeibook.top"
+SITE_DOMAIN = "https://qifeibook.com"
 
 def generate_sitemap():
     # 读取 mockData.js
