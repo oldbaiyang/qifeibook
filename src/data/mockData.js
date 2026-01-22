@@ -47,7 +47,7 @@ export const books = [
       },
       {
         name: "百度网盘",
-        url: "https://pan.baidu.com/s/1nVmUXsXNyx2pq8GQIs_zug?pwd=0000",
+        url: "https://pan.baidu.com/s/1YxR23j2peqN1xk_2bEGDUg?pwd=0000",
         code: "0000"
       }
     ],
