@@ -610,7 +610,7 @@ export const books = [
     year: "1997",
     cover: "https://img.aqifei.top/img/2026/01/026_沉默的大多数",
     description: "《沉默的大多数》是王小波的一部杂文随笔集。作者以幽默智慧的笔触,对社会现象、文化传统、人性心理等进行了深入的剖析和批判,倡导自由、理性、独立的思考精神。",
-    category: "小说文学",
+    category: "人文社科",
     downloadLinks: [
       {
         name: "夸克网盘",
@@ -810,7 +810,7 @@ export const books = [
     year: "1947",
     cover: "https://img.aqifei.top/img/2026/01/034_乡土中国",
     description: "《乡土中国》是费孝通先生的一部社会学经典著作。书中探讨了中国基层传统社会结构及其运作逻辑,提出了'差序格局'、'礼治秩序'、'无讼'等重要概念,深刻剖析了中国乡土社会的特点。",
-    category: "小说文学",
+    category: "人文社科",
     downloadLinks: [
       {
         name: "夸克网盘",
@@ -860,7 +860,7 @@ export const books = [
     year: "2011",
     cover: "https://img.aqifei.top/img/2026/01/036_人类简史",
     description: "《人类简史:从动物到上帝》从大历史的视角,审视了人类历史上的三次革命:认知革命、农业革命和科学革命。作者以新颖的观点和宏大的视野,探讨了人类如何从一种不起眼的动物演变为地球的主宰,以及人类社会的未来走向。",
-    category: "小说文学",
+    category: "历史传记",
     downloadLinks: [
       {
         name: "夸克网盘",
