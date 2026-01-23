@@ -280,9 +280,9 @@ export const books = [
   {
     id: 12,
     title: "三国演义（全二册）",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "余华",
+    authorDetail: "余华,当代著名作家,中国先锋文学代表人物",
+    year: "1993",
     cover: "https://img.aqifei.top/img/2026/01/010_三国演义（全二册）",
     description: "三国演义（全二册）",
     category: "小说文学",
@@ -305,9 +305,9 @@ export const books = [
   {
     id: 13,
     title: "福尔摩斯探案全集（上中下）",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "刘慈欣",
+    authorDetail: "刘慈欣,中国科幻小说代表作家,雨果奖得主",
+    year: "2008",
     cover: "https://img.aqifei.top/img/2026/01/011_福尔摩斯探案全集（上中下）",
     description: "福尔摩斯探案全集（上中下）",
     category: "小说文学",
@@ -520,6 +520,481 @@ export const books = [
       {
         name: "百度网盘",
         url: "https://pan.baidu.com/s/12pJ3jxyPmey6PfTBObx2-A",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 22,
+    title: "新名字的故事",
+    author: "[哥伦比亚] 加西亚·马尔克斯",
+    authorDetail: "加西亚·马尔克斯,哥伦比亚作家,诺贝尔文学奖得主,魔幻现实主义文学代表",
+    year: "1967",
+    cover: "https://img.aqifei.top/img/2026/01/021_新名字的故事",
+    description: "《新名字的故事》是'那不勒斯四部曲'的第二部,描述了莉拉和埃莱娜的青年时代。在她们的人生中,痛苦和幸福、愤怒和压抑、希望和绝望依然紧紧交织。她们在各自的生活中努力挣扎,试图找到属于自己的位置。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/a9ae562485ca",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1JqpOLmXigcb2aQ-TpyVecA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 23,
+    title: "杀死一只知更鸟",
+    author: "[美] 玛格丽特·米切尔",
+    authorDetail: "玛格丽特·米切尔,美国作家,《飘》是其唯一的长篇小说",
+    year: "1936",
+    cover: "https://img.aqifei.top/img/2026/01/022_杀死一只知更鸟",
+    description: "《杀死一只知更鸟》讲述了20世纪30年代美国南方一个小镇上,律师阿提克斯为一名被指控强奸白人女子的黑人辩护的故事。小说通过两个孩子的视角,展现了种族偏见、社会不公以及成长的阵痛,是一部感人至深的经典之作。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/bfcdaf434f30",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1LWnA4cJjy2crcc9FH4ffMQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 24,
+    title: "野草",
+    author: "[英] 乔治·奥威尔",
+    authorDetail: "乔治·奥威尔,英国作家,《1984》《动物农场》作者",
+    year: "1945",
+    cover: "https://img.aqifei.top/img/2026/01/024_野草",
+    description: "《野草》是鲁迅先生唯一的一部散文诗集,收录了他在1924年至1926年间创作的23篇散文诗。作品以隐晦的象征、富于诗意的意象和充满张力的语言,表达了作者对现实的绝望、抗争以及对生命意义的深刻思考。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/958a250e7cdb",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1BwWGmgsOIw5eaQ4t4sqlcA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 25,
+    title: "沉默的大多数",
+    author: "林奕含",
+    authorDetail: "林奕含,台湾作家,本书是其唯一一部长篇小说",
+    year: "2017",
+    cover: "https://img.aqifei.top/img/2026/01/026_沉默的大多数",
+    description: "《沉默的大多数》是王小波的一部杂文随笔集。作者以幽默智慧的笔触,对社会现象、文化传统、人性心理等进行了深入的剖析和批判,倡导自由、理性、独立的思考精神。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/20550325982e",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/19VrO0tD0qSnrHEjgY-kb0A",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 26,
+    title: "罗杰疑案",
+    author: "[日] 东野圭吾",
+    authorDetail: "东野圭吾,日本推理小说家,代表作《白夜行》《嫌疑人X的献身》等",
+    year: "1999",
+    cover: "https://img.aqifei.top/img/2026/01/027_罗杰疑案",
+    description: "《罗杰疑案》是阿加莎·克里斯蒂的成名作,也是侦探小说史上的经典之作。小说讲述了住在金艾博特村的富翁罗杰·艾克罗伊德离奇身亡,大侦探波洛介入调查的故事。结局出人意料,开创了侦探小说的一种全新模式。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/299a9e58020d",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1YS0BpDaEXB9MyQ3kbLlVoQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 27,
+    title: "悉达多",
+    author: "鲁迅",
+    authorDetail: "鲁迅,中国现代文学的奠基人之一,伟大的文学家、思想家、革命家",
+    year: "1923",
+    cover: "https://img.aqifei.top/img/2026/01/028_悉达多",
+    description: "《悉达多》讲述了古印度贵族青年悉达多为了追求心灵的安宁和生命的真谛,离家出走,历经各种人生体验,最终在流水的启示下悟道的故事。这是一部关于自我发现和精神成长的寓言。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/896fef00a279",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1kEVhCsNPAg4yzHUHTDXa4Q",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 28,
+    title: "我与地坛",
+    author: "[法] 圣埃克苏佩里",
+    authorDetail: "圣埃克苏佩里,法国作家、飞行员,《小王子》作者",
+    year: "1943",
+    cover: "https://img.aqifei.top/img/2026/01/029_我与地坛",
+    description: "《我与地坛》是史铁生的散文代表作。作者身患残疾,在最狂妄的年龄失去了双腿。他在地坛的古园中沉思冥想,对生命、死亡、命运等终极问题进行了深刻的感悟。文字深沉凝重,感人肺腑。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/5a7dc43ef8ce",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1x_vA_nnsJTnacvY_J2OUrQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 29,
+    title: "许三观卖血记",
+    author: "[丹麦] 安徒生",
+    authorDetail: "安徒生,丹麦作家,世界著名童话作家",
+    year: "1835-1872",
+    cover: "https://img.aqifei.top/img/2026/01/030_许三观卖血记",
+    description: "《许三观卖血记》讲述了丝厂送茧工许三观靠卖血度过人生一个个难关的故事。小说以卖血为主线,串联起许三观的一生,展现了小人物在苦难生活中的生存智慧和顽强生命力。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/37793dd949a8",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/19Q2boiSsBkgYq1tKXLOvlw",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 30,
+    title: "彷徨",
+    author: "三毛",
+    authorDetail: "三毛,台湾著名女作家,本名陈懋平",
+    year: "1976",
+    cover: "https://img.aqifei.top/img/2026/01/031_彷徨",
+    description: "《彷徨》是鲁迅的第二部小说集,收录了他在1924年至1925年间创作的11篇小说,包括《祝福》《在酒楼上》《伤逝》等。作品反映了五四运动后知识分子的苦闷和彷徨,以及对社会现实的深刻批判。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/b01d79543fe5",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1XPDIHk_yTMtEnDfO2NK2NQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 31,
+    title: "局外人",
+    author: "[意] 埃莱娜·费兰特",
+    authorDetail: "埃莱娜·费兰特,意大利作家,'那不勒斯四部曲'作者",
+    year: "2014",
+    cover: "https://img.aqifei.top/img/2026/01/032_局外人",
+    description: "《局外人》是加缪的成名作。小说塑造了默尔索这个'局外人'形象,他对母亲的死、女友的感情、杀人等都表现得冷漠无动于衷。小说揭示了世界的荒诞性以及人与社会的疏离。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1625454f849e",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1DQtOKJfvNV0EDyzw3dmmuQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 32,
+    title: "白鹿原",
+    author: "金庸",
+    authorDetail: "金庸,本名查良镛,武侠小说泰斗,香港'四大才子'之一",
+    year: "1963",
+    cover: "https://img.aqifei.top/img/2026/01/033_白鹿原",
+    description: "《白鹿原》是一部渭河平原50年变迁的雄奇史诗,一轴中国农村斑斓多彩、触目惊心的长幅画卷。小说以白嘉轩为叙事核心,描写了白鹿两家三代人的恩怨纠葛,展现了从清末民初到建国之初中国农村的历史演变。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f0177e4b262a",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1jB2c6NoAz7Y7EQ9Ry8jUcQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 33,
+    title: "乡土中国",
+    author: "[俄] 陀思妥耶夫斯基",
+    authorDetail: "陀思妥耶夫斯基,19世纪俄国批判现实主义作家",
+    year: "1880",
+    cover: "https://img.aqifei.top/img/2026/01/034_乡土中国",
+    description: "《乡土中国》是费孝通先生的一部社会学经典著作。书中探讨了中国基层传统社会结构及其运作逻辑,提出了'差序格局'、'礼治秩序'、'无讼'等重要概念,深刻剖析了中国乡土社会的特点。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/8ceb6400a7cf",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1UWTD2UFCKZOWv6US0AtN0w",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 34,
+    title: "平凡的世界（全三部）",
+    author: "[意] 埃莱娜·费兰特",
+    authorDetail: "埃莱娜·费兰特,意大利当代匿名作家,'那不勒斯四部曲'作者",
+    year: "2012",
+    cover: "https://img.aqifei.top/img/2026/01/035_平凡的世界（全三部）",
+    description: "《平凡的世界》是一部全景式地表现中国当代城乡社会生活的长篇小说。小说以孙少安和孙少平两兄弟为中心,刻画了当时社会各阶层众多普通人的形象;劳动与爱情、挫折与追求、痛苦与欢乐、日常生活与巨大社会冲突纷繁地交织在一起,深刻地展示了普通人在大时代历史进程中所走过的艰难曲折的道路。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/4a768f98c6d8",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1wAQY2KgqwkpMK6ABANxasA",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 35,
+    title: "人类简史",
+    author: "[美] 哈珀·李",
+    authorDetail: "哈珀·李,美国作家,普利策小说奖得主",
+    year: "1960",
+    cover: "https://img.aqifei.top/img/2026/01/036_人类简史",
+    description: "《人类简史:从动物到上帝》从大历史的视角,审视了人类历史上的三次革命:认知革命、农业革命和科学革命。作者以新颖的观点和宏大的视野,探讨了人类如何从一种不起眼的动物演变为地球的主宰,以及人类社会的未来走向。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/85aa2770d791",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1smgFTJrobagz6SnpKTgIdg",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 36,
+    title: "围城",
+    author: "鲁迅",
+    authorDetail: "鲁迅,中国现代文学奠基人",
+    year: "1927",
+    cover: "https://img.aqifei.top/img/2026/01/037_围城",
+    description: "《围城》是钱钟书先生唯一的一部长篇小说,被誉为'新儒林外史'。小说以方鸿渐的经历为主线,描绘了抗战初期知识分子的群像,揭示了'围城'困境:城外的人想冲进去,城里的人想逃出来。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/516c123922ff",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/16urEJQxnt-16RpX4oS8B_g",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 37,
+    title: "笑傲江湖（全四册）",
+    author: "王小波",
+    authorDetail: "王小波,中国当代著名学者、作家",
+    year: "1997",
+    cover: "https://img.aqifei.top/img/2026/01/038_笑傲江湖（全四册）",
+    description: "《笑傲江湖》属于金庸的后期作品。小说通过叙述华山派大弟子令狐冲的经历,反映了武林各派争霸夺权的血腥斗争,揭露了伪君子和野心家的丑恶面目,歌颂了令狐冲追求自由、不畏强权的独立人格。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/789e85f6e6b3",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1tR1XhjtPe83y_EKsxhElSQ",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 38,
+    title: "献给阿尔吉侬的花束",
+    author: "[英] 阿加莎·克里斯蒂",
+    authorDetail: "阿加莎·克里斯蒂,英国侦探小说女王",
+    year: "1926",
+    cover: "https://img.aqifei.top/img/2026/01/039_献给阿尔吉侬的花束",
+    description: "查理·高登是低智商者,他参加了一项提高智力的实验手术。手术后,他的智商逐渐提高,变成了一个天才。然而,他发现原本的朋友和同事开始排斥他,他也发现了社会中隐藏的残酷真相。同时,同样接受手术的实验白鼠阿尔吉侬出现了退化现象,预示着查理的命运......",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/837da4b14c90",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1H9BTizUuydmJF-qxcjnl5g",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 39,
+    title: "东方快车谋杀案",
+    author: "[德] 赫尔曼·黑塞",
+    authorDetail: "赫尔曼·黑塞,德国作家,诺贝尔文学奖得主",
+    year: "1922",
+    cover: "https://img.aqifei.top/img/2026/01/040_东方快车谋杀案",
+    description: "午夜过后,一场大雪迫使东方快车停了下来。侦探波洛在列车上。第二天早上,大家发现萨缪埃尔·雷切特死在了他的包厢里,身中十二刀。车上的乘客都有嫌疑,波洛展开了调查,最终揭开了一个惊人的秘密。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3750135cda50",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1AsNMnLUBHUsXsvVFvubO6A",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 40,
+    title: "故事新编",
+    author: "史铁生",
+    authorDetail: "史铁生,中国当代著名作家",
+    year: "1991",
+    cover: "https://img.aqifei.top/img/2026/01/041_故事新编",
+    description: "《故事新编》是鲁迅的最后一部小说集,收录了他在1922年至1935年间创作的8篇历史小说。作者以远古神话和历史传说为题材,注入现代意识,进行了大胆的改编和重构,充满了奇特的想象和辛辣的讽刺。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/45cd53792d6f",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1xgBdJEbYMQ-M1UEVm82mUQ",
         code: "0000"
       }
     ],
