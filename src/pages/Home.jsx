@@ -7,10 +7,13 @@ export default function Home() {
     const [currentPage, setCurrentPage] = useState(1);
     const booksPerPage = 10;
 
+    // 按ID倒序排序（即按上架时间倒序）
+    const sortedBooks = [...books].sort((a, b) => b.id - a.id);
+
     // 计算分页
-    const totalPages = Math.ceil(books.length / booksPerPage);
+    const totalPages = Math.ceil(sortedBooks.length / booksPerPage);
     const startIndex = (currentPage - 1) * booksPerPage;
-    const currentBooks = books.slice(startIndex, startIndex + booksPerPage);
+    const currentBooks = sortedBooks.slice(startIndex, startIndex + booksPerPage);
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
