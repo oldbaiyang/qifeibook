@@ -1385,6 +1385,438 @@ export const books = [
     size: "未知",
     format: "EPUB",
     publishYear: "1957"
+  },,
+  {
+    id: 57,
+    title: "追风筝的人",
+    author: "[美] 卡勒德·胡赛尼",
+    authorDetail: "卡勒德·胡赛尼，美籍阿富汗裔作家。",
+    year: "2003",
+    cover: "https://img.aqifei.top/img/2026/01/058_追风筝的人",
+    description: "《追风筝的人》讲述了12岁的阿富汗富家少爷阿米尔与仆人哈桑情同手足。然而，在一次风筝比赛后，发生了一件悲惨不堪的事，阿米尔为自己的懦弱感到自责和痛苦，逼走了哈桑。多年以后，阿米尔为了赎罪，再次踏上故土……",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/5fe5536ec0ec"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/11Fakp5rKN-pM3USVdAXknA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2003"
+  },
+  {
+    id: 58,
+    title: "寻路中国",
+    author: "[美] 彼得·海斯勒",
+    authorDetail: "彼得·海斯勒（何伟），美国作家、记者。",
+    year: "2011",
+    cover: "https://img.aqifei.top/img/2026/01/059_寻路中国",
+    description: "《寻路中国》是“中国纪实三部曲”的最终卷。作者驾车漫游中国，从乡村到城市，记录了中国社会的巨大变迁，探寻了普通人在现代化进程中的命运。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/da86e7967235"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1xnLHIROlAeEungbgS6qFQw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2011"
+  },
+  {
+    id: 59,
+    title: "刀锋",
+    author: "[英] 威廉·萨默塞特·毛姆",
+    authorDetail: "毛姆，英国著名小说家。",
+    year: "1944",
+    cover: "https://img.aqifei.top/img/2026/01/060_刀锋",
+    description: "《刀锋》是毛姆的代表作之一。小说写一个参加一战的美国青年飞行员拉里，在目睹战友牺牲后，寻找人生意义的过程。他拒绝了优渥的生活，游历世界，最终在古老的东方找到了灵魂的归宿。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/8de2d1756bab"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1kTbLbYvmJQlQGhuOjh1PhA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1944"
+  },
+  {
+    id: 60,
+    title: "格林童话全集",
+    author: "[德] 格林兄弟",
+    authorDetail: "格林兄弟，德国民间文学搜集整编者。",
+    year: "1812",
+    cover: "https://img.aqifei.top/img/2026/01/061_格林童话全集",
+    description: "《格林童话》是德国格林兄弟搜集、整理的德国民间文学童话集。收录了《灰姑娘》、《白雪公主》、《小红帽》、《睡美人》等脍炙人口的故事，是世界儿童文学的瑰宝。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/0e2d2ef081e8"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Ft-NIpcX06MzAxINU8g7Rw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1812"
+  },
+  {
+    id: 61,
+    title: "太白金星有点烦",
+    author: "马伯庸",
+    authorDetail: "马伯庸，著名作家。",
+    year: "2023",
+    cover: "https://images.weserv.nl/?url=https://img9.doubanio.com/view/subject/s/public/s34544956.jpg",
+    description: "《太白金星有点烦》是马伯庸的“见微知著”系列历史小说。借太白金星的视角，讲述了西天取经项目背后的繁杂职场故事，将神话故事解构为职场生存指南，幽默诙谐中透着对人性的洞察。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/e455e54ea0b8"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Jw9JSUa3TJ6G_5HZwo53uA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2023"
+  },
+  {
+    id: 62,
+    title: "可能性的艺术",
+    author: "刘瑜",
+    authorDetail: "刘瑜，清华大学政治学系副教授。",
+    year: "2022",
+    cover: "https://images.weserv.nl/?url=https://img2.doubanio.com/view/subject/s/public/s34192061.jpg",
+    description: "《可能性的艺术：比较政治学30讲》是刘瑜老师关于比较政治学的普及读物。书中通过对不同国家政治制度的比较分析，探讨了民主、转型、国家能力等核心政治议题，引导读者建立一种比较的、开放的政治视野。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/059c25c1a5d8"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/16ODoMzjrCVyEHGxH0cC-qQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2022"
+  },
+  {
+    id: 63,
+    title: "刘擎西方现代思想讲义",
+    author: "刘擎",
+    authorDetail: "刘擎，华东师范大学紫江特聘教授。",
+    year: "2021",
+    cover: "https://img.aqifei.top/img/2026/01/065_刘擎西方现代思想讲义",
+    description: "《刘擎西方现代思想讲义》通过梳理韦伯、尼采、萨特等19位著名思想家的学术思想，清晰地展现了西方现代思想的演变脉络，帮助读者理解现代人的困境与出路。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/bfbdf97f4af9"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1c9NOlSxRmzraP-a22DYl4w?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2021"
+  },
+  {
+    id: 64,
+    title: "鼠疫",
+    author: "[法] 阿尔贝·加缪",
+    authorDetail: "加缪，诺贝尔文学奖得主。",
+    year: "1947",
+    cover: "https://img.aqifei.top/img/2026/01/066_鼠疫",
+    description: "《鼠疫》讲述了阿尔及利亚的奥兰发生瘟疫，突如其来的灾难让人措手不及。在封城的状态下，人们经历了恐惧、绝望、反抗与团结。小说通过对鼠疫的描写，象征了战争、灾难以及人类生存的荒谬境况。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1e36deee6ab0"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1tNiEcMC83BeG-K6_psZ-Pg?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1947"
+  },
+  {
+    id: 65,
+    title: "嫌疑人X的献身",
+    author: "[日] 东野圭吾",
+    authorDetail: "东野圭吾，日本推理小说天王。",
+    year: "2005",
+    cover: "https://img.aqifei.top/img/2026/01/067_嫌疑人X的献身",
+    description: "《嫌疑人X的献身》是东野圭吾的巅峰之作。数学天才石神为了守护心爱的女人，设计了一个天衣无缝的诡计，与物理学教授汤川学展开了一场高智商的对决。小说探讨了爱情的极致与牺牲。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/b24ca83bc44c"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1-1NpoCA2f81kyKPwBZYT2w?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2005"
+  },
+  {
+    id: 66,
+    title: "一间只属于自己的房间",
+    author: "[英] 弗吉尼亚·伍尔夫",
+    authorDetail: "伍尔夫，英国现代主义作家，女性主义先驱。",
+    year: "1929",
+    cover: "https://img.aqifei.top/img/2026/01/068_一间只属于自己的房间",
+    description: "《一间只属于自己的房间》是女性主义文学的里程碑之作。伍尔夫在书中提出“女性如果要写作，由于性别的限制，她必须要有钱和一间属于自己的房间”，深刻剖析了女性在文学创作和历史中的地位。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1e7163949e13"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1DBbwviXlzVlSOYM59lLShQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1929"
+  },
+  {
+    id: 67,
+    title: "孽子",
+    author: "白先勇",
+    authorDetail: "白先勇，当代著名作家。",
+    year: "1983",
+    cover: "https://img.aqifei.top/img/2026/01/069_孽子",
+    description: "《孽子》是白先勇唯一的长篇小说。以20世纪70年代台北新公园为背景，描写了一群被家庭和社会遗弃的同性恋少年的生存状态和情感纠葛，展现了他们对爱与归属的渴望以及父子关系的复杂。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1accd2d48387"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1P_BLJuf1zC0p8ay2iNbpsQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1983"
+  },
+  {
+    id: 68,
+    title: "傲慢与偏见",
+    author: "[英] 简·奥斯汀",
+    authorDetail: "简·奥斯汀，英国著名女性小说家。",
+    year: "1813",
+    cover: "https://img.aqifei.top/img/2026/01/070_傲慢与偏见",
+    description: "《傲慢与偏见》是简·奥斯汀的代表作。小说以达西和伊丽莎白的爱情故事为主线，描写了19世纪初英国乡绅阶层的婚姻和生活。通过对“傲慢”与“偏见”的消解，探讨了婚姻、金钱与爱情的关系。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/211affd3cd27"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/16_CJbzTxC1S0UGYiTckPgA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1813"
+  },
+  {
+    id: 69,
+    title: "黄金时代",
+    author: "王小波",
+    authorDetail: "王小波，当代著名学者、作家。",
+    year: "1994",
+    cover: "https://img.aqifei.top/img/2026/01/071_黄金时代",
+    description: "《黄金时代》是王小波的代表作之一。小说以“文革”时期为背景，讲述了知青王二和医生陈清扬的爱情故事。作者以幽默、荒诞的笔触，表现了对人性的压抑与反抗，以及对自由的追求。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/643568c72547"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1KUXUEcyHAWAjKSNlZyqlPw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1994"
+  },
+  {
+    id: 70,
+    title: "台北人",
+    author: "白先勇",
+    authorDetail: "白先勇，当代著名作家。",
+    year: "1971",
+    cover: "https://img.aqifei.top/img/2026/01/073_台北人",
+    description: "《台北人》是白先勇的短篇小说集。收录了《永远的尹雪艳》、《金大班的最后一夜》等14篇作品。描写了随着国民党撤退到台湾的各阶层人物的生活和心态，展现了今昔之比的沧桑感和历史的无常。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/bd1802b17854"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1sjalW8pHGGJVnZYJn9Tgug?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1971"
+  },
+  {
+    id: 71,
+    title: "四世同堂",
+    author: "老舍",
+    authorDetail: "老舍，杰出的语言大师，人民艺术家。",
+    year: "1944",
+    cover: "https://img.aqifei.top/img/2026/01/074_四世同堂",
+    description: "《四世同堂》是老舍先生的长篇小说代表作。以抗战时期的北平为背景，描写了小羊圈胡同祁家四世同堂的生活，以及周围邻居在日寇统治下的荣辱浮沉，展现了中国人民在国难当头时的痛苦与抗争。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/38ea7c1e0fb2"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1osEgUxdQTYgdKELNI9Elmw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1944"
+  },
+  {
+    id: 72,
+    title: "诗经",
+    author: "佚名",
+    authorDetail: "中国最早的诗歌总集。",
+    year: "西周-春秋",
+    cover: "https://img.aqifei.top/img/2026/01/075_诗经",
+    description: "《诗经》是中国最早的一部诗歌总集，收录了西周初年至春秋中叶的诗歌305篇。分为风、雅、颂三部分，内容丰富，反映了当时的社会生活、风俗民情和政治状况，是中国现实主义文学的源头。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1da1c7b1e571"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1fkFws7pD7WG2FqQzydWp8Q?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "Unknown"
+  },
+  {
+    id: 73,
+    title: "悲惨世界（上中下）",
+    author: "[法] 维克多·雨果",
+    authorDetail: "雨果，法国浪漫主义文学代表作家。",
+    year: "1862",
+    cover: "https://img.aqifei.top/img/2026/01/077_悲惨世界（上中下）",
+    description: "《悲惨世界》是维克多·雨果最著名的长篇小说。以冉·阿让的传奇经历为主线，描绘了19世纪初法国社会的广阔画面。小说融进了法国的历史、革命、战争、道德哲学、法律、正义、宗教信仰等，是一部社会史诗。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/b4b7a33c6acc"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1m_cIU9acopnSButNoGDyQA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1862"
+  },
+  {
+    id: 74,
+    title: "南京大屠杀",
+    author: "[美] 张纯如",
+    authorDetail: "张纯如，华裔美国作家、历史学家。",
+    year: "1997",
+    cover: "https://img.aqifei.top/img/2026/01/078_南京大屠杀",
+    description: "《南京大屠杀：被遗忘的二战浩劫》是美籍华裔作家张纯如的历史著作。书中详实地记录了1937年日军在南京犯下的暴行，以及国际安全区内西方人士的人道主义救援。这是第一部用英语写成的关于南京大屠杀的历史著作。",
+    category: "历史传记",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/7b5f3eb1d171"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1aeL4tvis0PpC_sqHkMhGnw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1997"
   },
 ];
 

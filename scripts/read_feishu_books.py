@@ -94,8 +94,10 @@ def read_feishu_books():
         baidu = row[3] if len(row) > 3 else ""
         status = row[4] if len(row) > 4 else ""
         
-        # 提取文本(如果是对象)
+        # 提取文本(如果是对象或列表)
         def extract_text(cell):
+            if isinstance(cell, list):
+                return "".join([str(seg.get('text', '')) for seg in cell if isinstance(seg, dict)])
             if isinstance(cell, dict):
                 return cell.get('text', '')
             return str(cell) if cell else ""
