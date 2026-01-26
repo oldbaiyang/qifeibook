@@ -1002,7 +1002,7 @@ export const books = [
     format: "EPUB",
     publishYear: "2024"
   },
-{
+  {
     id: 41,
     title: "城南旧事",
     author: "林海音",
@@ -1385,7 +1385,7 @@ export const books = [
     size: "未知",
     format: "EPUB",
     publishYear: "1957"
-  },,
+  },
   {
     id: 57,
     title: "追风筝的人",
@@ -1821,7 +1821,7 @@ export const books = [
 ];
 
 export const categories = [
-"小说文学",
+  "小说文学",
   "历史传记",
   "人文社科",
   "励志成功",
