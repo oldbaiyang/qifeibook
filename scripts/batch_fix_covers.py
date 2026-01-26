@@ -84,17 +84,29 @@ if __name__ == "__main__":
     # 需要修复的书籍列表
     # 格式: "书名": {"image_path": "路径", "row": 飞书行号}
     books_to_fix = {
-        "新名字的故事": {
-            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/new_name_story_cover_1769137830172.png",
-            "row": 24
+        "太白金星有点烦": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/taibai_venus_cover_1769415361385.png",
+            "row": 66
         },
-        "笑傲江湖（全四册）": {
-            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/xiaoao_jianghu_cover_1769137848494.png",
-            "row": 41
+        "可能性的艺术": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/possibility_politcs_cover_1769415345343.png",
+            "row": 67
         },
-        "局外人": {
-            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/stranger_camus_cover_1769137886125.png",
-            "row": 35
+        "嫌疑人X的献身": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/suspect_x_cover_1769415425738.png",
+            "row": 70
+        },
+        "台北人": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/taipei_people_cover_1769415409304.png",
+            "row": 76
+        },
+        "悲惨世界（上中下）": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/les_miserables_cover_1769415393122.png",
+            "row": 80
+        },
+        "南京大屠杀": {
+            "image_path": "/Users/zcy/.gemini/antigravity/brain/ae600791-163c-4825-81a3-0ff0ac54ada0/nanjing_massacre_cover_1769415377513.png",
+            "row": 81
         }
     }
     

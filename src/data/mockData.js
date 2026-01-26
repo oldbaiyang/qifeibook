@@ -1488,7 +1488,7 @@ export const books = [
     author: "马伯庸",
     authorDetail: "马伯庸，著名作家。",
     year: "2023",
-    cover: "https://images.weserv.nl/?url=https://img9.doubanio.com/view/subject/s/public/s34544956.jpg",
+    cover: "https://img.aqifei.top/img/2026/01/taibai_venus_cover_1769415361385",
     description: "《太白金星有点烦》是马伯庸的“见微知著”系列历史小说。借太白金星的视角，讲述了西天取经项目背后的繁杂职场故事，将神话故事解构为职场生存指南，幽默诙谐中透着对人性的洞察。",
     category: "小说文学",
     downloadLinks: [
@@ -1512,7 +1512,7 @@ export const books = [
     author: "刘瑜",
     authorDetail: "刘瑜，清华大学政治学系副教授。",
     year: "2022",
-    cover: "https://images.weserv.nl/?url=https://img2.doubanio.com/view/subject/s/public/s34192061.jpg",
+    cover: "https://img.aqifei.top/img/2026/01/possibility_politcs_cover_1769415345343",
     description: "《可能性的艺术：比较政治学30讲》是刘瑜老师关于比较政治学的普及读物。书中通过对不同国家政治制度的比较分析，探讨了民主、转型、国家能力等核心政治议题，引导读者建立一种比较的、开放的政治视野。",
     category: "人文社科",
     downloadLinks: [
@@ -1584,7 +1584,7 @@ export const books = [
     author: "[日] 东野圭吾",
     authorDetail: "东野圭吾，日本推理小说天王。",
     year: "2005",
-    cover: "https://img.aqifei.top/img/2026/01/067_嫌疑人X的献身",
+    cover: "https://img.aqifei.top/img/2026/01/suspect_x_cover_1769415425738",
     description: "《嫌疑人X的献身》是东野圭吾的巅峰之作。数学天才石神为了守护心爱的女人，设计了一个天衣无缝的诡计，与物理学教授汤川学展开了一场高智商的对决。小说探讨了爱情的极致与牺牲。",
     category: "小说文学",
     downloadLinks: [
@@ -1704,7 +1704,7 @@ export const books = [
     author: "白先勇",
     authorDetail: "白先勇，当代著名作家。",
     year: "1971",
-    cover: "https://img.aqifei.top/img/2026/01/073_台北人",
+    cover: "https://img.aqifei.top/img/2026/01/taipei_people_cover_1769415409304",
     description: "《台北人》是白先勇的短篇小说集。收录了《永远的尹雪艳》、《金大班的最后一夜》等14篇作品。描写了随着国民党撤退到台湾的各阶层人物的生活和心态，展现了今昔之比的沧桑感和历史的无常。",
     category: "小说文学",
     downloadLinks: [
@@ -1776,7 +1776,7 @@ export const books = [
     author: "[法] 维克多·雨果",
     authorDetail: "雨果，法国浪漫主义文学代表作家。",
     year: "1862",
-    cover: "https://img.aqifei.top/img/2026/01/077_悲惨世界（上中下）",
+    cover: "https://img.aqifei.top/img/2026/01/les_miserables_cover_1769415393122",
     description: "《悲惨世界》是维克多·雨果最著名的长篇小说。以冉·阿让的传奇经历为主线，描绘了19世纪初法国社会的广阔画面。小说融进了法国的历史、革命、战争、道德哲学、法律、正义、宗教信仰等，是一部社会史诗。",
     category: "小说文学",
     downloadLinks: [
@@ -1800,7 +1800,7 @@ export const books = [
     author: "[美] 张纯如",
     authorDetail: "张纯如，华裔美国作家、历史学家。",
     year: "1997",
-    cover: "https://img.aqifei.top/img/2026/01/078_南京大屠杀",
+    cover: "https://img.aqifei.top/img/2026/01/nanjing_massacre_cover_1769415377513",
     description: "《南京大屠杀：被遗忘的二战浩劫》是美籍华裔作家张纯如的历史著作。书中详实地记录了1937年日军在南京犯下的暴行，以及国际安全区内西方人士的人道主义救援。这是第一部用英语写成的关于南京大屠杀的历史著作。",
     category: "历史传记",
     downloadLinks: [
