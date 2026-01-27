@@ -183,7 +183,7 @@ export const books = [
     author: "[哥伦比亚] 加西亚·马尔克斯",
     authorDetail: "加西亚·马尔克斯,哥伦比亚作家,诺贝尔文学奖得主,魔幻现实主义文学代表",
     year: "1967",
-    cover: "https://img.aqifei.top/img/2026/01/006_百年孤独",
+    cover: "https://img.aqifei.top/img/2026/01/006_%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC",
     description: "《百年孤独》是魔幻现实主义文学的代表作,描写了布恩迪亚家族七代人的传奇故事,以及加勒比海沿岸小镇马孔多的百年兴衰,反映了拉丁美洲一个世纪以来风云变幻的历史。作品融入神话传说、民间故事、宗教典故等因素,巧妙地糅合了现实与虚幻,展现出一个瑰丽的想象世界。",
     category: "小说文学",
     downloadLinks: [
@@ -208,7 +208,7 @@ export const books = [
     author: "[美] 玛格丽特·米切尔",
     authorDetail: "玛格丽特·米切尔,美国作家,《飘》是其唯一的长篇小说",
     year: "1936",
-    cover: "https://img.aqifei.top/img/2026/01/007_飘",
+    cover: "https://img.aqifei.top/img/2026/01/007_%E9%A3%98",
     description: "《飘》是一部有关战争的小说,但作者没有把着眼点放在战场上。除了亚特兰大之围,作者详细描述过战争,其余的战争场面几乎都是一笔带过。她以女性特有的细腻、真切和委婉,从女主人公的心理感受上反映战争的动荡和残酷,塑造了郝思嘉这个性格复杂、极富魅力的女性形象。",
     category: "小说文学",
     downloadLinks: [
@@ -233,7 +233,7 @@ export const books = [
     author: "[英] 乔治·奥威尔",
     authorDetail: "乔治·奥威尔,英国作家,《1984》《动物农场》作者",
     year: "1945",
-    cover: "https://img.aqifei.top/img/2026/01/008_动物农场",
+    cover: "https://img.aqifei.top/img/2026/01/008_%E5%8A%A8%E7%89%A9%E5%86%9C%E5%9C%BA",
     description: "农场的一群动物成功地进行了一场'革命',将压榨他们的人类东家赶出农场,建立起一个平等的动物社会。然而,动物领袖,那些聪明的猪们最终却篡夺了革命的果实,成为比人类东家更加独裁和极权的统治者。",
     category: "小说文学",
     downloadLinks: [
@@ -258,7 +258,7 @@ export const books = [
     author: "林奕含",
     authorDetail: "林奕含,台湾作家,本书是其唯一一部长篇小说",
     year: "2017",
-    cover: "https://img.aqifei.top/img/2026/01/009_房思琪的初恋乐园",
+    cover: "https://img.aqifei.top/img/2026/01/009_%E6%88%BF%E6%80%9D%E7%90%AA%E7%9A%84%E5%88%9D%E6%81%8B%E4%B9%90%E5%9B%AD",
     description: "令人心碎却无能为力的真实故事。向死而生的文学绝唱。李银河、张悦然、冯唐、詹宏志、蒋方舟 万千读者 强力推荐!这是一部惊人而特别的小说,小说作者既具有高度敏锐的感受力、又是一个近乎疯狂的语言天才。",
     category: "小说文学",
     downloadLinks: [
@@ -283,7 +283,7 @@ export const books = [
     author: "余华",
     authorDetail: "余华,当代著名作家,中国先锋文学代表人物",
     year: "1993",
-    cover: "https://img.aqifei.top/img/2026/01/010_三国演义（全二册）",
+    cover: "https://img.aqifei.top/img/2026/01/010_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89%EF%BC%88%E5%85%A8%E4%BA%8C%E5%86%8C%EF%BC%89",
     description: "三国演义（全二册）",
     category: "小说文学",
     downloadLinks: [
@@ -308,7 +308,7 @@ export const books = [
     author: "刘慈欣",
     authorDetail: "刘慈欣,中国科幻小说代表作家,雨果奖得主",
     year: "2008",
-    cover: "https://img.aqifei.top/img/2026/01/011_福尔摩斯探案全集（上中下）",
+    cover: "https://img.aqifei.top/img/2026/01/011_%E7%A6%8F%E5%B0%94%E6%91%A9%E6%96%AF%E6%8E%A2%E6%A1%88%E5%85%A8%E9%9B%86%EF%BC%88%E4%B8%8A%E4%B8%AD%E4%B8%8B%EF%BC%89",
     description: "福尔摩斯探案全集（上中下）",
     category: "小说文学",
     downloadLinks: [
@@ -333,7 +333,7 @@ export const books = [
     author: "[日] 东野圭吾",
     authorDetail: "东野圭吾,日本推理小说家,代表作《白夜行》《嫌疑人X的献身》等",
     year: "1999",
-    cover: "https://img.aqifei.top/img/2026/01/012_白夜行",
+    cover: "https://img.aqifei.top/img/2026/01/012_%E7%99%BD%E5%A4%9C%E8%A1%8C",
     description: "《白夜行》将无望却坚守的凄凉爱情和执著而缜密的冷静推理完美结合。一九七三年,大阪一栋废弃建筑内发现一名遭利器刺死的男子。此后十九年,嫌疑人之女雪穗与被害者之子桐原亮司走上截然不同的人生道路,一个跻身上流社会,一个却在底层游走,而他们身边的人,却接二连三地离奇死去,警察经过十九年的艰辛追踪,终于使真相大白……",
     category: "小说文学",
     downloadLinks: [
@@ -383,7 +383,7 @@ export const books = [
     author: "[法] 圣埃克苏佩里",
     authorDetail: "圣埃克苏佩里,法国作家、飞行员,《小王子》作者",
     year: "1943",
-    cover: "https://img.aqifei.top/img/2026/01/015_小王子",
+    cover: "https://img.aqifei.top/img/2026/01/015_%E5%B0%8F%E7%8E%8B%E5%AD%90",
     description: "小王子是一个超凡脱俗的仙童,他住在一颗只比他大一丁点儿的小行星上。陪伴他的是一朵他非常喜爱的小玫瑰花。但玫瑰花的虚荣心伤害了小王子对她的感情。小王子告别小行星,开始了遨游太空的旅行。他先后访问了六个行星,各种见闻使他陷入忧伤,他感到大人们荒唐可笑、太不正常。",
     category: "小说文学",
     downloadLinks: [
@@ -408,7 +408,7 @@ export const books = [
     author: "[丹麦] 安徒生",
     authorDetail: "安徒生,丹麦作家,世界著名童话作家",
     year: "1835-1872",
-    cover: "https://img.aqifei.top/img/2026/01/016_安徒生童话故事集",
+    cover: "https://img.aqifei.top/img/2026/01/016_%E5%AE%89%E5%BE%92%E7%94%9F%E7%AB%A5%E8%AF%9D%E6%95%85%E4%BA%8B%E9%9B%86",
     description: "《安徒生童话》是丹麦作家安徒生创作的童话集。该作爱憎分明,热情歌颂劳动人民、赞美他们的善良和纯洁的优秀品德;无情地揭露和批判王公贵族们的愚蠢、无能、贪婪和残暴。其中较为闻名的故事有《小美人鱼》、《丑小鸭》、《卖火柴的小女孩》、《拇指姑娘》等。",
     category: "小说文学",
     downloadLinks: [
@@ -433,7 +433,7 @@ export const books = [
     author: "三毛",
     authorDetail: "三毛,台湾著名女作家,本名陈懋平",
     year: "1976",
-    cover: "https://img.aqifei.top/img/2026/01/017_撒哈拉的故事",
+    cover: "https://img.aqifei.top/img/2026/01/017_%E6%92%92%E5%93%88%E6%8B%89%E7%9A%84%E6%95%85%E4%BA%8B",
     description: "三毛作品中最膾炙人口的《撒哈拉的故事》,是她在撒哈拉沙漠生活时的见闻,以及她思考和感怀的结晶。不论是爱情、友谊、还是对大自然的热爱,都反映在她的作品里,广受读者喜爱。",
     category: "小说文学",
     downloadLinks: [
@@ -458,7 +458,7 @@ export const books = [
     author: "[意] 埃莱娜·费兰特",
     authorDetail: "埃莱娜·费兰特,意大利作家,'那不勒斯四部曲'作者",
     year: "2014",
-    cover: "https://img.aqifei.top/img/2026/01/018_失踪的孩子",
+    cover: "https://img.aqifei.top/img/2026/01/018_%E5%A4%B1%E8%B8%AA%E7%9A%84%E5%AD%A9%E5%AD%90",
     description: "《失踪的孩子》是'那不勒斯四部曲'的第四部,也是完结篇。时间跨度长达半个世纪。通过莉拉和埃莱娜的个人命运、恩怨纠葛,描绘了二战后意大利政治、经济和社会状况的变迁,展现了一幅意大利现当代的史诗画卷。",
     category: "小说文学",
     downloadLinks: [
@@ -558,7 +558,7 @@ export const books = [
     author: "[美] 哈珀·李",
     authorDetail: "哈珀·李,美国作家,普利策小说奖得主",
     year: "1960",
-    cover: "https://img.aqifei.top/img/2026/01/022_杀死一只知更鸟",
+    cover: "https://img.aqifei.top/img/2026/01/022_%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F",
     description: "《杀死一只知更鸟》讲述了20世纪30年代美国南方一个小镇上,律师阿提克斯为一名被指控强奸白人女子的黑人辩护的故事。小说通过两个孩子的视角,展现了种族偏见、社会不公以及成长的阵痛,是一部感人至深的经典之作。",
     category: "小说文学",
     downloadLinks: [
@@ -583,7 +583,7 @@ export const books = [
     author: "鲁迅",
     authorDetail: "鲁迅,中国现代文学奠基人",
     year: "1927",
-    cover: "https://img.aqifei.top/img/2026/01/024_野草",
+    cover: "https://img.aqifei.top/img/2026/01/024_%E9%87%8E%E8%8D%89",
     description: "《野草》是鲁迅先生唯一的一部散文诗集,收录了他在1924年至1926年间创作的23篇散文诗。作品以隐晦的象征、富于诗意的意象和充满张力的语言,表达了作者对现实的绝望、抗争以及对生命意义的深刻思考。",
     category: "小说文学",
     downloadLinks: [
@@ -608,7 +608,7 @@ export const books = [
     author: "王小波",
     authorDetail: "王小波,中国当代著名学者、作家",
     year: "1997",
-    cover: "https://img.aqifei.top/img/2026/01/026_沉默的大多数",
+    cover: "https://img.aqifei.top/img/2026/01/026_%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0",
     description: "《沉默的大多数》是王小波的一部杂文随笔集。作者以幽默智慧的笔触,对社会现象、文化传统、人性心理等进行了深入的剖析和批判,倡导自由、理性、独立的思考精神。",
     category: "人文社科",
     downloadLinks: [
@@ -633,7 +633,7 @@ export const books = [
     author: "[英] 阿加莎·克里斯蒂",
     authorDetail: "阿加莎·克里斯蒂,英国侦探小说女王",
     year: "1926",
-    cover: "https://img.aqifei.top/img/2026/01/027_罗杰疑案",
+    cover: "https://img.aqifei.top/img/2026/01/027_%E7%BD%97%E6%9D%B0%E7%96%91%E6%A1%88",
     description: "《罗杰疑案》是阿加莎·克里斯蒂的成名作,也是侦探小说史上的经典之作。小说讲述了住在金艾博特村的富翁罗杰·艾克罗伊德离奇身亡,大侦探波洛介入调查的故事。结局出人意料,开创了侦探小说的一种全新模式。",
     category: "小说文学",
     downloadLinks: [
@@ -658,7 +658,7 @@ export const books = [
     author: "[德] 赫尔曼·黑塞",
     authorDetail: "赫尔曼·黑塞,德国作家,诺贝尔文学奖得主",
     year: "1922",
-    cover: "https://img.aqifei.top/img/2026/01/028_悉达多",
+    cover: "https://img.aqifei.top/img/2026/01/028_%E6%82%89%E8%BE%BE%E5%A4%9A",
     description: "《悉达多》讲述了古印度贵族青年悉达多为了追求心灵的安宁和生命的真谛,离家出走,历经各种人生体验,最终在流水的启示下悟道的故事。这是一部关于自我发现和精神成长的寓言。",
     category: "小说文学",
     downloadLinks: [
@@ -683,7 +683,7 @@ export const books = [
     author: "史铁生",
     authorDetail: "史铁生,中国当代著名作家",
     year: "1991",
-    cover: "https://img.aqifei.top/img/2026/01/029_我与地坛",
+    cover: "https://img.aqifei.top/img/2026/01/029_%E6%88%91%E4%B8%8E%E5%9C%B0%E5%9D%9B",
     description: "《我与地坛》是史铁生的散文代表作。作者身患残疾,在最狂妄的年龄失去了双腿。他在地坛的古园中沉思冥想,对生命、死亡、命运等终极问题进行了深刻的感悟。文字深沉凝重,感人肺腑。",
     category: "小说文学",
     downloadLinks: [
@@ -708,7 +708,7 @@ export const books = [
     author: "余华",
     authorDetail: "余华,中国当代先锋文学代表作家",
     year: "1995",
-    cover: "https://img.aqifei.top/img/2026/01/030_许三观卖血记",
+    cover: "https://img.aqifei.top/img/2026/01/030_%E8%AE%B8%E4%B8%89%E8%A7%82%E5%8D%96%E8%A1%80%E8%AE%B0",
     description: "《许三观卖血记》讲述了丝厂送茧工许三观靠卖血度过人生一个个难关的故事。小说以卖血为主线,串联起许三观的一生,展现了小人物在苦难生活中的生存智慧和顽强生命力。",
     category: "小说文学",
     downloadLinks: [
@@ -733,7 +733,7 @@ export const books = [
     author: "鲁迅",
     authorDetail: "鲁迅,中国现代文学奠基人",
     year: "1926",
-    cover: "https://img.aqifei.top/img/2026/01/031_彷徨",
+    cover: "https://img.aqifei.top/img/2026/01/031_%E5%BD%B7%E5%BE%A8",
     description: "《彷徨》是鲁迅的第二部小说集,收录了他在1924年至1925年间创作的11篇小说,包括《祝福》《在酒楼上》《伤逝》等。作品反映了五四运动后知识分子的苦闷和彷徨,以及对社会现实的深刻批判。",
     category: "小说文学",
     downloadLinks: [
@@ -783,7 +783,7 @@ export const books = [
     author: "陈忠实",
     authorDetail: "陈忠实,中国当代著名作家,茅盾文学奖得主",
     year: "1993",
-    cover: "https://img.aqifei.top/img/2026/01/033_白鹿原",
+    cover: "https://img.aqifei.top/img/2026/01/033_%E7%99%BD%E9%B9%BF%E5%8E%9F",
     description: "《白鹿原》是一部渭河平原50年变迁的雄奇史诗,一轴中国农村斑斓多彩、触目惊心的长幅画卷。小说以白嘉轩为叙事核心,描写了白鹿两家三代人的恩怨纠葛,展现了从清末民初到建国之初中国农村的历史演变。",
     category: "小说文学",
     downloadLinks: [
@@ -808,7 +808,7 @@ export const books = [
     author: "费孝通",
     authorDetail: "费孝通,中国著名社会学家、人类学家",
     year: "1947",
-    cover: "https://img.aqifei.top/img/2026/01/034_乡土中国",
+    cover: "https://img.aqifei.top/img/2026/01/034_%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD",
     description: "《乡土中国》是费孝通先生的一部社会学经典著作。书中探讨了中国基层传统社会结构及其运作逻辑,提出了'差序格局'、'礼治秩序'、'无讼'等重要概念,深刻剖析了中国乡土社会的特点。",
     category: "人文社科",
     downloadLinks: [
@@ -833,7 +833,7 @@ export const books = [
     author: "路遥",
     authorDetail: "路遥,中国当代作家,茅盾文学奖得主",
     year: "1986",
-    cover: "https://img.aqifei.top/img/2026/01/035_平凡的世界（全三部）",
+    cover: "https://img.aqifei.top/img/2026/01/035_%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%88%E5%85%A8%E4%B8%89%E9%83%A8%EF%BC%89",
     description: "《平凡的世界》是一部全景式地表现中国当代城乡社会生活的长篇小说。小说以孙少安和孙少平两兄弟为中心,刻画了当时社会各阶层众多普通人的形象;劳动与爱情、挫折与追求、痛苦与欢乐、日常生活与巨大社会冲突纷繁地交织在一起,深刻地展示了普通人在大时代历史进程中所走过的艰难曲折的道路。",
     category: "小说文学",
     downloadLinks: [
@@ -858,7 +858,7 @@ export const books = [
     author: "[以] 尤瓦尔·赫拉利",
     authorDetail: "尤瓦尔·赫拉利,以色列历史学家",
     year: "2011",
-    cover: "https://img.aqifei.top/img/2026/01/036_人类简史",
+    cover: "https://img.aqifei.top/img/2026/01/036_%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2",
     description: "《人类简史:从动物到上帝》从大历史的视角,审视了人类历史上的三次革命:认知革命、农业革命和科学革命。作者以新颖的观点和宏大的视野,探讨了人类如何从一种不起眼的动物演变为地球的主宰,以及人类社会的未来走向。",
     category: "历史传记",
     downloadLinks: [
@@ -883,7 +883,7 @@ export const books = [
     author: "钱钟书",
     authorDetail: "钱钟书,中国现代著名学者、作家",
     year: "1947",
-    cover: "https://img.aqifei.top/img/2026/01/037_围城",
+    cover: "https://img.aqifei.top/img/2026/01/037_%E5%9B%B4%E5%9F%8E",
     description: "《围城》是钱钟书先生唯一的一部长篇小说,被誉为'新儒林外史'。小说以方鸿渐的经历为主线,描绘了抗战初期知识分子的群像,揭示了'围城'困境:城外的人想冲进去,城里的人想逃出来。",
     category: "小说文学",
     downloadLinks: [
@@ -933,7 +933,7 @@ export const books = [
     author: "[美] 丹尼尔·凯斯",
     authorDetail: "丹尼尔·凯斯,美国作家,心理学家",
     year: "1959",
-    cover: "https://img.aqifei.top/img/2026/01/039_献给阿尔吉侬的花束",
+    cover: "https://img.aqifei.top/img/2026/01/039_%E7%8C%AE%E7%BB%99%E9%98%BF%E5%B0%94%E5%90%89%E4%BE%AC%E7%9A%84%E8%8A%B1%E6%9D%9F",
     description: "查理·高登是低智商者,他参加了一项提高智力的实验手术。手术后,他的智商逐渐提高,变成了一个天才。然而,他发现原本的朋友和同事开始排斥他,他也发现了社会中隐藏的残酷真相。同时,同样接受手术的实验白鼠阿尔吉侬出现了退化现象,预示着查理的命运......",
     category: "小说文学",
     downloadLinks: [
@@ -958,7 +958,7 @@ export const books = [
     author: "[英] 阿加莎·克里斯蒂",
     authorDetail: "阿加莎·克里斯蒂,侦探小说女王",
     year: "1934",
-    cover: "https://img.aqifei.top/img/2026/01/040_东方快车谋杀案",
+    cover: "https://img.aqifei.top/img/2026/01/040_%E4%B8%9C%E6%96%B9%E5%BF%AB%E8%BD%A6%E8%B0%8B%E6%9D%80%E6%A1%88",
     description: "午夜过后,一场大雪迫使东方快车停了下来。侦探波洛在列车上。第二天早上,大家发现萨缪埃尔·雷切特死在了他的包厢里,身中十二刀。车上的乘客都有嫌疑,波洛展开了调查,最终揭开了一个惊人的秘密。",
     category: "小说文学",
     downloadLinks: [
@@ -983,7 +983,7 @@ export const books = [
     author: "鲁迅",
     authorDetail: "鲁迅,中国现代文学奠基人",
     year: "1936",
-    cover: "https://img.aqifei.top/img/2026/01/041_故事新编",
+    cover: "https://img.aqifei.top/img/2026/01/041_%E6%95%85%E4%BA%8B%E6%96%B0%E7%BC%96",
     description: "《故事新编》是鲁迅的最后一部小说集,收录了他在1922年至1935年间创作的8篇历史小说。作者以远古神话和历史传说为题材,注入现代意识,进行了大胆的改编和重构,充满了奇特的想象和辛辣的讽刺。",
     category: "小说文学",
     downloadLinks: [
@@ -1008,7 +1008,7 @@ export const books = [
     author: "林海音",
     authorDetail: "林海音（1918－2001），中国现代著名女作家。",
     year: "1960",
-    cover: "https://img.aqifei.top/img/2026/01/042_城南旧事",
+    cover: "https://img.aqifei.top/img/2026/01/042_%E5%9F%8E%E5%8D%97%E6%97%A7%E4%BA%8B",
     description: "《城南旧事》是著名女作家林海音的自传体小说，以其七岁到十三岁的生活为背景，透过主角英子童稚的双眼，向世人展现了大人世界的悲欢离合，有一种说不出来的天真，却道尽人世复杂的情感。",
     category: "小说文学",
     downloadLinks: [
@@ -1056,7 +1056,7 @@ export const books = [
     author: "[美] 彼得·海斯勒",
     authorDetail: "彼得·海斯勒（Peter Hessler），中文名何伟，美国作家、记者。",
     year: "2001",
-    cover: "https://img.aqifei.top/img/2026/01/044_江城",
+    cover: "https://img.aqifei.top/img/2026/01/044_%E6%B1%9F%E5%9F%8E",
     description: "《江城》是彼得·海斯勒（何伟）的中国纪实三部曲之一。1996年，作者作为“和平队”志愿者来到中国长江边的城市涪陵，在当地师专担任英语教师。书中记录了他在涪陵两年的生活经历，以及对中国社会的观察与思考。",
     category: "人文社科",
     downloadLinks: [
@@ -1080,7 +1080,7 @@ export const books = [
     author: "鲁迅",
     authorDetail: "鲁迅，中国现代文学奠基人。",
     year: "1928",
-    cover: "https://img.aqifei.top/img/2026/01/045_朝花夕拾",
+    cover: "https://img.aqifei.top/img/2026/01/045_%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE",
     description: "《朝花夕拾》是鲁迅先生唯一的一部回忆性散文集，原名《旧事重提》。收录了《狗·猫·鼠》《阿长与〈山海经〉》《二十四孝图》《五猖会》《无常》《从百草园到三味书屋》《父亲的病》《琐记》《藤野先生》《范爱农》等十篇作品。",
     category: "小说文学",
     downloadLinks: [
@@ -1152,7 +1152,7 @@ export const books = [
     author: "杨本芬",
     authorDetail: "杨本芬，80岁才开始写作的素人作家。",
     year: "2020",
-    cover: "https://img.aqifei.top/img/2026/01/048_秋园",
+    cover: "https://img.aqifei.top/img/2026/01/048_%E7%A7%8B%E5%9B%AD",
     description: "《秋园》讲述了“妈妈”秋园一位普通中国女性在剧变时代中的生存故事。她的一生经历了种种苦难，却始终保持着坚韧与尊严。这本书被誉为“女性版的《活着》”。",
     category: "小说文学",
     downloadLinks: [
@@ -1176,7 +1176,7 @@ export const books = [
     author: "[哥伦比亚] 加西亚·马尔克斯",
     authorDetail: "加西亚·马尔克斯，诺贝尔文学奖得主，《百年孤独》作者。",
     year: "1985",
-    cover: "https://img.aqifei.top/img/2026/01/049_霍乱时期的爱情",
+    cover: "https://img.aqifei.top/img/2026/01/049_%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85",
     description: "《霍乱时期的爱情》是马尔克斯最著名的爱情小说。小说讲述了一段跨越半个多世纪的爱情史诗，穷尽了所有爱情的可能性，被誉为“人类有史以来最伟大的爱情小说”。",
     category: "小说文学",
     downloadLinks: [
@@ -1200,7 +1200,7 @@ export const books = [
     author: "[英] 贡布里希",
     authorDetail: "E.H.贡布里希，英国艺术史家。",
     year: "1950",
-    cover: "https://img.aqifei.top/img/2026/01/050_艺术的故事",
+    cover: "https://img.aqifei.top/img/2026/01/050_%E8%89%BA%E6%9C%AF%E7%9A%84%E6%95%85%E4%BA%8B",
     description: "《艺术的故事》是有关艺术史的著名畅销书。概括地叙述了从最早的洞窟绘画到当今的实验艺术的发展历程，阐述了艺术史发展的内在逻辑，是由于其通俗易懂的语言和严谨的学术态度而备受推崇。",
     category: "人文艺术",
     downloadLinks: [
@@ -1224,7 +1224,7 @@ export const books = [
     author: "兰小欢",
     authorDetail: "兰小欢，复旦大学经济学院教授。",
     year: "2021",
-    cover: "https://img.aqifei.top/img/2026/01/051_置身事内",
+    cover: "https://img.aqifei.top/img/2026/01/051_%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85",
     description: "《置身事内：中国政府与经济发展》将经济学原理与中国经济发展的实践有机融合，以地方政府投融资为主线，深入浅出地论述了中国经济的发展模式，解释了许多复杂的经济现象。",
     category: "人文社科",
     downloadLinks: [
@@ -1248,7 +1248,7 @@ export const books = [
     author: "[日] 上野千鹤子",
     authorDetail: "上野千鹤子，日本著名社会学家，女性主义学者。",
     year: "2010",
-    cover: "https://img.aqifei.top/img/2026/01/052_厌女",
+    cover: "https://img.aqifei.top/img/2026/01/052_%E5%8E%8C%E5%A5%B3",
     description: "《厌女》是上野千鹤子的经典代表作。书中通过对“厌女症”这一概念的剖析，揭示了性别二元制下男女不平等的深层根源，以及厌女心理在社会文化中的各种表现形式。",
     category: "人文社科",
     downloadLinks: [
@@ -1296,7 +1296,7 @@ export const books = [
     author: "[英] 威廉·萨默塞特·毛姆",
     authorDetail: "毛姆，英国小说家、剧作家。",
     year: "1919",
-    cover: "https://img.aqifei.top/img/2026/01/054_月亮和六便士",
+    cover: "https://img.aqifei.top/img/2026/01/054_%E6%9C%88%E4%BA%AE%E5%92%8C%E5%85%AD%E4%BE%BF%E5%A3%AB",
     description: "《月亮和六便士》以法国画家高更为原型，讲述了证券经纪人斯特里克兰德人到中年，突然抛妻弃子，离家出走，去追寻绘画梦想的故事。月亮代表高高在上的理想，六便士代表现实的世俗生活。",
     category: "小说文学",
     downloadLinks: [
@@ -1344,7 +1344,7 @@ export const books = [
     author: "[英] 阿加莎·克里斯蒂",
     authorDetail: "阿加莎·克里斯蒂，推理女王。",
     year: "1939",
-    cover: "https://img.aqifei.top/img/2026/01/056_无人生还",
+    cover: "https://img.aqifei.top/img/2026/01/056_%E6%97%A0%E4%BA%BA%E7%94%9F%E8%BF%98",
     description: "《无人生还》是阿加莎·克里斯蒂最著名的作品之一，开创了“暴风雪山庄”模式。八个素不相识的人受邀来到海岛上的别墅，晚餐时被指控犯有谋杀罪。随即，他们一个接一个地死去，死状与童谣描述的一模一样……",
     category: "小说文学",
     downloadLinks: [
@@ -1392,7 +1392,7 @@ export const books = [
     author: "[美] 卡勒德·胡赛尼",
     authorDetail: "卡勒德·胡赛尼，美籍阿富汗裔作家。",
     year: "2003",
-    cover: "https://img.aqifei.top/img/2026/01/058_追风筝的人",
+    cover: "https://img.aqifei.top/img/2026/01/058_%E8%BF%BD%E9%A3%8E%E7%AD%9D%E7%9A%84%E4%BA%BA",
     description: "《追风筝的人》讲述了12岁的阿富汗富家少爷阿米尔与仆人哈桑情同手足。然而，在一次风筝比赛后，发生了一件悲惨不堪的事，阿米尔为自己的懦弱感到自责和痛苦，逼走了哈桑。多年以后，阿米尔为了赎罪，再次踏上故土……",
     category: "小说文学",
     downloadLinks: [
@@ -1416,7 +1416,7 @@ export const books = [
     author: "[美] 彼得·海斯勒",
     authorDetail: "彼得·海斯勒（何伟），美国作家、记者。",
     year: "2011",
-    cover: "https://img.aqifei.top/img/2026/01/059_寻路中国",
+    cover: "https://img.aqifei.top/img/2026/01/059_%E5%AF%BB%E8%B7%AF%E4%B8%AD%E5%9B%BD",
     description: "《寻路中国》是“中国纪实三部曲”的最终卷。作者驾车漫游中国，从乡村到城市，记录了中国社会的巨大变迁，探寻了普通人在现代化进程中的命运。",
     category: "人文社科",
     downloadLinks: [
@@ -1440,7 +1440,7 @@ export const books = [
     author: "[英] 威廉·萨默塞特·毛姆",
     authorDetail: "毛姆，英国著名小说家。",
     year: "1944",
-    cover: "https://img.aqifei.top/img/2026/01/060_刀锋",
+    cover: "https://img.aqifei.top/img/2026/01/060_%E5%88%80%E9%94%8B",
     description: "《刀锋》是毛姆的代表作之一。小说写一个参加一战的美国青年飞行员拉里，在目睹战友牺牲后，寻找人生意义的过程。他拒绝了优渥的生活，游历世界，最终在古老的东方找到了灵魂的归宿。",
     category: "小说文学",
     downloadLinks: [
@@ -1464,7 +1464,7 @@ export const books = [
     author: "[德] 格林兄弟",
     authorDetail: "格林兄弟，德国民间文学搜集整编者。",
     year: "1812",
-    cover: "https://img.aqifei.top/img/2026/01/061_格林童话全集",
+    cover: "https://img.aqifei.top/img/2026/01/061_%E6%A0%BC%E6%9E%97%E7%AB%A5%E8%AF%9D%E5%85%A8%E9%9B%86",
     description: "《格林童话》是德国格林兄弟搜集、整理的德国民间文学童话集。收录了《灰姑娘》、《白雪公主》、《小红帽》、《睡美人》等脍炙人口的故事，是世界儿童文学的瑰宝。",
     category: "小说文学",
     downloadLinks: [
@@ -1536,7 +1536,7 @@ export const books = [
     author: "刘擎",
     authorDetail: "刘擎，华东师范大学紫江特聘教授。",
     year: "2021",
-    cover: "https://img.aqifei.top/img/2026/01/065_刘擎西方现代思想讲义",
+    cover: "https://img.aqifei.top/img/2026/01/065_%E5%88%98%E6%93%8E%E8%A5%BF%E6%96%B9%E7%8E%B0%E4%BB%A3%E6%80%9D%E6%83%B3%E8%AE%B2%E4%B9%89",
     description: "《刘擎西方现代思想讲义》通过梳理韦伯、尼采、萨特等19位著名思想家的学术思想，清晰地展现了西方现代思想的演变脉络，帮助读者理解现代人的困境与出路。",
     category: "人文社科",
     downloadLinks: [
@@ -1560,7 +1560,7 @@ export const books = [
     author: "[法] 阿尔贝·加缪",
     authorDetail: "加缪，诺贝尔文学奖得主。",
     year: "1947",
-    cover: "https://img.aqifei.top/img/2026/01/066_鼠疫",
+    cover: "https://img.aqifei.top/img/2026/01/066_%E9%BC%A0%E7%96%AB",
     description: "《鼠疫》讲述了阿尔及利亚的奥兰发生瘟疫，突如其来的灾难让人措手不及。在封城的状态下，人们经历了恐惧、绝望、反抗与团结。小说通过对鼠疫的描写，象征了战争、灾难以及人类生存的荒谬境况。",
     category: "小说文学",
     downloadLinks: [
@@ -1608,7 +1608,7 @@ export const books = [
     author: "[英] 弗吉尼亚·伍尔夫",
     authorDetail: "伍尔夫，英国现代主义作家，女性主义先驱。",
     year: "1929",
-    cover: "https://img.aqifei.top/img/2026/01/068_一间只属于自己的房间",
+    cover: "https://img.aqifei.top/img/2026/01/068_%E4%B8%80%E9%97%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%88%BF%E9%97%B4",
     description: "《一间只属于自己的房间》是女性主义文学的里程碑之作。伍尔夫在书中提出“女性如果要写作，由于性别的限制，她必须要有钱和一间属于自己的房间”，深刻剖析了女性在文学创作和历史中的地位。",
     category: "人文社科",
     downloadLinks: [
@@ -1632,7 +1632,7 @@ export const books = [
     author: "白先勇",
     authorDetail: "白先勇，当代著名作家。",
     year: "1983",
-    cover: "https://img.aqifei.top/img/2026/01/069_孽子",
+    cover: "https://img.aqifei.top/img/2026/01/069_%E5%AD%BD%E5%AD%90",
     description: "《孽子》是白先勇唯一的长篇小说。以20世纪70年代台北新公园为背景，描写了一群被家庭和社会遗弃的同性恋少年的生存状态和情感纠葛，展现了他们对爱与归属的渴望以及父子关系的复杂。",
     category: "小说文学",
     downloadLinks: [
@@ -1656,7 +1656,7 @@ export const books = [
     author: "[英] 简·奥斯汀",
     authorDetail: "简·奥斯汀，英国著名女性小说家。",
     year: "1813",
-    cover: "https://img.aqifei.top/img/2026/01/070_傲慢与偏见",
+    cover: "https://img.aqifei.top/img/2026/01/070_%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81",
     description: "《傲慢与偏见》是简·奥斯汀的代表作。小说以达西和伊丽莎白的爱情故事为主线，描写了19世纪初英国乡绅阶层的婚姻和生活。通过对“傲慢”与“偏见”的消解，探讨了婚姻、金钱与爱情的关系。",
     category: "小说文学",
     downloadLinks: [
@@ -1680,7 +1680,7 @@ export const books = [
     author: "王小波",
     authorDetail: "王小波，当代著名学者、作家。",
     year: "1994",
-    cover: "https://img.aqifei.top/img/2026/01/071_黄金时代",
+    cover: "https://img.aqifei.top/img/2026/01/071_%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3",
     description: "《黄金时代》是王小波的代表作之一。小说以“文革”时期为背景，讲述了知青王二和医生陈清扬的爱情故事。作者以幽默、荒诞的笔触，表现了对人性的压抑与反抗，以及对自由的追求。",
     category: "小说文学",
     downloadLinks: [
@@ -1728,7 +1728,7 @@ export const books = [
     author: "老舍",
     authorDetail: "老舍，杰出的语言大师，人民艺术家。",
     year: "1944",
-    cover: "https://img.aqifei.top/img/2026/01/074_四世同堂",
+    cover: "https://img.aqifei.top/img/2026/01/074_%E5%9B%9B%E4%B8%96%E5%90%8C%E5%A0%82",
     description: "《四世同堂》是老舍先生的长篇小说代表作。以抗战时期的北平为背景，描写了小羊圈胡同祁家四世同堂的生活，以及周围邻居在日寇统治下的荣辱浮沉，展现了中国人民在国难当头时的痛苦与抗争。",
     category: "小说文学",
     downloadLinks: [
@@ -1752,7 +1752,7 @@ export const books = [
     author: "佚名",
     authorDetail: "中国最早的诗歌总集。",
     year: "西周-春秋",
-    cover: "https://img.aqifei.top/img/2026/01/075_诗经",
+    cover: "https://img.aqifei.top/img/2026/01/075_%E8%AF%97%E7%BB%8F",
     description: "《诗经》是中国最早的一部诗歌总集，收录了西周初年至春秋中叶的诗歌305篇。分为风、雅、颂三部分，内容丰富，反映了当时的社会生活、风俗民情和政治状况，是中国现实主义文学的源头。",
     category: "小说文学",
     downloadLinks: [
@@ -1817,6 +1817,246 @@ export const books = [
     size: "未知",
     format: "EPUB",
     publishYear: "1997"
+  },
+  {
+    id: 75,
+    title: "永恒的终结",
+    author: "[美] 阿西莫夫",
+    authorDetail: "艾萨克·阿西莫夫，美国科幻小说黄金时代的代表人物。",
+    year: "1955",
+    cover: "https://img.aqifei.top/img/2026/01/079_%E6%B0%B8%E6%81%92%E7%9A%84%E7%BB%88%E7%BB%93",
+    description: "《永恒的终结》被公认为阿西莫夫的最高杰作。24世纪，人类发明了时间力场，建立了“永恒时空”，通过修正历史来消除人类的灾难。然而，永恒时空的执行者安德鲁·哈伦却爱上了一个不该爱的人……",
+    category: "科幻小说",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/46a04161aae1"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1cXi4-viW92zkWqp3aJdzEQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1955"
+  },
+  {
+    id: 76,
+    title: "美丽新世界",
+    author: "[英] 赫胥黎",
+    authorDetail: "阿尔多斯·赫胥黎，英国著名作家，属于著名的赫胥黎家族。",
+    year: "1932",
+    cover: "https://img.aqifei.top/img/2026/01/brave_new_world",
+    description: "《美丽新世界》是反乌托邦文学的经典之作。在未来的世界里，基因决定了人的命运，睡眠教学灌输了社会规则，索麻药物带来了廉价的快乐。人类失去了自由、痛苦和思考的权利，却拥有了所谓的“幸福”。",
+    category: "科幻小说",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/07bd790e2fa3"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ThEp1lbdQydZam6O2aMhpQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1932"
+  },
+  {
+    id: 77,
+    title: "一个叫欧维的男人决定去死",
+    author: "[瑞典] 弗雷德里克·巴克曼",
+    authorDetail: "弗雷德里克·巴克曼，瑞典著名的80后作家。",
+    year: "2012",
+    cover: "https://img.aqifei.top/img/2026/01/081_%E4%B8%80%E4%B8%AA%E5%8F%AB%E6%AC%A7%E7%BB%B4%E7%9A%84%E7%94%B7%E4%BA%BA%E5%86%B3%E5%AE%9A%E5%8E%BB%E6%AD%BB",
+    description: "59岁的欧维脾气古怪，带着坚不可摧的原则、每天恪守的常规以及随时发飙的脾性在社区晃来晃去，被公认为“地狱来的恶邻”。但在他决定去死的那天，一对新搬来的年轻夫妇意外撞坏了他的邮筒，从此改变了他的人生……",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/8877d8aaf846"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ebFe_cBgfF3NypMpzy0xrQ?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2012"
+  },
+  {
+    id: 78,
+    title: "始于极限",
+    author: "[日] 上野千鹤子 / 铃木凉美",
+    authorDetail: "上野千鹤子，著名女性主义学者；铃木凉美，新锐作家。",
+    year: "2022",
+    cover: "https://img.aqifei.top/img/2026/01/20260127192907457",
+    description: "《始于极限》是上野千鹤子与铃木凉美的通信集。两人围绕恋爱、婚姻、工作、独立、男人等女性关心的12个主题，进行了长达一年的真诚对话，深入探讨了当代女性面临的困境与出路。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/de6113ebc31f"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1HA-Ewl58mg21lJGYuX5D9g?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2022"
+  },
+  {
+    id: 79,
+    title: "神雕侠侣",
+    author: "金庸",
+    authorDetail: "金庸，武侠小说泰斗。",
+    year: "1959",
+    cover: "https://img.aqifei.top/img/2026/01/20260127192556648",
+    description: "《神雕侠侣》是金庸“射雕三部曲”的第二部。讲述了杨过和小龙女凄美动人的爱情故事，以及杨过从一个顽劣少年成长为一代大侠“神雕大侠”的历程。小说歌颂了坚贞不渝的爱情和侠义精神。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/0067051be9da"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1cIFoLJmDbJT9DWHqcmIK3A?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1959"
+  },
+  {
+    id: 80,
+    title: "绝叫",
+    author: "[日] 叶真中显",
+    authorDetail: "叶真中显，日本推理小说家。",
+    year: "2014",
+    cover: "https://img.aqifei.top/img/2026/01/084_%E7%BB%9D%E5%8F%AB",
+    description: "《绝叫》是社会派推理小说的杰作。一名独居女性孤独死在公寓，随着警方的调查，不仅揭开了她被嫌弃的一生，也展现了现代社会的黑暗面：原生家庭的阴影、黑心企业的压榨、孤独死的凄凉……",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/d03ccdd35065"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/14pzRYFdrss_387iS37fghw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2014"
+  },
+  {
+    id: 81,
+    title: "美的历程",
+    author: "李泽厚",
+    authorDetail: "李泽厚，中国当代著名哲学家、美学家。",
+    year: "1981",
+    cover: "https://img.aqifei.top/img/2026/01/085_%E7%BE%8E%E7%9A%84%E5%8E%86%E7%A8%8B",
+    description: "《美的历程》是中国美学经典之作。从龙飞凤舞的远古图腾，到青铜饕餮的狞厉之美，再到气韵生动的明清绘画，作者以宏大的视野和优美的文笔，勾画了中国美学发展的历史长河。",
+    category: "人文艺术",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/46b928ec37df"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1RQk_qZ5b89WdPGyicx_8uw?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1981"
+  },
+  {
+    id: 82,
+    title: "唐诗三百首",
+    author: "[清] 蘅塘退士",
+    authorDetail: "蘅塘退士，本名孙洙，清代学者。",
+    year: "1764",
+    cover: "https://img.aqifei.top/img/2026/01/086_%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96",
+    description: "《唐诗三百首》是家喻户晓的唐诗选本。收录了唐代77位诗人的310余首诗作，涵盖了五言、七言、乐府等各种体裁，是学习中国古典诗歌的最佳入门读物。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/c3671bf39607"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1wQIR-FRoTFjlclMkwV733g?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1764"
+  },
+  {
+    id: 83,
+    title: "历史深处的忧虑",
+    author: "林达",
+    authorDetail: "林达，美籍华人作家夫妇的笔名。",
+    year: "1997",
+    cover: "https://img.aqifei.top/img/2026/01/history_deep_worries",
+    description: "《历史深处的忧虑》是“近距离看美国”系列的第一本。作者通过一个个具体的法律案件，深入浅出地介绍了美国宪法、权利法案以及美国的司法制度，探讨了自由与法治的关系。",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/52a4b223b6c4"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1MVqnHH8MsqV4rTWwO644rA?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1997"
+  },
+  {
+    id: 84,
+    title: "灿烂千阳",
+    author: "[美] 卡勒德·胡赛尼",
+    authorDetail: "卡勒德·胡赛尼，《追风筝的人》作者。",
+    year: "2007",
+    cover: "https://img.aqifei.top/img/2026/01/20260127193019763",
+    description: "《灿烂千阳》是胡赛尼的第二部长篇小说。讲述了两个阿富汗女性玛丽雅姆和莱拉，在战乱与暴政下相互扶持、共同命运的故事。展现了女性在苦难中的坚韧与爱。",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/c8c64ed428e1"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1oe9cyTFJ2FZYZVkUiPFvkg?pwd=0000",
+        code: "0000"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2007"
   },
 ];
 

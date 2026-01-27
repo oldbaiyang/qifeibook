@@ -3,6 +3,7 @@ import json
 import re
 import os
 import ast
+import urllib.parse
 
 # Internal Knowledge Base
 METADATA_DB = {
@@ -135,6 +136,86 @@ METADATA_DB = {
         "publishYear": "1957"
     },
     # New additions
+    "永恒的终结": {
+        "author": "[美] 阿西莫夫",
+        "authorDetail": "艾萨克·阿西莫夫，美国科幻小说黄金时代的代表人物。",
+        "year": "1955",
+        "description": "《永恒的终结》被公认为阿西莫夫的最高杰作。24世纪，人类发明了时间力场，建立了“永恒时空”，通过修正历史来消除人类的灾难。然而，永恒时空的执行者安德鲁·哈伦却爱上了一个不该爱的人……",
+        "category": "科幻小说",
+        "publishYear": "1955"
+    },
+    "美丽新世界": {
+        "author": "[英] 赫胥黎",
+        "authorDetail": "阿尔多斯·赫胥黎，英国著名作家，属于著名的赫胥黎家族。",
+        "year": "1932",
+        "description": "《美丽新世界》是反乌托邦文学的经典之作。在未来的世界里，基因决定了人的命运，睡眠教学灌输了社会规则，索麻药物带来了廉价的快乐。人类失去了自由、痛苦和思考的权利，却拥有了所谓的“幸福”。",
+        "category": "科幻小说",
+        "publishYear": "1932"
+    },
+    "一个叫欧维的男人决定去死": {
+        "author": "[瑞典] 弗雷德里克·巴克曼",
+        "authorDetail": "弗雷德里克·巴克曼，瑞典著名的80后作家。",
+        "year": "2012",
+        "description": "59岁的欧维脾气古怪，带着坚不可摧的原则、每天恪守的常规以及随时发飙的脾性在社区晃来晃去，被公认为“地狱来的恶邻”。但在他决定去死的那天，一对新搬来的年轻夫妇意外撞坏了他的邮筒，从此改变了他的人生……",
+        "category": "小说文学",
+        "publishYear": "2012"
+    },
+    "始于极限": {
+        "author": "[日] 上野千鹤子 / 铃木凉美",
+        "authorDetail": "上野千鹤子，著名女性主义学者；铃木凉美，新锐作家。",
+        "year": "2022",
+        "description": "《始于极限》是上野千鹤子与铃木凉美的通信集。两人围绕恋爱、婚姻、工作、独立、男人等女性关心的12个主题，进行了长达一年的真诚对话，深入探讨了当代女性面临的困境与出路。",
+        "category": "人文社科",
+        "publishYear": "2022"
+    },
+    "神雕侠侣": {
+        "author": "金庸",
+        "authorDetail": "金庸，武侠小说泰斗。",
+        "year": "1959",
+        "description": "《神雕侠侣》是金庸“射雕三部曲”的第二部。讲述了杨过和小龙女凄美动人的爱情故事，以及杨过从一个顽劣少年成长为一代大侠“神雕大侠”的历程。小说歌颂了坚贞不渝的爱情和侠义精神。",
+        "category": "小说文学",
+        "publishYear": "1959"
+    },
+    "绝叫": {
+        "author": "[日] 叶真中显",
+        "authorDetail": "叶真中显，日本推理小说家。",
+        "year": "2014",
+        "description": "《绝叫》是社会派推理小说的杰作。一名独居女性孤独死在公寓，随着警方的调查，不仅揭开了她被嫌弃的一生，也展现了现代社会的黑暗面：原生家庭的阴影、黑心企业的压榨、孤独死的凄凉……",
+        "category": "小说文学",
+        "publishYear": "2014"
+    },
+    "美的历程": {
+        "author": "李泽厚",
+        "authorDetail": "李泽厚，中国当代著名哲学家、美学家。",
+        "year": "1981",
+        "description": "《美的历程》是中国美学经典之作。从龙飞凤舞的远古图腾，到青铜饕餮的狞厉之美，再到气韵生动的明清绘画，作者以宏大的视野和优美的文笔，勾画了中国美学发展的历史长河。",
+        "category": "人文艺术",
+        "publishYear": "1981"
+    },
+    "唐诗三百首": {
+        "author": "[清] 蘅塘退士",
+        "authorDetail": "蘅塘退士，本名孙洙，清代学者。",
+        "year": "1764",
+        "description": "《唐诗三百首》是家喻户晓的唐诗选本。收录了唐代77位诗人的310余首诗作，涵盖了五言、七言、乐府等各种体裁，是学习中国古典诗歌的最佳入门读物。",
+        "category": "小说文学",
+        "publishYear": "1764"
+    },
+    "历史深处的忧虑": {
+        "author": "林达",
+        "authorDetail": "林达，美籍华人作家夫妇的笔名。",
+        "year": "1997",
+        "description": "《历史深处的忧虑》是“近距离看美国”系列的第一本。作者通过一个个具体的法律案件，深入浅出地介绍了美国宪法、权利法案以及美国的司法制度，探讨了自由与法治的关系。",
+        "category": "人文社科",
+        "publishYear": "1997"
+    },
+    "灿烂千阳": {
+        "author": "[美] 卡勒德·胡赛尼",
+        "authorDetail": "卡勒德·胡赛尼，《追风筝的人》作者。",
+        "year": "2007",
+        "description": "《灿烂千阳》是胡赛尼的第二部长篇小说。讲述了两个阿富汗女性玛丽雅姆和莱拉，在战乱与暴政下相互扶持、共同命运的故事。展现了女性在苦难中的坚韧与爱。",
+        "category": "小说文学",
+        "publishYear": "2007"
+    },
     "追风筝的人": {
         "author": "[美] 卡勒德·胡赛尼",
         "authorDetail": "卡勒德·胡赛尼，美籍阿富汗裔作家。",
@@ -324,6 +405,17 @@ def process_import():
         cover_raw = book.get('cover', '')
         cover = parse_link_content(cover_raw)
         
+        # Encode Chinese characters in cover URL if present
+        if cover.startswith("https://img.aqifei.top/"):
+            try:
+                parts = cover.split('/')
+                filename = parts[-1]
+                encoded_filename = urllib.parse.quote(filename)
+                parts[-1] = encoded_filename
+                cover = '/'.join(parts)
+            except:
+                pass
+
         quark_raw = book.get('quark', '')
         quark_url = parse_link_content(quark_raw)
         

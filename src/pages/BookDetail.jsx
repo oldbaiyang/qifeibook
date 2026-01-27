@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { books } from '../data/mockData';
 import { Calendar, User, Tag } from 'lucide-react';
@@ -7,6 +7,15 @@ import styles from './BookDetail.module.css';
 export default function BookDetail() {
     const { id } = useParams();
     const book = books.find(b => b.id === parseInt(id));
+
+    useEffect(() => {
+        if (book) {
+            document.title = `${book.title} - ${book.author} - 免费电子书下载 - 棋飞书库`;
+        }
+        return () => {
+            document.title = '棋飞书库 - 经典电子书免费下载 (EPUB/MOBI/PDF)';
+        };
+    }, [book]);
 
     if (!book) {
         return <div className="container" style={{ padding: '4rem 1rem', textAlign: 'center' }}>书籍不存在</div>;

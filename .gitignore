@@ -24,3 +24,13 @@ dist-ssr
 *.sw?
 .venv/
 scripts/**/venv/
+**/venv/
+
+# Temp files
+temp/
+temp_covers/
+temp_covers_*/
+test_cover.jpg
+__pycache__/
+*.pyc
+
