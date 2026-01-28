@@ -2289,7 +2289,7 @@ export const books = [
     author: "[俄] 陀思妥耶夫斯基",
     authorDetail: "陀思妥耶夫斯基，俄国文学巨匠。",
     year: "1866",
-    cover: "https://img.aqifei.top/img/2026/01/罪与罚_1009137",
+    cover: "https://img.aqifei.top/img/2026/01/20260128120631589",
     description: "《罪与罚》是世界文学史上的经典之作。穷大学生拉斯柯尔尼科夫为了证明自己是“超人”，杀死了放高利贷的老太婆。然而，犯罪后的恐惧和良心的折磨使他痛苦不堪。在索尼娅的感召下，他最终投案自首，踏上了赎罪与新生的道路。",
     category: "小说文学",
     downloadLinks: [
