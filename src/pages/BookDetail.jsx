@@ -6,7 +6,7 @@ import styles from './BookDetail.module.css';
 
 export default function BookDetail() {
     const { id } = useParams();
-    const book = books.find(b => b.id === parseInt(id));
+    const book = books.find(b => b && b.id === parseInt(id));
 
     useEffect(() => {
         if (book) {

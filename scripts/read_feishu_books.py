@@ -94,19 +94,39 @@ def read_feishu_books():
         baidu = row[3] if len(row) > 3 else ""
         status = row[4] if len(row) > 4 else ""
         
-        # 提取文本(如果是对象或列表)
-        def extract_text(cell):
+        # 提取单元格内容
+        def extract_value(cell, prefer_link=False):
+            if not cell:
+                return ""
+                
+            # 处理列表形式的单元格数据
             if isinstance(cell, list):
-                return "".join([str(seg.get('text', '')) for seg in cell if isinstance(seg, dict)])
+                # 如果偏好链接，优先查找 type='url' 的 link 属性
+                if prefer_link:
+                    for seg in cell:
+                        if isinstance(seg, dict) and seg.get('type') == 'url' and seg.get('link'):
+                            return seg.get('link')
+                
+                # 否则拼接所有 text
+                texts = []
+                for seg in cell:
+                    if isinstance(seg, dict):
+                        texts.append(str(seg.get('text', '')))
+                return "".join(texts)
+
+            # 处理字典形式
             if isinstance(cell, dict):
+                if prefer_link and cell.get('type') == 'url' and cell.get('link'):
+                    return cell.get('link')
                 return cell.get('text', '')
-            return str(cell) if cell else ""
+
+            return str(cell)
         
-        title = extract_text(title)
-        cover = extract_text(cover)
-        quark = extract_text(quark)
-        baidu = extract_text(baidu)
-        status = extract_text(status)
+        title = extract_value(title, prefer_link=False)
+        cover = extract_value(cover, prefer_link=False) # 封面图需要拼接完整文本，包括中文后缀
+        quark = extract_value(quark, prefer_link=True) # 网盘优先取链接
+        baidu = extract_value(baidu, prefer_link=True) # 网盘优先取链接
+        status = extract_value(status, prefer_link=False)
         
         # 筛选条件
         has_pan = bool(quark.strip() or baidu.strip())

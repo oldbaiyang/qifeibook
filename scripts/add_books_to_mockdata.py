@@ -27,8 +27,14 @@ def parse_feishu_cell(cell_str):
     return cell_str
 
 # 读取筛选结果
-print("读取筛选结果...")
-with open("filtered_books.json", "r", encoding="utf-8") as f:
+print("读取书籍数据...")
+# 优先尝试读取 enriched_books.json
+input_file = "enriched_books.json"
+if not Path(input_file).exists():
+    input_file = "filtered_books.json"
+    print(f"enriched_books.json 不存在，回退读取 {input_file}...")
+
+with open(input_file, "r", encoding="utf-8") as f:
     books = json.load(f)
 
 # 读取现有的 mockData.js
@@ -68,15 +74,22 @@ for book in books:
     print(f"    百度: {baidu} (提取码: {baidu_code})")
     
     # 生成书籍对象代码
+    # 优先使用已有的丰富数据，否则使用默认值
+    author = book.get('author', '待补充')
+    authorDetail = book.get('authorDetail', '待补充')
+    description = book.get('description', title).replace('\n', '\\n').replace('"', '\\"')
+    year = book.get('year', '2024')
+    category = book.get('category', '文学')
+    
     book_code = f"""  {{
     id: {next_id},
     title: "{title}",
-    author: "待补充",
-    authorDetail: "待补充",
-    year: "2024",
+    author: "{author}",
+    authorDetail: "{authorDetail}",
+    year: "{year}",
     cover: "{cover}",
-    description: "{title}",
-    category: "文学",
+    description: "{description}",
+    category: "{category}",
     downloadLinks: ["""
     
     links = []
