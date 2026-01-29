@@ -15,11 +15,12 @@ from pathlib import Path
 # 目标书籍及其豆瓣 ID (或者搜索关键词)
 # 为了准确，我这里直接使用搜索结果中看起来最靠谱的 ID
 TARGET_BOOKS = {
-    "叫魂": "1043535",
-    "人间词话": "1023194", 
-    "罪与罚": "1009137", # 岳麓书社版，评分较高
-    "哭泣的骆驼": "1060377",
-    "上帝掷骰子吗": "35447700" # 升级版
+    "浪潮之巅": "6713426",
+    "昨日的世界": "20424526"
+}
+
+MANUAL_COVERS = {
+    "桶川跟踪狂杀人事件": "https://img9.doubanio.com/view/subject/l/public/s33827824.jpg"
 }
 
 PICGO_SERVER = 'http://127.0.0.1:36677/upload'
@@ -41,17 +42,25 @@ def get_douban_cover(subject_id):
             return None
         
         # 尝试提取高清封面
-        # 通常在 JSON-LD 或者特定的 img 标签中
-        # <a class="nbg" href="..." title="...">
-        # <img src="https://img9.doubanio.com/view/subject/l/public/s1336496.jpg" ...>
-        
+        # 1. 尝试 JSON-LD 中的 image (通常最准)
+        match = re.search(r'"image":\s*"(https://img\d\.doubanio\.com/view/subject/l/public/.*?\.jpg)"', resp.text)
+        if match:
+            return match.group(1)
+
+        # 2. 尝试 og:image
+        match = re.search(r'<meta property="og:image" content="(.*?)"', resp.text)
+        if match:
+            return match.group(1)
+
+        # 3. 尝试 img 标签 (l/public, m/public, s/public)
+        # 优先找 l (large)
         match = re.search(r'<img src="(https://img\d\.doubanio\.com/view/subject/l/public/.*?\.jpg)"', resp.text)
         if match:
             return match.group(1)
             
-        # 备用匹配
-        match = re.search(r'property="og:image" content="(.*?)"', resp.text)
-        if match:
+        # 备用: 找 content 区域的主图
+        match = re.search(r'<a class="nbg"[^>]*href="([^"]*)"', resp.text)
+        if match and match.group(1).endswith('.jpg'):
             return match.group(1)
             
         return None
@@ -140,6 +149,7 @@ def update_mockdata(title, new_cover_url):
     return False
 
 def main():
+    # 1. Process Douban IDs
     for title, douban_id in TARGET_BOOKS.items():
         print(f"\nProcessing: {title}")
         cover_url = get_douban_cover(douban_id)
@@ -157,7 +167,6 @@ def main():
             continue
             
         # 上传
-        # 这里需要绝对路径
         abs_path = os.path.abspath(local_path)
         picgo_url = upload_to_picgo(abs_path)
         if not picgo_url:
@@ -166,9 +175,28 @@ def main():
             
         # 更新
         update_mockdata(title, picgo_url)
-        
-        # 礼貌性延时
         time.sleep(1)
+
+    # 2. Process Manual Covers
+    if 'MANUAL_COVERS' in globals():
+        for title, url in MANUAL_COVERS.items():
+            print(f"\nProcessing Manual: {title}")
+            ext = url.split('.')[-1]
+            filename = f"{title}_manual.{ext}"
+            local_path = download_image(url, filename)
+            
+            if not local_path:
+                print("Skipping due to download failure")
+                continue
+                
+            abs_path = os.path.abspath(local_path)
+            picgo_url = upload_to_picgo(abs_path)
+            if not picgo_url:
+                print("Skipping due to upload failure")
+                continue
+                
+            update_mockdata(title, picgo_url)
+            time.sleep(1)
 
 if __name__ == "__main__":
     main()
