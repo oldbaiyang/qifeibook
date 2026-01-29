@@ -2564,7 +2564,7 @@ export const books = [
     author: "[日] 清水洁",
     authorDetail: "清水洁，日本资深调查记者。",
     year: "2021",
-    cover: "https://img.aqifei.top/img/2026/01/桶川跟踪狂杀人事件_manual",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161752861",
     description: "《桶川跟踪狂杀人事件》是一部震撼的非虚构作品。记者清水洁通过对一起女大学生被前男友骚扰并杀害案件的深入调查，揭露了警方在办案过程中的推诿、失职甚至篡改笔录的丑闻，直接推动了日本《反跟踪骚扰法》的出台。",
     category: "历史传记",
     downloadLinks: [
@@ -2589,7 +2589,7 @@ export const books = [
     author: "陈凯歌",
     authorDetail: "陈凯歌，中国著名导演。",
     year: "2001",
-    cover: "https://img.aqifei.top/img/2026/01/少年凯歌_1013401",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161752861",
     description: "《少年凯歌》是陈凯歌导演的回忆录。他以平实而富有画面感的文字，回忆了自己在文革时期的少年经历。书中充满了对那个时代的深刻反思，以及对人性、尊严和忏悔的追问，被誉为“文革回忆录中的杰作”。",
     category: "历史传记",
     downloadLinks: [
@@ -2614,7 +2614,7 @@ export const books = [
     author: "吴军",
     authorDetail: "吴军，计算机科学家，硅谷投资人。",
     year: "2011",
-    cover: "https://img.aqifei.top/img/2026/01/浪潮之巅_6713426",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161536997",
     description: "《浪潮之巅》梳理了IT产业发展历程中那些伟大的公司（如AT&T、IBM、苹果、微软、谷歌等）的兴衰史。作者从技术、市场、商业模式等多个角度，分析了它们成功的原因和衰落的教训，揭示了科技产业发展的规律。",
     category: "经济管理",
     downloadLinks: [
@@ -2639,7 +2639,7 @@ export const books = [
     author: "[奥] 斯蒂芬·茨威格",
     authorDetail: "茨威格，奥地利著名作家。",
     year: "1942",
-    cover: "https://img.aqifei.top/img/2026/01/昨日的世界_20424526",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161508098",
     description: "《昨日的世界》是茨威格的绝笔自传。他以个人的经历为线索，展现了从一战前欧洲的“太平盛世”到二战期间文明崩塌的悲剧历史。书中充满了对旧欧洲文化的怀念和对人道主义失落的悲痛。",
     category: "历史传记",
     downloadLinks: [
@@ -2814,7 +2814,7 @@ export const books = [
     author: "[英] 肯·福莱特",
     authorDetail: "肯·福莱特，通俗小说大师。",
     year: "2010",
-    cover: "https://img.aqifei.top/img/2026/01/巨人的陨落_4706076",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161405765",
     description: "《巨人的陨落》是“世纪三部曲”的第一部。以一战为背景，通过五个家族的命运纠葛，展现了那段波澜壮阔的历史。书中融合了战争、爱情、政治阴谋等元素，情节跌宕起伏，是一部令人欲罢不能的历史通俗小说。",
     category: "小说文学",
     downloadLinks: [
@@ -2864,7 +2864,7 @@ export const books = [
     author: "[德] 叔本华",
     authorDetail: "叔本华，德国著名哲学家。",
     year: "1851",
-    cover: "https://img.aqifei.top/img/2026/01/人生的智慧_1033230",
+    cover: "https://img.aqifei.top/img/2026/01/桶川跟踪狂杀人事件_35326778",
     description: "《人生的智慧》是叔本华流传最广的著作之一。他从哲学的高度，探讨了如何度过幸福的一生。书中关于健康、财富、名誉以及独处等话题的论述，冷静透彻，对现代人依然具有极大的指导意义。",
     category: "人文社科",
     downloadLinks: [
@@ -2939,7 +2939,7 @@ export const books = [
     author: "[英] 威廉·萨默塞特·毛姆",
     authorDetail: "毛姆，英国小说家。",
     year: "1925",
-    cover: "https://img.aqifei.top/img/2026/01/面纱_1101918",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161125269",
     description: "《面纱》讲述了爱慕虚荣的凯蒂为了报复出轨的丈夫，随其前往霍乱流行的中国内地行医的故事。在面对生死和苦难的过程中，凯蒂逐渐摆脱了精神的枷锁，获得了个人的觉醒和心灵的救赎。",
     category: "小说文学",
     downloadLinks: [
