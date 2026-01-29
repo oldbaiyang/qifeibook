@@ -2864,7 +2864,7 @@ export const books = [
     author: "[德] 叔本华",
     authorDetail: "叔本华，德国著名哲学家。",
     year: "1851",
-    cover: "https://img.aqifei.top/img/2026/01/桶川跟踪狂杀人事件_35326778",
+    cover: "https://img.aqifei.top/img/2026/01/20260129161216101",
     description: "《人生的智慧》是叔本华流传最广的著作之一。他从哲学的高度，探讨了如何度过幸福的一生。书中关于健康、财富、名誉以及独处等话题的论述，冷静透彻，对现代人依然具有极大的指导意义。",
     category: "人文社科",
     downloadLinks: [

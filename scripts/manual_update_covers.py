@@ -8,13 +8,7 @@ from pathlib import Path
 
 # Mapping provided by user
 UPDATES = {
-    "面纱": "https://img.aqifei.top/img/2026/01/20260129161125269",
-    "人生的智慧": "https://img.aqifei.top/img/2026/01/桶川跟踪狂杀人事件_35326778",
-    "巨人的陨落": "https://img.aqifei.top/img/2026/01/20260129161405765",
-    "昨日的世界": "https://img.aqifei.top/img/2026/01/20260129161508098",
-    "浪潮之巅": "https://img.aqifei.top/img/2026/01/20260129161536997",
-    "少年凯歌": "https://img.aqifei.top/img/2026/01/20260129161752861",
-    "桶川跟踪狂杀人事件": "https://img.aqifei.top/img/2026/01/20260129161752861"
+    "人生的智慧": "https://img.aqifei.top/img/2026/01/20260129161216101"
 }
 
 def main():
