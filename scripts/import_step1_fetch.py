@@ -132,18 +132,46 @@ def read_feishu_books():
         has_pan = bool(quark.strip() or baidu.strip())
         status_ok = status.strip() != "1"
         
-        if has_pan and status_ok:
-            filtered_books.append({
-                "row": i,
-                "title": title,
-                "cover": cover,
-                "quark": quark,
-                "baidu": baidu,
-                "status": status
-            })
-            print(f"✓ [{i}] {title[:30]:30} 夸克:{bool(quark):5} 百度:{bool(baidu):5} 状态:{status}")
+        if status_ok:
+            if has_pan:
+                filtered_books.append({
+                    "row": i,
+                    "title": title,
+                    "cover": cover,
+                    "quark": quark,
+                    "baidu": baidu,
+                    "status": status
+                })
+                print(f"✓ [{i}] {title[:30]:30} 夸克:{bool(quark):5} 百度:{bool(baidu):5} 状态:{status}")
+            else:
+                # Optional: Log skipped items (Status 0 but no links)
+                # print(f"  [{i}] {title[:15]}... 跳过 (缺网盘链接)")
+                pass
     
     print(f"\n共筛选出 {len(filtered_books)} 本书")
+    
+    # Check if there are pending books
+    if len(filtered_books) == 0:
+        pending_count = 0
+        for row in values[1:]:
+            if len(row) > 4 and str(row[4]).strip() != "1":
+                # Check link columns (indices 2 and 3)
+                q = row[2] if len(row) > 2 else ""
+                b = row[3] if len(row) > 3 else ""
+                
+                # Helper to check if link cell is empty
+                def is_empty_link(cell):
+                    if not cell: return True
+                    if isinstance(cell, dict): return not cell.get('text')
+                    if isinstance(cell, list): 
+                        return not "".join([str(s.get('text', '')) for s in cell if isinstance(s, dict)])
+                    return not str(cell).strip()
+
+                if is_empty_link(q) and is_empty_link(b):
+                    pending_count += 1
+                    
+        if pending_count > 0:
+            print(f"提示: 发现 {pending_count} 本书状态未更新(Status!=1)但缺少网盘链接。请在飞书中填写链接后重试。")
     
     # 保存到 JSON 文件
     with open("filtered_books.json", "w", encoding="utf-8") as f:
