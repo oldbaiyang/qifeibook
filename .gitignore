@@ -23,14 +23,18 @@ dist-ssr
 *.sln
 *.sw?
 .venv/
-scripts/**/venv/
 **/venv/
+__pycache__/
+*.pyc
 
 # Temp files
 temp/
 temp_covers/
-temp_covers_*/
 test_cover.jpg
-__pycache__/
-*.pyc
 
+# Maintenance Scripts & Tools (Not for website production)
+scripts/
+.opencode/
+*.py
+douban_top250.json
+*_books.json
