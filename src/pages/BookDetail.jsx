@@ -30,11 +30,12 @@ export default function BookDetail() {
 
                 <div className={styles.infoSection}>
                     <h1 className={styles.title}>{book.title}</h1>
+                    
+                    <div className={styles.authorBio}>
+                        {book.authorDetail}
+                    </div>
+
                     <div className={styles.metaRow}>
-                        <span className={styles.author}>
-                            <User size={16} />
-                            {book.authorDetail}
-                        </span>
                         <span className={styles.metaItem}>
                             <Calendar size={16} />
                             {book.year}

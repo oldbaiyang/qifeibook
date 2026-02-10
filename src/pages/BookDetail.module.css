@@ -30,6 +30,13 @@
     line-height: 1.2;
 }
 
+.authorBio {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 .metaRow {
     display: flex;
     align-items: center;
@@ -39,7 +46,6 @@
     font-size: 0.95rem;
 }
 
-.author,
 .metaItem,
 .categoryTag {
     display: flex;
