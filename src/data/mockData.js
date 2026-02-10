@@ -3832,6 +3832,631 @@ export const books = [
     size: "未知",
     format: "EPUB",
     publishYear: "2024"
+  },
+  {
+    id: 156,
+    title: "國史大綱（上下）",
+    author: "錢穆",
+    authorDetail: "待补充",
+    year: "2013",
+    cover: "https://img.aqifei.top/img/2026/01/162_國史大綱（上下）",
+    description: "這是一部中國通史，因用大學教科書體例寫成，不得不力求簡要，僅舉大納，刪其瑣節。內容於學術思想，政治制度，社會風氣，國際形勢，兼有顧及，惟但求其通為一體，明其治亂盛衰之所由，聞其一貫相承之為統，以指陳吾國家民族生命精神之所寄。至其人物之詳，事業之備，則待教者讀者之自加參考，自為引伸。本書主旨則在發明其相互影響，及先後之演變發展，以作國人如何應付現時代之種種事變作根據之借鑒。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/72655900243c",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1AsowNwiWfuK8wQHTwMj3hg",
+        code: "sxp3"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 157,
+    title: "万水千山走遍",
+    author: "三毛",
+    authorDetail: "待补充",
+    year: "2003",
+    cover: "https://img.aqifei.top/img/2026/01/163_万水千山走遍",
+    description: "大地啊，我来到你岸上时原是一个陌生人，住在你房子里时原是一个旅客，而今我离开你的门时却是一个朋友了。 当飞机降落在墨西哥首都的机场时，我的体力已经透支得几乎无法举步。长长的旅程，别人睡觉，我一直在看书。眼看全机的人都慢慢地走了，还让自己绑在安全带上。窗外的机场灯光通明，是夜间了。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f2c05afe8c96",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1n1nkA_Lpr5O7U0bG3IJkOg",
+        code: "1gpc"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 158,
+    title: "亮剑",
+    author: "都梁",
+    authorDetail: "待补充",
+    year: "2005",
+    cover: "https://img.aqifei.top/img/2026/01/164_亮剑",
+    description: "李云龙是一个叱咤风云、百战沙场的职业军人，是一个一生都在血与火中搏斗的名将。他的人生信条是：面对强大的对手，明知不敌，也要毅然亮剑，即使倒下，也要成为一座山、一道岭。在战争与和平的时空转换中，他的命运注定要充满悲欢离合—无论是政治生涯还是婚姻、爱情。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/94e742952a39",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Aci5PecBNc610gbwzmIPtA",
+        code: "ax63"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 159,
+    title: "我不知道该说什么，关于死亡还是爱情",
+    author: "[白俄] S·A·阿列克谢耶维奇",
+    authorDetail: "待补充",
+    year: "2014",
+    cover: "https://img.aqifei.top/img/2026/01/165_我不知道该说什么，关于死亡还是爱情",
+    description: "★获得2015年诺贝尔文学奖，真实记录切尔诺贝利核灾难事件★“她的复调书写，是对我们时代的苦难和勇气的纪念。”★“每一页，都是感人肺腑的故事。”------------------------------------------------------------ -------------切尔诺贝利核灾难幸存者口述实录，每一页都是感人肺腑的故事作者冒着核辐射危险，深入切尔诺贝利，采访当地幸存者人类史上最惨烈的科技悲剧，今天的我们该如何避免灾难重演？-------------------------------------------------------------------------1986年4月26日，史上最惨烈的反应炉事故发生在切尔诺贝利。这是史上最浩大的悲剧之一。作者访问了上百位受到切尔诺贝利核灾影响的人民，有无辜的居...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/0a7f323b8dad",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Bfi4ij5mFk7J5hD59rGcuw",
+        code: "3mxd"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 160,
+    title: "生死疲劳",
+    author: "莫言",
+    authorDetail: "待补充",
+    year: "2021",
+    cover: "https://img.aqifei.top/img/2026/01/166_生死疲劳",
+    description: "五十年间西门闹经历六次转世，一世为驴，二世为牛，三世为猪，四世为狗，五世为猴，最终降生为人。在这六世里，他目睹蓝脸一家三代经历人生的生死疲劳，他们爱就爱到底，恨就恨到底，犟就犟到底，干就干到底，有极致的痛苦，也有彻底的放纵。而他们的故事，要从1950年1月1日讲起……",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f4b72ef93d58",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/12ebzX7Yq1eLHTF3bZL-f-Q",
+        code: "t9p8"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 161,
+    title: "全球通史",
+    author: "[美] L.S.斯塔夫里阿诺",
+    authorDetail: "待补充",
+    year: "2024",
+    cover: "https://img.aqifei.top/img/2026/01/167_全球通史",
+    description: "☆一部影响世界四代人的全球史☆史学大家斯塔夫里阿诺斯经典著作☆人大、清华知名教授新注新译，原貌重现☆全球突破2000万读者，20年销量遥遥领先☆豆瓣9.0+，全网百万读者高分评论☆20世纪影响世界的10本书之一☆北大历史系主要参考书☆清华学生借阅榜常客☆ 阿诺德·汤因比、钱乘旦、葛剑雄、阎步克、戴锦华 倾情推荐☆新版附赠历史思维导读手册与北大限定书签，让阅读更深入，理解更透彻☆全球局势越复杂，越要读《全球通史》！·本书采用全新的史学观点和方法，将整个世界看作一个不可分割的有机的统一体，从全球视角考察世界各地区人类文明的产生和发展，重点关注对人类历史进程有重大影响的各种历史运动、历史事件及其相互关联和相互影响，努力反映局部与整体的对抗以及它们之间的相互作用。本书问世后受到著名历史学 家汤因比和巴勒克拉夫的高度评价，被译成多种文字流...(展开全部)",
+    category: "历史传记",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f6ed6f0b6612",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1cJlAiRraOkHOCvY7PiegPQ",
+        code: "max5"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 162,
+    title: "苏菲的世界",
+    author: "[挪威] 乔斯坦·贾德",
+    authorDetail: "待补充",
+    year: "2017",
+    cover: "https://img.aqifei.top/img/2026/01/168_苏菲的世界",
+    description: "《苏菲的世界》这是一本风靡世界的哲学启蒙书。14岁的少女苏菲不断接到一些极不寻常的来信，世界像谜团一般在她眼底展开，她在一位神秘导师的指引下，苏菲开始思索，从苏格拉底、柏拉图到达尔文、弗洛伊德等哲学大师所思考的根本问题。苏菲运用少女天生的悟性与后天知识，企图解开这些谜团，然而，事实真相远比她所想的更怪异、更离奇。《苏菲的世界》，是智慧的世界，梦的世界。它将会唤醒每个人内心深处对生命的赞叹与对人生终极意义的关怀与好奇。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/d18623e362b4",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1q-cAoZkF515UVApatZVqjQ",
+        code: "gfqm"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 163,
+    title: "一个陌生女人的来信",
+    author: "[奥] 斯蒂芬·茨威格",
+    authorDetail: "待补充",
+    year: "2007",
+    cover: "https://img.aqifei.top/img/2026/01/169_一个陌生女人的来信",
+    description: "这是一部短篇小说集，除《一个陌生女人的来信》，亦按时间顺序收录了《火烧火燎的秘密》、《马来狂人》等名篇，作者的创作历程一目了然。《一个陌生女人的来信》讲述一个刻骨铭心的爱情故事，一个女子暗恋男主人公18年，直至临死才决定向他告白。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/d0389fbd440c",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/167KZnm3d1eMnEgU21iMwYQ",
+        code: "ix9s"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 164,
+    title: "李光耀观天下",
+    author: "李光耀",
+    authorDetail: "待补充",
+    year: "2015",
+    cover: "https://img.aqifei.top/img/2026/01/170_李光耀观天下",
+    description: "★  李光耀是亚洲的传奇人物，因为他极强的领导能力和治国才能而倍受尊敬。——潘基文★  李光耀对亚洲动态及经济管理的意见及见解，深受世上人尊重。——奥巴马★  《李光耀观天下》对世界广泛的课题做了独特和坦率的分析，将半个世纪以来其他领袖向李光耀请教的精辟见解展现于前。——基辛格李光耀绝笔，每个想认识他的人都应该买一本。这本书绝不是枯燥的地缘政治论述，也不是全球事务迂回曲折发展的专题报告。李光耀一生密切地参与国际事务。在本书中，他凭借其丰富经验和深刻洞察力，对今天世界的形势和20年后世界可能展现的面貌提出看法。相反，在横跨美国、中国、亚洲和欧洲的广博叙述中，他剖析了它们的社会、探究其人民的心理，并提出了有关这些国家未来的结论。李光耀在书中表达的坦率且往往令人惊讶的观点，使本书成为一本新鲜生动又引人入胜的读物；也探讨了他长久以来最关切的新加坡...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/7c739cbc36f1",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1bTyK5liAVx_EuXpL-1R1ng",
+        code: "cgci"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 165,
+    title: "史蒂夫·乔布斯传",
+    author: "[美] 沃尔特·艾萨克森",
+    authorDetail: "待补充",
+    year: "2011",
+    cover: "https://img.aqifei.top/img/2026/01/171_史蒂夫·乔布斯传",
+    description: "这本乔布斯唯一授权的官方传记，在2011年上半年由美国出版商西蒙舒斯特对外发布出版消息以来，备受全球媒体和业界瞩目，这本书的全球出版日期最终确定为2011年11月21日，简体中文版也将同步上市。两年多的时间，与乔布斯40多次的面对面倾谈，以及与乔布斯一百多个家庭成员、 朋友、竞争对手、同事的不受限的采访，造就了这本独家传记。尽管乔布斯给予本书的采访和创作全面的配合，但他对内容从不干涉，也不要求出版前阅读全文的权利。对于任何资源和关联的人，他都不设限，甚至鼓励他所熟知的人袒露出自己的心声。“我已经做了很多并不值得自豪的事情，比如23岁时就让我的女友怀了孕，以及我对这件事的处理方式”，他说， “对我而言，没有什么不可以对外袒露的。”谈及和他共过事的人以及竞争对手，他直言不讳，甚至尖酸刻薄。他的激情、精力、欲望、完美主义、艺术修养、残暴还有对掌控权...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/76b26760d613",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1mMAv3XehzjDpbgzbMGEkdw",
+        code: "nxwp"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 166,
+    title: "德米安",
+    author: "[德] 赫尔曼·黑塞 出版社: 上海人民出版社 出品方: 世纪文景 副标题: 埃米尔·辛克莱的彷徨少年时 原作名: Demian: die geschichte von emil sinclairs jugend 译者: 丁君君 / 谢莹莹 出版年: 2009-3 页数: 193 定价: 25.00元 装帧: 平装 丛书: 赫尔曼·黑塞作品系列 ISBN: 9787208081550",
+    authorDetail: "待补充",
+    year: "2009",
+    cover: "https://img.aqifei.top/img/2026/01/172_德米安",
+    description: "《德米安：埃米尔·辛克莱的彷徨少年时》是黑塞的代表作之一，讲述少年辛克莱寻找通向自身之路的艰辛历程。出生并成长于“光明世界”的辛克莱，偶然发现截然不同的“另一个世界”，那里的纷乱和黑暗，使他焦虑困惑，并陷入谎言带来的灾难之中。这时，一个名叫德米安的少年出现，将他带出沼泽地，从此他开始走向孤独寻找自我的前路。之后的若干年，“德米安”以不同的身份面目出现，在他每一次孤独寻找、艰难抉择的时候，成为他的引路人……",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/34984fac3d15",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/15jCqJIGotfNbyem3NJLlbg",
+        code: "u8m9"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 167,
+    title: "爱的艺术",
+    author: "[美] 艾·弗洛姆",
+    authorDetail: "待补充",
+    year: "2008",
+    cover: "https://img.aqifei.top/img/2026/02/20260210110429442",
+    description: "《爱的艺术》是德裔美籍心理学家和哲学家、法兰克福学派重要成员艾里希-弗洛姆最著名的作品，自1956年出版至今已被翻译成32种文字，在全世界畅销不衰，被誉为当代爱的艺术理论专著最著名的作品。在这本书中，弗洛姆认为，爱情不是一种与人的成熟程度无关，只需要投入身心的感情。如果不努力发展自己的全部人格并以此达到一种创造倾向性，那么每种爱的试图都会失败，如果没有爱他人的能力，如果不能真正谦恭地、勇敢地、真诚地和有纪律地爱他人，那么人们在自己的爱情生活中也永远得不到满足。弗洛姆进而提出，爱是一门艺术，要求想要掌握这门艺术的人有这方面的知识并付出努力。在这里，爱不仅仅是狭隘的男女爱情，也并非通过磨练增进技巧即可获得。爱是人格整体的展现，要发展爱的能力，就需要努力发展自己的人格，并朝着有益的目标迈进。此版特别收录弗洛姆学术助手纪念文章《弗洛姆生命中的爱》。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/14761e7f18e6",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/18jlwsQOkYrs1NH0ftnsVKw",
+        code: "iite"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 168,
+    title: "天生有罪",
+    author: "[南非] 特雷弗·诺亚",
+    authorDetail: "待补充",
+    year: "2018",
+    cover: "https://img.aqifei.top/img/2026/01/174_天生有罪",
+    description: "火遍微博、微信的《小崔每日秀》主持人特雷弗·诺亚首部回忆录比尔·盖茨2017年夏季书单推荐图书美国《纽约时报》《新闻日报》《时尚先生》及“国家公共电台”年度好书2017年瑟伯美国幽默文学奖得主美国亚马逊周阅读榜连续在榜，评分高达4.8编辑推荐：★	囧司徒接班人崔那娃爆笑回忆录 作为美国最具影响力的脱口秀节目之一，《囧司徒每日秀》曾在中国收获了一大批忠实粉丝，他宣布辞职后，钦点了南非脱口秀明星特雷弗·诺亚担任继任者。名不见经传的诺亚以自己独特的喜剧风格，在美国内外收获了大批粉丝，并被中国观众亲切称为“崔那娃”。在本书中，小崔将他的幽默天赋发挥到了极致，完美展示了为什么他会被选为《每日秀》的主持人。★	“生而有罪”的崔那娃讲述贫民窟的成长经历 小崔出生在种族隔离制度下的南非，其父母属于跨种族结合，因此他生下来就犯了罪，再加上他从小生活在贫民...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/dfaa8055ab1b",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1LFJsejdPNFU4TEEbf0gsTg",
+        code: "xnmq"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 169,
+    title: "温柔的夜",
+    author: "三毛",
+    authorDetail: "待补充",
+    year: "2007",
+    cover: "https://img.aqifei.top/img/2026/01/175_温柔的夜",
+    description: "《温柔的夜》记录了三毛在加纳利群岛的生活，共十四篇。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/5b31947f651e",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1fblVMlCoYv3DS1puC56sJg",
+        code: "n8w7"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 170,
+    title: "亲密关系（第6版）",
+    author: "[美] 罗兰·米勒",
+    authorDetail: "待补充",
+    year: "2015",
+    cover: "https://img.aqifei.top/img/2026/01/176_亲密关系（第6版）",
+    description: "亲密关系与泛泛之交有什么区别？大丈夫与小女子真的般配吗？吸引力的秘密是什么？男人与女人真的是不同的动物吗？同性恋真的是由基因决定的吗？单亲家庭的孩子长大后更容易离婚吗……什么是爱情？由什么构成？能持续多久？两性在发生一夜情及选择终身伴侣上有什么差异？爱情和性欲是由不同的脑区控制吗？亲密关系美满的秘诀是什么？有什么方法能让婚姻持续一生？米勒教授在本书中回答了这些问题，尤其澄清了通俗心理学所宣扬的经验之谈，甚至某些错误观点。本书汲取了社会心理学、沟通研究、家庭研究、认知心理学、发展心理学、演化心理学、社会学、传播学及家政学等学科的最新成果，研究实践和理论建构并重，学术标准与大众兴趣兼备。全书结构清晰、逻辑严密、语言生动、启发思考，既通俗易懂，读来轻松愉快，又科学权威，崇尚实证精神。本书遵循由浅入深、由一般到特殊的认知规律，论述了亲密关系的基础、活动形...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/2c423ff5e6ee",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1nXqo2CZ-mQPc8pbAO4k7Ag",
+        code: "7nbd"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 171,
+    title: "倾城之恋",
+    author: "张爱玲",
+    authorDetail: "待补充",
+    year: "2019",
+    cover: "https://img.aqifei.top/img/2026/01/177_倾城之恋",
+    description: "◑张爱玲中短篇小说集。收录创作于1943年至1944年创作的中短篇小说《第一炉香》《第二炉香》《茉莉香片》《心经》《封锁》《倾城之恋》《琉璃瓦》《金锁记》《连环套》。◑三十年前的上海，一个有月亮的晚上……我们也许没赶上看见三十年前的月亮。——《金锁记》◑葛薇龙，一个 极普通的上海女孩子，站在半山里一座大住宅的走廊上，向花园里远远望过去。——《第一炉香》◑在这动荡的世界里，钱财，地产，天长地久的一切，全不可靠了。靠得住的只有她腔子里的这口气，还有睡在她身边的这个人。——《倾城之恋》◑全新精装，臻美典藏，月亮构筑起的永恒传奇。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/473e73d4342b",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1OtBsMum9NPR-xuyUDQ5ZPQ",
+        code: "rsw3"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 172,
+    title: "球状闪电",
+    author: "刘慈欣",
+    authorDetail: "待补充",
+    year: "2016",
+    cover: "https://img.aqifei.top/img/2026/02/20260210110408993",
+    description: "某个离奇的雨夜，一个球状闪电闯进了少年的视野，并在一瞬间将少年的父母化为灰烬。少年毕其一生去解开那个将他变成孤儿的自然之谜。但未曾想，多年后，他的研究被纳入“新概念武器”开发计划，他所追寻的球状闪电变成了下一场战争中决定祖国生存或是灭亡的终武器。及锋而试，大西北戈壁滩上升起冰冷的“蓝太阳”，世界变得陌生而怪异。一个完全未知的未来，在宇宙观测者的注视下，降临在人类面前……",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/b6c0a429b507",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1TEAKnY4qQorXlLUrs6EnfQ",
+        code: "512m"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 173,
+    title: "我的阿勒泰",
+    author: "李娟",
+    authorDetail: "待补充",
+    year: "2018",
+    cover: "https://img.aqifei.top/img/2026/01/179_我的阿勒泰",
+    description: "李娟的散文成名作和代表作之一。原生态记录了作者在疆北阿勒泰地区生活的点点滴滴，包括人与事的记忆和感悟。全书文字明净，质地纯粹，原生态地再现了疆北风物人情，充满了朴野清新的气息。十年前，作者在到处收集来的纸片上用密密麻麻的文字写下她的生活和感悟，投稿到新疆的文艺期刊。一些资深的编辑认为一个二十岁左右的女孩不可能写出如此清新而有才华的作品。但新疆著名作家刘亮程将她挖掘出来，她的*部作品以《九篇雪》为名结集出版，人们才开始知道有个新疆女孩叫李娟。此后，她的散文在《南方周末》、《文汇报》陆续刊登，完全是天才的笔触，引起了文坛的震惊。人们很难想象：一个没有受过完整高等教育、阅读范围主要限于金庸、琼瑶、一直生活在疆北荒野之地的女孩，能够写出如此清新、活泼、充满灵性和生命力的文字。她的作品和图书相继荣获年度华文*散文奖，入评年度十大好书，很有可能将成为这个时代的散...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/6e16c3a076f9",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1DA0HK9NSH1R9Ybvm4aiQwg",
+        code: "ixui"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 174,
+    title: "恶意",
+    author: "[日] 东野圭吾",
+    authorDetail: "待补充",
+    year: "2016",
+    cover: "https://img.aqifei.top/img/2026/02/20260210110344356",
+    description: "《恶意》是东野圭吾挑战写作极限的长篇杰作，与《白夜行》《嫌疑人X的献身》《解忧杂货店》并称东野圭吾四大杰作。《恶意》深刻揭示人性，故事中无边的恶意深不见底，有如万丈深渊，让人不寒而栗。从未遇到这样的案子：杀人不是目的，而是手段；死亡不是结束，而是开始。 读完《恶意》，才算真正认识东野圭吾。============================ ================================畅销作家在出国前一晚被杀，警方很快锁定了凶手。此人供认自己是一时冲动犯下了罪行。案子到此已经可以了结。可办案的加贺警官并不这么认为，因为他找不到凶手作案的动机，凶手也一直对动机避而不谈。加贺不愿草草结案，大量走访。渐渐显露的真相让他感到冰冷的寒意——“你心里藏着对他的恶意，这仇恨深不见底，深得连你自己都无法解释。正是它导致了这起案件。这股恶...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f90d2cf08a21",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/197crQSOCifvqZcrANwMinA",
+        code: "awyp"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 175,
+    title: "不能承受的生命之轻",
+    author: "[捷克] 米兰·昆德拉 出版社: 上海译文出版社 原作名: Nesnesitelná lehkost bytí 译者: 许钧 出版年: 2003-7 页数: 394 定价: 23.00元 装帧: 平装 丛书: 米兰·昆德拉作品系列（2003版） ISBN: 9787532731077",
+    authorDetail: "待补充",
+    year: "2003",
+    cover: "https://img.aqifei.top/img/2026/01/181_不能承受的生命之轻",
+    description: "《不能承受的生命之轻》是米兰·昆德拉最负盛名的作品。小说描写了托马斯与特丽莎、萨丽娜之间的感情生活。但它不是一个男人和两个女人的三角性爱故事，它是一部哲理小说，小说从“永恒轮回”的讨论开始，把读者带入了对一系列问题的思考中，比如轻与重、灵与肉。《不能承受的生命之轻》是一部意象繁复的书，其中装载了多种涵义：被政治化了的社会内涵的揭示、人性考察、个人命运在特定历史与政治语境下的呈现，以及对两性关系本质上的探索等。昆德拉将这些元素糅合在一起，写成一部非同凡响的小说——其中既有隐喻式的哲学思考，也有人的悲欢离合的生命历程的展现。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f3b4add960ad",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1K4k1OOkCwom7FFGrG-vcbQ",
+        code: "wn6w"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 176,
+    title: "帷幕",
+    author: "[英]阿加莎·克里斯蒂",
+    authorDetail: "待补充",
+    year: "2015",
+    cover: "https://img.aqifei.top/img/2026/01/182_帷幕",
+    description: "波洛与挚友黑斯廷斯的探案生涯回到了原点，他们再次相聚于斯泰尔斯庄园——正是在这里，初到英国的波洛解决了第一起谋杀案。如今的波洛已到风烛残年，但还有一件急迫的任务摆在面前：一名已经犯下五起谋杀案的凶手也来到了这里。在帷幕降下之前，他必须阻止凶手再次出击……",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/36abf6fc5ac7",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/18SEaDP_OMgwI5uY522_Yow",
+        code: "a577"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 177,
+    title: "古文观止",
+    author: "吴楚材 / 吴调侯",
+    authorDetail: "待补充",
+    year: "1987",
+    cover: "https://img.aqifei.top/img/2026/01/183_古文观止",
+    description: "《古文观止》是清康熙年间吴乘权、吴大职编选的一部古文读本，凡十二卷，收录自先秦至明末的散文二百二十二篇，每篇都有注释和评论。据《左传》襄公二十九年记载，吴公子季札在鲁国观看乐舞《韶�》时，以为尽善尽美，无以复加，赞叹道：“观止矣：若有他乐吾不敢请已！”本书书名中“观止”二字即由此而来，是表示所选的古文极好，堪称最佳读本。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3f931f74440f",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1qkJrLnUkutDpMfUBLh06jA",
+        code: "s9v2"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 178,
+    title: "包法利夫人",
+    author: "福楼拜",
+    authorDetail: "待补充",
+    year: "2003",
+    cover: "https://img.aqifei.top/img/2026/01/184_包法利夫人",
+    description: "《包法利夫人》于1856-1857年间在《巴黎杂志》上连载，轰动文坛，在社会上引起轩然大波。法当局对作者提起公诉，指控小说“伤风败俗、亵渎宗教”，并传唤作者到庭受审，最终以“宣判无罪”收场，而隐居乡野、籍籍无名的作者从此奠定了自己的文学声誉和在文学的地位。曾有人问福楼拜，谁是法利夫人的原型，他答道：“包法利夫人就是我自己。”",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1ec44c1cdfa6",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1NSu_m6jSYReiPEhBsQJkyQ",
+        code: "i4b6"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 179,
+    title: "看不见的女性",
+    author: "卡罗琳·克里亚多·佩雷斯",
+    authorDetail: "待补充",
+    year: "2022",
+    cover: "https://img.aqifei.top/img/2026/02/20260210110021813",
+    description: "这本书没有咆哮，只有事实和数字。在告诉我父权制是我想象出来的之前，请你先读读这本书。《看不见的女性》充满启示，令人恐惧，又充满希望。堪称一部现世的《圣经》。——珍妮特·温特森，英国知名作家卡罗琳·克里亚多·佩雷斯简直是掌握数据的西蒙娜·德·波伏瓦。——莱昂内尔·巴伯，《金融时报》前主编·🚺 关于全世界一半人口被无视、被消声的故事，全方位揭露无处不在的隐形歧视🚺 一本书彻底更新你的性别思维：我们的世界以男性为样本、由男性设计，为男性设计🚺 从校园到职场，从孕育到患病，“掌握数据的波伏瓦”展现她被忽视、压榨和威胁的一生🚺 一本改变游戏规则的书，获《金融时报》&麦肯锡商业图书奖🚺 当代女性生存指南：在专为男性设计的世界该如何生存和改变？🚺 横扫欧美市场，已译成30多种语言，简中版首次引进！🚺 英国书店最受读者欢迎好书，皇家学会科学图书...(展开全部)",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/60e98b8e5121",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1c3bWkT3QIIdfIxIwIzhWPQ",
+        code: "rmtt"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
+  },
+  {
+    id: 180,
+    title: "麦琪的礼物",
+    author: "[美] 欧·亨利",
+    authorDetail: "待补充",
+    year: "2003",
+    cover: "https://img.aqifei.top/img/2026/01/186_麦琪的礼物",
+    description: "选收欧·亨利的小说34篇，国外当代文学类重要工具书介绍的有代表性的作品均已收入。欧·亨利是位有独特风格的杰出短篇小说家，以巧妙的构思、夸张和幽默的文笔反映了他那个时代的人和事。",
+    category: "文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/59b0ac36308e",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/10taK0F79BqOeTMeajs386A",
+        code: "gjub"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2024"
   }
 ];
 
