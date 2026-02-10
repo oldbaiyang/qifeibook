@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { books } from '../data/mockData';
 import { Calendar, User, Tag } from 'lucide-react';
@@ -7,6 +7,10 @@ import styles from './BookDetail.module.css';
 export default function BookDetail() {
     const { id } = useParams();
     const book = books.find(b => b && b.id === parseInt(id));
+    
+    // States for expanding text
+    const [isAuthorExpanded, setIsAuthorExpanded] = useState(false);
+    const [isDescExpanded, setIsDescExpanded] = useState(false);
 
     useEffect(() => {
         if (book) {
@@ -21,6 +25,20 @@ export default function BookDetail() {
         return <div className="container" style={{ padding: '4rem 1rem', textAlign: 'center' }}>书籍不存在</div>;
     }
 
+    // Helper to truncate text
+    const truncateText = (text, maxLength) => {
+        if (!text) return "";
+        if (text.length <= maxLength) return text;
+        return text.substring(0, maxLength) + "...";
+    };
+
+    // Determine if we need expansion (threshold ~200 chars or as needed)
+    const authorBioThreshold = 200;
+    const descThreshold = 250;
+    
+    const showAuthorExpand = book.authorDetail && book.authorDetail.length > authorBioThreshold;
+    const showDescExpand = book.description && book.description.length > descThreshold;
+
     return (
         <div className="container" style={{ padding: '2rem 1rem' }}>
             <div className={styles.detailContainer}>
@@ -32,7 +50,15 @@ export default function BookDetail() {
                     <h1 className={styles.title}>{book.title}</h1>
                     
                     <div className={styles.authorBio}>
-                        {book.authorDetail}
+                        {isAuthorExpanded ? book.authorDetail : truncateText(book.authorDetail, authorBioThreshold)}
+                        {showAuthorExpand && (
+                            <button 
+                                className={styles.expandButton}
+                                onClick={() => setIsAuthorExpanded(!isAuthorExpanded)}
+                            >
+                                {isAuthorExpanded ? '(收起)' : '(展开全部)'}
+                            </button>
+                        )}
                     </div>
 
                     <div className={styles.metaRow}>
@@ -48,7 +74,17 @@ export default function BookDetail() {
 
                     <div className={styles.description}>
                         <h3 className={styles.sectionHeader}>内容简介</h3>
-                        <p>{book.description}</p>
+                        <p>
+                            {isDescExpanded ? book.description : truncateText(book.description, descThreshold)}
+                        </p>
+                        {showDescExpand && (
+                            <button 
+                                className={styles.expandButton}
+                                onClick={() => setIsDescExpanded(!isDescExpanded)}
+                            >
+                                {isDescExpanded ? '(收起)' : '(展开全部)'}
+                            </button>
+                        )}
                     </div>
 
 
