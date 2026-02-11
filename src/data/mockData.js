@@ -4457,6 +4457,476 @@ export const books = [
     size: "未知",
     format: "EPUB",
     publishYear: "2024"
+  },
+  {
+    id: 181,
+    title: "父权制与资本主义",
+    author: "[日] 上野千鹤子",
+    authorDetail: "上野千鹤子，日本著名社会学家，女性主义理论家，东京大学名誉教授",
+    year: "2020",
+    cover: "https://img.aqifei.top/img/2026/01/188_父权制与资本主义",
+    description: "本书是作者历经十年完成的重要作品，对女权主义各个派别，特别是马克思主义女权主义的再次思考。近代社会在'资本主义'支配的'市场'和'父权制'支配的'家庭形态'双重控制下，以无偿的女性劳务为中心，形成了女性地位低下的历史根源。作者对此进行了深刻批判，并就如何改善女性的社会地位提出了中肯的建议。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/1e7ab493c665",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/11KKA2eQq6Qu-mVOuw92kAQ?pwd=q0n9",
+        code: "q0n9"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2020"
+  },
+  {
+    id: 182,
+    title: "一个女人的故事",
+    author: "[法] 安妮·埃尔诺",
+    authorDetail: "安妮·埃尔诺，2022年诺贝尔文学奖得主，法国当代著名女性作家，以自传体写作著称",
+    year: "2022",
+    cover: "https://img.aqifei.top/img/2026/01/189_一个女人的故事",
+    description: "《一个女人的故事》是安妮·埃尔诺对母亲和女儿、青春和衰老、梦想和现实的感人叙述。在母亲死于阿尔茨海默症后，作者开始了令人生畏的时光倒流之旅，她试图捕捉真正的女人，那个独立于女儿而存在的女人。她探讨了母亲和女儿之间既脆弱又不可动摇的纽带，以及我们必须失去我们所爱之人这一无法逃避的事实。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/5f3952212d98",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1y3Klh2401_oaGtfGDH32vA?pwd=uvog",
+        code: "uvog"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2022"
+  },
+  {
+    id: 183,
+    title: "足利女童连续失踪事件",
+    author: "[日] 清水洁",
+    authorDetail: "清水洁，日本著名调查记者，以深度报道冤案和社会事件著称",
+    year: "2022",
+    cover: "https://img.aqifei.top/img/2026/01/190_足利女童连续失踪事件",
+    description: "本书是一部讲述日本'足利事件'全过程的纪实文学作品，直击儿童诱拐、女性安全、冤案误判、受害者有罪论、侦查黑幕、媒体报道争议等社会痛点议题。作者亲临案发现场，不断进行取证调查，还原案情细节，面对警方引以为傲多年的办案功勋，他大声而坚定地提出质疑，最终叫停17年冤狱。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/ed1a5b961bf5",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/18R4awFt1zNIitc8vEbQ1Cg?pwd=brhd",
+        code: "brhd"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2022"
+  },
+  {
+    id: 184,
+    title: "雕刻时光",
+    author: "[苏] 安德烈·塔可夫斯基",
+    authorDetail: "安德烈·塔可夫斯基，苏联著名电影导演，被誉为现代艺术电影圣三位一体之一",
+    year: "2016",
+    cover: "https://img.aqifei.top/img/2026/01/191_雕刻时光",
+    description: "《雕刻时光》是塔可夫斯基的电影理论著作，被视为电影艺术的圣经。书中以'雕刻时光'为核心隐喻，将电影创作类比雕塑过程——从庞杂的时间素材中剔除冗余，提炼出承载意义的影像序列。塔可夫斯基主张电影本质在于捕捉时间的真实流动，书中结合其重要作品的创作实践，探讨艺术家使命、电影形象构建等议题。...",
+    category: "人文艺术",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/52e0b88808d2",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1rfAC2LQb4ngK8m-qsq6wmw?pwd=djz8",
+        code: "djz8"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2016"
+  },
+  {
+    id: 185,
+    title: "一桩事先张扬的凶杀案",
+    author: "[哥伦比亚] 加西亚·马尔克斯",
+    authorDetail: "加西亚·马尔克斯，哥伦比亚作家，诺贝尔文学奖得主，魔幻现实主义文学代表",
+    year: "1981",
+    cover: "https://img.aqifei.top/img/2026/01/192_一桩事先张扬的凶杀案",
+    description: "《一桩事先张扬的凶杀案》描写的是发生在1951年的真人真事。出身显赫的巴亚多·圣·罗曼来到加勒比海沿岸的一个小镇，爱上了出身平庸的安赫拉·维卡略。新婚之夜他发现新娘不是处女，万分沮丧之下把她休回娘家。姑娘的母亲逼问是谁破坏了她的贞节，姑娘无奈之下将其归罪于圣地亚哥·纳赛尔，两个哥哥拿上杀猪刀凶残地杀害了这个无辜者。小说通过一个小题材，辛辣地嘲讽了权贵，无情地揭露和批判了愚昧无知的封建礼教。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/20e27255bc05",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1LqcGv8YIwJS8mzMSFNhSnA?pwd=ikeh",
+        code: "ikeh"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1981"
+  },
+  {
+    id: 186,
+    title: "挽救计划",
+    author: "[美] 安迪·威尔",
+    authorDetail: "安迪·威尔，美国科幻作家，凭借处女作《火星救援》一炮而红，擅长硬核科幻",
+    year: "2021",
+    cover: "https://img.aqifei.top/img/2026/02/20260211203134625",
+    description: "一趟孤注一掷的太空远征，一座没有尽头的科学迷宫，一次争分夺秒的冒险营救，一段跨越星际的真挚友谊。浩瀚宇宙中，瑞恩·格雷斯是整个人类文明仅存的希望。但在醒来的那一刻，他连自己的名字都不记得。他在未知的恐惧中寻找身份，从记忆的碎片中获取线索。这个肩负拯救地球重任的关键人物，现已命悬一线！人类文明究竟能否存续？...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/f45616ed9aa7",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1ty3sn4d-RW6UKaS94QpLnw?pwd=x8d4",
+        code: "x8d4"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2021"
+  },
+  {
+    id: 187,
+    title: "翦商",
+    author: "李硕",
+    authorDetail: "李硕，青年历史学家，著有《南北战争三百年》《孔子大历史》等有影响力的历史著作",
+    year: "2022",
+    cover: "https://img.aqifei.top/img/2026/01/194_翦商",
+    description: "本书主要讲述华夏文明的萌生与转型。从距今四千年前夏朝的出现，到三千年前商朝的灭亡、西周建立，时间跨度一千余年。本书借助考古材料和传世文献，梳理了上古人祭风俗产生、繁荣和消亡的全过程，以及人祭与华夏早期文明从伴生到分离的伟大转折，再现了古人为终结商朝和人祭风俗付出的巨大努力，使我们对华夏文明的起源有了全新的认知。...",
+    category: "历史传记",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/4dd7bc1dec1d",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1EzHSfXwXHYDD4ZYziwR0dg?pwd=o0yv",
+        code: "o0yv"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2022"
+  },
+  {
+    id: 188,
+    title: "我也有一个梦想",
+    author: "林达",
+    authorDetail: "林达，美籍华人作家，以介绍美国历史和政治制度著称",
+    year: "2019",
+    cover: "https://img.aqifei.top/img/2026/02/20260211203017631",
+    description: "本书通过精彩动人的故事，展示了与美国种族问题相关联的社会意识和法律演进史，介绍了在契约社会里，立法的民众基础、法律对人性的思考、法律的变化与社会进步的关系等问题。通过作者的叙述，能够看到在法治国家里，民众尤其是弱势人群怎样运用法律，经过长期抗争，取得自身权益，并由此推动全社会认识的深化。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/4c83cd90bcfb",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1LJ2P5SzlgmlHSDR68xi6PQ?pwd=1d7k",
+        code: "1d7k"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2019"
+  },
+  {
+    id: 189,
+    title: "激荡三十年",
+    author: "吴晓波",
+    authorDetail: "吴晓波，著名财经作家，单向街图书馆创办人之一，'蓝狮子'财经图书出版人",
+    year: "2007",
+    cover: "https://img.aqifei.top/img/2026/01/196_激荡三十年（上）",
+    description: "本书站在民间的角度，以真切而激扬的写作手法描绘了中国企业在改革开放年代走向市场、走向世界的成长、发展之路。改革开放初期汹涌的商品大潮；国营企业、民营企业、外资企业，这三种力量此消彼长、互相博弈的曲折发展；整个社会的躁动和不安……整部书稿中都体现得极为真切和实在。它承载了太多人的光荣与梦想，是几乎一代人共同成长的全部记忆。...",
+    category: "商业财经",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/ed028cabfd3a",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1046W0h9vezp1WdFS_InK0g?pwd=ghb8",
+        code: "ghb8"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2007"
+  },
+  {
+    id: 190,
+    title: "在细雨中呼喊",
+    author: "余华",
+    authorDetail: "余华，中国当代著名作家，代表作《活着》《许三观卖血记》等",
+    year: "1991",
+    cover: "https://img.aqifei.top/img/2026/01/197_在细雨中呼喊",
+    description: "《在细雨中呼喊》是余华的第一部长篇小说，讲述了一个少年的成长经历和心灵历程。小说通过主人公孙光林的视角，展现了上世纪六七十年代中国乡村的生活图景，以及人性的复杂与温暖。作品以细腻的笔触描绘了家庭关系、友情、青春困惑等主题，是余华创作生涯中的重要作品。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/0dde065ba38a",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1gRu8DBLUAXe9BJa96_Ifiw?pwd=mu9b",
+        code: "mu9b"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1991"
+  },
+  {
+    id: 191,
+    title: "跨越边界的社区",
+    author: "项飙",
+    authorDetail: "项飙，人类学家，牛津大学社会人类学教授",
+    year: "2018",
+    cover: "https://img.aqifei.top/img/2026/01/198_跨越边界的社区（修订版）",
+    description: "本书是作者对北京'浙江村'进行长期田野调查的成果。作者深入社区，详细记录了'浙江村'的形成、发展、内部运作机制，以及与国家权力的互动关系。这一研究不仅深化了对中国城市化进程的理解，也为人类学和社会学的研究方法提供了重要的实践范例。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/dccf6a5dd854",
+        code: "无"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2018"
+  },
+  {
+    id: 192,
+    title: "银河帝国：基地七部曲",
+    author: "[美] 艾萨克·阿西莫夫",
+    authorDetail: "艾萨克·阿西莫夫，美国著名科幻作家，与阿瑟·克拉克、罗伯特·海因莱因并称为科幻三巨头",
+    year: "1951",
+    cover: "https://img.aqifei.top/img/2026/02/20260211202950848",
+    description: "《银河帝国：基地七部曲》是科幻文学史上的经典巨著。故事讲述人类已遍布银河系，建立了庞大的银河帝国。心理史学家哈里·谢顿预言帝国即将崩溃，并建立了'基地'以保存人类文明。在长达数百年的历史长河中，基地经历了种种危机与挑战。这部作品以其宏大的叙事、深刻的思想，成为科幻文学的丰碑。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/4b1dd16317af",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1SkO9rkpI-2_UoCFh35QDhw?pwd=oatb",
+        code: "oatb"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1951"
+  },
+  {
+    id: 193,
+    title: "尼罗河上的惨案",
+    author: "[英] 阿加莎·克里斯蒂",
+    authorDetail: "阿加莎·克里斯蒂，英国侦探小说女王，被誉为'推理小说界的莎士比亚'",
+    year: "1937",
+    cover: "https://img.aqifei.top/img/2026/01/200_尼罗河上的惨案",
+    description: "琳内特·里奇卫是一位年轻貌美、财富惊人的女子，她抢走了女仆杰奎琳的未婚夫西蒙，并与之闪电结婚。新婚夫妇前往埃及度蜜月，乘坐尼罗河游轮。然而在一个月光皎洁的夜晚，琳内特被枪杀在自己的舱房中。大侦探波洛正好也在船上，他通过细致入微的观察和缜密的推理，揭开了这桩看似不可能犯罪的真相。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/6335f70bc1e1",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/151Gm2Z1UClSKCIFHmnZA4A?pwd=tdmz",
+        code: "tdmz"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1937"
+  },
+  {
+    id: 194,
+    title: "海风中失落的血色馈赠",
+    author: "[加] 阿利斯泰尔·麦克劳德",
+    authorDetail: "阿利斯泰尔·麦克劳德，加拿大著名作家，以描写布雷顿角的小说闻名",
+    year: "1976",
+    cover: "https://img.aqifei.top/img/2026/01/201_海风中失落的血色馈赠",
+    description: "这是一部关于布雷顿角的短篇小说集，收录了七个充满深情的故事。小说以加拿大东海岸的布雷顿角为背景，描绘了矿工、渔民等普通人的生活，展现了人与土地、传统与现代之间的张力。麦克劳德的文字质朴而富有诗意，情感深沉，是一部充满人性光辉的文学杰作。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/d3ecab514ca1",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1hJUgmHnQn-aXIgSOFiKhmQ?pwd=z71m",
+        code: "z71m"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1976"
+  },
+  {
+    id: 195,
+    title: "骆驼祥子",
+    author: "老舍",
+    authorDetail: "老舍，中国现代著名小说家、剧作家，代表作《茶馆》《四世同堂》等",
+    year: "1937",
+    cover: "https://img.aqifei.top/img/2026/01/202_骆驼祥子",
+    description: "《骆驼祥子》是老舍的代表作之一，讲述了人力车夫祥子的悲惨命运。祥子来自农村，怀揣梦想来到北平城，希望通过自己的努力买一辆属于自己的车。然而在那个黑暗的社会里，他的梦想一次次破灭，最终被生活压垮。小说深刻揭示了旧社会底层人民的苦难生活，是中国现代文学的经典之作。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/12999931a55a",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1qWg_Y6nwsFJJYVDDWhSRiw?pwd=depb",
+        code: "depb"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1937"
+  },
+  {
+    id: 196,
+    title: "当呼吸化为空气",
+    author: "[美] 保罗·卡拉尼什",
+    authorDetail: "保罗·卡拉尼什，美国神经外科医生、作家",
+    year: "2016",
+    cover: "https://img.aqifei.top/img/2026/01/203_当呼吸化为空气",
+    description: "保罗·卡拉尼什是一位才华横溢的神经外科医生，在事业即将达到巅峰时，却被诊断出患有晚期肺癌。面对死亡，他开始重新审视生命的意义。这本书是他在生命最后阶段写下的回忆录，记录了从医生到患者的身份转变，以及对生死、人性、医学伦理的深刻思考。这是一部感人至深的生命之书。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/3173bb7686d9",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1xPu117es774YCTpw_HMucQ?pwd=7fkg",
+        code: "7fkg"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2016"
+  },
+  {
+    id: 197,
+    title: "从零开始的女性主义",
+    author: "[日] 上野千鹤子",
+    authorDetail: "上野千鹤子，日本著名社会学家，女性主义理论家",
+    year: "2021",
+    cover: "https://img.aqifei.top/img/2026/01/204_从零开始的女性主义",
+    description: "本书是日本女性主义理论家上野千鹤子的经典之作。书中以通俗易懂的语言，系统介绍了女性主义的基本概念和历史发展，探讨了性别歧视、家庭制度、职场平等、身体自主权等重要议题。上野千鹤子以其犀利的观点和深刻的洞察力，为读者打开了一扇了解女性主义的窗口，是一部入门级的女性主义启蒙读物。...",
+    category: "人文社科",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/9f9cc872d90d",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1wDvv6AN0e-4yEq52BHz06g?pwd=qq2j",
+        code: "qq2j"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "2021"
+  },
+  {
+    id: 198,
+    title: "雷雨",
+    author: "曹禺",
+    authorDetail: "曹禺，中国现代话剧奠基人之一，代表作《雷雨》《日出》《原野》等",
+    year: "1934",
+    cover: "https://img.aqifei.top/img/2026/01/205_雷雨",
+    description: "《雷雨》是中国现代话剧的经典之作，讲述了周、鲁两个家庭之间复杂的恩怨情仇。在一个雷雨交加的夜晚，三十年前的秘密被揭开，所有的矛盾集中爆发。作品深刻揭露了封建家庭的罪恶，展现了人性的复杂与悲剧。其精巧的戏剧结构、深刻的思想内涵，使其成为中国话剧史上不朽的丰碑。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/30bac8a56564",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1uS4OS2QP52EGptNf1chf-g?pwd=olxc",
+        code: "olxc"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1934"
+  },
+  {
+    id: 199,
+    title: "荒原狼",
+    author: "[德] 赫尔曼·黑塞",
+    authorDetail: "赫尔曼·黑塞，德国作家，诺贝尔文学奖得主，以其深刻的心理分析和灵性探索著称",
+    year: "1927",
+    cover: "https://img.aqifei.top/img/2026/01/206_荒原狼",
+    description: "《荒原狼》是黑塞的代表作之一，讲述了一个名叫哈里·哈勒尔的男人的精神危机。哈里自称'荒原狼'，认为自己身上同时存在着人性和狼性两种本性。小说通过哈里的内心独白和奇幻经历，探讨了现代人的精神分裂、孤独、自我认同等深刻主题。这是一部充满哲学思考和诗意想象的心理小说。...",
+    category: "小说文学",
+    downloadLinks: [
+      {
+        name: "夸克网盘",
+        url: "https://pan.quark.cn/s/2f469fb89719",
+        code: "无"
+      },
+      {
+        name: "百度网盘",
+        url: "https://pan.baidu.com/s/1Px0Z-3n5W7FhOeF38VBWDw?pwd=ha8m",
+        code: "ha8m"
+      }
+    ],
+    size: "未知",
+    format: "EPUB",
+    publishYear: "1927"
   }
 ];
 
