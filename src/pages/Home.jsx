@@ -103,10 +103,6 @@ export default function Home() {
                     <p style={{ color: '#666', fontSize: '14px', marginTop: '0.5rem' }}>
                         共 {books.length} 本精选电子书，持续更新中
                     </p>
-                    <p style={{ color: '#888', fontSize: '13px', marginTop: '0.5rem', maxWidth: '800px', lineHeight: '1.6' }}>
-                        棋飞书库提供免费电子书下载服务，涵盖小说文学、历史人文、科幻奇幻、推理悬疑等多个分类。
-                        所有书籍支持EPUB、MOBI、PDF格式，可通过夸克网盘、百度网盘高速下载。
-                    </p>
                 </header>
                 
                 <section 
