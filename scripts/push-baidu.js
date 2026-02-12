@@ -5,9 +5,19 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuration
+// Load environment variables
+import dotenv from 'dotenv';
+dotenv.config();
+
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
-const API_URL = 'http://data.zz.baidu.com/urls?site=https://www.qifeibook.com&token=YCJbOkFZTRJYgOt6';
+const TOKEN = process.env.BAIDU_PUSH_TOKEN;
+
+if (!TOKEN) {
+    console.error('Error: BAIDU_PUSH_TOKEN is not defined in .env file');
+    process.exit(1);
+}
+
+const API_URL = `http://data.zz.baidu.com/urls?site=https://www.qifeibook.com&token=${TOKEN}`;
 
 console.log('Reading sitemap from:', SITEMAP_PATH);
 const sitemapContent = fs.readFileSync(SITEMAP_PATH, 'utf8');
