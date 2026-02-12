@@ -210,7 +210,7 @@ export const books = [
     year: "1936",
     cover: "https://img.aqifei.top/img/2026/01/007_%E9%A3%98",
     description: "《飘》是一部有关战争的小说,但作者没有把着眼点放在战场上。除了亚特兰大之围,作者详细描述过战争,其余的战争场面几乎都是一笔带过。她以女性特有的细腻、真切和委婉,从女主人公的心理感受上反映战争的动荡和残酷,塑造了郝思嘉这个性格复杂、极富魅力的女性形象。",
-    category: "当代小说",
+    category: "外国文学",
     downloadLinks: [
       {
         name: "夸克网盘",
@@ -280,9 +280,9 @@ export const books = [
   {
     id: 12,
     title: "三国演义（全二册）",
-    author: "余华",
-    authorDetail: "余华,当代著名作家,中国先锋文学代表人物",
-    year: "1993",
+    author: "[明] 罗贯中",
+    authorDetail: "罗贯中,元末明初小说家,中国古典长篇章回小说四大名著之一《三国演义》作者",
+    year: "明代",
     cover: "https://img.aqifei.top/img/2026/01/010_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89%EF%BC%88%E5%85%A8%E4%BA%8C%E5%86%8C%EF%BC%89",
     description: "三国演义（全二册）",
     category: "历史人文",
@@ -305,9 +305,9 @@ export const books = [
   {
     id: 13,
     title: "福尔摩斯探案全集（上中下）",
-    author: "刘慈欣",
-    authorDetail: "刘慈欣,中国科幻小说代表作家,雨果奖得主",
-    year: "2008",
+    author: "[英] 阿瑟·柯南·道尔",
+    authorDetail: "阿瑟·柯南·道尔,英国作家,侦探小说之父,福尔摩斯系列创作者",
+    year: "1887-1927",
     cover: "https://img.aqifei.top/img/2026/01/011_%E7%A6%8F%E5%B0%94%E6%91%A9%E6%96%AF%E6%8E%A2%E6%A1%88%E5%85%A8%E9%9B%86%EF%BC%88%E4%B8%8A%E4%B8%AD%E4%B8%8B%EF%BC%89",
     description: "福尔摩斯探案全集（上中下）",
     category: "推理悬疑",
@@ -410,7 +410,7 @@ export const books = [
     year: "1835-1872",
     cover: "https://img.aqifei.top/img/2026/01/016_%E5%AE%89%E5%BE%92%E7%94%9F%E7%AB%A5%E8%AF%9D%E6%95%85%E4%BA%8B%E9%9B%86",
     description: "《安徒生童话》是丹麦作家安徒生创作的童话集。该作爱憎分明,热情歌颂劳动人民、赞美他们的善良和纯洁的优秀品德;无情地揭露和批判王公贵族们的愚蠢、无能、贪婪和残暴。其中较为闻名的故事有《小美人鱼》、《丑小鸭》、《卖火柴的小女孩》、《拇指姑娘》等。",
-    category: "诗歌散文",
+    category: "外国文学",
     downloadLinks: [
       {
         name: "夸克网盘",
@@ -585,7 +585,7 @@ export const books = [
     year: "1927",
     cover: "https://img.aqifei.top/img/2026/01/024_%E9%87%8E%E8%8D%89",
     description: "《野草》是鲁迅先生唯一的一部散文诗集,收录了他在1924年至1926年间创作的23篇散文诗。作品以隐晦的象征、富于诗意的意象和充满张力的语言,表达了作者对现实的绝望、抗争以及对生命意义的深刻思考。",
-    category: "当代小说",
+    category: "诗歌散文",
     downloadLinks: [
       {
         name: "夸克网盘",
@@ -660,7 +660,7 @@ export const books = [
     year: "1922",
     cover: "https://img.aqifei.top/img/2026/01/028_%E6%82%89%E8%BE%BE%E5%A4%9A",
     description: "《悉达多》讲述了古印度贵族青年悉达多为了追求心灵的安宁和生命的真谛,离家出走,历经各种人生体验,最终在流水的启示下悟道的故事。这是一部关于自我发现和精神成长的寓言。",
-    category: "当代小说",
+    category: "外国文学",
     downloadLinks: [
       {
         name: "夸克网盘",

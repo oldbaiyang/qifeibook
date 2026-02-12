@@ -11,7 +11,7 @@ export default function Category() {
 
     // 获取当前分类的所有书籍
     const categoryBooks = books.filter(book => book.category === id);
-    
+
     // 当前显示的书籍
     const displayedBooks = categoryBooks.slice(0, displayCount);
     const hasMore = displayCount < categoryBooks.length;
@@ -19,7 +19,7 @@ export default function Category() {
     // 加载更多书籍
     const loadMore = () => {
         if (isLoading || !hasMore) return;
-        
+
         setIsLoading(true);
         setTimeout(() => {
             setDisplayCount(prev => Math.min(prev + booksPerLoad, categoryBooks.length));
@@ -33,7 +33,7 @@ export default function Category() {
             const scrollTop = window.scrollY || document.documentElement.scrollTop;
             const scrollHeight = document.documentElement.scrollHeight;
             const clientHeight = window.innerHeight;
-            
+
             if (scrollTop + clientHeight >= scrollHeight - 100) {
                 loadMore();
             }
@@ -46,15 +46,15 @@ export default function Category() {
     // SEO优化
     useEffect(() => {
         // 更新页面标题
-        document.title = `${id} - 免费电子书下载 - 棋飞书库`;
-        
+        document.title = `${id}电子书推荐_${categoryBooks.length}本精选好书免费下载_棋飞书库`;
+
         // 更新meta描述
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            const sampleBooks = categoryBooks.slice(0, 3).map(b => b.title).join('、');
-            metaDescription.setAttribute('content', `${id}分类提供${categoryBooks.length}本精选电子书免费下载，包括${sampleBooks}等好书。支持EPUB、MOBI、PDF格式，网盘高速下载。`);
+            const sampleBooks = categoryBooks.slice(0, 5).map(b => `《${b.title}》`).join('、');
+            metaDescription.setAttribute('content', `${id}电子书推荐：共${categoryBooks.length}本精选好书免费下载，包括${sampleBooks}等。支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘高速下载。`);
         }
-        
+
         // 更新canonical URL
         let canonicalLink = document.querySelector('link[rel="canonical"]');
         if (!canonicalLink) {
@@ -63,7 +63,7 @@ export default function Category() {
             document.head.appendChild(canonicalLink);
         }
         canonicalLink.setAttribute('href', `https://qifeibook.com/category/${encodeURIComponent(id)}`);
-        
+
         // 添加面包屑结构化数据
         const existingScript = document.getElementById('breadcrumb-jsonld');
         if (existingScript) {
@@ -91,7 +91,7 @@ export default function Category() {
             ]
         });
         document.head.appendChild(script);
-        
+
         return () => {
             const breadcrumbScript = document.getElementById('breadcrumb-jsonld');
             if (breadcrumbScript) {
@@ -111,11 +111,11 @@ export default function Category() {
         <div className="container" style={{ padding: '2rem 1rem' }}>
             {/* 面包屑导航 */}
             <nav aria-label="breadcrumb" style={{ marginBottom: '1.5rem' }}>
-                <ol style={{ 
-                    display: 'flex', 
-                    gap: '0.5rem', 
-                    fontSize: '0.875rem', 
-                    color: '#999', 
+                <ol style={{
+                    display: 'flex',
+                    gap: '0.5rem',
+                    fontSize: '0.875rem',
+                    color: '#999',
                     alignItems: 'center',
                     listStyle: 'none',
                     padding: 0,
@@ -134,9 +134,9 @@ export default function Category() {
             </nav>
 
             <header style={{ marginBottom: '2rem' }}>
-                <h1 style={{ 
-                    fontSize: '1.75rem', 
-                    fontWeight: '700', 
+                <h1 style={{
+                    fontSize: '1.75rem',
+                    fontWeight: '700',
                     marginBottom: '0.5rem',
                     color: '#1a1a1a'
                 }}>
@@ -150,9 +150,9 @@ export default function Category() {
                     共 {categoryBooks.length} 本精选图书
                 </p>
                 {categoryBooks.length > 0 && (
-                    <p style={{ 
-                        color: '#888', 
-                        fontSize: '13px', 
+                    <p style={{
+                        color: '#888',
+                        fontSize: '13px',
                         marginTop: '0.75rem',
                         maxWidth: '800px',
                         lineHeight: '1.6'
@@ -175,8 +175,8 @@ export default function Category() {
                         }}
                     >
                         {displayedBooks.map((book, index) => (
-                            <BookCard 
-                                key={book.id} 
+                            <BookCard
+                                key={book.id}
                                 book={book}
                                 priority={index < 10}
                             />
@@ -185,7 +185,7 @@ export default function Category() {
 
                     {/* 加载状态指示器 */}
                     {isLoading && (
-                        <div 
+                        <div
                             role="status"
                             aria-live="polite"
                             style={{
@@ -209,7 +209,7 @@ export default function Category() {
 
                     {/* 没有更多数据提示 */}
                     {!hasMore && !isLoading && displayedBooks.length > 0 && (
-                        <div 
+                        <div
                             role="status"
                             style={{
                                 textAlign: 'center',
@@ -231,10 +231,10 @@ export default function Category() {
                     <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>
                         暂无该分类的书籍
                     </p>
-                    <Link 
-                        to="/" 
-                        style={{ 
-                            color: '#3b82f6', 
+                    <Link
+                        to="/"
+                        style={{
+                            color: '#3b82f6',
                             textDecoration: 'none',
                             fontSize: '0.95rem'
                         }}

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { books } from '../data/mockData';
 import { Calendar, User, Tag } from 'lucide-react';
+import BookCard from '../components/BookCard';
 import styles from './BookDetail.module.css';
 
 export default function BookDetail() {
@@ -15,13 +16,13 @@ export default function BookDetail() {
     useEffect(() => {
         if (book) {
             // Update page title
-            document.title = `${book.title} - ${book.author} | 免费电子书下载 - 棋飞书库`;
+            document.title = `《${book.title}》${book.author}_EPUB/MOBI/PDF免费下载_棋飞书库`;
 
             // Update meta description
             const metaDescription = document.querySelector('meta[name="description"]');
             if (metaDescription) {
-                const desc = book.description ? book.description.substring(0, 150) + '...' : `${book.title}免费下载，支持EPUB、MOBI、PDF格式`;
-                metaDescription.setAttribute('content', `${book.title} - ${book.author}。${desc} 棋飞书库提供高速网盘下载。`);
+                const desc = book.description ? book.description.substring(0, 120) : `${book.title}免费下载`;
+                metaDescription.setAttribute('content', `《${book.title}》${book.author}著。${desc} 支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘免费高速下载。`);
             }
 
             // Update canonical URL
@@ -207,6 +208,36 @@ export default function BookDetail() {
                     </div>
                 </div>
             </div>
+
+            {/* 相关推荐 */}
+            {(() => {
+                const relatedBooks = books
+                    .filter(b => b.category === book.category && b.id !== book.id)
+                    .sort(() => 0.5 - Math.random())
+                    .slice(0, 5);
+                if (relatedBooks.length === 0) return null;
+                return (
+                    <section style={{ marginTop: '3rem' }}>
+                        <h2 style={{
+                            fontSize: '1.25rem',
+                            fontWeight: '600',
+                            marginBottom: '1.5rem',
+                            color: 'var(--text-primary)'
+                        }}>
+                            你可能还喜欢
+                        </h2>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
+                            gap: '1.5rem'
+                        }}>
+                            {relatedBooks.map(b => (
+                                <BookCard key={b.id} book={b} />
+                            ))}
+                        </div>
+                    </section>
+                );
+            })()}
         </article>
     );
 }
