@@ -111,13 +111,22 @@ export default function Category() {
         <div className="container" style={{ padding: '2rem 1rem' }}>
             {/* 面包屑导航 */}
             <nav aria-label="breadcrumb" style={{ marginBottom: '1.5rem' }}>
-                <ol style={{ display: 'flex', gap: '0.5rem', fontSize: '0.875rem', color: '#666', alignItems: 'center' }}>
+                <ol style={{ 
+                    display: 'flex', 
+                    gap: '0.5rem', 
+                    fontSize: '0.875rem', 
+                    color: '#999', 
+                    alignItems: 'center',
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: 0
+                }}>
                     <li>
                         <Link to="/" style={{ color: '#3b82f6', textDecoration: 'none' }}>
                             首页
                         </Link>
                     </li>
-                    <li aria-hidden="true">/</li>
+                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
                     <li aria-current="page" style={{ color: '#333', fontWeight: '500' }}>
                         {id}
                     </li>

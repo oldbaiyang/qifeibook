@@ -7,7 +7,7 @@ import styles from './BookDetail.module.css';
 export default function BookDetail() {
     const { id } = useParams();
     const book = books.find(b => b && b.id === parseInt(id));
-    
+
     // States for expanding text
     const [isAuthorExpanded, setIsAuthorExpanded] = useState(false);
     const [isDescExpanded, setIsDescExpanded] = useState(false);
@@ -16,14 +16,14 @@ export default function BookDetail() {
         if (book) {
             // Update page title
             document.title = `${book.title} - ${book.author} | 免费电子书下载 - 棋飞书库`;
-            
+
             // Update meta description
             const metaDescription = document.querySelector('meta[name="description"]');
             if (metaDescription) {
                 const desc = book.description ? book.description.substring(0, 150) + '...' : `${book.title}免费下载，支持EPUB、MOBI、PDF格式`;
                 metaDescription.setAttribute('content', `${book.title} - ${book.author}。${desc} 棋飞书库提供高速网盘下载。`);
             }
-            
+
             // Update canonical URL
             let canonicalLink = document.querySelector('link[rel="canonical"]');
             if (!canonicalLink) {
@@ -32,7 +32,7 @@ export default function BookDetail() {
                 document.head.appendChild(canonicalLink);
             }
             canonicalLink.setAttribute('href', `https://qifeibook.com/book/${id}`);
-            
+
             // Add JSON-LD structured data
             const existingScript = document.getElementById('book-jsonld');
             if (existingScript) {
@@ -62,7 +62,7 @@ export default function BookDetail() {
             });
             document.head.appendChild(script);
         }
-        
+
         return () => {
             document.title = '棋飞书库 - 经典电子书免费下载 | EPUB/MOBI/PDF格式';
             const metaDescription = document.querySelector('meta[name="description"]');
@@ -90,27 +90,36 @@ export default function BookDetail() {
     // Determine if we need expansion (threshold ~200 chars or as needed)
     const authorBioThreshold = 200;
     const descThreshold = 250;
-    
+
     const showAuthorExpand = book.authorDetail && book.authorDetail.length > authorBioThreshold;
     const showDescExpand = book.description && book.description.length > descThreshold;
 
     return (
         <article className="container" style={{ padding: '2rem 1rem' }} itemScope itemType="https://schema.org/Book">
             <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
-                <ol style={{ display: 'flex', gap: '0.5rem', fontSize: '0.875rem', color: '#666' }}>
-                    <li><Link to="/" style={{ color: '#3b82f6' }}>首页</Link></li>
-                    <li>/</li>
-                    <li><Link to={`/category/${book.category}`} style={{ color: '#3b82f6' }}>{book.category}</Link></li>
-                    <li>/</li>
+                <ol style={{
+                    display: 'flex',
+                    gap: '0.5rem',
+                    fontSize: '0.875rem',
+                    color: '#999',
+                    alignItems: 'center',
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: 0
+                }}>
+                    <li><Link to="/" style={{ color: '#3b82f6', textDecoration: 'none' }}>首页</Link></li>
+                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
+                    <li><Link to={`/category/${book.category}`} style={{ color: '#3b82f6', textDecoration: 'none' }}>{book.category}</Link></li>
+                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
                     <li aria-current="page" style={{ color: '#333' }}>{book.title}</li>
                 </ol>
             </nav>
-            
+
             <div className={styles.detailContainer}>
                 <div className={styles.coverSection}>
-                    <img 
-                        src={book.cover} 
-                        alt={`${book.title}封面`} 
+                    <img
+                        src={book.cover}
+                        alt={`${book.title}封面`}
                         className={styles.cover}
                         itemProp="image"
                         loading="eager"
@@ -119,11 +128,11 @@ export default function BookDetail() {
 
                 <div className={styles.infoSection}>
                     <h1 className={styles.title} itemProp="name">{book.title}</h1>
-                    
+
                     <div className={styles.authorBio} itemProp="author" itemScope itemType="https://schema.org/Person">
                         <span itemProp="name">{isAuthorExpanded ? book.authorDetail : truncateText(book.authorDetail, authorBioThreshold)}</span>
                         {showAuthorExpand && (
-                            <button 
+                            <button
                                 className={styles.expandButton}
                                 onClick={() => setIsAuthorExpanded(!isAuthorExpanded)}
                                 aria-expanded={isAuthorExpanded}
@@ -150,7 +159,7 @@ export default function BookDetail() {
                             {isDescExpanded ? book.description : truncateText(book.description, descThreshold)}
                         </p>
                         {showDescExpand && (
-                            <button 
+                            <button
                                 className={styles.expandButton}
                                 onClick={() => setIsDescExpanded(!isDescExpanded)}
                                 aria-expanded={isDescExpanded}
@@ -168,9 +177,9 @@ export default function BookDetail() {
                                     <div key={index} className={styles.downloadLinkItem}>
                                         <div className={styles.providerName}>{link.name}</div>
                                         <div className={styles.linkContainer}>
-                                            <a 
-                                                href={link.url} 
-                                                target="_blank" 
+                                            <a
+                                                href={link.url}
+                                                target="_blank"
                                                 rel="noopener noreferrer nofollow"
                                                 title={`${book.title} - ${link.name}`}
                                             >
@@ -184,9 +193,9 @@ export default function BookDetail() {
                                 <div className={styles.downloadLinkItem}>
                                     <div className={styles.providerName}>下载链接</div>
                                     <div className={styles.linkContainer}>
-                                        <a 
-                                            href={book.downloadLink} 
-                                            target="_blank" 
+                                        <a
+                                            href={book.downloadLink}
+                                            target="_blank"
                                             rel="noopener noreferrer nofollow"
                                         >
                                             {book.downloadLink}
