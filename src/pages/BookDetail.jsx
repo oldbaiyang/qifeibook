@@ -14,6 +14,9 @@ export default function BookDetail() {
     const [isDescExpanded, setIsDescExpanded] = useState(false);
 
     useEffect(() => {
+        // 切换书籍时滚动到顶部
+        window.scrollTo(0, 0);
+
         if (book) {
             // Update page title
             document.title = `《${book.title}》${book.author}_EPUB/MOBI/PDF免费下载_棋飞书库`;
