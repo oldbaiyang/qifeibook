@@ -1,11 +1,10 @@
 .header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 1rem 0;
 }
 
 .container {
@@ -13,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .logo {
@@ -22,6 +22,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    flex-shrink: 0;
 }
 
 .logoIcon {
@@ -69,54 +70,155 @@
     background: rgba(0, 0, 0, 0.05);
 }
 
-.nav {
+/* 标签云容器 */
+.tagCloudContainer {
+    background: linear-gradient(to right, #f8f9fa, #ffffff, #f8f9fa);
+    border-top: 1px solid var(--border-color);
+    padding: 0.75rem 0;
+}
+
+.tagCloud {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
 }
 
-.navLink {
+/* 标签基础样式 */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 99px;
+    background: white;
+    border: 1px solid var(--border-color);
     color: var(--text-secondary);
+    font-size: 0.85rem;
     font-weight: 500;
-    transition: color 0.2s;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
-.navLink:hover {
-    color: var(--primary-color);
+.tag:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.menuBtn {
-    display: none;
-    background: none;
+/* 首页标签 */
+.tagHome {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.tagHome:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+/* 大号标签 - 50本以上 */
+.tagLarge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     border: none;
-    cursor: pointer;
-    color: var(--text-primary);
 }
 
+.tagLarge:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #653e8f 100%);
+}
+
+/* 中号标签 - 20-49本 */
+.tagMedium {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.9rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+}
+
+.tagMedium:hover {
+    background: linear-gradient(135deg, #e07ce8 0%, #e0455a 100%);
+}
+
+/* 小号标签 - 10-19本 */
+.tagSmall {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+}
+
+.tagSmall:hover {
+    background: linear-gradient(135deg, #3a9ced 0%, #00d9e9 100%);
+}
+
+/* 迷你标签 - 10本以下 */
+.tagTiny {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    background: #f0f0f0;
+    color: #666;
+}
+
+.tagTiny:hover {
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* 标签数量徽章 */
+.tagCount {
+    font-size: 0.7em;
+    opacity: 0.8;
+    margin-left: 0.2rem;
+}
+
+/* 响应式 */
 @media (max-width: 768px) {
-    .menuBtn {
-        display: block;
+    .container {
+        padding: 0.75rem;
     }
-
-    .nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        padding: 1rem;
-        border-bottom: 1px solid var(--border-color);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+    .logo {
+        font-size: 1.25rem;
     }
-
-    .navOpen {
-        display: flex;
-    }
-
+    
     .search {
-        display: none;
-        /* Simplify for mobile for now, or move to separate row */
+        max-width: none;
+    }
+    
+    .tagCloudContainer {
+        padding: 0.5rem 0;
+    }
+    
+    .tagCloud {
+        gap: 0.35rem;
+    }
+    
+    .tag {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .tagLarge {
+        font-size: 0.9rem;
+        padding: 0.35rem 0.75rem;
+    }
+    
+    .tagMedium {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.7rem;
     }
 }

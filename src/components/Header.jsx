@@ -1,19 +1,37 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { BookOpen, Search, Menu } from 'lucide-react';
-import { categories } from '../data/mockData';
+import { BookOpen, Search } from 'lucide-react';
+import { books } from '../data/mockData';
 import styles from './Header.module.css';
 
 export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [searchQuery, setSearchQuery] = React.useState('');
     const navigate = useNavigate();
+
+    // 统计每个分类的书籍数量
+    const categoryCount = {};
+    books.forEach(book => {
+        categoryCount[book.category] = (categoryCount[book.category] || 0) + 1;
+    });
+
+    // 按数量排序的分类
+    const sortedCategories = Object.entries(categoryCount)
+        .sort((a, b) => b[1] - a[1])
+        .map(([cat]) => cat);
 
     const handleSearch = () => {
         if (searchQuery.trim()) {
             navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
-            setIsMenuOpen(false);
         }
+    };
+
+    // 根据书籍数量计算标签大小
+    const getTagSize = (category) => {
+        const count = categoryCount[category] || 0;
+        if (count >= 50) return styles.tagLarge;
+        if (count >= 20) return styles.tagMedium;
+        if (count >= 10) return styles.tagSmall;
+        return styles.tagTiny;
     };
 
     return (
@@ -37,24 +55,25 @@ export default function Header() {
                         <Search size={20} />
                     </button>
                 </div>
+            </div>
 
-                <button className={styles.menuBtn} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    <Menu size={24} />
-                </button>
-
-                <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-                    <Link to="/" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>首页</Link>
-                    {categories.map(cat => (
+            {/* 标签云 */}
+            <div className={styles.tagCloudContainer}>
+                <div className={`container ${styles.tagCloud}`}>
+                    <Link to="/" className={`${styles.tag} ${styles.tagHome}`}>
+                        全部
+                    </Link>
+                    {sortedCategories.map(cat => (
                         <Link
                             key={cat}
                             to={`/category/${cat}`}
-                            className={styles.navLink}
-                            onClick={() => setIsMenuOpen(false)}
+                            className={`${styles.tag} ${getTagSize(cat)}`}
                         >
                             {cat}
+                            <span className={styles.tagCount}>{categoryCount[cat]}</span>
                         </Link>
                     ))}
-                </nav>
+                </div>
             </div>
         </header>
     );
