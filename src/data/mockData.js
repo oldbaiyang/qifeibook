@@ -4934,7 +4934,7 @@ export const books = [
     author: "[日] 岩井俊二",
     authorDetail: "[日] 岩井俊二，著名作家",
     year: "1995",
-    cover: "https://img.aqifei.top/img/2026/01/208_情书",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131922587",
     description: "《情书》是日本作家岩井俊二创作的长篇小说及成名作。小说以两位同名主人公的书信往来为契机，通过平行叙事展现两段跨越时空的情感纠葛。故事核心围绕大雪与感冒的隐喻意象展开回忆叙事，借书卡背面的素描作为关键信物串联起青春暗恋的伏线。...",
     category: "小说文学",
     downloadLinks: [
@@ -4984,7 +4984,7 @@ export const books = [
     author: "金庸",
     authorDetail: "金庸，著名作家",
     year: "1961",
-    cover: "https://img.aqifei.top/img/2026/01/210_倚天屠龙记",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131919570",
     description: "《倚天屠龙记》是金庸射雕三部曲的最后一部，以元末群雄纷起、江湖动荡为广阔背景，叙述武当弟子张无忌的江湖生涯。故事围绕屠龙刀和倚天剑展开，展现众武林豪杰质朴自然、形态各异的精神风貌。...",
     category: "小说文学",
     downloadLinks: [
@@ -5059,7 +5059,7 @@ export const books = [
     author: "[英] 吉米·哈利",
     authorDetail: "[英] 吉米·哈利，著名作家",
     year: "1970",
-    cover: "https://img.aqifei.top/img/2026/01/213_万物有灵且美",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131916375",
     description: "《万物有灵且美》是英国兽医吉米·哈利的自传体小说，讲述了他在约克郡乡间从事兽医工作的温馨故事。作者以幽默风趣的笔触描绘了乡村生活的美好，展现了人与动物之间的深厚情感。...",
     category: "小说文学",
     downloadLinks: [
@@ -5109,7 +5109,7 @@ export const books = [
     author: "八月长安",
     authorDetail: "八月长安，著名作家",
     year: "2013",
-    cover: "https://img.aqifei.top/img/2026/01/215_最好的我们",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131923474",
     description: "《最好的我们》是八月长安振华系列小说之一，讲述了普通学生耿耿和学霸余淮从高中到大学的成长故事。小说以细腻的笔触描绘了青春校园生活的酸甜苦辣，以及青春期的懵懂情愫。...",
     category: "小说文学",
     downloadLinks: [
@@ -5159,7 +5159,7 @@ export const books = [
     author: "[英] 威尔·贡培兹",
     authorDetail: "[英] 威尔·贡培兹，著名作家",
     year: "2012",
-    cover: "https://img.aqifei.top/img/2026/01/217_现代艺术150年",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131925381",
     description: "《现代艺术150年》是英国艺术评论家威尔·贡培兹写给普通读者的现代艺术入门书。作者以生动幽默的语言梳理了从印象派到当代艺术的发展历程，解读了各流派的艺术特点和代表作品。...",
     category: "人文艺术",
     downloadLinks: [
@@ -5234,7 +5234,7 @@ export const books = [
     author: "[战国] 庄周",
     authorDetail: "[战国] 庄周，著名作家",
     year: "战国",
-    cover: "https://img.aqifei.top/img/2026/01/220_庄子",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131921459",
     description: "《庄子》是道家经典著作，由庄子及其后学所著。全书以寓言故事的形式阐述了道家的哲学思想，主张顺应自然、逍遥无为，对中国古代哲学和文学产生了深远影响。...",
     category: "人文社科",
     downloadLinks: [
@@ -5284,7 +5284,7 @@ export const books = [
     author: "[春秋] 孔子弟子",
     authorDetail: "[春秋] 孔子弟子，著名作家",
     year: "春秋",
-    cover: "https://img.aqifei.top/img/2026/01/222_论语",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131926344",
     description: "《论语》是儒家经典著作，记录了孔子及其弟子的言行。全书以语录体形式阐述了儒家的政治主张、伦理思想、道德观念和教育原则，对中国文化产生了深远影响。...",
     category: "人文社科",
     downloadLinks: [
@@ -5334,7 +5334,7 @@ export const books = [
     author: "龙应台",
     authorDetail: "龙应台，著名作家",
     year: "1994",
-    cover: "https://img.aqifei.top/img/2026/01/224_孩子你慢慢来",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131920473",
     description: "《孩子你慢慢来》是龙应台的散文集，记录了她作为母亲的育儿经历和感悟。作者以温柔的笔触描绘了与孩子相处的点滴，探讨了教育、成长和亲子关系等话题，充满了母爱和智慧。...",
     category: "学习教育",
     downloadLinks: [
@@ -5409,7 +5409,7 @@ export const books = [
     author: "[日] 伊藤诗织",
     authorDetail: "[日] 伊藤诗织，著名作家",
     year: "2017",
-    cover: "https://img.aqifei.top/img/2026/01/227_黑箱：日本之耻",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131928351",
     description: "《黑箱：日本之耻》是日本记者伊藤诗织的自传体纪实作品，记录了她遭受性侵后寻求正义的艰难历程。书中揭露了日本司法系统和社会对性侵受害者的偏见，引发了广泛的社会讨论。...",
     category: "人文社科",
     downloadLinks: [
@@ -5459,7 +5459,7 @@ export const books = [
     author: "[清] 沈复",
     authorDetail: "[清] 沈复，著名作家",
     year: "清代",
-    cover: "https://img.aqifei.top/img/2026/01/229_浮生六记",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131924427",
     description: "《浮生六记》是清代文人沈复的自传体散文，记录了作者与妻子芸娘的生活点滴。全书以朴实细腻的笔触描绘了夫妻间的深厚感情和日常生活的美好，被誉为中国古典文学中最动人的爱情篇章。...",
     category: "小说文学",
     downloadLinks: [
@@ -5509,7 +5509,7 @@ export const books = [
     author: "张爱玲",
     authorDetail: "张爱玲，著名作家",
     year: "1943",
-    cover: "https://img.aqifei.top/img/2026/01/231_金锁记",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131927376",
     description: "《金锁记》是张爱玲的短篇小说代表作，讲述了曹七巧在金钱和欲望的枷锁下走向毁灭的故事。小说以精湛的笔触描绘了人性的扭曲和悲剧，被誉为中国现代文学史上最优秀的中篇小说之一。...",
     category: "小说文学",
     downloadLinks: [
@@ -5609,7 +5609,7 @@ export const books = [
     author: "[白俄] S.A.阿列克谢耶维奇",
     authorDetail: "[白俄] S.A.阿列克谢耶维奇，著名作家",
     year: "2013",
-    cover: "https://img.aqifei.top/img/2026/01/235_二手时间",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131917511",
     description: "《二手时间》是白俄罗斯作家阿列克谢耶维奇的纪实文学作品，通过采访苏联解体后普通人的故事，记录了那个时代的社会变迁和人们的精神困境。该书获得2015年诺贝尔文学奖。...",
     category: "人文社科",
     downloadLinks: [
@@ -5684,7 +5684,7 @@ export const books = [
     author: "[美] 特德·姜",
     authorDetail: "[美] 特德·姜，著名作家",
     year: "1998",
-    cover: "https://img.aqifei.top/img/2026/01/239_你一生的故事",
+    cover: "https://img.aqifei.top/img/2026/02/20260212131918673",
     description: "《你一生的故事》是特德·姜的科幻短篇小说集，收录了他的代表作《你一生的故事》等。作品以独特的视角探讨了语言、时间、自由意志等哲学命题，展现了作者非凡的想象力和思辨能力。...",
     category: "科幻小说",
     downloadLinks: [
