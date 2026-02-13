@@ -106,15 +106,26 @@ export default function BookList({ books }: BookListProps) {
 
             {/* End of List Message */}
             {!hasMore && displayedBooks.length > 0 && (
-                <div className="text-center py-12">
-                    <div className="inline-flex flex-col items-center gap-3">
-                        <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                            <span className="text-2xl">📚</span>
+                <div style={{ textAlign: 'center', padding: '4rem 1rem' }}>
+                    <div style={{ maxWidth: '320px', margin: '0 auto' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
+                            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, transparent, #e2e8f0)' }}></div>
+                            <div style={{
+                                width: '44px', height: '44px',
+                                background: '#eff6ff',
+                                borderRadius: '50%',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                fontSize: '1.25rem',
+                                flexShrink: 0,
+                            }}>📚</div>
+                            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, transparent, #e2e8f0)' }}></div>
                         </div>
-                        <div>
-                            <p className="text-gray-700 font-medium">已展示全部 {books.length} 本书</p>
-                            <p className="text-gray-400 text-sm mt-1">感谢您的阅读，我们会持续更新更多好书</p>
-                        </div>
+                        <p style={{ color: '#1e293b', fontWeight: 600, fontSize: '0.95rem', margin: 0 }}>
+                            已展示全部 <span style={{ color: '#2563eb' }}>{books.length}</span> 本书
+                        </p>
+                        <p style={{ color: '#94a3b8', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+                            感谢您的阅读，我们会持续更新更多好书
+                        </p>
                     </div>
                 </div>
             )}
