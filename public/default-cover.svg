@@ -1,0 +1,6 @@
+<svg width="200" height="280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="280" fill="#f3f4f6"/>
+  <rect x="10" y="10" width="180" height="260" fill="none" stroke="#d1d5db" stroke-width="2"/>
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af" text-anchor="middle">暂无封面</text>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">No Cover</text>
+</svg>

@@ -15,7 +15,20 @@ export const metadata: Metadata = {
     other: {
       "baidu-site-verification": "codeva-wgQ1i6Efrq"
     }
-  }
+  },
+  openGraph: {
+    title: "棋飞书库 - 经典电子书免费下载",
+    description: "海量经典电子书免费下载，支持EPUB、MOBI、PDF格式",
+    url: "https://qifeibook.com",
+    siteName: "棋飞书库",
+    type: "website",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary",
+    title: "棋飞书库 - 经典电子书免费下载",
+    description: "海量经典电子书免费下载，支持EPUB、MOBI、PDF格式",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +40,7 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body className={inter.className}>
         <Header />
-        <main style={{ minHeight: 'calc(100vh - 300px)' }}>
+        <main className="min-h-[calc(100vh-300px)]">
           {children}
         </main>
         <Footer />

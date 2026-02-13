@@ -2,17 +2,13 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer style={{
-            padding: '2rem 0',
-            textAlign: 'center',
+        <footer className="py-8 text-center border-t mt-16 text-sm" style={{
             color: 'var(--text-secondary)',
-            borderTop: '1px solid var(--border-color)',
-            marginTop: '4rem',
-            fontSize: '0.9rem'
+            borderColor: 'var(--border-color)'
         }}>
             <div className="container">
                 <p>&copy; {new Date().getFullYear()} 棋飞书库. All rights reserved.</p>
-                <p style={{ marginTop: '0.5rem' }}>仅供学习交流，请支持正版。</p>
+                <p className="mt-2">仅供学习交流，请支持正版。</p>
             </div>
         </footer>
     );

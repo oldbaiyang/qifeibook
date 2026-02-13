@@ -4,14 +4,23 @@
     height: 100%;
     text-decoration: none;
     color: inherit;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .coverWrapper {
     position: relative;
     width: 100%;
     padding-top: 140%;
-    /* ~1:1.4 Aspect Ratio */
-    background: #f1f5f9;
+    background: linear-gradient(145deg, #e0e7ff 0%, #c7d2fe 100%);
     overflow: hidden;
 }
 
@@ -22,22 +31,28 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .cover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.8) 0%,
+        rgba(15, 23, 42, 0.3) 40%,
+        transparent 100%
+    );
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding-bottom: 1.25rem;
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.3s ease;
 }
 
 .card:hover .overlay {
@@ -45,14 +60,16 @@
 }
 
 .viewBtn {
-    background: white;
-    color: var(--text-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
     font-size: 0.85rem;
-    font-weight: 500;
-    transform: translateY(10px);
-    transition: transform 0.2s;
+    font-weight: 600;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.5);
+    letter-spacing: 0.5px;
 }
 
 .card:hover .viewBtn {
@@ -60,27 +77,36 @@
 }
 
 .content {
-    padding: 1rem;
+    padding: 1.25rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    background: #fff;
 }
 
 .title {
     font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: #0f172a;
+    min-height: 3rem;
+    letter-spacing: -0.01em;
 }
 
 .author {
     font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.75rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 500;
 }
 
 .meta {
@@ -88,12 +114,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
 }
 
 .tag {
-    background: #f1f5f9;
-    padding: 2px 8px;
-    border-radius: 4px;
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    color: #4338ca;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.year {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.year::before {
+    content: '📅';
+    font-size: 0.75rem;
 }

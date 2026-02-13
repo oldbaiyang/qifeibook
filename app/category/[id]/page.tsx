@@ -1,8 +1,10 @@
 import { books } from "@/data/mockData";
 import BookList from "@/components/BookList";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { generateBreadcrumbJsonLd } from "@/lib/utils";
 
 interface Props {
     params: Promise<{ id: string }>;
@@ -28,7 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${category}电子书推荐_${categoryBooks.length}本精选好书免费下载_棋飞书库`,
         description: `${category}电子书推荐：共${categoryBooks.length}本精选好书免费下载，包括${sampleBooks}等。支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘高速下载。`,
         alternates: {
-            canonical: `https://qifeibook.com/category/${id}`, // use encoded id in URL
+            canonical: `https://qifeibook.com/category/${id}`,
+        },
+        openGraph: {
+            title: `${category}电子书推荐`,
+            description: `共${categoryBooks.length}本精选好书免费下载，包括${sampleBooks}等`,
+            url: `https://qifeibook.com/category/${id}`,
+            siteName: "棋飞书库",
+            type: "website",
+            locale: "zh_CN",
+        },
+        twitter: {
+            card: "summary",
+            title: `${category}电子书推荐`,
+            description: `共${categoryBooks.length}本精选好书免费下载`,
         },
     };
 }
@@ -43,81 +58,34 @@ export default async function CategoryPage({ params }: Props) {
     }
 
     // Add JSON-LD
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        'itemListElement': [
-            {
-                '@type': 'ListItem',
-                'position': 1,
-                'name': '首页',
-                'item': 'https://qifeibook.com/'
-            },
-            {
-                '@type': 'ListItem',
-                'position': 2,
-                'name': category,
-                'item': `https://qifeibook.com/category/${id}`
-            }
-        ]
-    };
+    const jsonLd = generateBreadcrumbJsonLd([
+        { name: '首页', url: 'https://qifeibook.com/' },
+        { name: category, url: `https://qifeibook.com/category/${id}` }
+    ]);
 
     return (
-        <div className="container" style={{ padding: '2rem 1rem' }}>
+        <div>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            <nav aria-label="breadcrumb" style={{ marginBottom: '1.5rem' }}>
-                <ol style={{
-                    display: 'flex',
-                    gap: '0.5rem',
-                    fontSize: '0.875rem',
-                    color: '#999',
-                    alignItems: 'center',
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0
-                }}>
-                    <li>
-                        <Link href="/" style={{ color: '#3b82f6', textDecoration: 'none' }}>
-                            首页
-                        </Link>
-                    </li>
-                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
-                    <li aria-current="page" style={{ color: '#333', fontWeight: '500' }}>
-                        {category}
-                    </li>
-                </ol>
-            </nav>
+            <BreadcrumbNav items={[
+                { name: "首页", href: "/" },
+                { name: category }
+            ]} />
 
-            <header style={{ marginBottom: '2rem' }}>
-                <h1 style={{
-                    fontSize: '1.75rem',
-                    fontWeight: '700',
-                    marginBottom: '0.5rem',
-                    color: '#1a1a1a'
-                }}>
-                    {category}
-                </h1>
-                <p style={{
-                    fontSize: '1rem',
-                    color: '#666',
-                    fontWeight: 'normal'
-                }}>
-                    共 {categoryBooks.length} 本精选图书
-                </p>
-                <p style={{
-                    color: '#888',
-                    fontSize: '13px',
-                    marginTop: '0.75rem',
-                    maxWidth: '800px',
-                    lineHeight: '1.6'
-                }}>
-                    本分类收录了{categoryBooks.length}本{category}相关电子书，支持EPUB、MOBI、PDF格式免费下载。
-                    所有书籍均经过精心挑选，提供夸克网盘、百度网盘等多种下载方式。
-                </p>
+            {/* 分类头部 */}
+            <header className="page-header category-header">
+                <div className="page-header-content">
+                    <div className="page-header-icon">📖</div>
+                    <div className="page-header-text">
+                        <h1>{category}</h1>
+                        <p>
+                            共 <span className="highlight">{categoryBooks.length}</span> 本精选图书
+                        </p>
+                    </div>
+                </div>
             </header>
 
             <section aria-label={`${category}图书列表`}>

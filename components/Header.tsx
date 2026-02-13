@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { BookOpen, Search } from 'lucide-react';
@@ -11,16 +11,19 @@ export default function Header() {
     const [searchQuery, setSearchQuery] = React.useState('');
     const router = useRouter();
 
-    // 统计每个分类的书籍数量
-    const categoryCount: Record<string, number> = {};
-    books.forEach(book => {
-        categoryCount[book.category] = (categoryCount[book.category] || 0) + 1;
-    });
+    // 使用 useMemo 缓存分类计算
+    const { categoryCount, sortedCategories } = useMemo(() => {
+        const count: Record<string, number> = {};
+        books.forEach(book => {
+            count[book.category] = (count[book.category] || 0) + 1;
+        });
 
-    // 按数量排序的分类
-    const sortedCategories = Object.entries(categoryCount)
-        .sort((a, b) => b[1] - a[1])
-        .map(([cat]) => cat);
+        const sorted = Object.entries(count)
+            .sort((a, b) => b[1] - a[1])
+            .map(([cat]) => cat);
+
+        return { categoryCount: count, sortedCategories: sorted };
+    }, []); // books 是静态导入，依赖为空
 
     const handleSearch = () => {
         if (searchQuery.trim()) {

@@ -38,19 +38,12 @@ function SearchContent() {
     });
 
     return (
-        <div className="container" style={{ padding: '2rem 1rem' }}>
-            <div className="section-title" style={{
-                marginBottom: '2rem',
-                borderBottom: '1px solid #eee',
-                paddingBottom: '1rem',
-                display: 'flex',
-                alignItems: 'baseline',
-                justifyContent: 'space-between'
-            }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+        <div className="px-4 py-8 md:px-6 lg:px-8">
+            <div className="mb-8 border-b border-gray-200 pb-4 flex items-baseline justify-between">
+                <h2 className="text-xl font-bold">
                     搜索结果: "{query}"
                 </h2>
-                <span style={{ fontSize: '0.9rem', color: '#666' }}>
+                <span className="text-sm text-gray-600">
                     共 {searchResults.length} 个结果
                 </span>
             </div>
@@ -58,15 +51,10 @@ function SearchContent() {
             {searchResults.length > 0 ? (
                 <BookList books={searchResults} />
             ) : (
-                <div style={{ textAlign: 'center', padding: '4rem 0', color: '#666' }}>
-                    <p style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>没有找到相关书籍</p>
+                <div className="text-center py-16 text-gray-600">
+                    <p className="text-xl mb-4">没有找到相关书籍</p>
                     <p>请尝试搜索书名或作者关键词</p>
-                    <Link href="/" style={{
-                        display: 'inline-block',
-                        marginTop: '2rem',
-                        color: '#3b82f6',
-                        textDecoration: 'none'
-                    }}>
+                    <Link href="/" className="inline-block mt-8 text-blue-500 no-underline hover:underline">
                         返回首页
                     </Link>
                 </div>
@@ -77,7 +65,7 @@ function SearchContent() {
 
 export default function SearchPage() {
     return (
-        <Suspense fallback={<div className="container" style={{ padding: '2rem' }}>Loading...</div>}>
+        <Suspense fallback={<div className="px-4 py-8">Loading...</div>}>
             <SearchContent />
         </Suspense>
     );

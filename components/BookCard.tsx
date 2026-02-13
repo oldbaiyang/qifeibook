@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './BookCard.module.css';
 import { Book } from '@/data/mockData';
@@ -9,6 +11,8 @@ interface BookCardProps {
 }
 
 export default function BookCard({ book, priority = false }: BookCardProps) {
+    const [imageError, setImageError] = useState(false);
+
     return (
         <article itemScope itemType="https://schema.org/Book">
             <Link
@@ -19,7 +23,7 @@ export default function BookCard({ book, priority = false }: BookCardProps) {
                 <div className={styles.coverWrapper}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src={book.cover}
+                        src={imageError ? '/default-cover.svg' : book.cover}
                         alt={`${book.title}封面图片`}
                         className={styles.cover}
                         loading={priority ? "eager" : "lazy"}
@@ -27,6 +31,7 @@ export default function BookCard({ book, priority = false }: BookCardProps) {
                         itemProp="image"
                         width="200"
                         height="280"
+                        onError={() => setImageError(true)}
                     />
                     <div className={styles.overlay}>
                         <span className={styles.viewBtn}>查看详情</span>

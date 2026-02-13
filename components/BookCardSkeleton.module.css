@@ -1,0 +1,114 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    height: 100%;
+}
+
+.coverWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 140%;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #f1f5f9 0%,
+        #e2e8f0 50%,
+        #f1f5f9 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 2.85rem;
+    background: linear-gradient(
+        90deg,
+        #f1f5f9 0%,
+        #e2e8f0 50%,
+        #f1f5f9 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.author {
+    height: 0.8rem;
+    width: 70%;
+    background: linear-gradient(
+        90deg,
+        #f1f5f9 0%,
+        #e2e8f0 50%,
+        #f1f5f9 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.tag {
+    height: 1.25rem;
+    width: 4rem;
+    background: linear-gradient(
+        90deg,
+        #f1f5f9 0%,
+        #e2e8f0 50%,
+        #f1f5f9 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 20px;
+}
+
+.year {
+    height: 0.875rem;
+    width: 3rem;
+    background: linear-gradient(
+        90deg,
+        #f1f5f9 0%,
+        #e2e8f0 50%,
+        #f1f5f9 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}

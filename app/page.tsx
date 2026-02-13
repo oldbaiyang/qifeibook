@@ -1,6 +1,7 @@
 import { books } from "@/data/mockData";
 import BookList from "@/components/BookList";
 import { Metadata } from "next";
+import { generateBreadcrumbJsonLd } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "棋飞书库 - 经典电子书免费下载 | EPUB/MOBI/PDF格式",
@@ -13,34 +14,37 @@ export default function Home() {
   // 按ID倒序排序（即按上架时间倒序）
   const sortedBooks = [...books].sort((a, b) => b.id - a.id);
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [{
-      '@type': 'ListItem',
-      'position': 1,
-      'name': '首页',
-      'item': 'https://qifeibook.com/'
-    }]
-  };
+  const jsonLd = generateBreadcrumbJsonLd([
+    { name: '首页', url: 'https://qifeibook.com/' }
+  ]);
 
   return (
-    <div className="container" style={{ padding: '2rem 1rem' }}>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section style={{ marginBottom: '3rem' }}>
-        <header className="section-title" style={{ marginBottom: '2rem' }}>
-          <h1 style={{ fontSize: '1.75rem', fontWeight: '700', marginBottom: '0.5rem' }}>
-            全部图书
-          </h1>
-          <p style={{ color: '#666', fontSize: '14px', marginTop: '0.5rem' }}>
-            共 {books.length} 本精选电子书，持续更新中
-          </p>
-        </header>
+      {/* 页面头部 */}
+      <header className="page-header">
+        <div className="page-header-content">
+          <div className="page-header-icon">📚</div>
+          <div className="page-header-text">
+            <h1>全部图书</h1>
+            <p>
+              <span className="highlight">{books.length}</span> 本精选电子书，持续更新中
+            </p>
+          </div>
+        </div>
+        <div className="page-header-decoration">
+          <span className="decoration-item">✨</span>
+          <span className="decoration-item">📖</span>
+          <span className="decoration-item">🌟</span>
+        </div>
+      </header>
 
+      {/* 图书列表 */}
+      <section>
         <BookList books={sortedBooks} />
       </section>
     </div>

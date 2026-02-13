@@ -96,3 +96,140 @@ ul {
   background-color: var(--primary-color);
   border-radius: 2px;
 }
+
+/* 书籍列表网格布局 */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 3rem;
+}
+
+@media (max-width: 1200px) {
+  .book-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+}
+
+/* 页面头部样式 */
+.page-header {
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 0 0 32px 32px;
+  padding: 3rem 3rem 2.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.page-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header-icon {
+  font-size: 3rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.page-header-text h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header-text p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: 500;
+}
+
+.page-header-text .highlight {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.1rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.page-header-decoration {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
+  opacity: 0.6;
+}
+
+.decoration-item {
+  font-size: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.decoration-item:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.decoration-item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .page-header-icon {
+    font-size: 2.5rem;
+  }
+
+  .page-header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .page-header-text p {
+    font-size: 0.9rem;
+  }
+
+  .page-header-decoration {
+    display: none;
+  }
+}

@@ -1,10 +1,13 @@
 import { books } from "@/data/mockData";
 import BookCard from "@/components/BookCard";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
+import RelatedBooks from "@/components/RelatedBooks";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Calendar, Tag } from "lucide-react";
 import styles from "./page.module.css";
+import { generateBookJsonLd } from "@/lib/utils";
 // Note: legacy module css used specific classes. I verified they match usage here.
 
 interface Props {
@@ -29,6 +32,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: `《${book.title}》${book.author}著。${desc} 支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘免费高速下载。`,
         alternates: {
             canonical: `https://qifeibook.com/book/${id}`,
+        },
+        openGraph: {
+            title: `《${book.title}》${book.author}`,
+            description: desc,
+            url: `https://qifeibook.com/book/${id}`,
+            siteName: "棋飞书库",
+            type: "book",
+            locale: "zh_CN",
+            images: [
+                {
+                    url: book.cover,
+                    width: 300,
+                    height: 420,
+                    alt: `${book.title}封面`,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `《${book.title}》${book.author}`,
+            description: desc,
+            images: [book.cover],
         },
     };
 }
@@ -61,51 +86,20 @@ export default async function BookDetailPage({ params }: Props) {
         // This is acceptable for SSG. Or use a deterministic seed.
         .slice(0, 5);
 
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'Book',
-        'name': book.title,
-        'author': {
-            '@type': 'Person',
-            'name': book.author
-        },
-        'description': book.description,
-        'image': book.cover,
-        'datePublished': book.year,
-        'inLanguage': 'zh-CN',
-        'url': `https://qifeibook.com/book/${id}`,
-        'publisher': {
-            '@type': 'Organization',
-            'name': '棋飞书库'
-        },
-        'genre': book.category
-    };
+    const jsonLd = generateBookJsonLd(book, id);
 
     return (
-        <article className="container" style={{ padding: '2rem 1rem' }}>
+        <article className="px-4 py-8 md:px-6 lg:px-8">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
-                <ol style={{
-                    display: 'flex',
-                    gap: '0.5rem',
-                    fontSize: '0.875rem',
-                    color: '#999',
-                    alignItems: 'center',
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0
-                }}>
-                    <li><Link href="/" style={{ color: '#3b82f6', textDecoration: 'none' }}>首页</Link></li>
-                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
-                    <li><Link href={`/category/${book.category}`} style={{ color: '#3b82f6', textDecoration: 'none' }}>{book.category}</Link></li>
-                    <li aria-hidden="true" style={{ color: '#ccc', userSelect: 'none' }}>›</li>
-                    <li aria-current="page" style={{ color: '#333' }}>{book.title}</li>
-                </ol>
-            </nav>
+            <BreadcrumbNav items={[
+                { name: "首页", href: "/" },
+                { name: book.category, href: `/category/${book.category}` },
+                { name: book.title }
+            ]} />
 
             <div className={styles.detailContainer}>
                 <div className={styles.coverSection}>
@@ -115,7 +109,7 @@ export default async function BookDetailPage({ params }: Props) {
                         alt={`${book.title}封面`}
                         className={styles.cover}
                         loading="eager"
-                        width={300} // Approximate
+                        width={300}
                     />
                 </div>
 
@@ -139,7 +133,7 @@ export default async function BookDetailPage({ params }: Props) {
 
                     <div className={styles.description}>
                         <h2 className={styles.sectionHeader}>内容简介</h2>
-                        <p style={{ whiteSpace: 'pre-wrap' }}>
+                        <p className="whitespace-pre-wrap">
                             {book.description}
                         </p>
                     </div>
@@ -168,28 +162,7 @@ export default async function BookDetailPage({ params }: Props) {
                 </div>
             </div>
 
-            {/* 相关推荐 */}
-            {relatedBooks.length > 0 && (
-                <section style={{ marginTop: '3rem' }}>
-                    <h2 style={{
-                        fontSize: '1.25rem',
-                        fontWeight: '600',
-                        marginBottom: '1.5rem',
-                        color: 'var(--text-primary)'
-                    }}>
-                        你可能还喜欢
-                    </h2>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
-                        gap: '1.5rem'
-                    }}>
-                        {relatedBooks.map(b => (
-                            <BookCard key={b.id} book={b} />
-                        ))}
-                    </div>
-                </section>
-            )}
+            <RelatedBooks books={relatedBooks} />
         </article>
     );
 }

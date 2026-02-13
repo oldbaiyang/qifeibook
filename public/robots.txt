@@ -1,15 +1,25 @@
 # Robots.txt for qifeibook.com
-# Allow all search engines to crawl
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /tmp/
 
 # Sitemap location
 Sitemap: https://qifeibook.com/sitemap.xml
 
-# Disallow patterns
-Disallow: /api/
-Disallow: /admin/
+# Crawl-delay for politeness
+Crawl-delay: 1
 
-# Crawl rate (be polite to search engines)
+# Popular search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
 Crawl-delay: 1
