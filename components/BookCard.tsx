@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './BookCard.module.css';
 import { Book } from '@/data/mockData';
+import { Calendar, Tag } from 'lucide-react';
 
 interface BookCardProps {
     book: Book;
@@ -17,7 +18,7 @@ export default function BookCard({ book, priority = false }: BookCardProps) {
         <article itemScope itemType="https://schema.org/Book">
             <Link
                 href={`/book/${book.id}`}
-                className={`card ${styles.card}`}
+                className={styles.card}
                 title={`${book.title} - ${book.author} | 免费下载`}
             >
                 <div className={styles.coverWrapper}>
@@ -45,11 +46,17 @@ export default function BookCard({ book, priority = false }: BookCardProps) {
                         {book.author}
                     </p>
                     <div className={styles.meta}>
-                        <span className={styles.tag} itemProp="genre">{book.category}</span>
-                        <span className={styles.year} itemProp="datePublished">{book.year}</span>
+                        <span className={styles.tag} itemProp="genre">
+                            {book.category}
+                        </span>
+                        <span className={styles.year} itemProp="datePublished">
+                            <Calendar size={12} />
+                            {book.year}
+                        </span>
                     </div>
                 </div>
             </Link>
         </article>
     );
 }
+

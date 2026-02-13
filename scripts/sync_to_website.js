@@ -2,9 +2,23 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const APP_ID = 'cli_a5ac1fa61a78900c';
-const APP_SECRET = 'P4dSxCogfw69EG0224aHIfpF1d8W5oce';
-const WIKI_TOKEN = 'RIXjwrSs3ibf7FkOB2JcguCin8I';
+// Load environment variables from .env file
+require('dotenv').config();
+
+const APP_ID = process.env.FEISHU_APP_ID || '';
+const APP_SECRET = process.env.FEISHU_APP_SECRET || '';
+const WIKI_TOKEN = process.env.FEISHU_WIKI_TOKEN || '';
+
+// Validate required environment variables
+if (!APP_ID || !APP_SECRET || !WIKI_TOKEN) {
+    console.error('错误: 缺少必要的环境变量');
+    console.error('请设置以下环境变量:');
+    console.error('  - FEISHU_APP_ID');
+    console.error('  - FEISHU_APP_SECRET');
+    console.error('  - FEISHU_WIKI_TOKEN');
+    console.error('\n可以在 .env 文件中配置这些变量');
+    process.exit(1);
+}
 
 const MOCK_DATA_PATH = path.join(__dirname, '../data/mockData.ts');
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
