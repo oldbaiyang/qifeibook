@@ -5925,7 +5925,7 @@ export const books: Book[] = [
     "author": "贾樟柯",
     "authorDetail": "贾樟柯,中国第六代导演代表人物,曾获威尼斯电影节金狮奖",
     "year": "2009",
-    "cover": "https://img.aqifei.top/img/2026/01/248_贾想 I",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101848542",
     "description": "《贾想》是著名电影导演贾樟柯的电影手记，全景记录了他多年的思考和活动踪迹，展现了他在电影艺术上的探索、对社会现状的深刻思考以及他以电影抒写乡愁的情怀。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6021,7 +6021,7 @@ export const books: Book[] = [
     "author": "[日] 龙樱团队",
     "authorDetail": "龙樱团队,日本著名教育辅导团队",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_停止内耗的人生：四象限学习精进计划",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101819206",
     "description": "借助“喜欢/不喜欢”和“擅长/不擅长”组成的自我分析四象限工具，帮助读者明确自身强项和弱项，找到适合自己的学习策略，通过科学的大脑训练术实现高效成长。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6045,7 +6045,7 @@ export const books: Book[] = [
     "author": "三分钟实验室",
     "authorDetail": "三分钟实验室,趣味历史自媒体",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_三分钟趣读中国史：从战国到西汉",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101801366",
     "description": "用轻快幽默的笔调和现代感的语言，三分钟带你穿梭战国至西汉。通过爆笑梗点解析历史大事件，让枯燥的史记变得生动有趣。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6093,7 +6093,7 @@ export const books: Book[] = [
     "author": "未知",
     "authorDetail": "暂无详情",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_重构契丹早期史",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101725175",
     "description": "重构契丹早期史",
     "category": "小说文学",
     "downloadLinks": [
@@ -6141,7 +6141,7 @@ export const books: Book[] = [
     "author": "宋杰",
     "authorDetail": "宋杰,历史军事地理专家",
     "year": "2023",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_两魏周齐战争中的河东",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101636250",
     "description": "全景展示了北朝后期东西魏与周齐在河东地区的军事对抗，探讨了地理枢纽对统一战争进程的关键影响。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6165,7 +6165,7 @@ export const books: Book[] = [
     "author": "[日] 矶田道史",
     "authorDetail": "矶田道史,日本历史学家,史学博士",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_江户时代��户城",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101603639",
     "description": "涵盖江户时代有趣的人物、生活和文化故事。为读者呈现教科书中心鲜见的历史细节，展现了江户城下町的繁荣与社会百态。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6189,7 +6189,7 @@ export const books: Book[] = [
     "author": "未知",
     "authorDetail": "暂无详情",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_蛋镇诗社 – 朱山坡",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101513221",
     "description": "蛋镇诗社",
     "category": "小说文学",
     "downloadLinks": [
@@ -6285,7 +6285,7 @@ export const books: Book[] = [
     "author": "未知",
     "authorDetail": "暂无详情",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_交子：世界金融史的中国贡献",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101417526",
     "description": "交子：世界金融史的中国贡献",
     "category": "小说文学",
     "downloadLinks": [
@@ -6357,7 +6357,7 @@ export const books: Book[] = [
     "author": "马植杰",
     "authorDetail": "马植杰,著名秦汉魏晋史专家",
     "year": "1983",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_三国史 – 马植杰",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101328728",
     "description": "由秦汉魏晋史专家马植杰撰写，系统叙述三国时期的政治、经济、文化及军事斗争，是研究三国历史的重要参考著作。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6453,7 +6453,7 @@ export const books: Book[] = [
     "author": "未知",
     "authorDetail": "暂无详情",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_敌友难辨：冷战谍海逸史",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101303877",
     "description": "敌友难辨：冷战谍海逸史",
     "category": "小说文学",
     "downloadLinks": [
@@ -6573,7 +6573,7 @@ export const books: Book[] = [
     "author": "宋杰",
     "authorDetail": "宋杰,军事地理专家",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_三国战争与地要天时",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101147642",
     "description": "从地理视角重构三国战局。深入解析为什么汉中、荆州、合肥是必争之地，以及“天时”是如何在关键战役中左右胜负的。",
     "category": "小说文学",
     "downloadLinks": [
@@ -6645,7 +6645,7 @@ export const books: Book[] = [
     "author": "未知",
     "authorDetail": "暂无详情",
     "year": "2024",
-    "cover": "https://img.aqifei.top/img/2026/01/fix_明熹宗传：木匠皇帝朱由校",
+    "cover": "https://img.aqifei.top/img/2026/02/20260213101112115",
     "description": "明熹宗传：木匠皇帝朱由校",
     "category": "小说文学",
     "downloadLinks": [
