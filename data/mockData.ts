@@ -6662,7 +6662,344 @@ export const books: Book[] = [
     "size": "未知",
     "format": "EPUB",
     "publishYear": "2024"
-  }
+  },
+  {
+  "id": 270,
+  "title": "黄色墙纸",
+  "author": "[美] 夏洛特·珀金斯·吉尔曼",
+  "authorDetail": "夏洛特·珀金斯·吉尔曼，美国著名女作家、女性主义先驱",
+  "year": "1892",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214183656538",
+  "description": "收录吉尔曼创作生涯中最具代表性的短篇小说，包括其名篇《黄色墙纸》。这部作品以细腻的笔触描绘了19世纪末女性的处境，成为女性主义文学的经典之作。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/484a601b995f"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/12GS_6tFLtPUzFGY0QUZ6VQ",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1892"
+},
+  {
+  "id": 271,
+  "title": "世界在前进",
+  "author": "[匈牙利] 克拉斯诺霍尔卡伊·拉斯洛",
+  "authorDetail": "拉斯洛，匈牙利当代最伟大的作家之一，2025年诺贝尔文学奖得主",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154624481",
+  "description": "匈牙利作家克拉斯诺霍尔卡伊·拉斯洛的最新短篇小说集，收录了他近年来的最新创作。作品以其独特的叙事风格和深刻的思想性著称，描绘了一个荒诞而真实的文学世界。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/4bccb74e24e0"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1RoyafN-aIrbgKXUOjDX9vQ",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 272,
+  "title": "即使以最微弱的光",
+  "author": "[韩] 崔恩荣",
+  "authorDetail": "崔恩荣，韩国作家，获李箱文学奖",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214183633816",
+  "description": "韩国作家崔恩荣的短篇小说集，收录了七篇作品。每个故事既独立又相互关联，以温柔的笔触探讨人与人之间的羁绊、孤独与救赎。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/cc3399e4ed96"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1XmRvIoJT9AaqMpol_Sp_CA",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 273,
+  "title": "太阳的阴影",
+  "author": "[波兰] 雷沙德·卡普钦斯基",
+  "authorDetail": "雷沙德·卡普钦斯基，波兰著名记者，作家",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154630330",
+  "description": "一部深入非洲的纪实作品。作者记录了在非洲大陆三十余年的记者生涯，描绘了一个复杂而真实的非洲，远离了西方媒体常见的刻板印象。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/41477b98ccc7"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1-1EMrzLR7VcV471Jy3svmw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 274,
+  "title": "要有光",
+  "author": "梁鸿",
+  "authorDetail": "梁鸿，著名非虚构作家，代表作为'梁庄三部曲'",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154633464",
+  "description": "梁鸿最新非虚构作品，关注那些被困住的少年。通过田野调查和深度访谈，记录了当代中国青少年的困境与挣扎，是一部具有社会关怀的纪实之作。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/3f7d48725781"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1JCY8RJ0GvQ46bbXmSz979A",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
+  {
+  "id": 275,
+  "title": "哲学家的最后一课",
+  "author": "朱锐",
+  "authorDetail": "朱锐，中国人民大学哲学院教授，哲学家",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214183613769",
+  "description": "当医学宣布仅剩数十天生命时，哲学家朱锐选择以课堂的方式完成最后的思辨。本书记录了他在生命最后阶段对死亡、意义和哲学的深入思考，是一本关于如何面对终点的深刻之作。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/0bb296195f28"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/10574U8GauHQAbHNSCoAXWA",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
+  {
+  "id": 276,
+  "title": "格外的活法",
+  "author": "[日] 吉井忍",
+  "authorDetail": "吉井忍，日本作家，长期在中国生活",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214183553059",
+  "description": "作者走进日本的大街小巷，历时七年采访各行各业的人，记录了12种主流秩序外的'格外'活法。这些不走寻常路的人们，展现了另一种生活可能性的探索。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/1f7e97afd7eb"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/18gPNAP3fiblGnpwR8mX35g",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
+  {
+  "id": 277,
+  "title": "父亲的解放日志",
+  "author": "[韩] 郑智我",
+  "authorDetail": "郑智我，韩国新生代作家，获李箱文学奖",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154643953",
+  "description": "一部关于父女关系、意识形态与个人命运的小说。故事背景设定在80年代韩国，通过女儿的视角展开对父亲理想主义与现实之间冲突的审视，探讨了历史的复杂性。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/26078de1fbb0"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1qDmytGAYFdQocA3hUiOPeQ",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 278,
+  "title": "玫瑰朝上",
+  "author": "[巴勒斯坦] 莫萨布·阿布·托哈",
+  "authorDetail": "莫萨布·阿布·托哈，90后巴勒斯坦诗人，2025年普利策评论奖得主",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214183535816",
+  "description": "来自加沙的诗集，作者以诗歌记录废墟中的坚韧与希望。在战火与封锁中，诗笔成为了抵抗与存在的方式，展现了巴勒斯坦人民的生命力。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/a0766ef3f16b"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1OGWohNCKt8RxUh9vqhxgwA",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 279,
+  "title": "人生解忧",
+  "author": "成庆",
+  "authorDetail": "成庆，上海大学历史系副教授，佛学研究者",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154649403",
+  "description": "一部面向现代人的佛学入门著作。作者以清晰易懂的语言，系统讲解佛学核心思想，帮助读者在焦虑的时代找到内心的安宁与智慧。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/81d9a42f320d"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1bubFh3fSOM0qXhTXRtpOtg",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
+  {
+  "id": 280,
+  "title": "我是寨子里长大的女孩",
+  "author": "扎十一惹",
+  "authorDetail": "扎十一惹，90后彝族作家",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260214154652362",
+  "description": "作者以温暖的笔触记录了自己在云南高寒山区寨子里的成长经历。这本书不仅是个人记忆，更是一个关于文化认同、家庭关系和现代转型的深刻故事。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/75fc6ba1245f"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1yMHK-ROerGRHy0jXBpT83Q",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 281,
+  "title": "安史之乱",
+  "author": "张诗坪、胡可奇",
+  "authorDetail": "张诗坪、胡可奇，青年历史学者",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/02/20260213214650913",
+  "description": "深入剖析安史之乱这一唐朝转折点。通过40幅战略示意图复盘决战全貌，不仅关注战役细节，更通过财政、粮食、后勤视角解构军政博弈。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/a844719a8336"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1I_fGnIpCcz5VYYUmnif0kg",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 282,
+  "title": "弃长安",
+  "author": "张明扬",
+  "authorDetail": "张明扬，著名历史作家，代表作《入关》",
+  "year": "2022",
+  "cover": "https://img.aqifei.top/img/2026/02/20260213214657296",
+  "description": "聚焦于安史之乱中决定唐帝国命运的关键决策——弃守长安。作者深度挖掘人性冲突与政治博弈，展现了盛世转瞬即逝的悲剧色彩与历史的冷酷逻辑。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/27cbc7014cb7"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1UZ-wI3HkQWH5xh1WmQyeEA",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2022"
+},
+  {
+  "id": 283,
+  "title": "南明史",
+  "author": "顾诚",
+  "authorDetail": "顾诚，北京师范大学历史系教授，明清史专家",
+  "year": "1997",
+  "cover": "https://img.aqifei.top/img/2026/02/20260213214703720",
+  "description": "中国近代史领域的'天花板'级别著作。顾诚先生以极其严谨的史料考证，推翻了许多传统成见，深入分析了南明政权内部的权力斗争。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn/s/bab55d79eb6b"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1hQEGp3HeXGsoD5fhXvqGrw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1997"
+},
+
 ];
 
 export const categories = [
