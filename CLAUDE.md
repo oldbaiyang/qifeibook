@@ -6,88 +6,87 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 棋飞书库 (qifeibook.com) is a Next.js SSG (Static Site Generation) e-book library website. It provides free e-book downloads with cloud storage links (Quark, Baidu). The site is SEO-optimized with dynamic metadata generation, JSON-LD structured data, and Baidu search engine integration.
 
+## Tech Stack
+
+- **Next.js 16** with App Router and React 19
+- **Tailwind CSS v4** (zero-config, via `@tailwindcss/postcss`)
+- **TypeScript** with strict mode and `@/*` path alias (maps to project root)
+- **lucide-react** for icons
+
 ## Development Commands
 
 ```bash
-# Development server
-npm run dev
-
-# Production build
-npm run build
-
-# Start production server
-npm start
-
-# Lint code
-npm run lint
-
-# Push sitemap to Baidu Search Engine (requires BAIDU_PUSH_TOKEN in .env)
-npm run push:baidu
+npm run dev          # Development server
+npm run build        # Production build (SSG)
+npm start            # Start production server
+npm run lint         # ESLint (flat config, ignores legacy_backup/, scripts/, dist/, .next/)
+npm run push:baidu   # Push sitemap to Baidu (requires BAIDU_PUSH_TOKEN in .env)
 ```
+
+No test framework is configured.
 
 ## Architecture
 
-### Data Source
-- **`data/mockData.ts`**: Single source of truth for all book data. Contains a TypeScript array of `Book` objects with metadata like title, author, cover URL, download links, categories, etc.
+### Data Layer
 
-### App Structure (Next.js App Router)
-- **`app/page.tsx`**: Homepage - displays all books sorted by ID (descending, newest first)
-- **`app/book/[id]/page.tsx`**: Dynamic book detail pages using `generateStaticParams()`
-- **`app/category/[id]/page.tsx`**: Category listing pages, also using `generateStaticParams()`
-- **`app/search/page.tsx`**: Client-side search functionality (uses `useSearchParams`)
+`data/mockData.ts` is the single source of truth — a static TypeScript array of `Book` objects serving as the entire database. All pages import directly from this file. There is no API layer or database.
 
-### Key Components
-- **`components/BookList.tsx`**: Client component with infinite scroll loading (Intersection Observer)
-- **`components/BookCard.tsx`**: Individual book card component
-- **`components/Header.tsx`**: Site navigation header
-- **`components/Footer.tsx`**: Site footer
+```typescript
+interface Book {
+  id: number; title: string; author: string; authorDetail: string;
+  year: string; cover: string; description: string; category: string;
+  downloadLinks: DownloadLink[]; size: string; format: string; publishYear: string;
+}
+interface DownloadLink { name: string; url: string; code?: string; }
+```
 
-### SEO & Metadata
-- Uses `generateMetadata()` for dynamic page titles and descriptions
-- JSON-LD structured data for books and breadcrumbs
-- Sitemap auto-generation during build (`public/sitemap.xml`)
-- Baidu site verification code in `app/layout.tsx`
+### Rendering Strategy
 
-### Sync Scripts (scripts/)
-- **`sync_to_website.js`**: Fetches new books from Feishu (飞书) spreadsheet API and syncs to `data/mockData.ts` and `public/sitemap.xml`. Requires Feishu app credentials.
-- **`push-baidu.js`**: Pushes sitemap URLs to Baidu search engine for indexing. Requires `BAIDU_PUSH_TOKEN` environment variable.
-- **`fetch_unsynced.js`**: Helper script for Feishu data fetching.
+All pages use SSG. Book detail and category pages use `generateStaticParams()` to pre-render at build time. The search page (`/search`) is the only client-rendered page (uses `useSearchParams`).
+
+| Route | File | Rendering |
+|-------|------|-----------|
+| `/` | `app/page.tsx` | SSG — all books sorted by ID desc |
+| `/book/[id]` | `app/book/[id]/page.tsx` | SSG via `generateStaticParams()` |
+| `/category/[id]` | `app/category/[id]/page.tsx` | SSG — `id` is the category name string |
+| `/search?q=...` | `app/search/page.tsx` | Client-side filtering |
+
+### Server vs Client Components
+
+- **Server components**: `Footer`, `RelatedBooks`, page components (homepage, book detail, category)
+- **Client components** (`"use client"`): `Header` (search bar + category tag cloud computed from `books`), `BookList` (infinite scroll via IntersectionObserver, loads 10 at a time), `BookCard`, `BreadcrumbNav`
+
+### Styling Approach (Hybrid)
+
+Three styling methods are used — follow the pattern of the component you're modifying:
+1. **Tailwind v4** — inline utility classes, plus shared constants in `lib/styles.ts`
+2. **CSS Modules** — component-scoped styles (`BookCard.module.css`, `Header.module.css`, `BookCardSkeleton.module.css`, `app/book/[id]/page.module.css`)
+3. **Global CSS** — `app/globals.css` defines CSS custom properties, reusable classes (`.container`, `.btn`, `.card`, `.book-grid`), and responsive grid breakpoints
+
+### Utilities (`lib/`)
+
+- `lib/utils.ts` — JSON-LD structured data generators, text truncation, date formatting
+- `lib/constants.ts` — site config constants (URLs, thresholds, error messages)
+- `lib/styles.ts` — Tailwind class constants and `mergeClasses` utility
+
+### SEO
+
+- `generateMetadata()` on book and category pages for dynamic titles, OpenGraph, and Twitter cards
+- JSON-LD structured data (Book schema, breadcrumbs) generated via `lib/utils.ts`
+- `public/sitemap.xml` updated by sync scripts
+- Google Analytics (GA4) and Baidu site verification in `app/layout.tsx`
 
 ## Adding New Books
 
-### Method 1: Manual Edit
-Directly edit `data/mockData.ts` to add book entries. Follow the `Book` interface:
-```typescript
-{
-  id: number,
-  title: string,
-  author: string,
-  authorDetail: string,
-  year: string,
-  cover: string,
-  description: string,
-  category: string,
-  downloadLinks: DownloadLink[],
-  size: string,
-  format: string,
-  publishYear: string
-}
-```
+**Manual:** Add entries to `data/mockData.ts` following the `Book` interface. New books should have the highest `id` (homepage sorts descending).
 
-### Method 2: Feishu Sync
-1. Add books to Feishu spreadsheet with columns: 书名, 夸克网盘, 百度网盘, 状态, 封面图, 分类
-2. Run `node scripts/sync_to_website.js` to sync new books (status != 1) to the codebase
-3. The script auto-updates `data/mockData.ts`, `public/sitemap.xml`, and marks synced items
+**Feishu Sync:** Add books to Feishu spreadsheet, then run `node scripts/sync_to_website.js` to auto-update `data/mockData.ts` and `public/sitemap.xml`.
 
 ## Environment Variables
 
-Required for certain scripts:
-- `BAIDU_PUSH_TOKEN`: For `npm run push:baidu` - Baidu search engine API token
+- `BAIDU_PUSH_TOKEN`: Required for `npm run push:baidu`
+- Feishu credentials are hardcoded in `scripts/sync_to_website.js`
 
-Note: Feishu credentials in `sync_to_website.js` are hardcoded (consider moving to .env for better security).
+## Legacy
 
-## Build & Deploy
-
-The project uses Next.js static generation. Run `npm run build` to generate the `.next` folder with static HTML/CSS/JS. The site can be deployed to Vercel, Netlify, or any static hosting provider.
-
-After deployment, run `npm run push:baidu` to notify Baidu of new pages.
+`legacy_backup/` contains the original Vite + React SPA codebase. It is excluded from ESLint and not part of the active project.

@@ -6999,6 +6999,246 @@ export const books: Book[] = [
   "format": "EPUB",
   "publishYear": "1997"
 },
+  {
+  "id": 284,
+  "title": "寻秦记",
+  "author": "黄易",
+  "authorDetail": "黄易，原名黄祖强，香港著名武侠小说家，与金庸、古龙、梁羽生并称武侠小说四大宗师。代表作有《大唐双龙传》《覆雨翻云》等。",
+  "year": "1996",
+  "cover": "https://img.aqifei.top/img/2026/02/20260215095922882",
+  "description": "项少龙是一名21世纪的特种部队精英，在一次时空穿越实验中被送回战国时代。他凭借现代人的智慧与知识，在那个群雄争霸的年代卷入了秦国统一天下的历史洪流之中，与嬴政、吕不韦等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，是穿越小说的开山鼻祖之作。",
+  "category": "科幻奇幻",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1j1SALabF1uh4uFKm2h7CZw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1996"
+},
+  {
+  "id": 285,
+  "title": "女生会学习，世界都让路",
+  "author": "安小妃",
+  "authorDetail": "安小妃，教育领域畅销书作家，专注于女性成长与学习方法研究。",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302174529996",
+  "description": "一本专为女生量身打造的学习成长指南。从学习方法、时间管理、自律养成到目标规划，帮助女生在学业上建立自信，掌握高效学习的核心技巧，用知识改变命运，用努力赢得尊重。",
+  "category": "励志成功",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1W0C8TrzUTUitZQ39x56rgw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
+  {
+  "id": 286,
+  "title": "读读童谣和儿歌",
+  "author": "人民教育出版社",
+  "authorDetail": "人民教育出版社课程教材研究所编写，收录经典童谣与儿歌，是小学一年级下册'快乐读书吧'推荐阅读书目。",
+  "year": "2019",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302174534109",
+  "description": "本书精选了中外经典童谣和儿歌，语言活泼、韵律优美、朗朗上口。通过阅读这些充满童趣的作品，帮助孩子感受语言的节奏与韵律之美，培养阅读兴趣，是小学低年级必读的启蒙读物。",
+  "category": "少儿读物",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1GX0RynV1yRDNv6QDvqWSQg",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "PDF",
+  "publishYear": "2019"
+},
+  {
+  "id": 287,
+  "title": "被讨厌的勇气",
+  "author": "岸见一郎 / 古贺史健",
+  "authorDetail": "岸见一郎，日本哲学家，京都大学研究生院文学研究科博士，专攻阿德勒心理学。古贺史健，日本自由作家，以对话体写作见长。",
+  "year": "2013",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175326301",
+  "description": "一本阿德勒心理学的通俗读物，以一位青年与哲人的对话形式展开。书中提出'一切烦恼皆源于人际关系''课题分离''自我接纳'等核心观点，告诉我们不必活在别人的期待中，要有被讨厌的勇气，才能获得真正的自由与幸福。本书在日韩销量超过百万册。",
+  "category": "人文社科",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1hN4l8mHDam7bJhznU-jshg",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2013"
+},
+  {
+  "id": 288,
+  "title": "经典常谈",
+  "author": "朱自清",
+  "authorDetail": "朱自清（1898—1948），原名自华，字佩弦，中国现代散文家、诗人、学者、民主战士。代表作有《背影》《荷塘月色》《春》等，是中国现代文学史上著名的散文大家。",
+  "year": "1942",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175331243",
+  "description": "朱自清先生用浅明而切要的文字，于十三篇文章中介绍了《说文解字》《周易》《尚书》《诗经》《三礼》《春秋三传》《四书》《战国策》《史记》《汉书》以及辞赋、诗、文等中国古代文化经典。全书见解精辟，通俗流畅，是了解中国传统文化的入门必读书。",
+  "category": "人文社科",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1kUitYFHF9tJ2Slxw_9QF_A",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1942"
+},
+  {
+  "id": 289,
+  "title": "钢铁是怎样炼成的",
+  "author": "尼古拉·奥斯特洛夫斯基",
+  "authorDetail": "尼古拉·阿列克谢耶维奇·奥斯特洛夫斯基（1904—1936），苏联作家。出身于乌克兰工人家庭，年少参加革命，在战斗中多次负伤，后全身瘫痪、双目失明，以顽强毅力写下本书。",
+  "year": "1933",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175354305",
+  "description": "小说以保尔·柯察金的成长经历为线索，展现了从十月革命到社会主义建设初期那段波澜壮阔的岁月。保尔在战争、疾病、伤残的重重考验下，以钢铁般的意志践行了'人最宝贵的是生命'的人生信条。本书是激励无数青年奋发向上的经典名著。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1bXb3ti5RqOCCck53rey0kw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1933"
+},
+  {
+  "id": 290,
+  "title": "波西和皮普",
+  "author": "阿克塞尔·舍夫勒",
+  "authorDetail": "阿克塞尔·舍夫勒（Axel Scheffler），德国著名插画家，与作家朱莉娅·唐纳森长期合作，创作了《咕噜牛》等风靡全球的绘本作品。",
+  "year": "2016",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302174547534",
+  "description": "波西和皮普是一对形影不离的好朋友。这套绘本通过他们日常生活中的小故事——一起玩耍、闹别扭、互相帮助，让孩子在温馨有趣的故事中学会分享、包容和友谊的真谛。画风明快可爱，语言简洁生动，适合低幼儿童亲子阅读。",
+  "category": "少儿读物",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1e86GmSjfANq909MTNGc_sQ",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2016"
+},
+  {
+  "id": 291,
+  "title": "小狗钱钱",
+  "author": "博多·舍费尔",
+  "authorDetail": "博多·舍费尔（Bodo Schäfer），德国著名投资家、企业家、演说家及畅销书作家，被誉为'欧洲巴菲特'。代表作有《小狗钱钱》《财务自由之路》等。",
+  "year": "2002",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175341961",
+  "description": "12岁的女孩吉娅救了一只受伤的拉布拉多犬，没想到这只名叫'钱钱'的小狗竟然会说话，还是一个理财高手。钱钱教会吉娅如何管理零花钱、设立梦想储蓄罐、学习投资基金。一本写给孩子的财商启蒙书，用童话故事讲明白了成年人都不一定懂的理财知识。",
+  "category": "励志成功",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1RcVA_es3AtfGgA4JiqyiaA",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2002"
+},
+  {
+  "id": 292,
+  "title": "快乐读书吧",
+  "author": "人民教育出版社",
+  "authorDetail": "人民教育出版社课程教材研究所编写，是配合统编语文教材的课外阅读丛书，涵盖小学各年级推荐书目。",
+  "year": "2019",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302174550698",
+  "description": "人教版'快乐读书吧'系列阅读丛书，精选与语文教材配套的经典名著和优秀作品。帮助学生在课外阅读中拓展视野、提升语文素养，让读书成为一种快乐的习惯。涵盖古今中外名著、科普知识、童话寓言等多种体裁。",
+  "category": "少儿读物",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1ZFk1JeoqraQjaQ3p5R5s3A",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "PDF",
+  "publishYear": "2019"
+},
+  {
+  "id": 293,
+  "title": "见春天",
+  "author": "毕飞宇",
+  "authorDetail": "毕飞宇，1964年生于江苏兴化，当代著名作家。代表作有《推拿》《青衣》《玉米》等，曾获茅盾文学奖、鲁迅文学奖、英仕曼亚洲文学奖等重要文学奖项。",
+  "year": "2025",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302174554004",
+  "description": "毕飞宇最新长篇小说，时隔多年重磅回归。故事围绕一个普通家庭在时代变迁中的命运展开，以细腻的笔触描摹人物内心的挣扎与希望。作者一如既往地关注小人物的生存境遇，在日常生活的褶皱中发现人性的光芒与韧性。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1nljV8lJZJ92a1gbex6NpYw",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2025"
+},
+  {
+  "id": 294,
+  "title": "灰尘的旅行",
+  "author": "高士其",
+  "authorDetail": "高士其（1905—1988），原名高仕錤，福建福州人，中国著名科普作家、科学家。他在全身瘫痪的情况下坚持科普写作数十年，被称为'中国的霍金'。",
+  "year": "1935",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175401773",
+  "description": "以拟人化的手法讲述灰尘的奇妙旅行，揭示了灰尘的来源、特性及其与人类生活的密切关系。全书语言生动有趣，将深奥的科学知识化为浅显易懂的故事，是小学四年级下册'快乐读书吧'推荐的科普经典读物。",
+  "category": "科普知识",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1NjFw5plWRGLxapMA9wyo0w",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "1935"
+},
+  {
+  "id": 295,
+  "title": "我从未如此眷恋人间",
+  "author": "史铁生 等",
+  "authorDetail": "本书收录史铁生、季羡林、汪曾祺、沈从文、梁实秋等多位文学大家的经典散文作品，是一部名家散文精选集。",
+  "year": "2024",
+  "cover": "https://img.aqifei.top/img/2026/03/20260302175405902",
+  "description": "收录史铁生《我与地坛》、季羡林《清塘荷韵》、汪曾祺《人间草木》等数十篇名家散文。这些文字或深情、或淡然、或幽默，记录了对生命的感悟、对自然的热爱、对人间烟火的眷恋。在浮躁的时代里，这本书带你重拾对生活的温柔与敬意。",
+  "category": "小说文学",
+  "downloadLinks": [
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com/s/1sWNkoyzdWujWAdkTIuGw5A",
+      "code": "0000"
+    }
+  ],
+  "size": "未知",
+  "format": "EPUB",
+  "publishYear": "2024"
+},
 
 ];
 
