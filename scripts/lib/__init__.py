@@ -8,5 +8,6 @@
 from .feishu_client import FeishuClient
 from .mockdata_helper import MockDataHelper
 from .sitemap_helper import SitemapHelper
+from .douban_client import DoubanClient
 
-__all__ = ['FeishuClient', 'MockDataHelper', 'SitemapHelper']
+__all__ = ['FeishuClient', 'MockDataHelper', 'SitemapHelper', 'DoubanClient']
