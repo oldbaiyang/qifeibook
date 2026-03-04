@@ -7641,7 +7641,366 @@ export const books: Book[] = [
   "format": "EPUB",
   "publishYear": "2024"
 },
-
+  {
+    "id": 296,
+    "title": "大漠谣",
+    "author": "桐华",
+    "authorDetail": "桐华，当代言情女作家，代表作《步步惊心》《大漠谣》等。",
+    "year": "2006",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143345037",
+    "description": "大漠谣》是一部穿越言情小说，讲述现代女孩金玉意外穿越到汉朝的故事。在茫茫大漠中，她与霍去病将军相遇，展开一段跨越千年的爱恨情仇。作品以细腻的情感描写和宏大的历史背景著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yUfmNztw3li9V4MqKwv4Hw?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 297,
+    "title": "欢乐英雄",
+    "author": "古龙",
+    "authorDetail": "古龙（1938-1985），原名熊耀华，著名武侠小说家。其作品风格独特，以悬疑推理和人性描写见长。",
+    "year": "1971",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143353305",
+    "description": "《欢乐英雄》是古龙的一部武侠小说。讲述了三个江湖朋友——郭大路、王动和林太平——在江湖中经历的种种奇遇和冒险。作品以幽默风趣的笔触，展现了江湖人情的温暖与复杂。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KeJJ4Iltg9Q57Goz2JJUtQ?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 298,
+    "title": "剑桥倚天屠龙史",
+    "author": "新垣平",
+    "authorDetail": "新垣平，日本学者，专攻中国历史与武侠小说研究。",
+    "year": "2013",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143401311",
+    "description": "《剑桥倚天屠龙史》是一部学术性与趣味性并存的武侠文化研究著作。作者以剑桥大学历史学家的视角，深入剖析了金庸《倚天屠龙记》中的历史背景、人物原型及文化内涵，为读者打开了全新的解读视角。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1bbpQjz6wfLfOSSSpIFz4Dw?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 299,
+    "title": "长安乱",
+    "author": "韩寒",
+    "authorDetail": "韩寒，中国当代作家、赛车手、导演。其作品以犀利的社会观察和幽默的文笔著称。",
+    "year": "2013",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304185437177",
+    "description": "《长安乱》是韩寒的一部奇幻武侠小说。讲述了主人公在长安城的奇幻冒险经历，融合了武侠、玄幻和现代元素，展现了作者独特的想象力和叙事风格。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mvsubTGX_v4FRahWAw31NQ?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 300,
+    "title": "射雕英雄传前传",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "2003",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143437797",
+    "description": "《射雕英雄传前传》是金庸武侠世界的前传故事。讲述了郭靖之父郭啸天与杨康之父杨铁心的江湖往事，以及江南七怪的传说，为《射雕英雄传》的故事增添了丰富的背景。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uRPMmKPDPiOkRscGRPFIKg?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 301,
+    "title": "边荒传说",
+    "author": "黄易",
+    "authorDetail": "黄易（1952-2017），原名黄祖强，香港武侠小说家。开创了玄幻武侠流派。",
+    "year": "1994",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143446018",
+    "description": "《边荒传说》是黄易的代表作之一。讲述了现代武侠高手边荒因意外穿越到古代的冒险故事。作品融合了传统武侠与玄幻元素，开创了武侠小说的新格局。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1k3_uSy94QzabypNbIRd1WA?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 302,
+    "title": "碧血剑【新修版】",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1956",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143454144",
+    "description": "《碧血剑》是金庸的早期武侠作品。讲述了明末少年袁承志为父报仇、闯荡江湖的故事，其中涉及了李自成的起义和明亡的历史背景。新修版对原有情节进行了修订和完善。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CUSgZEMsXqxiONYiruOIew?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 303,
+    "title": "雪山飞狐",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1959",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143522550",
+    "description": "《雪山飞狐》是金庸的武侠中篇作品。讲述了雪山飞狐胡斐的故事，其武功高强、性格孤傲。作品篇幅精炼但情节紧凑，是金庸武侠系列的精彩篇章。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JYTieTgqdK3Q5taMSRB5_g?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 304,
+    "title": "侠客行",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1967",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143530468",
+    "description": "《侠客行》是金庸的武侠小说。讲述了石破天在江湖中的奇遇，以及与其身份相关的谜团。作品以石破天纯真无邪的性格和江湖的复杂权谋形成对比，探讨了身份认同的主题。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yQviY4SU_TshWrLh-KLN3w?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 305,
+    "title": "书剑恩仇录",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1955",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143538441",
+    "description": "《书剑恩仇录》是金庸的处女作。讲述了红花会少主陈家洛为反清复明而努力的历程，以及与乾隆皇帝的身世之谜。作品融入了历史与武侠元素，展现了金庸早期创作的才华。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1DGLuIHC5VrzddEHiw70jtQ?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 306,
+    "title": "连城诀",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1963",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143558083",
+    "description": "《连城诀》是金庸的武侠小说。讲述了狄云和戚芳在江湖中的悲惨遭遇，以及围绕连城诀剑谱的争夺。作品以对人性的深刻揭示和悲剧性结局著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1vE3PHxvoGQnoF_jA8-y1uA?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 307,
+    "title": "飞狐外传",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1960",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143605447",
+    "description": "《飞狐外传》是《雪山飞狐》的前传作品。讲述了胡斐父母的故事，以及江湖中围绕宝刀的恩怨情仇。作品补充了胡斐身世和江湖背景，丰富了雪山飞狐的故事线。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GCphqQzzDg3ov6HdFGdemg?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 308,
+    "title": "碧血剑",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），原名查良镛，武侠小说一代宗师。其作品影响深远，被改编为无数影视作品。",
+    "year": "1956",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143613143",
+    "description": "《碧血剑》是金庸的早期武侠作品。讲述了明末少年袁承志为父报仇、闯荡江湖的故事，其中涉及了李自成的起义和明亡的历史背景。作品融合了历史与武侠，展现了金庸早期创作的才华。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CUSgZEMsXqxiONYiruOIew?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 309,
+    "title": "七剑下天山",
+    "author": "梁羽生",
+    "authorDetail": "梁羽生（1924-2009），原名陈文统，新派武侠小说开山鼻祖。",
+    "year": "1956",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143649452",
+    "description": "《七剑下天山》是梁羽生的武侠代表作。讲述了凌未风等七剑下天山的故事，以及与朝廷的对抗。作品以宏大的江湖背景和精彩的对阵场面著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IQYl8LtTepDk17NhXkFM_g?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 310,
+    "title": "少年追命",
+    "author": "温瑞安",
+    "authorDetail": "温瑞安，台湾著名武侠小说家，被誉为'武侠中的鬼才'。",
+    "year": "1980s",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143703255",
+    "description": "《少年追命》是温瑞安温派武侠系列的作品。讲述了少年追命在江湖中的冒险和成长，以及与各路高手的较量。作品以独特的语言风格和快速的对阵场面著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1syy3qR3bqHUrZn1MVkjFSg?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 311,
+    "title": "少年铁手",
+    "author": "温瑞安",
+    "authorDetail": "温瑞安，台湾著名武侠小说家，被誉为'武侠中的鬼才'。",
+    "year": "1980s",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143710327",
+    "description": "《少年铁手》是温瑞安温派武侠系列的作品。讲述了少年铁手在江湖中的历练和成长，以及四大名捕等角色的故事。作品以精彩的情节和鲜明的人物形象著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XCvmp8mb4JlGgBatmCxaSg?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 312,
+    "title": "布衣神相",
+    "author": "黄易",
+    "authorDetail": "黄易（1952-2017），原名黄祖强，香港武侠小说家。开创了玄幻武侠流派。",
+    "year": "1990s",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143716806",
+    "description": "《布衣神相》是黄易的早期作品。讲述了相术师项少龙在江湖中的经历，以及相术与武功的结合。作品开创了武侠与术数结合的新题材。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11WoFkJ4PS1zTj6iW4iNGEA?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
+  {
+    "id": 313,
+    "title": "白发魔女传",
+    "author": "梁羽生",
+    "authorDetail": "梁羽生（1924-2009），原名陈文统，新派武侠小说开山鼻祖。",
+    "year": "1957",
+    "cover": "https://img.aqifei.top/img/2026/03/20260304143727685",
+    "description": "《白发魔女传》是梁羽生的武侠名作。讲述了练霓裳与卓一航的爱情悲剧，以及她在练功过程中头发变白的经历。作品以凄美的爱情和悲剧色彩著称。",
+    "category": "小说文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1kJZojWmtD1WbzlVkg9rQ0w?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "未知",
+    "format": "PDF/EPUB/MOBI",
+    "publishYear": "2000"
+  },
 ];
 
 export const categories = [
@@ -7654,3 +8013,4 @@ export const categories = [
   "生活时尚",
   "英文原版"
 ];
+
