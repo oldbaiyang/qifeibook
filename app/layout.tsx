@@ -17,6 +17,17 @@ export const metadata: Metadata = {
       "baidu-site-verification": "codeva-wgQ1i6Efrq"
     }
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "棋飞书库 - 经典电子书免费下载",
     description: "海量经典电子书免费下载，支持EPUB、MOBI、PDF格式",
@@ -24,11 +35,22 @@ export const metadata: Metadata = {
     siteName: "棋飞书库",
     type: "website",
     locale: "zh_CN",
+    images: [
+      {
+        url: "https://qifeibook.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "棋飞书库 - 经典电子书免费下载",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "棋飞书库 - 经典电子书免费下载",
     description: "海量经典电子书免费下载，支持EPUB、MOBI、PDF格式",
+  },
+  alternates: {
+    canonical: "https://qifeibook.com",
   },
 };
 
@@ -39,6 +61,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
+      <head>
+        {/* Structured Data for SEO */}
+        <Script id="structured-data" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "棋飞书库",
+            "url": "https://qifeibook.com",
+            "description": "免费电子书下载网站，提供小说、文学、历史、科幻等各类电子书资源",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://qifeibook.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </Script>
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="min-h-[calc(100vh-300px)]">
