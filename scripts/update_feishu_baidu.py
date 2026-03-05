@@ -1,172 +1,209 @@
-#!/usr/bin/env python3
-"""
-更新飞书表格的百度网盘链接
-"""
 import requests
+import re
+import time
 
-# 飞书配置
 APP_ID = 'cli_a5ac1fa61a78900c'
 APP_SECRET = 'P4dSxCogfw69EG0224aHIfpF1d8W5oce'
 WIKI_TOKEN = 'RIXjwrSs3ibf7FkOB2JcguCin8I'
 
-# 书名和百度网盘链接映射
-BOOK_BAIDU_LINKS = {
-    "黄色墙纸": "https://pan.baidu.com/s/12GS_6tFLtPUzFGY0QUZ6VQ 提取码:0000",
-    "哲学家的最后一课": "https://pan.baidu.com/s/10574U8GauHQAbHNSCoAXWA 提取码:0000",
-    "父亲的解放日志": "https://pan.baidu.com/s/1qDmytGAYFdQocA3hUiOPeQ 提取码:0000",
-    "世界在前进": "https://pan.baidu.com/s/1RoyafN-aIrbgKXUOjDX9vQ 提取码:0000",
-    "人生解忧": "https://pan.baidu.com/s/1bubFh3fSOM0qXhTXRtpOtg 提取码:0000",
-    "我是寨子里长大的女孩": "https://pan.baidu.com/s/1yMHK-ROerGRHy0jXBpT83Q 提取码:0000",
-    "玫瑰朝上": "https://pan.baidu.com/s/1OGWohNCKt8RxUh9vqhxgwA 提取码:0000",
-    "即使以最微弱的光": "https://pan.baidu.com/s/1XmRvIoJT9AaqMpol_Sp_CA 提取码:0000",
-    "要有光": "https://pan.baidu.com/s/1JCY8RJ0GvQ46bbXmSz979A 提取码:0000",
-    "太阳的阴影": "https://pan.baidu.com/s/1-1EMrzLR7VcV471Jy3svmw 提取码:0000",
-    "安史之乱": "https://pan.baidu.com/s/1I_fGnIpCcz5VYYUmnif0kg 提取码:0000",
-    "格外的活法": "https://pan.baidu.com/s/18gPNAP3fiblGnpwR8mX35g 提取码:0000",
-    "弃长安": "https://pan.baidu.com/s/1UZ-wI3HkQWH5xh1WmQyeEA 提取码:0000",
-    "南明史": "https://pan.baidu.com/s/1hQEGp3HeXGsoD5fhXvqGrw 提取码:0000",
-}
+def get_tokens():
+    url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal'
+    res = requests.post(url, json={'app_id': APP_ID, 'app_secret': APP_SECRET}).json()
+    token = res.get('tenant_access_token')
 
-def get_access_token():
-    """获取飞书访问令牌"""
-    url = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
-    resp = requests.post(url, json={"app_id": APP_ID, "app_secret": APP_SECRET})
-    return resp.json().get("tenant_access_token")
+    wiki_url = f"https://open.feishu.cn/open-apis/wiki/v2/spaces/get_node?token={WIKI_TOKEN}"
+    wiki_res = requests.get(wiki_url, headers={"Authorization": f"Bearer {token}"}).json()
+    obj_token = wiki_res["data"]["node"]["obj_token"]
+    return token, obj_token
 
-def get_spreadsheet_token(access_token):
-    """获取电子表格token"""
-    url = f"https://open.feishu.cn/open-apis/wiki/v2/spaces/get_node?token={WIKI_TOKEN}"
-    headers = {"Authorization": f"Bearer {access_token}"}
-    resp = requests.get(url, headers=headers)
-    return resp.json()["data"]["node"]["obj_token"]
+def get_real_sheet_id(token, obj_token, sheet_name='苦瓜书盘_武侠小说'):
+    meta_url = f"https://open.feishu.cn/open-apis/sheets/v3/spreadsheets/{obj_token}/sheets/query"
+    meta_res = requests.get(meta_url, headers={"Authorization": f"Bearer {token}"}).json()
+    for s in meta_res.get('data', {}).get('sheets', []):
+        if s.get('title') == sheet_name:
+            return s.get('sheet_id')
+    return None
 
-def get_sheet_id(access_token, spreadsheet_token):
-    """获取第一个工作表ID"""
-    url = f"https://open.feishu.cn/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/query"
-    headers = {"Authorization": f"Bearer {access_token}"}
-    resp = requests.get(url, headers=headers)
-    return resp.json()["data"]["sheets"][0]["sheet_id"]
-
-def extract_text(cell):
-    """提取单元格文本"""
-    if not cell:
-        return ""
-
-    # 处理字符串
-    if isinstance(cell, str):
-        return cell.strip()
-
-    # 处理字典（飞书单元格格式）
-    if isinstance(cell, dict):
-        if "link" in cell:
-            return cell.get("link", "").strip()
-        if "text" in cell:
-            return cell.get("text", "").strip()
-        if "user" in cell:
-            return cell.get("user", {}).get("name", "").strip()
-        return str(cell).strip()
-
-    # 处理列表
-    if isinstance(cell, list):
-        result = ""
-        for c in cell:
-            result += extract_text(c)
-        return result.strip()
-
-    return str(cell).strip()
-
-def update_baidu_links():
-    """更新百度网盘链接"""
-    print("=" * 60)
-    print("更新飞书表格 - 百度网盘链接")
-    print("=" * 60)
-
-    # 获取访问令牌
-    print("正在获取访问令牌...")
-    token = get_access_token()
-    if not token:
-        print("获取访问令牌失败!")
-        return
-    print("✓ 获取访问令牌成功")
-
-    # 获取表格和工作表ID
-    print("正在获取表格信息...")
-    spreadsheet_token = get_spreadsheet_token(token)
-    sheet_id = get_sheet_id(token, spreadsheet_token)
-
-    print(f"表格ID: {spreadsheet_token}")
-    print(f"工作表ID: {sheet_id}")
-
-    # 读取表格数据
-    print("正在读取表格数据...")
-    read_url = f"https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/{spreadsheet_token}/values/{sheet_id}!A1:Z500"
-    headers = {"Authorization": f"Bearer {token}"}
-    resp = requests.get(read_url, headers=headers)
-
-    if resp.status_code != 200:
-        print(f"读取表格失败: {resp.json()}")
+def main():
+    token, obj_token = get_tokens()
+    sheet_id = get_real_sheet_id(token, obj_token)
+    if not sheet_id:
+        print("未找到工作表 苦瓜书盘_武侠小说")
         return
 
-    values = resp.json().get('data', {}).get('valueRange', {}).get('values', [])
-    if not values:
-        print("表格为空!")
-        return
+    # 从飞书中读取当前所有行的数据提取名称
+    read_url = f"https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/{obj_token}/values/{sheet_id}!A2:F"
+    data_res = requests.get(read_url, headers={"Authorization": f"Bearer {token}"}).json()
+    rows = data_res.get('data', {}).get('valueRange', {}).get('values', [])
+    
+    # 要更新的百度网盘数据（使用多行字符串）
+    raw_data = """
+【超级会员V9】通过百度网盘分享的文件：少年追命.mobi
+链接：https://pan.baidu.com/s/1jTT_ZbhhXU69Bgkl_tvebw?pwd=0000 
+提取码：0000
 
-    print(f"✓ 读取到 {len(values)} 行数据")
+【超级会员V9】通过百度网盘分享的文件：少年铁手.mobi
+链接：https://pan.baidu.com/s/1eXQmxUCUdrWR77tQ3W2NKw?pwd=0000 
+提取码：0000
 
-    # 解析表头
-    header = values[0]
-    book_name_idx = header.index('书名') if '书名' in header else 0
-    baidu_idx = header.index('百度网盘') if '百度网盘' in header else 3
+【超级会员V9】通过百度网盘分享的文件：大漠谣
+链接：https://pan.baidu.com/s/1s6n0JJnx_hrwFZVQv3F36A?pwd=0000 
+提取码：0000
 
-    print(f"\n书名列索引: {book_name_idx}, 百度网盘列索引: {baidu_idx}")
+【超级会员V9】通过百度网盘分享的文件：边荒传说.mobi
+链接：https://pan.baidu.com/s/1NoAooK7fETBiHHkHQO0RtQ?pwd=0000 
+提取码：0000
 
-    # 更新计数
-    updated = 0
-    not_found = 0
-    processed = 0
+【超级会员V9】通过百度网盘分享的文件：射雕英雄传前传.pdf
+链接：https://pan.baidu.com/s/1kdVqXeSLyRuEQFyz83uWQw?pwd=0000 
+提取码：0000
 
-    # 遍历每一行，查找对应书籍并更新百度网盘链接
-    print("\n开始匹配和更新...")
-    for row_idx, row in enumerate(values[1:], start=2):  # 从第2行开始（第1行是表头）
-        if len(row) <= book_name_idx:
-            continue
+【超级会员V9】通过百度网盘分享的文件：碧血剑_20260304_152348.pdf
+链接：https://pan.baidu.com/s/1AiIvbektxDKbUElLQvgiGA?pwd=0000 
+提取码：0000
 
-        book_name = extract_text(row[book_name_idx])
-        if not book_name:
-            continue
+【超级会员V9】通过百度网盘分享的文件：鹿鼎记.pdf
+链接：https://pan.baidu.com/s/1_-078EInIKw8ggqV_tR92g?pwd=0000 
+提取码：0000
 
-        processed += 1
+【超级会员V9】通过百度网盘分享的文件：射雕英雄传前传_20260304_152347.pdf
+链接：https://pan.baidu.com/s/17zf2ZN1Hhvs4FNuToe5NdQ?pwd=0000 
+提取码：0000
 
-        # 查找匹配的百度网盘链接（精确匹配）
-        baidu_link = BOOK_BAIDU_LINKS.get(book_name)
+【超级会员V9】通过百度网盘分享的文件：碧血剑.pdf
+链接：https://pan.baidu.com/s/1bqTEy0O6vpeOzuTWO_a80A?pwd=0000 
+提取码：0000
 
-        if baidu_link:
-            # 更新百度网盘列
-            update_url = f"https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/{spreadsheet_token}/values"
-            update_payload = {
-                "valueRange": {
-                    "range": f"{sheet_id}!{chr(65 + baidu_idx)}{row_idx}:{chr(65 + baidu_idx)}{row_idx}",
-                    "values": [[baidu_link]]
-                }
-            }
+【超级会员V9】通过百度网盘分享的文件：剑桥倚天屠龙史.mobi
+链接：https://pan.baidu.com/s/1VjCdlDIjiFyfjSi2iUoljg?pwd=0000 
+提取码：0000
 
-            update_resp = requests.put(update_url, json=update_payload, headers=headers)
-            if update_resp.status_code == 200:
-                data = update_resp.json()
-                if data.get("code") == 0:
-                    print(f"✓ 已更新: {book_name}")
-                    updated += 1
-                else:
-                    print(f"✗ 更新失败: {book_name} - {data}")
+【超级会员V9】通过百度网盘分享的文件：射雕英雄传【新修版】.mobi
+链接：https://pan.baidu.com/s/1eg55vmLjGqkfNhNFRBYVxQ?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：连城诀_20260304_152347.pdf
+链接：https://pan.baidu.com/s/1DQBqjIG4YgZVcZBgG1HvOw?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：碧血剑【新修版】.mobi
+链接：https://pan.baidu.com/s/151shJUWtixgA3gPgPfQ4Cw?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：剑桥倚天屠龙史_20260304_152359.mobi
+链接：https://pan.baidu.com/s/1xZ_9aSExevM18KhH0hW-AA?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：连城诀.pdf
+链接：https://pan.baidu.com/s/1E-v-2tCYJL2J3-rRGUtPEQ?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：欢乐英雄.azw3
+链接：https://pan.baidu.com/s/1_Rpxthp9wKHKbpnmaPBCeg?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：七剑下天山.mobi
+链接：https://pan.baidu.com/s/16580Nbq6zBTGq59xJCaPQQ?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：长安乱.pdf
+链接：https://pan.baidu.com/s/1VA8gIQ_weFv8qmmKkr3tRg?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：神雕侠侣【新修版】.mobi
+链接：https://pan.baidu.com/s/1iSc7y9RXMwxxNpnHJ33G4A?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：雪山飞狐.pdf
+链接：https://pan.baidu.com/s/1c-SMRdRzqXFvs8_V8tt-TQ?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：飞狐外传.pdf
+链接：https://pan.baidu.com/s/1lYwKOAF0SaAmBM8QqDfQnw?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：射雕英雄传前传_20260304_152359.pdf
+链接：https://pan.baidu.com/s/1IMoRCz8oPbM_aDqd4QM4xQ?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：连城诀_20260304_152358.pdf
+链接：https://pan.baidu.com/s/1d8hBHzn0FiITWNO7qpIGBg?pwd=0000 
+提取码：0000
+
+【超级会员V9】通过百度网盘分享的文件：布衣神相.mobi
+链接：https://pan.baidu.com/s/1MLxG76sb7Bi63DdAqj6Ydg?pwd=0000 
+提取码：0000
+    """
+
+    # 解析链接文本块
+    book_links_map = {}
+    blocks = raw_data.strip().split('\n\n')
+    for block in blocks:
+        lines = block.split('\n')
+        name = ""
+        link = ""
+        code = "0000" # 统一为0000
+        for line in lines:
+            if "分享的文件：" in line:
+                # 剔除后缀和时间戳等清理成纯书名
+                full_name = line.split("分享的文件：")[1].strip()
+                # 兼容类似“碧血剑_20260304_152348.pdf” / “连城诀.pdf”
+                name_clean = full_name.split('.')[0].split('_')[0]
+                name = name_clean
+            elif line.startswith("链接："):
+                link = line.replace("链接：", "").strip()
+        if name and link:
+            # 遇到多格式或者重复项，合并为多个下划线
+            if name in book_links_map:
+                book_links_map[name].append(link)
             else:
-                print(f"✗ 更新失败: {book_name} - HTTP {update_resp.status_code}")
+                book_links_map[name] = [link]
+                
+    updates = []
+    
+    for idx, row in enumerate(rows):
+        if not row or len(row) < 1: continue
+        title = row[0].strip()
+        matched_links = []
+        
+        # 尝试精确匹配飞书的书名
+        for parsed_name, links in book_links_map.items():
+            if parsed_name == title or parsed_name in title or title in parsed_name:
+                matched_links = links
+                break
+                
+        if matched_links:
+            row_num = idx + 2
+            
+            # 使用飞书富文本格式构建下载链接
+            cell_items = []
+            for i, l in enumerate(matched_links):
+                cell_items.append({
+                    "type": "text", "text": f"百度网盘{i+1}: "
+                })
+                cell_items.append({
+                    "type": "url", "text": l, "link": l
+                })
+                cell_items.append({
+                    "type": "text", "text": " (密码: 0000)\n"
+                })
+                
+            updates.append({
+                "range": f"{sheet_id}!E{row_num}:E{row_num}",
+                "values": [[cell_items]]
+            })
+            print(f"匹配成功: {title} -> {len(matched_links)} 个链接")
         else:
-            not_found += 1
+            print(f"未找到网盘链接匹配: {title}")
 
-    print("\n" + "=" * 60)
-    print(f"完成! 处理 {processed} 行，更新 {updated} 个链接，未找到匹配 {not_found} 个")
-    print("=" * 60)
+    if updates:
+        print(f"\n准备批量更新 {len(updates)} 本书的飞书下载链接...")
+        update_url = f"https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/{obj_token}/values_batch_update"
+        resp = requests.post(update_url, headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"}, json={"valueRanges": updates}).json()
+        if resp.get('code') == 0:
+            print("✅ 飞书网盘链接写入完成！")
+        else:
+            print(f"❌ 写入失败: {resp}")
 
 if __name__ == "__main__":
-    update_baidu_links()
+    main()
