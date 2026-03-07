@@ -1,4 +1,25 @@
-export const books = [
+export interface DownloadLink {
+  name: string;
+  url: string;
+  code?: string;
+}
+
+export interface Book {
+  id: number;
+  title: string;
+  author: string;
+  authorDetail: string;
+  year: string;
+  cover: string;
+  description: string;
+  category: string;
+  downloadLinks: DownloadLink[];
+  size: string;
+  format: string;
+  publishYear: string;
+}
+
+export const books: Book[] = [
   {
     "id": 384,
     "title": "黄色墙纸",
