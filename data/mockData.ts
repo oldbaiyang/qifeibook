@@ -27,7 +27,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154621548",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -47,7 +47,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154624481",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -67,7 +67,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154627403",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -87,7 +87,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154630330",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -107,7 +107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154633464",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -127,7 +127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154636002",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -147,7 +147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154638470",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -167,7 +167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154643953",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -187,7 +187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154646607",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -207,7 +207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154649403",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -227,7 +227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154652362",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -247,7 +247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/001_红楼梦",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -267,7 +267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/002_活着",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -287,7 +287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/santi_cover_1769100754655",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -307,7 +307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/006_百年孤独",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -327,7 +327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/007_飘",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -347,7 +347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/008_动物农场",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -367,7 +367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/009_房思琪的初恋乐园",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -387,7 +387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/010_三国演义（全二册）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -407,7 +407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/011_福尔摩斯探案全集（上中下）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -427,7 +427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/012_白夜行",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -447,7 +447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/nahan_cover_1769101171677",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -467,7 +467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/015_小王子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -487,7 +487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/016_安徒生童话故事集",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -507,7 +507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/017_撒哈拉的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -527,7 +527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/018_失踪的孩子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -547,7 +547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/tianlong_cover_1769101187012",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -567,7 +567,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/karamazov_cover_1769101204306",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -587,7 +587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/new_name_story_cover_1769137830172",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -607,7 +607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/022_杀死一只知更鸟",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -627,7 +627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/024_野草",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -647,7 +647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/026_沉默的大多数",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -667,7 +667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/027_罗杰疑案",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -687,7 +687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/028_悉达多",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -707,7 +707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/029_我与地坛",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -727,7 +727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/030_许三观卖血记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -747,7 +747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/031_彷徨",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -767,7 +767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/stranger_camus_cover_1769137886125",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -787,7 +787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/033_白鹿原",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -807,7 +807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/034_乡土中国",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -827,7 +827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/035_平凡的世界（全三部）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -847,7 +847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/036_人类简史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -867,7 +867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/037_围城",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -887,7 +887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/xiaoao_jianghu_cover_1769137848494",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -907,7 +907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/039_献给阿尔吉侬的花束",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -927,7 +927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/040_东方快车谋杀案",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -947,7 +947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/041_故事新编",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -967,7 +967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/042_城南旧事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -987,7 +987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/043_肖申克的救赎",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1007,7 +1007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/044_江城",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1027,7 +1027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/045_朝花夕拾",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1047,7 +1047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/046_基督山伯爵",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1067,7 +1067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/047_万历十五年",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1087,7 +1087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/048_秋园",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1107,7 +1107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/049_霍乱时期的爱情",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1127,7 +1127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/050_艺术的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1147,7 +1147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/051_置身事内",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1167,7 +1167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/052_厌女",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1187,7 +1187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/053_射雕英雄传",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1207,7 +1207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/054_月亮和六便士",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1227,7 +1227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/055_西游记（全二册）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1247,7 +1247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/056_无人生还",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1267,7 +1267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/057_树上的男爵",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1287,7 +1287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/058_追风筝的人",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1307,7 +1307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/059_寻路中国",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1327,7 +1327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/060_刀锋",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1347,7 +1347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/061_格林童话全集",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1367,7 +1367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/taibai_venus_cover_1769415361385",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1387,7 +1387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/possibility_politcs_cover_1769415345343",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1407,7 +1407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/065_刘擎西方现代思想讲义",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1427,7 +1427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/066_鼠疫",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1447,7 +1447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/suspect_x_cover_1769415425738",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1467,7 +1467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/068_一间只属于自己的房间",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1487,7 +1487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/069_孽子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1507,7 +1507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/070_傲慢与偏见",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1527,7 +1527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/071_黄金时代",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1547,7 +1547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/taipei_people_cover_1769415409304",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1567,7 +1567,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/074_四世同堂",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1587,7 +1587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/075_诗经",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1607,7 +1607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/les_miserables_cover_1769415393122",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1627,7 +1627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/nanjing_massacre_cover_1769415377513",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1647,7 +1647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/079_永恒的终结",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1667,7 +1667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/080_美丽新世界",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1687,7 +1687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/081_一个叫欧维的男人决定去死",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1707,7 +1707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/082_始于极限",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1727,7 +1727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/083_神雕侠侣",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1747,7 +1747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/084_绝叫",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1767,7 +1767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/085_美的历程",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1787,7 +1787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/086_唐诗三百首",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1807,7 +1807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/087_历史深处的忧虑",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1827,7 +1827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/088_灿烂千阳",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1847,7 +1847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/089_流俗地",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1867,7 +1867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/090_上帝掷骰子吗",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1887,7 +1887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/091_窗边的小豆豆",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1907,7 +1907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/092_最好的告别",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1927,7 +1927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/093_筚路维艰",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1947,7 +1947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/094_哭泣的骆驼",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1967,7 +1967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/095_冬牧场",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1987,7 +1987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/096_呼兰河传",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2007,7 +2007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/097_棋王·树王·孩子王",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2027,7 +2027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/098_罪与罚",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2047,7 +2047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/099_离开的，留下的",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2067,7 +2067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/100_明亮的夜晚",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2087,7 +2087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/101_人间词话",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2107,7 +2107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/102_叫魂",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2127,7 +2127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/103_西线无战事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2147,7 +2147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/104_道德经",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2167,7 +2167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/105_也许你该找个人聊聊",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2187,7 +2187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/106_平面国",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2207,7 +2207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/107_文学回忆录",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2227,7 +2227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/108_遥远的向日葵地",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2247,7 +2247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/109_桶川跟踪狂杀人事件",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2267,7 +2267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/110_少年凯歌",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2287,7 +2287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/111_浪潮之巅",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2307,7 +2307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/113_昨日的世界",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2327,7 +2327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/115_爱你就像爱生命",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2347,7 +2347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/116_失明症漫记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2367,7 +2367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/117_我们仨",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2387,7 +2387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/118_人生的枷锁",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2407,7 +2407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/119_看不见的城市",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2427,7 +2427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/120_海子的诗",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2447,7 +2447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/121_巨人的陨落",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2467,7 +2467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/122_飞鸟集",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2487,7 +2487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/123_人生的智慧",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2507,7 +2507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/124_教父",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2527,7 +2527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/125_檀香刑",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2547,7 +2547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/126_面纱",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2567,7 +2567,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/127_人间草木",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2587,7 +2587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/128_我的天才女友",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2607,7 +2607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/129_13 67",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2627,7 +2627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/130_陆犯焉识",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2647,7 +2647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/131_鹿鼎记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2667,7 +2667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/132_大明王朝1566",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2687,7 +2687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/133_地下室手记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2707,7 +2707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/135_边城",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2727,7 +2727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/136_额尔古纳河右岸",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2747,7 +2747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/137_斯通纳",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2767,7 +2767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/138_梦里花落知多少",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2787,7 +2787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/139_时间简史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2807,7 +2807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/140_克莱因壶",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2827,7 +2827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/141_2001：太空漫游",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2847,7 +2847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/142_安娜·卡列尼娜",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2867,7 +2867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/143_王尔德童话",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2887,7 +2887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/144_金色梦乡",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2907,7 +2907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/145_小径分岔的花园",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2927,7 +2927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/146_绿毛水怪",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2947,7 +2947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/147_一句顶一万句",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2967,7 +2967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/148_这些人，那些事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -2987,7 +2987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/149_强风吹拂",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3007,7 +3007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/150_长日将尽",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3027,7 +3027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/152_半生缘",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3047,7 +3047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/153_经济学原理（上下）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3067,7 +3067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/154_你当像鸟飞往你的山",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3087,7 +3087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/155_海的女儿",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3107,7 +3107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/156_阿勒泰的角落",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3127,7 +3127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/157_鹿川有许多粪",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3147,7 +3147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/158_天朝的崩溃",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3167,7 +3167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/159_冰与火之歌",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3187,7 +3187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/160_东晋门阀政治",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3207,7 +3207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/161_草房子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3227,7 +3227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/162_國史大綱（上下）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3247,7 +3247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/163_万水千山走遍",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3267,7 +3267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/164_亮剑",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3287,7 +3287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/165_我不知道该说什么，关于死亡还是爱情",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3307,7 +3307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/166_生死疲劳",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3327,7 +3327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/167_全球通史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3347,7 +3347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/168_苏菲的世界",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3367,7 +3367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/169_一个陌生女人的来信",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3387,7 +3387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/170_李光耀观天下",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3407,7 +3407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/171_史蒂夫·乔布斯传",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3427,7 +3427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/172_德米安",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3447,7 +3447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/173_爱的艺术",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3467,7 +3467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/174_天生有罪",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3487,7 +3487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/175_温柔的夜",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3507,7 +3507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/176_亲密关系（第6版）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3527,7 +3527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/177_倾城之恋",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3547,7 +3547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/178_球状闪电",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3567,7 +3567,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/179_我的阿勒泰",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3587,7 +3587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/180_恶意",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3607,7 +3607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/181_不能承受的生命之轻",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3627,7 +3627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/182_帷幕",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3647,7 +3647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/183_古文观止",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3667,7 +3667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/184_包法利夫人",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3687,7 +3687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/185_看不见的女性",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3707,7 +3707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/186_麦琪的礼物",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3727,7 +3727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/188_父权制与资本主义",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3747,7 +3747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/189_一个女人的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3767,7 +3767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/190_足利女童连续失踪事件",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3787,7 +3787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/191_雕刻时光",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3807,7 +3807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/192_一桩事先张扬的凶杀案",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3827,7 +3827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/193_挽救计划",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3847,7 +3847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/194_翦商",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3867,7 +3867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/195_我也有一个梦想",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3887,7 +3887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/196_激荡三十年（上）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3907,7 +3907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/197_在细雨中呼喊",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3927,7 +3927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/199_银河帝国：基地七部曲",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3947,7 +3947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/200_尼罗河上的惨案",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3967,7 +3967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/201_海风中失落的血色馈赠",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3987,7 +3987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/202_骆驼祥子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4007,7 +4007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/203_当呼吸化为空气",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4027,7 +4027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/204_从零开始的女性主义",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4047,7 +4047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/205_雷雨",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4067,7 +4067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/206_荒原狼",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4087,7 +4087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/208_情书",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4107,7 +4107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/209_水浒传（全二册）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4127,7 +4127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/210_倚天屠龙记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4147,7 +4147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/211_一千零一夜",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4167,7 +4167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/212_孙子兵法",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4187,7 +4187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/213_万物有灵且美",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4207,7 +4207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/214_雨季不再来",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4227,7 +4227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/215_最好的我们",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4247,7 +4247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/216_奥斯维辛",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4267,7 +4267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/217_现代艺术150年",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4287,7 +4287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/218_康熙的红票",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4307,7 +4307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/219_不存在的骑士",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4327,7 +4327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/220_庄子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4347,7 +4347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/221_送你一颗子弹",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4367,7 +4367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/222_论语",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4387,7 +4387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/223_坟",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4407,7 +4407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/224_孩子你慢慢来",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4427,7 +4427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/225_罗生门",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4447,7 +4447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/226_会饮篇",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4467,7 +4467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/227_黑箱：日本之耻",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4487,7 +4487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/228_九州·缥缈录",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4507,7 +4507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/229_浮生六记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4527,7 +4527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/230_显微镜下的大明",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4547,7 +4547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/231_金锁记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4567,7 +4567,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/232_象棋的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4587,7 +4587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/233_渴望生活",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4607,7 +4607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/234_变形记",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4627,7 +4627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/235_二手时间",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4647,7 +4647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/236_白痴",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4667,7 +4667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/237_红星照耀中国",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4687,7 +4687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/238_分成两半的子爵",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4707,7 +4707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/239_你一生的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4727,7 +4727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/241_规训与惩罚",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4747,7 +4747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/242_哈姆莱特",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4767,7 +4767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/243_成为波伏瓦",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4787,7 +4787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/244_你好，旧时光（上 下）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4807,7 +4807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/245_银河系漫游指南",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4827,7 +4827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/246_时间的秩序",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4847,7 +4847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/247_火星救援",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4867,7 +4867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/248_贾想 I",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4887,7 +4887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/249_打开一颗心",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4907,7 +4907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/250_解忧杂货店",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4927,7 +4927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/004_1984",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4947,7 +4947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_停止内耗的人生：四象限学习精进计划",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4967,7 +4967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_三分钟趣读中国史：从战国到西汉",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4987,7 +4987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_燕东园左邻右舍",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5007,7 +5007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_重构契丹早期史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5027,7 +5027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_深山欲雪",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5047,7 +5047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_两魏周齐战争中的河东",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5067,7 +5067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_江户时代江户城",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5087,7 +5087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_蛋镇诗社 – 朱山坡",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5107,7 +5107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_黛莱丝的一生",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5127,7 +5127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_大地三部曲",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5147,7 +5147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_中国甲胄史（全二册）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5167,7 +5167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_交子：世界金融史的中国贡献",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5187,7 +5187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_名士自风流：中国古代隐士传",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5207,7 +5207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_露西娅逃离的29个春天",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5227,7 +5227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_三国史 – 马植杰",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5247,7 +5247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_信仰 – [日] 村田沙耶香",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5267,7 +5267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_胎记 – 苏南",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5287,7 +5287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_告白 – [日] 凑佳苗",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5307,7 +5307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_敌友难辨：冷战谍海逸史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5327,7 +5327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_别让微压力消耗你",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5347,7 +5347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_聪明人说话前在想什么？",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5367,7 +5367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_愚蠢的核弹：古巴导弹危机新史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5387,7 +5387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_音乐与人类",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5407,7 +5407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_三国战争与地要天时",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5427,7 +5427,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_造物须臾",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5447,7 +5447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_午后进入我房间",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5467,7 +5467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_明熹宗传：木匠皇帝朱由校",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5487,7 +5487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_渡鸦栖息时",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5507,7 +5507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260213214650913",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5527,7 +5527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260213214657296",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5547,7 +5547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260213214703720",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5563,11 +5563,11 @@ export const books: Book[] = [
   {
     "id": 661,
     "title": "寻秦记",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "黄易",
+    "authorDetail": "黄易（1952-2017），原名黄祖强，香港著名武侠小说家，与金庸、古龙、梁羽生并称武侠小说四大宗师。代表作有《寻秦记》《大唐双龙传》《覆雨翻云》等，开创了穿越武侠小说的先河。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260215095922882",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5587,7 +5587,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174529996",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5607,7 +5607,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174534109",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5627,7 +5627,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175326301",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5647,7 +5647,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175331243",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5667,7 +5667,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174543007",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5687,7 +5687,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174545822",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5707,7 +5707,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174547534",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5727,7 +5727,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175341961",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5747,7 +5747,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174550698",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5767,7 +5767,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174554004",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5787,7 +5787,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175401773",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5807,7 +5807,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175405902",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5827,7 +5827,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303111959567",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5847,7 +5847,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112101494",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5867,7 +5867,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112120562",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5887,7 +5887,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112133126",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5907,7 +5907,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112211233",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5927,7 +5927,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303111926569",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5947,7 +5947,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114135504",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5967,7 +5967,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114231687",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -5987,7 +5987,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114252572",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6007,7 +6007,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114327116",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6027,7 +6027,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303134245098",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6047,7 +6047,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303134309744",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6067,7 +6067,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303134452429",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6087,7 +6087,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143345037",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6107,7 +6107,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143353305",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6127,7 +6127,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143401311",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6147,7 +6147,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143408462",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6167,7 +6167,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://kgbook.com/d/file/201102/99d942ee125350c7c71c25b18c99601a.jpg",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6187,7 +6187,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143437797",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6207,7 +6207,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143446018",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6227,7 +6227,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143454144",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6247,7 +6247,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143503417",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6267,7 +6267,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143512221",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6287,7 +6287,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143522550",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6307,7 +6307,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143530468",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6327,7 +6327,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143538441",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6347,7 +6347,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143548795",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6367,7 +6367,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143558083",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6387,7 +6387,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143605447",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6407,7 +6407,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143613143",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6423,11 +6423,11 @@ export const books: Book[] = [
   {
     "id": 704,
     "title": "寻秦记",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "黄易",
+    "authorDetail": "黄易（1952-2017），原名黄祖强，香港著名武侠小说家，与金庸、古龙、梁羽生并称武侠小说四大宗师。代表作有《寻秦记》《大唐双龙传》《覆雨翻云》等，开创了穿越武侠小说的先河。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143625573",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6447,7 +6447,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143639432",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6467,7 +6467,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143649452",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6487,7 +6487,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143703255",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6507,7 +6507,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143710327",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6527,7 +6527,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143716806",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6547,7 +6547,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143727685",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8059,11 +8059,11 @@ export const books: Book[] = [
   {
     "id": 251,
     "title": "寻秦记",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "黄易",
+    "authorDetail": "黄易（1952-2017），原名黄祖强，香港著名武侠小说家，与金庸、古龙、梁羽生并称武侠小说四大宗师。代表作有《寻秦记》《大唐双龙传》《覆雨翻云》等，开创了穿越武侠小说的先河。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260215095922882",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8083,7 +8083,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174529996",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8103,7 +8103,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174534109",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8123,7 +8123,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175326301",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8143,7 +8143,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175331243",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8163,7 +8163,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174543007",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8183,7 +8183,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174547534",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8203,7 +8203,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175341961",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8223,7 +8223,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174550698",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8243,7 +8243,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174554004",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8263,7 +8263,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175401773",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8283,7 +8283,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175405902",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
@@ -8303,7 +8303,7 @@ export const books: Book[] = [
     "authorDetail": "佚名作者，该作品作者信息不详。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112211233",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《寻秦记》是黄易的代表作之一，讲述了21世纪特种兵项少龙穿越回战国时代，凭借现代人的智慧与知识，卷入秦国统一天下的历史洪流之中。他与嬴政、吕不韦、赵姬等历史人物展开了一段跨越时空的传奇故事。本书将武侠、历史、科幻巧妙融合，被誉为穿越小说的开山鼻祖之作。",
     "category": "小说文学",
     "downloadLinks": [
       {
