@@ -223,11 +223,11 @@ export const books: Book[] = [
   {
     "id": 384,
     "title": "黄色墙纸",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "吉尔曼",
+    "authorDetail": "夏洛特·帕金斯·吉尔曼（1860-1935），美国女作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260214154621548",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《黄色墙纸》是一篇心理恐怖短篇小说，讲述了一位患有产后抑郁症的女性被丈夫禁锢，最终精神崩溃的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -443,11 +443,11 @@ export const books: Book[] = [
   {
     "id": 397,
     "title": "三体全集",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "刘慈欣",
+    "authorDetail": "刘慈欣，1963年生，中国科幻作家。《三体》获雨果奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/santi_cover_1769100754655",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《三体》三部曲讲述了地球文明与三体文明之间的博弈与战争。「黑暗森林」法则成为科幻文学的经典设定。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -463,11 +463,11 @@ export const books: Book[] = [
   {
     "id": 398,
     "title": "百年孤独",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "马尔克斯",
+    "authorDetail": "马尔克斯（1927-2014），哥伦比亚作家，1982年诺贝尔文学奖获得者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/006_百年孤独",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《百年孤独》是魔幻现实主义的巅峰之作，讲述了布恩迪亚家族七代人的传奇故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -483,11 +483,11 @@ export const books: Book[] = [
   {
     "id": 399,
     "title": "飘",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "玛格丽特·米切尔",
+    "authorDetail": "玛格丽特·米切尔（1900-1949），美国女作家。《飘》获普利策奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/007_飘",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《飘》以美国南北战争为背景，讲述了南方庄园小姐斯嘉丽·奥哈拉的传奇人生。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -503,11 +503,11 @@ export const books: Book[] = [
   {
     "id": 400,
     "title": "动物农场",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "乔治·奥威尔",
+    "authorDetail": "乔治·奥威尔（1903-1950），英国作家。《动物农场》《1984》是反极权主义的经典。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/008_动物农场",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《动物农场》是一部政治寓言小说，讲述了农场动物赶走人类主人后，猪逐渐成为新的压迫者的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -523,11 +523,11 @@ export const books: Book[] = [
   {
     "id": 401,
     "title": "房思琪的初恋乐园",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "林奕含",
+    "authorDetail": "林奕含（1991-2017），台湾女作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/009_房思琪的初恋乐园",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《房思琪的初恋乐园》讲述了少女房思琪被补习班老师诱奸、性侵的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -543,11 +543,11 @@ export const books: Book[] = [
   {
     "id": 402,
     "title": "三国演义（全二册）",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "罗贯中",
+    "authorDetail": "罗贯中（约1330-约1400），元末明初小说家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/010_三国演义（全二册）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《三国演义》以东汉末年为背景，讲述了魏、蜀、吴三国鼎立的历史。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -563,11 +563,11 @@ export const books: Book[] = [
   {
     "id": 403,
     "title": "福尔摩斯探案全集（上中下）",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "柯南·道尔",
+    "authorDetail": "柯南·道尔（1859-1930），英国作家。塑造了侦探福尔摩斯。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/011_福尔摩斯探案全集（上中下）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《福尔摩斯探案全集》讲述了侦探福尔摩斯与助手华生在伦敦破案的传奇故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -583,11 +583,11 @@ export const books: Book[] = [
   {
     "id": 404,
     "title": "白夜行",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "东野圭吾",
+    "authorDetail": "东野圭吾，1958年生，日本推理小说作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/012_白夜行",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《白夜行》讲述了两个被命运捆绑的灵魂的故事。被誉为东野圭吾的巅峰之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -603,11 +603,11 @@ export const books: Book[] = [
   {
     "id": 406,
     "title": "小王子",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "圣埃克苏佩里",
+    "authorDetail": "圣埃克苏佩里（1900-1944），法国作家、飞行员。《小王子》是世界上最畅销的图书之一。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/015_小王子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《小王子》是一部献给大人的童话，讲述了来自B612小行星的小王子的故事。「只有用心才能看清楚，真正重要的东西眼睛是看不见的。」",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -623,11 +623,11 @@ export const books: Book[] = [
   {
     "id": 407,
     "title": "安徒生童话故事集",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "安徒生",
+    "authorDetail": "安徒生（1805-1875），丹麦作家。世界最著名的童话作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/016_安徒生童话故事集",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《安徒生童话》收录了《海的女儿》《丑小鸭》《卖火柴的小女孩》等经典故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -643,11 +643,11 @@ export const books: Book[] = [
   {
     "id": 408,
     "title": "撒哈拉的故事",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "三毛",
+    "authorDetail": "三毛（1943-1991），台湾作家。以流浪文学著称。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/017_撒哈拉的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《撒哈拉的故事》记录了三毛与丈夫荷西在撒哈拉沙漠的生活。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -663,11 +663,11 @@ export const books: Book[] = [
   {
     "id": 409,
     "title": "失踪的孩子",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "费兰特",
+    "authorDetail": "埃莱娜·费兰特，意大利当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/018_失踪的孩子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《失踪的孩子》是「那不勒斯四部曲」的终章，讲述了莉拉和埃莱娜一生的友谊与竞争。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -683,11 +683,11 @@ export const books: Book[] = [
   {
     "id": 410,
     "title": "天龙八部",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），武侠小说大师。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/tianlong_cover_1769101187012",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《天龙八部》以北宋为背景，讲述了乔峰、段誉、虚竹三位主角的传奇故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -703,11 +703,11 @@ export const books: Book[] = [
   {
     "id": 411,
     "title": "卡拉马佐夫兄弟",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "陀思妥耶夫斯基",
+    "authorDetail": "陀思妥耶夫斯基（1821-1881），俄国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/karamazov_cover_1769101204306",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《卡拉马佐夫兄弟》深刻探讨了信仰、道德、自由意志等哲学主题。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -743,11 +743,11 @@ export const books: Book[] = [
   {
     "id": 413,
     "title": "杀死一只知更鸟",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "哈珀·李",
+    "authorDetail": "哈珀·李（1926-2016），美国女作家。《杀死一只知更鸟》获普利策奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/022_杀死一只知更鸟",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《杀死一只知更鸟》以美国南方小镇为背景，探讨了种族歧视、正义与成长的主题。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -763,11 +763,11 @@ export const books: Book[] = [
   {
     "id": 416,
     "title": "罗杰疑案",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "阿加莎·克里斯蒂",
+    "authorDetail": "阿加莎·克里斯蒂（1890-1976），英国侦探小说作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/027_罗杰疑案",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《罗杰疑案》是阿加莎·克里斯蒂的成名作，以开创性的叙事手法创造了推理小说史上最具争议的结局之一。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -783,11 +783,11 @@ export const books: Book[] = [
   {
     "id": 417,
     "title": "悉达多",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "黑塞",
+    "authorDetail": "黑塞（1877-1962），德国作家，1946年诺贝尔文学奖获得者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/028_悉达多",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《悉达多》是一部哲学小说，讲述了古印度贵族青年悉达多寻找真理的旅程。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -803,11 +803,11 @@ export const books: Book[] = [
   {
     "id": 418,
     "title": "我与地坛",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "史铁生",
+    "authorDetail": "史铁生（1951-2010），北京人，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/029_我与地坛",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《我与地坛》是史铁生的散文代表作，记录了他在地坛公园中对生命、死亡、母亲的思考。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -823,11 +823,11 @@ export const books: Book[] = [
   {
     "id": 420,
     "title": "彷徨",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "鲁迅",
+    "authorDetail": "鲁迅（1881-1936），原名周树人，中国现代文学的奠基人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/031_彷徨",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《彷徨》是鲁迅的第二部小说集，收录了《祝福》《在酒楼上》《伤逝》等名篇。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -843,11 +843,11 @@ export const books: Book[] = [
   {
     "id": 421,
     "title": "局外人",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "加缪",
+    "authorDetail": "加缪（1913-1960），法国作家，1957年诺贝尔文学奖获得者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/stranger_camus_cover_1769137886125",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《局外人》是加缪的成名作，讲述了主人公默尔索在母亲葬礼上没有哭泣，后来因杀人被判死刑的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -863,11 +863,11 @@ export const books: Book[] = [
   {
     "id": 423,
     "title": "乡土中国",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "费孝通",
+    "authorDetail": "费孝通（1910-2005），社会学家、人类学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/034_乡土中国",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《乡土中国》从「差序格局」「礼治秩序」等概念入手，分析了中国传统社会的结构特点。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -883,11 +883,11 @@ export const books: Book[] = [
   {
     "id": 424,
     "title": "平凡的世界（全三部）",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "路遥",
+    "authorDetail": "路遥（1949-1992），中国当代作家。《平凡的世界》获茅盾文学奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/035_平凡的世界（全三部）",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《平凡的世界》以孙少安、孙少平兄弟的奋斗为主线，描绘了中国城乡社会在1975-1985年间的巨大变迁。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -903,11 +903,11 @@ export const books: Book[] = [
   {
     "id": 425,
     "title": "人类简史",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "赫拉利",
+    "authorDetail": "赫拉利，1976年生，以色列历史学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/036_人类简史",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《人类简史》从认知革命、农业革命到科学革命，讲述了智人如何从一种普通动物成为地球的主宰。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1003,11 +1003,11 @@ export const books: Book[] = [
   {
     "id": 432,
     "title": "肖申克的救赎",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "斯蒂芬·金",
+    "authorDetail": "斯蒂芬·金，1947年生，美国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/043_肖申克的救赎",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《肖申克的救赎》讲述了银行家安迪被冤枉入狱后，用二十年时间挖通地道重获自由的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1063,11 +1063,11 @@ export const books: Book[] = [
   {
     "id": 435,
     "title": "基督山伯爵",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "大仲马",
+    "authorDetail": "大仲马（1802-1870），法国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/046_基督山伯爵",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《基督山伯爵》讲述了年轻的水手爱德蒙·唐泰斯被陷害入狱十四年后，成功越狱并复仇的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1083,11 +1083,11 @@ export const books: Book[] = [
   {
     "id": 436,
     "title": "万历十五年",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "黄仁宇",
+    "authorDetail": "黄仁宇（1918-2000），历史学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/047_万历十五年",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《万历十五年》以1587年为切入点，分析了明朝走向衰落的深层原因。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1103,11 +1103,11 @@ export const books: Book[] = [
   {
     "id": 437,
     "title": "秋园",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "杨本芬",
+    "authorDetail": "杨本芬，女，1940年生，作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/048_秋园",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《秋园》以朴素平实的语言记录了母亲秋园的一生。是一部普通人的史诗。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1123,11 +1123,11 @@ export const books: Book[] = [
   {
     "id": 438,
     "title": "霍乱时期的爱情",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "马尔克斯",
+    "authorDetail": "马尔克斯（1927-2014），哥伦比亚作家，诺贝尔文学奖获得者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/049_霍乱时期的爱情",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《霍乱时期的爱情》讲述了弗洛伦蒂诺·阿里萨对费尔明娜·达萨长达半个多世纪的爱情。被誉为「人类有史以来最伟大的爱情小说」。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1143,11 +1143,11 @@ export const books: Book[] = [
   {
     "id": 439,
     "title": "艺术的故事",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "贡布里希",
+    "authorDetail": "贡布里希（1909-2001），英国艺术史家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/050_艺术的故事",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《艺术的故事》从史前洞穴壁画讲到现代艺术，是艺术史入门的经典教材。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1203,11 +1203,11 @@ export const books: Book[] = [
   {
     "id": 442,
     "title": "射雕英雄传",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "金庸",
+    "authorDetail": "金庸（1924-2018），武侠小说大师。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/053_射雕英雄传",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《射雕英雄传》以南宋为背景，讲述了郭靖从一个草原少年成长为一代大侠的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1223,11 +1223,11 @@ export const books: Book[] = [
   {
     "id": 443,
     "title": "月亮和六便士",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "毛姆",
+    "authorDetail": "毛姆（1874-1965），英国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/054_月亮和六便士",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《月亮和六便士》以画家高更为原型，讲述了证券经纪人斯特里克兰德抛弃一切追寻艺术梦想的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1263,11 +1263,11 @@ export const books: Book[] = [
   {
     "id": 445,
     "title": "无人生还",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "阿加莎·克里斯蒂",
+    "authorDetail": "阿加莎·克里斯蒂（1890-1976），英国侦探小说作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/056_无人生还",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《无人生还》讲述了十个陌生人被邀请到孤岛上，按照一首童谣逐一死去的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1283,11 +1283,11 @@ export const books: Book[] = [
   {
     "id": 446,
     "title": "树上的男爵",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "卡尔维诺",
+    "authorDetail": "卡尔维诺（1923-1985），意大利作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/057_树上的男爵",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《树上的男爵》讲述了18世纪意大利贵族少年柯希莫爬到树上生活一生的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1303,11 +1303,11 @@ export const books: Book[] = [
   {
     "id": 447,
     "title": "追风筝的人",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "胡赛尼",
+    "authorDetail": "胡赛尼，1965年生，阿富汗裔美国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/058_追风筝的人",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《追风筝的人》讲述了阿富汗少年阿米尔与仆人哈桑之间的友谊。「为你，千千万万遍。」",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1343,11 +1343,11 @@ export const books: Book[] = [
   {
     "id": 449,
     "title": "刀锋",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "毛姆",
+    "authorDetail": "毛姆（1874-1965），英国作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/060_刀锋",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《刀锋》讲述了美国青年拉里在第一次世界大战后，放弃优渥的生活，踏上寻找生命意义的旅程。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1363,11 +1363,11 @@ export const books: Book[] = [
   {
     "id": 450,
     "title": "格林童话全集",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "格林兄弟",
+    "authorDetail": "格林兄弟，德国语言学家、民俗学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/061_格林童话全集",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《格林童话》收录了《白雪公主》《灰姑娘》《小红帽》等经典故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1383,11 +1383,11 @@ export const books: Book[] = [
   {
     "id": 451,
     "title": "太白金星有点烦",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "马伯庸",
+    "authorDetail": "马伯庸，1980年生，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/taibai_venus_cover_1769415361385",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《太白金星有点烦》以《西游记》为背景，从太白金星的视角重新解读取经故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1463,11 +1463,11 @@ export const books: Book[] = [
   {
     "id": 455,
     "title": "嫌疑人X的献身",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "东野圭吾",
+    "authorDetail": "东野圭吾，1958年生，日本推理小说作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/suspect_x_cover_1769415425738",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《嫌疑人X的献身》讲述了天才数学家石神为暗恋的邻居靖子制造完美不在场证明的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1503,11 +1503,11 @@ export const books: Book[] = [
   {
     "id": 457,
     "title": "孽子",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "白先勇",
+    "authorDetail": "白先勇，1937年生，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/069_孽子",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《孽子》是台湾第一部以同性恋为题材的长篇小说，是台湾同志文学的里程碑之作。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1523,11 +1523,11 @@ export const books: Book[] = [
   {
     "id": 458,
     "title": "傲慢与偏见",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "简·奥斯汀",
+    "authorDetail": "简·奥斯汀（1775-1817），英国女作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/070_傲慢与偏见",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《傲慢与偏见》讲述了乡绅之女伊丽莎白·班纳特与贵族达西先生之间的爱情故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1543,11 +1543,11 @@ export const books: Book[] = [
   {
     "id": 459,
     "title": "黄金时代",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "王小波",
+    "authorDetail": "王小波（1952-1997），北京人，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/071_黄金时代",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《黄金时代》以文革时期的云南农村为背景，讲述了知青王二与陈清扬的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1563,11 +1563,11 @@ export const books: Book[] = [
   {
     "id": 460,
     "title": "台北人",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "白先勇",
+    "authorDetail": "白先勇，1937年生，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/taipei_people_cover_1769415409304",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《台北人》收录了14个短篇小说，以民国时期迁台的大陆人为主角，描绘了他们的生活变迁。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1583,11 +1583,11 @@ export const books: Book[] = [
   {
     "id": 461,
     "title": "四世同堂",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "老舍",
+    "authorDetail": "老舍（1899-1966），中国现代著名作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/074_四世同堂",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《四世同堂》以抗日战争时期的北平为背景，讲述了祁家四代人在日寇占领下的生活。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -1604,10 +1604,10 @@ export const books: Book[] = [
     "id": 462,
     "title": "诗经",
     "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "authorDetail": "《诗经》是中国最早的诗歌总集。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/075_诗经",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《诗经》是中国文学的源头，分为风、雅、颂三部分。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -3563,11 +3563,11 @@ export const books: Book[] = [
   {
     "id": 568,
     "title": "麦琪的礼物",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "欧·亨利",
+    "authorDetail": "欧·亨利（1862-1910），原名威廉·西德尼·波特，美国短篇小说家。代表作有《麦琪的礼物》《最后一片叶子》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/186_麦琪的礼物",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《麦琪的礼物》讲述了贫困的年轻夫妇德拉和吉姆为了给对方买圣诞礼物，各自牺牲了最珍贵的东西的故事。这是一个关于爱与牺牲的经典故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4203,11 +4203,11 @@ export const books: Book[] = [
   {
     "id": 604,
     "title": "罗生门",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "芥川龙之介",
+    "authorDetail": "芥川龙之介（1892-1927），日本小说家。代表作有《罗生门》《鼻子》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/225_罗生门",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《罗生门》讲述了在平安时代末期的京都，一个被解雇的下人在罗生门下的故事。深刻探讨了善恶的界限与人性的复杂性。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -4223,11 +4223,11 @@ export const books: Book[] = [
   {
     "id": 605,
     "title": "会饮篇",
-    "author": "佚名",
-    "authorDetail": "佚名作者，该作品作者信息不详。",
+    "author": "柏拉图",
+    "authorDetail": "柏拉图（前427-前347），古希腊哲学家。西方哲学史上最重要的人物之一。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/226_会饮篇",
-    "description": "暂无可用的豆瓣简介信息。",
+    "description": "《会饮篇》是柏拉图最著名的对话录之一，以宴会上的对话形式探讨了「爱」的本质。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8234,10 +8234,10 @@ export const books: Book[] = [
     "id": 813,
     "title": "许三观卖血记",
     "author": "余华",
-    "authorDetail": "余华，1960年生，浙江杭州人，中国当代作家。《活着》《许三观卖血记》作者。",
+    "authorDetail": "余华，1960年生，浙江杭州人，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150035189",
-    "description": "《许三观卖血记》是余华1995年创作的一部长篇小说，它以博大的温情描绘了磨难中的人生，以激烈的故事形式表达了人在面对厄运时求生的欲望。小说讲述了许三观靠着卖血渡过了人生的一个个难关，战胜了命运强加给他的惊涛骇浪，而当他老了，知道自己的血再也没有人要时，精神却崩溃了。6寸pdf 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《许三观卖血记》讲述了丝厂工人许三观在几十年间多次卖血渡过人生难关的故事。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1n6zWqzAjVFkl4b2AympsDw", "code": "0000"}],
     "size": "",
@@ -8419,7 +8419,7 @@ export const books: Book[] = [
     "authorDetail": "鲁迅（1881-1936），原名周树人，中国现代文学的奠基人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150207812",
-    "description": "《呐喊》是鲁迅1918年至1922年所作的短篇小说的结集，作品真实地描绘了从辛亥革命到五四时期的社会生活，揭示了种种深层次的社会矛盾，对中国旧有制度及陈腐的传统观念进行了深刻的剖析和彻底的否定，表现出对民族生存浓重的忧患意识和对社会变革的强烈渴望。mobi 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《呐喊》是鲁迅的第一部小说集，收录了《狂人日记》《阿Q正传》等14篇小说。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1o9DTz13YQ1zf5pp8gnoPnA", "code": "0000"}],
     "size": "",
@@ -8710,10 +8710,10 @@ export const books: Book[] = [
     "id": 847,
     "title": "白鹿原",
     "author": "陈忠实",
-    "authorDetail": "陈忠实（1942-2016），陕西西安人，中国当代作家。《白鹿原》获第四届茅盾文学奖。",
+    "authorDetail": "陈忠实（1942-2016），陕西西安人，中国当代作家。《白鹿原》获茅盾文学奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150428104",
-    "description": "《白鹿原》是一部渭河平原五十年变迁的雄奇史诗，一轴中国农村班斓多彩、触目惊心的长幅画卷。主人公六娶六丧，神秘的序曲预示着不祥。一个家族两代子孙，为争夺白鹿原的统治代代争斗不已，上演了一幕幕惊心动魄的活剧：巧取风水地，恶施美人计，孝子为匪，亲翁杀媳，兄弟相煎，情人反目……大革命、日寇入侵、三年内战，白鹿原翻云覆雨，王旗变幻，家仇国恨交错缠结，冤冤相报代代不已……古老的土地在新生的阵痛中颤粟。厚重深邃的思想内容，复杂多变的人物性格，跌宕曲折的故事情节，绚丽多彩的风土人情，形成作品鲜明的艺术特色和令人震撼的真实感。mobi   azw3格式 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《白鹿原》以陕西关中平原白鹿村为背景，讲述了白、鹿两大家族祖孙三代的恩怨纠葛。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1fxBUVGQQ7AgSvbAGOZMmYQ", "code": "0000"}],
     "size": "",
@@ -8797,7 +8797,7 @@ export const books: Book[] = [
     "authorDetail": "鲁迅（1881-1936），原名周树人，中国现代文学的奠基人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150515132",
-    "description": "本书收作者1924年至1926年所作散文诗二十三篇。1927年7月由北京新书局初版，列为作者所编的《乌合丛书》之一。《野草》贯穿着严肃的自剖和不懈的思想探索。它的艺术特色鲜明——象征和隐喻手法，想象丰富，构思奇特。6寸pdf 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《野草》收录了鲁迅1924-1926年间创作的23篇散文诗，是中国现代散文诗的开山之作。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1SuOt9vWaSD_MEPisK6--Pg", "code": "0000"}],
     "size": "",
@@ -8808,10 +8808,10 @@ export const books: Book[] = [
     "id": 854,
     "title": "沉默的大多数",
     "author": "王小波",
-    "authorDetail": "王小波（1952-1997），北京人，中国当代作家。《黄金时代》作者。",
+    "authorDetail": "王小波（1952-1997），北京人，中国当代作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150527309",
-    "description": "这本杂文随笔集包括思想文化方面的文章，涉及知识分子的处境及思考，社会道德伦理，文化论争，国学与新儒家，民族主义等问题；包括从日常生活中发掘出来的各种真知灼见，涉及科学与邪道，女权主义等；包括对社会科学研究的评论，涉及性问题，生育问题，同性恋问题，社会研究的伦理问题和方法问题等；包括创作谈和文论，如写作的动机，作者的师承，作者对小说艺术的看法，作者对文体格调的看法，对影视的看法等；包括少量的书评，其中既有对文学经典的评论，也有对当代作家作品的一些看法；最后，还包括一些域外生活的杂感以及对某些社会现象的评点。6寸pdf 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《沉默的大多数》是王小波的杂文集，收录了他对文化、社会、人生的思考。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1y9b7G9mz0qNp9HyDUz7CTg", "code": "0000"}],
     "size": "",
@@ -8906,10 +8906,10 @@ export const books: Book[] = [
     "id": 861,
     "title": "围城",
     "author": "钱钟书",
-    "authorDetail": "钱钟书（1910-1998），字默存，中国现代著名作家。《围城》作者。",
+    "authorDetail": "钱钟书（1910-1998），中国现代著名作家、学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150608864",
-    "description": "《围城》是钱钟书所著的长篇小说。第一版于 1947年由上海晨光出版公司出版。1949年之后，由于政治等方面的原因，本书长期无法在中国大陆和台湾重印，仅在香港出现过盗印本。1980年由作者重新修订之后，在中国大陆地区由人民文学出版社刊印。此后作者又曾小幅修改过几次。《围城》自从出版以来，就受到许多人的推重。由于1949年后长期无法重印，这本书逐渐淡出人们的视野。1960年代，旅美汉学家夏志清在《中国现代小说史》(A History of Modern Chinese Fiction)中对本书作出很高的评价，这才重新引起人们对它的关注。人们对它的评价一般集中在两方面，幽默的语言和对生活深刻的观察。从1990年代开始，也有人提出对本书的不同看法，认为这是一部被“拔高”的小说，并不是一部出色的作品。很多人认为这是一部幽默作品。除了各具特色的人物语言之外，作者夹叙其间的文字也显着机智与幽默。这是本书的一大特色。也有人认为这是作者卖弄文字，语言显得尖酸刻薄。但这一说法并不为大多数人接受。mobi 购买正版传送0 条评论留下脚印Powered By Artalk",
+    "description": "《围城》讲述了方鸿渐从留学归国到婚姻破裂的故事。「城里的人想出去，城外的人想进来」成为经典隐喻。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1NuL6a-xluhEugav0f0x4mQ", "code": "0000"}],
     "size": "",
@@ -8917,4 +8917,5 @@ export const books: Book[] = [
     "publishYear": "2026"
   }
 ];
+
 
