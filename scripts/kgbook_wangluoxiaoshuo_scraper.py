@@ -206,11 +206,35 @@ async def scrape_book_detail(page, detail_url: str) -> Dict[str, str]:
 
                 description = ' '.join(intro_lines[:3]).strip()  # 取前3段
 
-        # 获取下载链接
-        download_link = ''
-        link_elem = await page.query_selector('a[href*="pan.baidu"], a[href*="pan.quark"]')
-        if link_elem:
-            download_link = await link_elem.get_attribute('href') or ''
+        # 获取所有下载链接
+        download_links = []
+
+        # 先查找所有 DownSys 下载链接
+        link_elems = await page.query_selector_all('a[href*="/e/DownSys/GetDown"]')
+        for link_elem in link_elems:
+            href = await link_elem.get_attribute('href') or ''
+            text = await link_elem.inner_text()
+            if href:
+                if not href.startswith('http'):
+                    href = 'https://kgbook.com' + href
+                # 格式：格式名 | URL
+                download_links.append(f"{text.strip()} | {href}")
+
+        # 如果没有找到 DownSys 链接，再查找网盘链接
+        if not download_links:
+            link_elems = await page.query_selector_all('a[href*="pan.baidu"], a[href*="pan.quark"]')
+            for link_elem in link_elems:
+                href = await link_elem.get_attribute('href') or ''
+                text = await link_elem.inner_text()
+                if href:
+                    download_links.append(f"{text.strip()} | {href}")
+
+        # 用换行符连接多个下载链接
+        download_link = '\n'.join(download_links) if download_links else ''
+
+        # 添加日志
+        if len(download_links) > 1:
+            logger.info(f"   找到 {len(download_links)} 个下载链接")
 
         return {
             'cover': cover_url,
