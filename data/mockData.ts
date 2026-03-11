@@ -22,26 +22,6 @@ export interface Book {
 export const books: Book[] = [
 
   {
-    "id": 862,
-    "title": "三国史",
-    "author": "马植杰",
-    "authorDetail": "马植杰（1922—2006），著名历史学家，河北定州人。1945年毕业于西北大学历史系，1958年北京大学历史系秦汉史研究生肄业，师从翦伯赞。曾在兰州大学历史系任教，后任河北省社会科学院历史研究所研究员。",
-    "year": "",
-    "cover": "https://img.aqifei.top/img/2026/03/20260311124026285",
-    "description": "本书是一部断代史著作，讲述的是广义的三国时代，即从东汉末年到西晋统一近百年间的史事。书中对汉末群雄割据和魏、蜀、吴三国的兴衰过程进行了细致的叙述，并对其中的重要人物和史事进行了辨析，根据史料记载，纠正了一些通行说法的错误。",
-    "category": "历史人文",
-    "downloadLinks": [
-      {
-        "name": "百度网盘",
-        "url": "",
-        "code": ""
-      }
-    ],
-    "size": "",
-    "format": "EPUB",
-    "publishYear": "2026"
-  },
-  {
     "id": 1,
     "title": "哈利·波特全集",
     "author": "J.K. Rowling",
