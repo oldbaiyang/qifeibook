@@ -16,7 +16,7 @@ import {
   Cloud,
 } from "lucide-react";
 import styles from "./page.module.css";
-import { generateBookJsonLd } from "@/lib/utils";
+import { generateBookJsonLd, generateBreadcrumbJsonLd } from "@/lib/utils";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -84,11 +84,22 @@ export default async function BookDetailPage({ params }: Props) {
 
   const jsonLd = generateBookJsonLd(book, id);
 
+  // 面包屑 JSON-LD
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "首页", url: "https://qifeibook.com/" },
+    { name: book.category, url: `https://qifeibook.com/category/${encodeURIComponent(book.category)}` },
+    { name: book.title, url: `https://qifeibook.com/book/${id}` }
+  ]);
+
   return (
     <article className="px-4 py-8 md:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <BreadcrumbNav

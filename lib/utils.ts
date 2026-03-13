@@ -27,6 +27,9 @@ export function generateBreadcrumbJsonLd(items: BreadcrumbItem[]) {
  * 生成图书的 JSON-LD 结构化数据
  */
 export function generateBookJsonLd(book: any, bookId: string) {
+    // 解析文件格式
+    const formats = book.format ? book.format.split(',').map((f: string) => f.trim().toUpperCase()) : ['EPUB'];
+
     return {
         '@context': 'https://schema.org',
         '@type': 'Book',
@@ -37,14 +40,32 @@ export function generateBookJsonLd(book: any, bookId: string) {
         },
         'description': book.description,
         'image': book.cover,
-        'datePublished': book.year,
+        'datePublished': book.publishYear || book.year,
         'inLanguage': 'zh-CN',
         'url': `https://qifeibook.com/book/${bookId}`,
         'publisher': {
             '@type': 'Organization',
             'name': '棋飞书库'
         },
-        'genre': book.category
+        'genre': book.category,
+        'bookFormat': 'EBook',
+        'encodingFormat': formats,
+        'offers': {
+            '@type': 'Offer',
+            'price': '0',
+            'priceCurrency': 'CNY',
+            'availability': 'https://schema.org/InStock',
+            'seller': {
+                '@type': 'Organization',
+                'name': '棋飞书库'
+            }
+        },
+        'aggregateRating': book.rating ? {
+            '@type': 'AggregateRating',
+            'ratingValue': book.rating,
+            'bestRating': '10',
+            'worstRating': '0'
+        } : undefined
     };
 }
 
