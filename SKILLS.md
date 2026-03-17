@@ -332,3 +332,75 @@ python3 scripts/move_to_new_publish.py
 1. 脚本会自动创建"新发布"工作表（如果不存在）
 2. 删除操作从后往前执行，避免行索引变化
 3. 表头行会被保留并复制到新工作表
+
+---
+
+## 7. 常用快速操作总结
+
+### 常用脚本列表
+
+| 脚本 | 功能 |
+|------|------|
+| `scripts/update_baidu_links_batch.py` | 批量更新飞书未发布sheet的F列下载链接 |
+| `scripts/sync_books_with_links.py` | 将飞书中有下载链接的书籍同步到网站 |
+| `scripts/move_to_published.py` | 将未发布sheet中有下载链接的书籍移动到已发布sheet |
+| `scripts/update_sitemap.py` | 更新sitemap.xml |
+
+### 完整发布流程
+
+```bash
+# 1. 更新飞书F列下载链接（用户提供百度网盘链接）
+python scripts/update_baidu_links_batch.py
+
+# 2. 发布书籍到网站
+python scripts/sync_books_with_links.py
+
+# 3. 构建项目
+npm run build
+
+# 4. 更新sitemap
+python scripts/update_sitemap.py
+
+# 5. 提交代码
+git add data/mockData.ts public/sitemap.xml
+git commit -m "feat: add new books"
+git push origin main
+
+# 6. 移动到已发布sheet
+python scripts/move_to_published.py
+```
+
+### 飞书表格结构
+
+**未发布Sheet (sheet_id: 22j6ne)**
+| 列 | 字段 |
+|---|---|
+| A | 书名 |
+| B | 作者 |
+| C | 封面图片URL |
+| D | 作者简介 |
+| E | 书籍简介 |
+| F | 下载链接 |
+
+**已发布Sheet (sheet_id: 3s5nH2)**
+| 列 | 字段 |
+|---|---|
+| A | ID |
+| B | 书名 |
+| C | 作者 |
+| D | 作者简介 |
+| E | 封面图片URL |
+| F | 书籍简介 |
+| G | 分类 |
+| H | 下载链接 |
+
+### 百度网盘链接格式
+
+用户提供的格式：
+```
+【超级会员V9】通过百度网盘分享的文件：书名.epub
+链接：https://pan.baidu.com/s/xxx?pwd=0000
+提取码：0000
+```
+
+脚本自动提取后存入飞书F列，包含超链接和提取码。
