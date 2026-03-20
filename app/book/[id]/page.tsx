@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `《${book.title}》${book.author}_EPUB/MOBI/PDF免费下载_棋飞书库`,
     description: `《${book.title}》${book.author}著。${desc} 支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘免费高速下载。`,
+    keywords: book.keywords,
     alternates: {
       canonical: `https://qifeibook.com/book/${id}`,
     },

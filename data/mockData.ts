@@ -17,6 +17,7 @@ export interface Book {
   size: string;
   format: string;
   publishYear: string;
+  keywords?: string[];
 }
 
 export const books: Book[] = [
@@ -418,6 +419,28 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": ""
+  },
+
+  {
+    "id": 930,
+    "title": "OpenClaw 从入门到精通指南",
+    "author": "",
+    "authorDetail": "",
+    "year": "",
+    "cover": "https://img.aqifei.top/img/2026/03/20260320100936605",
+    "description": "《OpenClaw 从入门到精通指南》是一本全面介绍开源AI智能体网关OpenClaw的实用手册。该工具允许用户在本地或云端部署AI助手，在完全保障数据隐私的前提下，直接搜索、读取和管理本地文件。同时，它还能无缝接入飞书、企业微信、QQ、Telegram等日常聊天平台，实现随时随地调用。全书详细解析了OpenClaw的核心优势与工作原理，重点介绍了通过丰富的Skills技能生态实现功能的无限扩展，以及通过自定义接入Kimi、DeepSeek等高性价比大模型API，大幅降低AI日常使用成本。全书提供了从零开始的实操指导，涵盖了Mac、Windows、Linux系统以及腾讯云、阿里云等云平台的环境搭建、一键部署、API配置与故障排查流程。这是一份专为超级个体、知识工作者和程序员量身打造的宝典，旨在帮助用户轻松构建私有化、低成本、高效率的全能型AI工作助手。",
+    "category": "计算机",
+    "downloadLinks": [
+        {
+          "name": "百度网盘",
+          "url": "https://pan.baidu.com/s/14ZeFLNJf3r7Sq18qr3N6IA?pwd=0000",
+          "code": "0000"
+        }
+      ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "",
+    "keywords": ["openclaw", "龙虾", "OpenClaw教程", "AI智能体网关", "私有化AI助手"]
   },
 
   {
