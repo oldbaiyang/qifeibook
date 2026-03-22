@@ -62,6 +62,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        {/* Google AdSense */}
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6967766161116772" crossOrigin="anonymous" />
+
         {/* Structured Data for SEO */}
         <Script id="structured-data" type="application/ld+json">
           {JSON.stringify({
