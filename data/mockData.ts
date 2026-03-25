@@ -1052,6 +1052,27 @@ export const books: Book[] = [
   },
 
   {
+    "id": 937,
+    "title": "英伟达之道：黄仁勋打造芯片帝国，引领AI浪潮的秘密",
+    "author": "金泰（Tae Kim）",
+    "authorDetail": "金泰（Tae Kim），硅谷资深科技作家、财经记者。媒体经历：《巴伦周刊》资深撰稿人，曾任《彭博观点》科技专栏作家、CNBC Digital投资记者、雅虎财经线上编辑。专业背景：拥有科技股投资与报导10年以上经验，横跨技术、金融与商业领域。写作特点：身为NVIDIA显卡30年用户及NVIDIA投资人，兼具内部视角与外部观察者客观立场。",
+    "year": "2025",
+    "cover": "https://img.aqifei.top/img/2026/03/20260325105147373",
+    "description": "《英伟达之道》是全球首部由黄仁勋授权采访的NVIDIA详细商业史，原书名《The NVIDIA Way: Jensen Huang and the Making of a Tech Giant》，2025年1月中文版出版。本书核心：NVIDIA究竟是一夜成名，还是筹谋已久？这本书以100多次访谈为素材，包括黄仁勋本人、两位联合创始人、最初的风险投资人、早期员工及现任高管，首次完整披露NVIDIA如何从一家图形处理器公司转型为全球AI领域的领航者。内容要点：黄仁勋亲述60年人生历程——从性格内向的亚裔移民少年，成长为全球最有价值公司掌舵人的励志故事；成功秘诀与商业创新——黄仁勋推崇的价值观、在至暗时刻的艰难抉择；幕后故事——不为人知的创业艰辛与关键时刻决策；投资价值——NVIDIA 1999年IPO时投资1万美元，如今价值约4000万美元，20年回报率惊人。",
+    "category": "历史人文",
+    "downloadLinks": [
+        {
+          "name": "百度网盘",
+          "url": "https://pan.baidu.com/s/1x_Dm_YCAoekSKGjtS_HEmA?pwd=0000",
+          "code": "0000"
+        }
+    ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "2025"
+  },
+
+  {
     "id": 873,
     "title": "宋词鉴赏辞典",
     "author": "夏承焘",
