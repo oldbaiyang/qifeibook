@@ -10764,6 +10764,27 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": "2017"
+  },
+
+  {
+    "id": 950,
+    "title": "当下的力量",
+    "author": "艾克哈特·托勒（Eckhart Tolle）",
+    "authorDetail": "当代伟大的心灵导师，不倾向于任何宗教或传统。他的教法与古代心灵导师一脉相承，以清晰明了的语言传递简单而深刻的灵性智慧，帮助读者回归当下，找回内在的平静与喜悦。",
+    "year": "2004",
+    "cover": "https://img.aqifei.top/img/2026/03/20260330065428538",
+    "description": "《当下的力量》揭示我们已拥有让自己幸福的宝藏，只是尚未发现与运用它的力量。书中通过深刻的洞见和实用指引，教我们专注于当下、放下思维的束缚，从而获得内在的平静、自由与喜悦。作为心灵读物的经典之作，英文版自2004年出版以来，已被译成30多种语言，累计销量超过200万册，为无数读者带来生命的转变与觉醒。",
+    "category": "心理自助",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1VLosAgnkBK-dahZwzAfgtg?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "2004"
   }
 ];
 
