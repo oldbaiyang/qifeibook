@@ -10799,7 +10799,7 @@ export const books: Book[] = [
     "downloadLinks": [
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1VLosAgnkBK-dahZwzAfgtg?pwd=0000",
+        "url": "https://pan.baidu.com/s/1vPdvtwk9pBD4piyPF68nqg?pwd=0000",
         "code": "0000"
       }
     ],
