@@ -3428,4 +3428,11 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://qifeibook.com/book/953</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
