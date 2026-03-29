@@ -10722,6 +10722,27 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": "2017"
+  },
+
+  {
+    "id": 948,
+    "title": "诡秘之主",
+    "author": "爱潜水的乌贼",
+    "authorDetail": "爱潜水的乌贼：阅文集团白金作家，网络文学著名作家，'茅盾文学新人奖·网络文学新人奖'获得者，四川省网络作家协会主席。代表作《诡秘之主》《灭运图录》《奥术神座》等。",
+    "year": "2020",
+    "cover": "https://img.aqifei.top/img/2026/03/20260329221109541",
+    "description": "蒸汽与机械的浪潮中，谁能触及非凡？历史和黑暗的迷雾里，又是谁在耳语？我从诡秘中醒来，睁眼看见这个世界：枪械，大炮，巨舰，飞空艇，差分机；魔药，占卜，诅咒，倒吊人，封印物……光明依旧照耀，神秘从未远离，这是一段'愚者'的传说。",
+    "category": "网络文学",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iQxR_Igi8hEtAjrbmcmH_g?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "2020"
   }
 ];
 
