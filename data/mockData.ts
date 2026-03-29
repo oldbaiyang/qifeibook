@@ -10806,6 +10806,27 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": "2023"
+  },
+
+  {
+    "id": 952,
+    "title": "骄阳似我",
+    "author": "顾漫",
+    "authorDetail": "顾漫，网络言情小说作家，擅长写温馨感人的都市言情故事，代表作包括《何以笙箫默》《骄阳似我》等。其作品语言细腻，情节温馨，深受读者喜爱。",
+    "year": "2015",
+    "cover": "https://img.aqifei.top/img/2026/03/20260330065641098",
+    "description": "《骄阳似我》是顾漫创作的都市言情小说，讲述了外科医生林屿森因意外转战商界，与开朗坚韧的聂曦光相遇，二人从误会到相知，最终携手面对生活挑战、共同成长的温暖故事。小说描写了比喜欢多一点就是爱的情感，有遗憾、伤痛，也有欢乐，人物关系引人入胜，是一部可以与《何以笙箫默》相媲美的言情作品。",
+    "category": "言情小说",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1lB0ACnLLxRCID2CThcV1_g?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "2015"
   }
 ];
 
