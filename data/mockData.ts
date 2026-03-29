@@ -10638,6 +10638,27 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": "2023"
+  },
+
+  {
+    "id": 944,
+    "title": "项塔兰",
+    "author": "格里高利·大卫·罗伯兹",
+    "authorDetail": "格里高利·大卫·罗伯兹（Gregory David Roberts），澳大利亚作家、诗人。曾在大学任哲学与文学讲师，后因抢劫银行、吸毒等犯罪被判入狱，越狱后流亡印度八年，真实经历成为《项塔兰》的创作源泉。",
+    "year": "2009",
+    "cover": "https://img.aqifei.top/img/2026/03/20260329220534775",
+    "description": "《项塔兰》是一部自传体长篇小说，以作者在印度的真实流亡经历为背景，讲述一位原本前途光明的哲学讲师因婚姻破裂、吸毒成瘾而走上抢劫之路，越狱后流亡至孟买，在底层社会历经沧桑、寻找自我与救赎的故事。小说融合了冒险、友情、爱情与对人性深刻的洞察，呈现出一幅光怪陆离的印度都市画卷。",
+    "category": "文学小说",
+    "downloadLinks": [
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1hy40ZA0p13ZbIE1NW3ACbQ?pwd=0000",
+        "code": "0000"
+      }
+    ],
+    "size": "",
+    "format": "EPUB",
+    "publishYear": "2009"
   }
 ];
 
