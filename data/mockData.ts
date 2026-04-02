@@ -10912,8 +10912,7 @@ export const books: Book[] = [
     "size": "",
     "format": "EPUB",
     "publishYear": "2018"
-  }
-];
+  },
 
   {
     "id": 957,
@@ -10942,3 +10941,4 @@ export const books: Book[] = [
     "publishYear": "2026"
   }
 
+];
