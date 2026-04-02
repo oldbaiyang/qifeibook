@@ -404,3 +404,99 @@ python scripts/move_to_published.py
 ```
 
 脚本自动提取后存入飞书F列，包含超链接和提取码。
+
+---
+
+## 8. 更新已有书籍信息
+
+**场景**: 用户提供了书名列表，需要搜索并更新 `data/mockData.ts` 中错误的数据。
+
+**完整工作流程**:
+
+### 步骤1: 批量搜索
+
+使用 `web_search` 一次性搜索所有书名，获取正确信息后，按以下格式输出：
+
+```
+更新书籍 {书名}
+
+作者 {作者}
+
+作者简介 {作者简介，以作者名开头}
+
+内容简介 {内容简介，500字左右，包含豆瓣评分和书籍评价}
+
+---
+```
+
+### 步骤2: 获取到内容后立即更新到网站
+
+搜索完成后，**不要只输出内容**，要同步更新到 `data/mockData.ts`：
+1. 用 `grep -n "书名" data/mockData.ts` 定位书籍 ID
+2. 读取该书籍的完整 JSON 条目
+3. 用 Node.js 替换更新（避免多行字符串问题）
+4. 构建验证 `npm run build`
+5. 提交并推送
+
+### 步骤3: 在 mockData.ts 中定位书籍
+
+```bash
+grep -n "书名" data/mockData.ts
+```
+
+### 步骤3: 用 Node.js 脚本更新
+
+由于 description 和 authorDetail 是多行字符串，必须用 Node.js 替换，避免 Python 的编码问题：
+
+```javascript
+node -e "
+const fs = require('fs');
+let content = fs.readFileSync('data/mockData.ts', 'utf8');
+
+// 找到旧条目并替换
+const oldEntry = \`  {
+    \"id\": 448,
+    \"title\": \"寻路中国\",
+    \"author\": \"错误的作者\",
+    \"authorDetail\": \"错误的简介...\",
+    ...
+  },\`;
+
+const newEntry = \`  {
+    \"id\": 448,
+    \"title\": \"寻路中国\",
+    \"author\": \"[美]彼得·海斯勒\",
+    \"authorDetail\": \"正确的简介...\",
+    ...
+  },\`;
+
+if (content.includes(oldEntry)) {
+  content = content.replace(oldEntry, newEntry);
+  fs.writeFileSync('data/mockData.ts', content, 'utf8');
+  console.log('Done!');
+} else {
+  console.log('Pattern not found');
+}
+"
+```
+
+### 步骤4: 验证构建
+
+```bash
+npm run build
+```
+
+### 步骤5: 提交
+
+```bash
+git add data/mockData.ts
+git commit -m "feat: update 书名 with correct author and description"
+git push
+```
+
+**注意事项**:
+- description 和 authorDetail 中使用中文引号「」代替英文引号
+- 保持 category、downloadLinks、cover 等原有字段不变（除非用户明确要改）
+- 如果找不到精确匹配，检查 mockData.ts 中实际内容的格式
+- **重要**: 获取到内容后**立即更新到网站**，不要只输出内容给用户看就结束
+- 提交信息格式: `feat: update 书名 with correct author and description` 或批量 `feat: update N books with correct authors and descriptions`
