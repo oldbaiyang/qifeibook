@@ -1844,7 +1844,7 @@ export const books: Book[] = [
     "authorDetail": "安小妃，教育领域畅销书作家，专注于女性成长与学习方法研究。",
     "year": "2024",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174529996",
-    "description": "《女生会学习，世界都让路》是一本关于女孩教育的书籍，探讨了如何培养女孩的学习能力和自信。",
+    "description": "《女生会学习，世界都让路》是一本关于女孩教育的书籍，探讨了如何培养女孩的学习能力和自信。杉山由美子是日本教育专家，内容实用性强。",
     "category": "成长励志",
     "downloadLinks": [
       {
@@ -6400,7 +6400,7 @@ export const books: Book[] = [
     "authorDetail": "Susan，学习方法研究者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_停止内耗的人生：四象限学习精进计划",
-    "description": "《停止内耗的人生》是一本关于个人成长和自我管理的书籍，介绍了四象限法则在学习和时间管理中的应用，帮助读者提高效率，减少精神内耗。",
+    "description": "《停止内耗的人生》是一本关于个人成长和自我管理的书籍，介绍了四象限法则在学习和时间管理中的应用。Susan是学习方法研究者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6420,7 +6420,7 @@ export const books: Book[] = [
     "authorDetail": "混子哥，科普作家，「混子曰」创始人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_三分钟趣读中国史：从战国到西汉",
-    "description": "《三分钟趣读中国史》是用漫画和趣味语言讲解中国历史的读物。从战国到西汉，用轻松幽默的方式，讲述了这一时期的重要历史事件和人物。",
+    "description": "《三分钟趣读中国史》是用漫画和趣味语言讲解中国历史的读物。从战国到西汉，用轻松幽默的方式讲述重要历史事件。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6440,7 +6440,7 @@ export const books: Book[] = [
     "authorDetail": "谢志宇，历史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_燕东园左邻右舍",
-    "description": "《燕东园左邻右舍》记录了北京燕东园地区的历史和人文故事，描写了这里曾经住过的学者和文化人的生平事迹。",
+    "description": "《燕东园左邻右舍》记录了北京燕东园地区的历史和人文故事，描写了这里曾经住过的学者和文化人的生平事迹。谢志宇是历史学者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6460,7 +6460,7 @@ export const books: Book[] = [
     "authorDetail": "林鹄，历史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_重构契丹早期史",
-    "description": "《重构契丹早期史》是关于契丹民族早期历史的研究著作，作者利用考古材料和文献记载，重建契丹建国前的历史。",
+    "description": "《重构契丹早期史》是关于契丹民族早期历史的研究著作，作者利用考古材料和文献记载，重建契丹建国前的历史。林鹄是历史学者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6500,7 +6500,7 @@ export const books: Book[] = [
     "authorDetail": "韩永亮，历史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_两魏周齐战争中的河东",
-    "description": "《两魏周齐战争中的河东》是关于南北朝时期河东地区军事史的研究著作，详细分析了西魏北周与东魏北齐之间战争的战略意义。",
+    "description": "《两魏周齐战争中的河东》是关于南北朝时期河东地区军事史的研究著作。韩永亮是军事史学者，分析细致入微。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6520,7 +6520,7 @@ export const books: Book[] = [
     "authorDetail": "赤濑史，日本历史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_江户时代江户城",
-    "description": "《江户时代江户城》详细描述了江户城的历史和建筑，以及江户时代的政治、社会、文化状况。",
+    "description": "《江户时代江户城》详细描述了江户城的历史和建筑，以及江户时代的政治、社会、文化状况。赤濑史是日本历史学者，对江户时代有深入研究。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6580,7 +6580,7 @@ export const books: Book[] = [
     "authorDetail": "赛珍珠（1892-1973），美国作家，出生后不久随传教士父母来到中国，在中国生活了近40年。1938年获诺贝尔文学奖。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_大地三部曲",
-    "description": "《大地三部曲》包括《大地》《儿子们》《分家》三部作品，描写了中国农民王龙一家的故事。赛珍珠以同情的笔触，描绘了中国农村的生活和农民的命运。",
+    "description": "《大地三部曲》包括《大地》《儿子们》《分家》三部作品，描写了中国农民王龙一家的故事。赛珍珠凭此书获诺贝尔文学奖。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6600,7 +6600,7 @@ export const books: Book[] = [
     "authorDetail": "杨泓，中国古代军事史专家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_中国甲胄史（全二册）",
-    "description": "《中国甲胄史》是关于中国古代铠甲的学术著作，系统梳理了从先秦到明清甲胄的发展演变。",
+    "description": "《中国甲胄史》是关于中国古代铠甲的学术著作，系统梳理了从先秦到明清甲胄的发展演变。作者杨泓是中国古代军事史专家，内容详实可靠。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6620,7 +6620,7 @@ export const books: Book[] = [
     "authorDetail": "陈唯一，财经作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_交子：世界金融史的中国贡献",
-    "description": "《交子》讲述了世界上最早的纸币——中国宋代交子的诞生史，以及它对世界金融史的重要意义。",
+    "description": "《交子》讲述了世界上最早的纸币——中国宋代交子的诞生史，以及它对世界金融史的重要意义。作者陈唯一是财经作家，文字通俗易懂。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6640,7 +6640,7 @@ export const books: Book[] = [
     "authorDetail": "蔡元培（1868-1940），中国近代著名教育家、革命家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_名士自风流：中国古代隐士传",
-    "description": "《名士自风流》描写了中国古代隐士的故事，展现了中国文化中独特的隐逸传统和名士风度。",
+    "description": "《名士自风流》描写了中国古代隐士的故事，展现了中国文化中独特的隐逸传统。蔡元培以其深厚的学养，描绘了一幅中国隐士文化的生动画卷。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6660,7 +6660,7 @@ export const books: Book[] = [
     "authorDetail": "达契亚·马拉伊尼，意大利作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_露西娅逃离的29个春天",
-    "description": "《露西娅逃离的29个春天》是一部意大利小说，讲述了主人公露西娅在不同国家的经历和自我寻找之旅。",
+    "description": "《露西娅逃离的29个春天》是达契亚·马拉伊尼的意大利小说，讲述了主人公露西娅在不同国家的经历和自我寻找之旅。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6680,7 +6680,7 @@ export const books: Book[] = [
     "authorDetail": "弗朗西斯·培根（1561-1626），英国哲学家、作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_信仰 – [日] 村田沙耶香",
-    "description": "《培根随笔》是培根的散文代表作，内容涉及真理、死亡、友谊、荣誉等人生重大主题。培根以简洁有力的语言，表达了对人生和社会的深刻洞察。",
+    "description": "《培根随笔》是培根的散文代表作，内容涉及真理、死亡、友谊、荣誉等人生重大主题。培根是英国哲学家，以简洁有力的语言著称。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6700,7 +6700,7 @@ export const books: Book[] = [
     "authorDetail": "赫尔曼·梅尔维尔（1819-1891），美国作家，代表作有《白鲸》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_胎记 – 苏南",
-    "description": "《胎记》是梅尔维尔的短篇小说，科学家艾格以身试验，消除了妻子脸上的胎记，却最终酿成悲剧。小说探讨了科学与自然、完美与缺陷的主题。",
+    "description": "《胎记》是梅尔维尔的短篇小说，科学家艾格以身试验，消除了妻子脸上的胎记，却最终酿成悲剧。梅尔维尔是《白鲸》的作者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6780,7 +6780,7 @@ export const books: Book[] = [
     "authorDetail": "菲利普·鲍威尔，英国心理学作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_聪明人说话前在想什么？",
-    "description": "《聪明人说话前在想什么》是一本关于逻辑思维和有效沟通的书籍，介绍了如何在说话和思考时避免常见误区。",
+    "description": "《聪明人说话前在想什么》是一本关于逻辑思维和有效沟通的书籍，介绍了如何在说话和思考时避免常见误区。菲利普·鲍威尔是英国心理学作家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6800,7 +6800,7 @@ export const books: Book[] = [
     "authorDetail": "格雷厄姆·艾利森，哈佛大学肯尼迪学院教授。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_愚蠢的核弹：古巴导弹危机新史",
-    "description": "《愚蠢的核弹》重新审视了古巴导弹危机，通过最新解密的文件和当事人回忆录，揭示了这一危机背后不为人知的故事。",
+    "description": "《愚蠢的核弹》重新审视了古巴导弹危机，通过最新解密的文件和当事人回忆录，揭示了这一危机背后不为人知的故事。格雷厄姆·艾利森是哈佛大学教授。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6820,7 +6820,7 @@ export const books: Book[] = [
     "authorDetail": "克里斯托弗·斯莫尔，音乐心理学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_音乐与人类",
-    "description": "《音乐与人类》探讨了音乐对人类大脑和情感的影响，以及音乐在人类进化和文化中的重要作用。",
+    "description": "《音乐与人类》探讨了音乐对人类大脑和情感的影响，以及音乐在人类进化和文化中的重要作用。克里斯托弗·斯莫尔是音乐心理学家，内容科学严谨。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6840,7 +6840,7 @@ export const books: Book[] = [
     "authorDetail": "宋杰，军事史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_三国战争与地要天时",
-    "description": "《三国战争与地要天时》从地理和气候角度分析三国时期的战争，探讨了地形、天时对战争胜负的影响。",
+    "description": "《三国战争与地要天时》从地理和气候角度分析三国时期的战争，探讨了地形、天时对战争胜负的影响。宋杰是军事史学者，分析深入透彻。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6860,7 +6860,7 @@ export const books: Book[] = [
     "authorDetail": "许知远，作家、媒体人。代表作有《那些忧伤的年轻人》《祖国的陌生人》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_造物须臾",
-    "description": "《造物须臾》是许知远的随笔集，收录了他对当代中国社会和文化的观察与思考。",
+    "description": "《造物须臾》是许知远的随笔集，收录了他对当代中国社会和文化的观察与思考。许知远以知识分子独特的视角，审视这个快速变化的时代。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6880,7 +6880,7 @@ export const books: Book[] = [
     "authorDetail": "韩寒，作家、赛车手、导演。代表作有《三重门》《后青春的方程式》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_午后进入我房间",
-    "description": "《午后进入我房间》是韩寒的诗歌和随笔集，展现了他在赛车和导演之外的文学才华。",
+    "description": "《午后进入我房间》是韩寒的诗歌和随笔集，展现了他在赛车和导演之外的文学才华。韩寒的文字简洁有力，在幽默中透着深意。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6900,7 +6900,7 @@ export const books: Book[] = [
     "authorDetail": "王剑，历史学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_明熹宗传：木匠皇帝朱由校",
-    "description": "《明熹宗传》是关于明朝皇帝朱由校的传记，详述了他作为「木匠皇帝」的传奇经历，以及明末宫廷的政治斗争。",
+    "description": "《明熹宗传》是关于明朝皇帝朱由校的传记，详述了他作为「木匠皇帝」的传奇经历，以及明末宫廷的政治斗争。王剑是历史学者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6920,7 +6920,7 @@ export const books: Book[] = [
     "authorDetail": "吴念真，台湾导演、作家。代表作有《这些人，那些事》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/01/fix_渡鸦栖息时",
-    "description": "《渡鸦栖息时》是吴念真的短篇小说集，以细腻的笔触描写了台湾底层社会的真实生活。",
+    "description": "《渡鸦栖息时》是吴念真的短篇小说集，以细腻的笔触描写了台湾底层社会的真实生活。吴念真是台湾著名的导演和作家，文字充满人文关怀。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6960,7 +6960,7 @@ export const books: Book[] = [
     "authorDetail": "张明扬，历史作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260213214657296",
-    "description": "《弃长安》讲述了唐朝安史之乱期间长安陷落的历史，以生动的笔触描绘了那场改变中国历史进程的巨变。",
+    "description": "《弃长安》讲述了唐朝安史之乱期间长安陷落的历史，以生动的笔触描绘了那场改变中国历史进程的巨变。张明扬是当代历史作家，文笔流畅。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -6980,7 +6980,7 @@ export const books: Book[] = [
     "authorDetail": "顾诚（1934-2013），北京师范大学历史系教授，明清史专家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/02/20260213214703720",
-    "description": "《南明史》是顾诚的代表作，系统阐述了明朝灭亡后南方政权抵抗清朝的斗争历程，是南明史研究的里程碑之作。",
+    "description": "《南明史》是顾诚的代表作，系统阐述了明朝灭亡后南方政权抵抗清朝的斗争历程。顾诚是明清史专家，全书史料详实。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7000,7 +7000,7 @@ export const books: Book[] = [
     "authorDetail": "杉山由美子，日本教育专家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174529996",
-    "description": "《女生会学习，世界都让路》是一本专为女生打造的高效学习书。作者从亲身经历出发，系统梳理自己从成绩普通到国际名校学霸的经验，帮助女生突破自我限制，找到适合的学习方法。",
+    "description": "《女生会学习，世界都让路》是一本关于女孩教育的书籍，探讨了如何培养女孩的学习能力和自信。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7020,7 +7020,7 @@ export const books: Book[] = [
     "authorDetail": "许例外，儿童文学作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174534109",
-    "description": "《读读童谣和儿歌》收录了中国传统童谣和儿歌，适合儿童阅读和传唱。",
+    "description": "《读读童谣和儿歌》收录了中国传统童谣和儿歌，适合儿童阅读和传唱。这些童谣和儿歌语言朗朗上口，内容生动有趣，是儿童启蒙教育的经典读物。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7120,7 +7120,7 @@ export const books: Book[] = [
     "authorDetail": "阿克塞尔·舍夫林，德国儿童文学作家、画家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174547534",
-    "description": "《波西和皮普》是一套经典的德国儿童绘本，讲述了小兔子波西和皮普的友谊故事，适合1.5-4岁儿童阅读。",
+    "description": "《波西和皮普》是一套经典的德国儿童绘本，讲述了小兔子波西和皮普的友谊故事。阿克塞尔·舍夫林是德国儿童文学作家，插画生动可爱。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7160,7 +7160,7 @@ export const books: Book[] = [
     "authorDetail": "人民教育出版社，中国教育出版社。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302174550698",
-    "description": "《快乐读书吧》是配合语文教材的课外阅读丛书，包含古今中外的经典文学作品选段。",
+    "description": "《快乐读书吧》是配合语文教材的课外阅读丛书，由人民教育出版社出版。丛书选编了古今中外的经典童话、寓言、民间传说等，是语文课外阅读的经典读物。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7200,7 +7200,7 @@ export const books: Book[] = [
     "authorDetail": "高士其（1905-1991），中国科普作家、微生物学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260302175401773",
-    "description": "《灰尘的旅行》是高士其的科普代表作，用生动的语言讲述了微生物的世界，是经典的青少年科普读物。",
+    "description": "《灰尘的旅行》是高士其的科普代表作，用生动的语言讲述了微生物的世界。高士其是中国科普事业的先驱，文字通俗有趣。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7260,7 +7260,7 @@ export const books: Book[] = [
     "authorDetail": "陈忠实（1942-2016），陕西作家，代表作有《白鹿原》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112101494",
-    "description": "《蟫》是陈忠实的短篇小说集，收录了他早期创作的短篇作品。",
+    "description": "《蟫》是陈忠实的短篇小说集，收录了他早期创作的短篇作品。陈忠实是当代中国著名作家，以《白鹿原》最为知名。他的短篇小说同样功底深厚，以朴实无华的笔触描绘陕西农村的生活和人物。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7280,7 +7280,7 @@ export const books: Book[] = [
     "authorDetail": "周公度，诗人、作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112120562",
-    "description": "《鹅之书》是周公度的随笔集，以轻盈的文字描写日常生活中的诗意。",
+    "description": "《鹅之书》是周公度的随笔集，以轻盈淡雅的文字描写日常生活中的诗意。周公度的散文风格独特，善于在平凡的日常生活中发现美和哲理。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7300,7 +7300,7 @@ export const books: Book[] = [
     "authorDetail": "赤仕子，日本漫画作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112133126",
-    "description": "《女校之星》是一部日本漫画，描写了女校的日常生活和青春故事。",
+    "description": "《女校之星》是一部日本漫画，描写了女校的日常生活和青春故事。本册为第三册，继续讲述校园生活中的趣事和青春成长。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7320,7 +7320,7 @@ export const books: Book[] = [
     "authorDetail": "夏洛特· Perkins·吉尔曼（1860-1935），美国女权主义作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303112211233",
-    "description": "《黄色墙纸》是吉尔曼的代表作，描写了一个被「休息疗法」害苦的女性的故事。被认为是早期女性主义的经典文本。",
+    "description": "《黄色墙纸》是夏洛特· Perkins·吉尔曼的代表作，描写了一个被「休息疗法」害苦的女性的故事。吉尔曼是美国早期女性主义作家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7340,7 +7340,7 @@ export const books: Book[] = [
     "authorDetail": "萨尔曼·鲁西迪（1947-），英国作家，印度裔。代表作有《午夜之子》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303111926569",
-    "description": "《摩尔人的最后叹息》是鲁西迪的重要作品，以魔幻现实主义的笔法，讲述了印度历史和文化的故事。",
+    "description": "《摩尔人的最后叹息》是萨尔曼·鲁西迪的重要作品，以魔幻现实主义的笔法，讲述了印度历史和文化的故事。鲁西迪是布克奖得主，《午夜之子》的作者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7360,7 +7360,7 @@ export const books: Book[] = [
     "authorDetail": "苏珊·桑塔格（1933-2004），美国批评家、作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114135504",
-    "description": "《瓦伦蒂诺的毁灭》是桑塔格的论文集，收录了她对电影、文学、文化的批评文章。",
+    "description": "《瓦伦蒂诺的毁灭》是苏珊·桑塔格的论文集，收录了她对电影、文学、文化的批评文章。桑塔格是美国当代最重要的批评家之一，其文章犀利而深刻。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7380,7 +7380,7 @@ export const books: Book[] = [
     "authorDetail": "弗兰纳格·奥康纳（1925-1964），美国南方作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303114231687",
-    "description": "《狂乱》是奥康纳的短篇小说集，以美国南方的视角，描写了人性的荒诞和宗教的狂热。",
+    "description": "《狂乱》是弗兰纳格·奥康纳的短篇小说集。奥康纳是美国南方文学的代表作家，以荒诞的情节和独特的视角著称，小说充满了对宗教狂热和人性的深刻思考。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7440,7 +7440,7 @@ export const books: Book[] = [
     "authorDetail": "尾崎隼子，日本作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303134245098",
-    "description": "《我生命中的幽灵》是关于抑郁症的文学作品，以第一人称视角描述了与抑郁症抗争的内心体验。",
+    "description": "《我生命中的幽灵》是关于抑郁症的文学作品，以第一人称视角描述了与抑郁症抗争的内心体验。尾崎隼子是日本作家，文字真实而深刻。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7460,7 +7460,7 @@ export const books: Book[] = [
     "authorDetail": "吉奥乔·阿甘本（1942-），意大利哲学家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260303134309744",
-    "description": "《匹诺曹：非存在的存在》是阿甘本的哲学著作，以匹诺曹的故事为切入点，探讨了存在与非存在的哲学问题。",
+    "description": "《匹诺曹：非存在的存在》是吉奥乔·阿甘本的哲学著作，以匹诺曹的故事为切入点，探讨了存在与非存在的哲学问题。阿甘本是当代意大利著名哲学家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7500,7 +7500,7 @@ export const books: Book[] = [
     "authorDetail": "桐华，知名言情小说作家，毕业于北京大学。代表作有《大漠谣》《步步惊心》《那片星空那片海》等。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143345037",
-    "description": "《大漠谣》是一部以汉朝为背景的历史言情小说，讲述了敢爱敢恨的都市奇女子在边疆大漠的传奇经历。小说融合了历史与武侠、爱情与家国，是桐华的代表作之一。豆瓣评分7.5。",
+    "description": "《大漠谣》是一部以汉朝为背景的历史言情小说，讲述了边疆大漠的传奇经历。桐华是北京大学毕业的知名言情小说作家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7540,7 +7540,7 @@ export const books: Book[] = [
     "authorDetail": "陈墨，中国武侠文学研究专家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143401311",
-    "description": "《剑桥倚天屠龙史》是以学术研究角度分析金庸小说《倚天屠龙记》的著作。书中对小说的人物、情节、历史背景、武侠理论等进行了系统研究，是武侠研究领域的重要作品。",
+    "description": "《剑桥倚天屠龙史》是以学术研究角度分析金庸小说《倚天屠龙记》的著作。陈墨是中国武侠文学研究专家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7600,7 +7600,7 @@ export const books: Book[] = [
     "authorDetail": "金童，大陆武侠小说作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143437797",
-    "description": "《神箭金雕》是《射雕英雄传》的前传，讲述了郭啸天、杨铁心等人物的故事，是射雕系列的组成部分。",
+    "description": "《神箭金雕》是《射雕英雄传》的前传，讲述了郭啸天、杨铁心等人物的故事。金童是大陆武侠小说作者。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7640,7 +7640,7 @@ export const books: Book[] = [
     "authorDetail": "金庸（1924-2018），本名查良镛，浙江海宁人，新派武侠小说最杰出的作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143454144",
-    "description": "《碧血剑》是金庸的第二部小说，以明末为背景，讲述了袁承志的成长和抗清故事。新修版是金庸后来修订的版本，增加了大量细节描写。豆瓣评分7.7。",
+    "description": "《碧血剑》是金庸的第二部武侠小说，以明末为背景。新修版是金庸后来修订的版本，增加了大量细节描写。豆瓣评分7.7。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7660,7 +7660,7 @@ export const books: Book[] = [
     "authorDetail": "金庸（1924-2018），本名查良镛，浙江海宁人，新派武侠小说最杰出的作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143503417",
-    "description": "《神雕侠侣》是《射雕英雄传》的续篇，讲述了杨过与小龙女之间的爱情故事。新修版是金庸后来修订的版本。豆瓣评分8.8。",
+    "description": "《神雕侠侣》是《射雕英雄传》的续篇，讲述了杨过与小龙女之间的爱情故事。金庸是新派武侠小说的巅峰人物，「飞雪连天射白鹿，笑书神侠倚碧鸳」。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7740,7 +7740,7 @@ export const books: Book[] = [
     "authorDetail": "金庸（1924-2018），本名查良镛，浙江海宁人，新派武侠小说最杰出的作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143538441",
-    "description": "《书剑恩仇录》是金庸的第一部武侠小说，讲述了乾隆年间的红花会反清起义故事。主角陈家洛是红花会总舵主，也是乾隆的亲弟弟。小说融合了历史与武侠，展现了民族矛盾和个人恩怨的交织。豆瓣评分7.8。",
+    "description": "《书剑恩仇录》是金庸的第一部武侠小说，讲述了乾隆年间的红花会反清起义故事。金庸的处女作，却已展现出大家风范。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7820,7 +7820,7 @@ export const books: Book[] = [
     "authorDetail": "金庸（1924-2018），本名查良镛，浙江海宁人，新派武侠小说最杰出的作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143613143",
-    "description": "《碧血剑》是金庸的第二部小说，以明末为背景，讲述了袁承志的成长和抗清故事。豆瓣评分7.7。",
+    "description": "《碧血剑》是金庸的第二部武侠小说，以明末为背景，讲述了袁承志的成长和抗清故事。金庸以深厚的史学功底，将真实历史与武侠传奇完美结合。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7900,7 +7900,7 @@ export const books: Book[] = [
     "authorDetail": "温瑞安（1954-），武侠小说作家，「四大名捕」系列作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143703255",
-    "description": "《少年追命》是温瑞安的武侠小说，讲述了年轻时代的追命的故事，是「四大名捕」系列的组成部分。",
+    "description": "《少年追命》是温瑞安的武侠小说，是「四大名捕」系列的组成部分。温瑞安的武侠小说情节曲折，想象丰富，在华语文学圈有广泛影响。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7920,7 +7920,7 @@ export const books: Book[] = [
     "authorDetail": "温瑞安（1954-），武侠小说作家，「四大名捕」系列作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143710327",
-    "description": "《少年铁手》是温瑞安的武侠小说，讲述了年轻时代的铁手的经历，是「四大名捕」系列的组成部分。",
+    "description": "《少年铁手》是温瑞安的武侠小说，讲述了年轻时代的铁手的经历。铁手是「四大名捕」之一，以铁手著称。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7940,7 +7940,7 @@ export const books: Book[] = [
     "authorDetail": "温瑞安（1954-），武侠小说作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143716806",
-    "description": "《布衣神相》是温瑞安的作品，讲述了一位相士在江湖上的传奇经历。",
+    "description": "《布衣神相》是温瑞安的武侠小说，以相术、命运与江湖恩怨为主题。小说将神秘的相术与江湖纷争相结合，塑造了一个个鲜活的人物形象，展现了武侠江湖的独特魅力。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -7960,7 +7960,7 @@ export const books: Book[] = [
     "authorDetail": "梁羽生（1924-2009），本名陈文统，广西蒙山人，新派武侠小说开创者之一，与金庸并称「南梁北金」。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260304143727685",
-    "description": "《白发魔女传》是梁羽生的代表作，讲述了练霓裳与卓一航的爱情悲剧。练霓裳因爱成恨，一夜之间白了头发，成为江湖上闻名的白发魔女。小说以独特的女性视角，描绘了一段令人扼腕的爱情故事。豆瓣评分8.0。",
+    "description": "《白发魔女传》是梁羽生的代表作，讲述了练霓裳与卓一航的爱情悲剧。梁羽生与金庸并称「南梁北金」。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8060,7 +8060,7 @@ export const books: Book[] = [
     "authorDetail": "《四书五经》是南宋朱熹将《论语》《孟子》《大学》《中庸》合编为「四书」，与「五经」（《诗经》《书经》《礼经》《易经》《春秋》）合称「四书五经」，是中国儒家最重要的经典著作。朱熹（1130-1200），字元晦，号晦庵，江西婺源人，南宋理学家、教育家，宋代理学的集大成者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112707408",
-    "description": "《四书五经》是「四书」和「五经」的合称，是中国儒家经典书籍，是南宋以后儒学的基本书目，儒生学子的必读之书。「四书」之名始于宋朝，「五经」之名始于汉武帝。",
+    "description": "《四书五经》是「四书」和「五经」的合称，是中国儒家经典书籍，是南宋以后儒学的基本书目。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8100,7 +8100,7 @@ export const books: Book[] = [
     "authorDetail": "陈寿（233-297），字承祚，西晋史学家。《三国志》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112719212",
-    "description": "《三国志》是西晋陈寿编写的一部纪传体断代史，记载了从魏文帝曹丕到晋武帝司马炎之间六十年的历史。全书六十五卷，分魏、蜀、吴三志。与裴松之注并称经典，是研究三国历史的重要史料。",
+    "description": "《三国志》是西晋陈寿编写的纪传体断代史，记载了魏、蜀、吴三国时期的历史。全书六十五卷，与裴松之注并称经典。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8120,7 +8120,7 @@ export const books: Book[] = [
     "authorDetail": "朱熹（1130-1200），字元晦，南宋理学家，儒学集大成者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112724994",
-    "description": "《论语集注》是朱熹对《论语》的注解集，是朱熹理学思想的重要体现。全书分上论、下论两大部分，对后世影响深远。",
+    "description": "《论语集注》是朱熹对《论语》的注解集，是朱熹理学思想的重要体现。朱熹是宋代理学的集大成者，对后世影响深远。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8140,7 +8140,7 @@ export const books: Book[] = [
     "authorDetail": "朱熹（1130-1200），字元晦，南宋理学家，儒学集大成者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112731091",
-    "description": "《大学》《中庸》与《论语》《孟子》合称「四书」。《大学》原为《礼记》中的一篇，朱熹将其独立出来并作注解；《中庸》同样如此。本书是理解宋明理学的重要文献。",
+    "description": "《大学》《中庸》与《论语》《孟子》合称「四书」。本书是朱熹对《大学》《中庸》的集注，是理解宋明理学的重要文献。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8240,7 +8240,7 @@ export const books: Book[] = [
     "authorDetail": "唐芸洲，清代小说家。《七剑十三侠》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112803569",
-    "description": "《七剑十三侠》是清代武侠小说，描写了明武宗时期以王守仁为首的一批英雄人物平定朱宸濠叛乱的故事。",
+    "description": "《七剑十三侠》是清代唐芸洲创作的公案侠义小说，描写了明武宗时期以王守仁为首的一批英雄人物平定朱宸濠叛乱的故事。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8400,7 +8400,7 @@ export const books: Book[] = [
     "authorDetail": "冯梦龙（1574-1646），字犹龙，明代文学家。「三言」编纂者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112854429",
-    "description": "《警世通言》是冯梦龙编纂的短篇白话小说集，与《喻世明言》《醒世恒言》合称「三言」。收录了《杜十娘怒沉百宝箱》《俞伯牙摔琴谢知音》等经典名篇。",
+    "description": "《警世通言》是冯梦龙编纂的短篇白话小说集，与《喻世明言》《醒世恒言》合称「三言」。收录了《杜十娘怒沉百宝箱》等经典名篇。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8500,7 +8500,7 @@ export const books: Book[] = [
     "authorDetail": "傅德岷，四川大学文学与新闻学院教授，长期从事中国古代文学研究。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112924007",
-    "description": "《元曲三百首》选录了元代散曲和杂剧中的精品之作。元曲是继唐诗、宋词之后中国文学的又一高峰，以通俗浅白的文字及意境，与唐诗、宋词遥相辉映。",
+    "description": "《元曲三百首》选录了元代散曲和杂剧中的精品之作。元曲是继唐诗、宋词之后中国文学的又一高峰。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8520,7 +8520,7 @@ export const books: Book[] = [
     "authorDetail": "蘅塘退士（1711-1778），原名孙洙，字唐后，江苏无锡人，清代学者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305112929577",
-    "description": "《唐诗三百首》是清代蘅塘退士编选的唐诗选本，成书于乾隆二十九年（1764年）。共选诗310首。选诗标准「专就唐诗中脍炙人口之作，择其尤要者」。",
+    "description": "《唐诗三百首》是清代蘅塘退士编选的唐诗选本，共选诗310首。「熟读唐诗三百首，不会吟诗也会吟」说明其影响力之广泛。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8740,7 +8740,7 @@ export const books: Book[] = [
     "authorDetail": "罗贯中（约1330-约1400），名本，字贯中，元末明初小说家。《三国演义》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305113036465",
-    "description": "《三国演义》是中国古典四大名著之一，描写了从东汉末年到西晋初年之间近百年的历史风云。全书以战争为主线，展现了魏、蜀、吴三大政治军事集团之间的矛盾斗争。豆瓣评分9.4。",
+    "description": "《三国演义》是中国古典四大名著之一，描写了从东汉末年到西晋初年之间近百年的历史风云。全书人物众多，情节曲折，是最受欢迎的古典小说之一。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -8780,7 +8780,7 @@ export const books: Book[] = [
     "authorDetail": "子思（约公元前483-前402），名孔伋，孔子之孙，战国时期鲁国人，儒家思孟学派代表人物，《中庸》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260305113051161",
-    "description": "《中庸》是儒家经典《四书》之一，原是《礼记》第三十一篇，相传为子思所作。全书阐述儒家「中庸」思想，提出「天命之谓性，率性之谓道，修道之谓教」的纲领，追求「中和」境界。",
+    "description": "《中庸》是儒家经典《四书》之一，相传为子思所作。全书阐述儒家「中庸」思想，追求「中和」境界。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -9116,7 +9116,7 @@ export const books: Book[] = [
     "authorDetail": "金 triangulation，网络作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260306155822475",
-    "description": "《暗杀1905》是一部以1905年为背景的历史悬疑小说，讲述了那个特殊年代发生的一系列神秘事件。作品融合了历史与悬疑元素。",
+    "description": "《暗杀1905》是一部以1905年为背景的历史悬疑小说，讲述了那个特殊年代发生的一系列神秘事件。金三角是网络作家。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -9236,7 +9236,7 @@ export const books: Book[] = [
     "authorDetail": "灰熊猫，中国当代网络小说作家。《窃明》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260306155849238",
-    "description": "《虎狼》是网络作家赵小家的作品，讲述了在乱世中生存与奋斗的故事。",
+    "description": "《虎狼》是网络作家赵小家的作品，讲述了在乱世中生存与奋斗的故事。小说情节紧张，人物命运跌宕起伏。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -9260,7 +9260,7 @@ export const books: Book[] = [
     "authorDetail": "墨十八，网络作家。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260306155855384",
-    "description": "《三千美娇娘》是墨十八创作的古代言情小说，讲述了穿越女主在古代一不小心招揽了众多美男的有趣故事。情节轻松幽默，人物生动有趣。",
+    "description": "《三千美娇娘》是墨十八创作的古代言情小说，讲述了穿越女主在古代一不小心招揽了众多美男的有趣故事。情节轻松幽默。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -9356,7 +9356,7 @@ export const books: Book[] = [
     "authorDetail": "灰熊猫，中国当代网络小说作家。《窃明》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260306155925224",
-    "description": "《窃明》是网络历史小说，讲述了一个现代人穿越到明末，成为袁崇焕之子，最终改变历史的故事。",
+    "description": "《窃明》是灰熊猫的历史穿越小说，讲述了一个现代普通人黄石穿越到明末的故事。小说以严谨的历史态度，重新审视了明末的历史人物和事件。",
     "category": "网络小说",
     "downloadLinks": [
       {
@@ -9546,7 +9546,7 @@ export const books: Book[] = [
     "authorDetail": "季羡林（1911-2009），山东清平人。语言学家、文学家。《牛棚杂忆》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310145610412",
-    "description": "《清华园日记》是季羡林在清华大学求学期间所写的日记，记录了他在清华园的求学生活，以及与师友的交往。",
+    "description": "《清华园日记》是季羡林在清华大学求学期间所写的日记，记录了他在清华园的求学生活，以及与师友的交往。季羡林是国际著名东方学专家。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1IojxUmIyuQSZ6wQlMQfdxw", "code": "0000"}],
     "size": "",
@@ -9574,7 +9574,7 @@ export const books: Book[] = [
     "authorDetail": "汪曾祺（1920-1997），江苏高邮人，中国当代作家。《受戒》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310145717306",
-    "description": "《汪曾祺小说经典》收录了汪曾祺的代表短篇小说，如《受戒》《大淖纪事》等。汪曾祺的文字平淡质朴，却韵味深长。",
+    "description": "《汪曾祺小说经典》收录了汪曾祺的代表短篇小说。汪曾祺被誉为「最后一个士大夫」，文字平淡质朴却韵味深长。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1XU7hXiUANsrJ1C_WyVUtZw", "code": "0000"}],
     "size": "",
@@ -9686,7 +9686,7 @@ export const books: Book[] = [
     "authorDetail": "徐志摩（1897-1931），原名章垿，浙江海宁人，中国现代诗人。《再别康桥》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310145829924",
-    "description": "《徐志摩全集》收录了徐志摩的诗歌、散文、戏剧等全部文学作品，展现了他独特的艺术风格和浪漫情怀。",
+    "description": "《徐志摩全集》收录了徐志摩的诗歌、散文、戏剧等全部文学作品。徐志摩是现代诗坛的巨匠，代表作有《再别康桥》《翡冷翠的一夜》等。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/14sA7u43Ov-OsE683fSgYPw", "code": "0000"}],
     "size": "",
@@ -9714,7 +9714,7 @@ export const books: Book[] = [
     "authorDetail": "鲁迅（1881-1936），原名周树人，中国现代文学的奠基人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310145842294",
-    "description": "《阿Q正传》是鲁迅最著名的中篇小说，描写了辛亥革命前后中国农村的社会面貌。阿Q这一形象成为中国文学史上最具代表性的「精神胜利法」典型。",
+    "description": "《阿Q正传》是鲁迅最著名的中篇小说，描写了辛亥革命前后中国农村的社会面貌。阿Q这一形象成为「精神胜利法」的典型。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1N963duFpKZOXIllrIK0Uvg", "code": "0000"}],
     "size": "",
@@ -9728,7 +9728,7 @@ export const books: Book[] = [
     "authorDetail": "鲁迅（1881-1936），原名周树人，中国现代文学的奠基人。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310145849085",
-    "description": "《狂人日记》是中国现代文学史上第一篇白话小说，发表于1918年。日记采用第一人称视角，揭露了封建礼教「吃人」的本质。",
+    "description": "《狂人日記》是中国现代文学史上第一篇白话小说，发表于1918年。鲁迅以第一人称视角，揭露了封建礼教「吃人」的本质。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/13i2c-MknGHbUqgdXa1CmEQ", "code": "0000"}],
     "size": "",
@@ -9868,7 +9868,7 @@ export const books: Book[] = [
     "authorDetail": "刘白羽（1916-2005），北京人，中国当代作家。《第二个太阳》获第三届茅盾文学奖。",
     "year": "",
     "cover": "https://kgbook.com/d/file/201103/6ea3a8b8e86d713eb4655624ac958415.jpg",
-    "description": "《第二个太阳》是刘白羽的长篇小说，描写了中国人民解放军渡江南下的英勇事迹，展现了革命战士的精神风貌。",
+    "description": "《第二个太阳》是刘白羽的长篇小说，描写了中国人民解放军渡江南下的英勇事迹。刘白羽是当代著名作家，文笔豪迈。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/1b7r4s3FX1KPaVhekwdbzXw", "code": "0000"}],
     "size": "",
@@ -9966,7 +9966,7 @@ export const books: Book[] = [
     "authorDetail": "阿城，原名钟阿城，1949年生，北京人，中国当代作家。《棋王》作者。",
     "year": "",
     "cover": "https://img.aqifei.top/img/2026/03/20260310150111174",
-    "description": "《棋王、树王、孩子王》是阿城的代表作，收录了三个中篇小说。《棋王》写知青「王二」下棋的故事；《树王》写护树的悲歌；《孩子王》写山村教育。三部作品各有深意。",
+    "description": "《棋王、树王、孩子王》是阿城的代表作，收录了三个中篇小说。《棋王》写知青下棋的故事，文字简洁而意蕴深远。",
     "category": "现代文学",
     "downloadLinks": [{"name": "百度网盘", "url": "https://pan.baidu.com/s/157VvtAgsloW3Y-qKlvL8-g", "code": "0000"}],
     "size": "",
