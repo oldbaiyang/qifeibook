@@ -7,10 +7,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  Calendar,
   Tag,
-  FileText,
-  HardDrive,
   BookOpen,
   User,
   Cloud,
@@ -126,27 +123,8 @@ export default async function BookDetailPage({ params }: Props) {
         <div className={styles.infoSection}>
           <h1 className={styles.title}>{book.title}</h1>
 
-          {/* 元信息：格式、大小、出版年份 */}
+          {/* 分类标签 */}
           <div className="metaInfo">
-            <span className="metaInfoItem">
-              <FileText size={14} />
-              {book.format || "EPUB"}
-            </span>
-            <span className="metaDivider"></span>
-            <span className="metaInfoItem">
-              <HardDrive size={14} />
-              {book.size || "未知"}
-            </span>
-            {book.publishYear && (
-              <>
-                <span className="metaDivider"></span>
-                <span className="metaInfoItem">
-                  <Calendar size={14} />
-                  {book.publishYear}年出版
-                </span>
-              </>
-            )}
-            <span className="metaDivider"></span>
             <Link
               href={`/category/${book.category}`}
               className="metaInfoItem"
