@@ -80,13 +80,38 @@ Three styling methods are used — follow the pattern of the component you're mo
 
 **Manual:** Add entries to `data/mockData.ts` following the `Book` interface. New books should have the highest `id` (homepage sorts descending).
 
-**Feishu Sync:** Add books to Feishu spreadsheet, then run `node scripts/sync_to_website.js` to auto-update `data/mockData.ts` and `public/sitemap.xml`.
+**Feishu Sync:** Add books to Feishu spreadsheet, then run `node scripts/sync_to_website.cjs` to auto-update `data/mockData.ts` and `public/sitemap.xml`.
+
+**详细脚本文档**: 参见 [SKILLS.md](./SKILLS.md) 了解所有自动化脚本的使用方法。
 
 ## Environment Variables
 
 - `BAIDU_PUSH_TOKEN`: Required for `npm run push:baidu`
-- Feishu credentials are hardcoded in `scripts/sync_to_website.js`
+- Feishu credentials are configured in `scripts/sync_to_website.cjs`
+- PicList (image upload) runs on `127.0.0.1:36677`
+
+## Automation Scripts
+
+Key scripts for book management (see [SKILLS.md](./SKILLS.md) for details):
+
+| Script | Purpose |
+|--------|---------|
+| `scrape_douban.cjs` | Scrape single book from Douban → Feishu |
+| `scrape_douban_list.cjs` | Scrape entire Douban list → Feishu |
+| `update_download_links.cjs` | Update download links in Feishu |
+| `sync_to_website.cjs` | Sync books with links to mockData.ts |
+| `enrich_books_from_douban.cjs` | Enrich missing fields from Douban |
 
 ## Legacy
 
 `legacy_backup/` contains the original Vite + React SPA codebase. It is excluded from ESLint and not part of the active project.
+
+## Skills & Scripts
+
+See [SKILLS.md](./SKILLS.md) for reusable automation scripts:
+
+- `scrape_douban.cjs` - Scrape single book from Douban
+- `scrape_douban_list.cjs` - Scrape Douban lists
+- `update_download_links.cjs` - Update download links in Feishu
+- `sync_to_website.cjs` - Sync books to mockData.ts
+- `enrich_books_from_douban.cjs` - Enrich book info from Douban
