@@ -1,87 +1,43 @@
-"use client";
+import { Metadata } from 'next';
+import SearchContentWrapper from './SearchContent';
+import { generateWebsiteJsonLd } from '@/lib/utils';
 
-import React, { Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
-import { books } from '@/data/mockData';
-import BookList from '@/components/BookList';
-import Link from 'next/link';
-import { Search, BookOpen, ArrowLeft } from 'lucide-react';
+export const metadata: Metadata = {
+    title: '搜索书籍_免费电子书搜索引擎_棋飞书库',
+    description: '在棋飞书库搜索您想看的电子书，支持书名、作者名搜索。提供 EPUB、MOBI、PDF 格式的免费下载，夸克网盘、百度网盘高速下载。',
+    keywords: ['电子书搜索', '免费电子书下载', '书籍搜索引擎', 'EPUB下载', 'MOBI下载', 'PDF下载'],
+    alternates: {
+        canonical: 'https://qifeibook.com/search',
+    },
+    openGraph: {
+        title: '搜索书籍_棋飞书库',
+        description: '在棋飞书库搜索您想看的电子书，支持书名、作者名搜索，免费高速下载',
+        url: 'https://qifeibook.com/search',
+        siteName: '棋飞书库',
+        type: 'website',
+        locale: 'zh_CN',
+    },
+    twitter: {
+        card: 'summary',
+        title: '搜索书籍_棋飞书库',
+        description: '在棋飞书库搜索您想看的电子书，免费高速下载',
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
 
-function SearchContent() {
-    const searchParams = useSearchParams();
-    const query = searchParams.get('q') || '';
-
-    const searchResults = books.filter(book => {
-        const lowerQuery = query.toLowerCase().trim();
-        if (!lowerQuery) return false;
-        return (
-            book.title.toLowerCase().includes(lowerQuery) ||
-            book.author.toLowerCase().includes(lowerQuery)
-        );
-    });
+export default function SearchPage() {
+    const jsonLd = generateWebsiteJsonLd();
 
     return (
         <div>
-            {/* 搜索结果头部 */}
-            <header className="page-header">
-                <div className="page-header-content">
-                    <div className="page-header-icon">🔍</div>
-                    <div className="page-header-text">
-                        <h1>搜索结果: &ldquo;{query}&rdquo;</h1>
-                        <p>
-                            {searchResults.length > 0 ? (
-                                <>找到 <span className="highlight">{searchResults.length}</span> 本相关书籍</>
-                            ) : (
-                                '未找到相关书籍'
-                            )}
-                        </p>
-                    </div>
-                </div>
-            </header>
-
-            {/* 搜索结果列表 */}
-            {searchResults.length > 0 ? (
-                <section>
-                    <BookList books={searchResults} />
-                </section>
-            ) : (
-                <div className="text-center py-20">
-                    <div className="inline-flex flex-col items-center gap-4">
-                        <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
-                            <BookOpen size={36} className="text-gray-400" />
-                        </div>
-                        <div>
-                            <p className="text-gray-700 font-medium text-lg mb-1">
-                                没有找到与 &ldquo;{query}&rdquo; 相关的书籍
-                            </p>
-                            <p className="text-gray-400 text-sm">
-                                请尝试更换关键词，或搜索书名、作者名
-                            </p>
-                        </div>
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium no-underline hover:bg-blue-700 transition-colors"
-                        >
-                            <ArrowLeft size={16} />
-                            返回首页
-                        </Link>
-                    </div>
-                </div>
-            )}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <SearchContentWrapper />
         </div>
     );
 }
-
-export default function SearchPage() {
-    return (
-        <Suspense fallback={
-            <div className="px-4 py-8 text-center text-gray-500">
-                <Search size={24} className="mx-auto mb-2 animate-pulse" />
-                加载中...
-            </div>
-        }>
-            <SearchContent />
-        </Suspense>
-    );
-}
-

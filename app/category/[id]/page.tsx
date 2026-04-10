@@ -39,6 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             siteName: "棋飞书库",
             type: "website",
             locale: "zh_CN",
+            images: categoryBooks.length > 0 ? [{
+                url: categoryBooks[0].cover,
+                width: 300,
+                height: 400,
+                alt: `${category}代表书籍封面`
+            }] : [],
         },
         twitter: {
             card: "summary",

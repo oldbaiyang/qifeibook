@@ -1,7 +1,7 @@
 import { books } from "@/data/mockData";
 import BookList from "@/components/BookList";
 import { Metadata } from "next";
-import { generateBreadcrumbJsonLd } from "@/lib/utils";
+import { generateBreadcrumbJsonLd, generateFaqJsonLd } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "棋飞书库 - 经典电子书免费下载 | EPUB/MOBI/PDF格式",
@@ -14,15 +14,20 @@ export default function Home() {
   // 按ID倒序排序（即按上架时间倒序）
   const sortedBooks = [...books].sort((a, b) => b.id - a.id);
 
-  const jsonLd = generateBreadcrumbJsonLd([
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: '首页', url: 'https://qifeibook.com/' }
   ]);
+  const faqJsonLd = generateFaqJsonLd();
 
   return (
     <div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* 页面头部 */}
