@@ -3535,4 +3535,12 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Book 983: 我重新出生的地方 -->
+    <url>
+        <loc>https://qifeibook.com/book/983</loc>
+        <lastmod>2026-04-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
