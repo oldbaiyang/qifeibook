@@ -3551,4 +3551,12 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Book 985: 故纸浮生 -->
+    <url>
+        <loc>https://qifeibook.com/book/985</loc>
+        <lastmod>2026-04-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
