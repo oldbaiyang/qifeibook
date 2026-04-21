@@ -62,6 +62,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        {/* Bing Webmaster Tools */}
+        <meta name="msvalidate.01" content="D89EDBE447BD6F73923A6CCE80DC9943" />
+
         {/* Google AdSense */}
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6967766161116772" crossOrigin="anonymous" />
 
