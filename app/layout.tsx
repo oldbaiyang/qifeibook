@@ -65,6 +65,9 @@ export default function RootLayout({
         {/* Bing Webmaster Tools */}
         <meta name="msvalidate.01" content="D89EDBE447BD6F73923A6CCE80DC9943" />
 
+        {/* Sogou Site Verification */}
+        <meta name="sogou_site_verification" content="HnQSusxk4n" />
+
         {/* Google AdSense */}
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6967766161116772" crossOrigin="anonymous" />
 
