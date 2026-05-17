@@ -230,6 +230,12 @@ npm run cf:deploy
 
 最近一次已验证通过的 Worker 部署：
 
+- Cloudflare Worker Version ID：`be61685a-7ff5-4f3e-bc94-91f349f30a31`
+- 部署日期：2026-05-17
+- 验证内容：生产 `/api/health` 正常，`/api/search?q=瓦尔登湖` 返回 `id=1010`，`/book/1010` 输出 Book JSON-LD 和 `og:image`。
+
+上一已知稳定版本：
+
 - Cloudflare Worker Version ID：`7ee2260d-4a42-45b5-8939-b4f5c65713fe`
 - 验证内容：首页、详情页、搜索页、分页、作者页、标签页、sitemap、robots.txt 均已按 Worker SEO 输出生效。
 
