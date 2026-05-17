@@ -1,117 +1,138 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code when working in this repository.
 
 ## Project Overview
 
-棋飞书库 (qifeibook.com) is a Next.js SSG (Static Site Generation) e-book library website. It provides free e-book downloads with cloud storage links (Quark, Baidu). The site is SEO-optimized with dynamic metadata generation, JSON-LD structured data, and Baidu search engine integration.
+棋飞书库 (qifeibook.com) is an e-book directory and download navigation site. Production is Cloudflare-only:
 
-## Tech Stack
+- Cloudflare Workers render SEO HTML and JSON APIs.
+- Cloudflare D1 stores books, categories, download links, and search data.
+- Cloudflare Workers Assets serves static files from `public/`.
 
-- **Next.js 16** with App Router and React 19
-- **Tailwind CSS v4** (zero-config, via `@tailwindcss/postcss`)
-- **TypeScript** with strict mode and `@/*` path alias (maps to project root)
-- **lucide-react** for icons
+The historical Next.js / React / Vercel application has been removed. Do not reintroduce it unless the user explicitly asks for a new frontend migration.
 
-## Development Commands
+## Current Stack
+
+- TypeScript with strict mode and `@/*` path alias
+- Cloudflare Workers
+- Cloudflare D1
+- Workers Assets
+- ESLint flat config
+- Playwright for Douban scraping helpers
+
+## Commands
 
 ```bash
-npm run dev          # Development server
-npm run build        # Production build (SSG)
-npm start            # Start production server
-npm run lint         # ESLint (flat config, ignores legacy_backup/, scripts/, dist/, .next/)
-npm run push:baidu   # Push sitemap to Baidu (requires BAIDU_PUSH_TOKEN in .env)
+npm run typecheck      # TypeScript validation
+npm run lint           # ESLint validation
+npm run cf:version     # Wrangler version through local wrapper
+npm run cf:dev         # Local Worker dev
+npm run cf:deploy      # Deploy Worker
 ```
 
-No test framework is configured.
+D1 and data:
 
-## Architecture
-
-### Data Layer
-
-`data/mockData.ts` is the single source of truth — a static TypeScript array of `Book` objects serving as the entire database. All pages import directly from this file. There is no API layer or database.
-
-```typescript
-interface Book {
-  id: number; title: string; author: string; authorDetail: string;
-  year: string; cover: string; description: string; category: string;
-  downloadLinks: DownloadLink[]; size: string; format: string; publishYear: string;
-}
-interface DownloadLink { name: string; url: string; code?: string; }
+```bash
+npm run db:export-sql
+npm run db:setup:local
+npm run db:migrate:local
+npm run db:seed:local
 ```
 
-### Rendering Strategy
+SEO and data quality:
 
-All pages use SSG. Book detail and category pages use `generateStaticParams()` to pre-render at build time. The search page (`/search`) is the only client-rendered page (uses `useSearchParams`).
+```bash
+npm run seo:smoke
+npm run seo:data-quality
+npm run seo:keyword-backfill
+```
 
-| Route | File | Rendering |
-|-------|------|-----------|
-| `/` | `app/page.tsx` | SSG — all books sorted by ID desc |
-| `/book/[id]` | `app/book/[id]/page.tsx` | SSG via `generateStaticParams()` |
-| `/category/[id]` | `app/category/[id]/page.tsx` | SSG — `id` is the category name string |
-| `/search?q=...` | `app/search/page.tsx` | Client-side filtering |
+No test framework is currently configured. Run at least `npm run typecheck` and `npm run lint` before claiming code changes are complete.
 
-### Server vs Client Components
+## Production Architecture
 
-- **Server components**: `Footer`, `RelatedBooks`, page components (homepage, book detail, category)
-- **Client components** (`"use client"`): `Header` (search bar + category tag cloud computed from `books`), `BookList` (infinite scroll via IntersectionObserver, loads 10 at a time), `BookCard`, `BreadcrumbNav`
+Worker code:
 
-### Styling Approach (Hybrid)
+- `worker/index.ts`: Worker entry
+- `worker/routes.ts`: route dispatcher
+- `worker/db.ts`: D1 queries
+- `worker/templates.ts`: SEO HTML templates and inline styles
+- `worker/types.ts`: Worker-facing types
+- `worker/utils.ts`: response, escaping, cache, and parsing helpers
 
-Three styling methods are used — follow the pattern of the component you're modifying:
-1. **Tailwind v4** — inline utility classes, plus shared constants in `lib/styles.ts`
-2. **CSS Modules** — component-scoped styles (`BookCard.module.css`, `Header.module.css`, `BookCardSkeleton.module.css`, `app/book/[id]/page.module.css`)
-3. **Global CSS** — `app/globals.css` defines CSS custom properties, reusable classes (`.container`, `.btn`, `.card`, `.book-grid`), and responsive grid breakpoints
+Shared types and helpers:
 
-### Utilities (`lib/`)
+- `lib/data-access/`: DTOs used by Worker queries and templates
+- `lib/utils.ts`: JSON-LD and SEO utility functions used by Worker templates
 
-- `lib/utils.ts` — JSON-LD structured data generators, text truncation, date formatting
-- `lib/constants.ts` — site config constants (URLs, thresholds, error messages)
-- `lib/styles.ts` — Tailwind class constants and `mergeClasses` utility
+D1 schema:
 
-### SEO
+- `db/migrations/0001_init.sql`
 
-- `generateMetadata()` on book and category pages for dynamic titles, OpenGraph, and Twitter cards
-- JSON-LD structured data (Book schema, breadcrumbs) generated via `lib/utils.ts`
-- `public/sitemap.xml` updated by sync scripts
-- Google Analytics (GA4) and Baidu site verification in `app/layout.tsx`
+Local source data:
+
+- `data/mockData.ts` is retained as an import source and Git data record.
+- Production does not read `data/mockData.ts` at runtime.
+
+## Routes
+
+Worker-rendered HTML includes:
+
+- `/`
+- `/search`
+- `/page/:page`
+- `/book/:id`
+- `/author/:name`
+- `/category/:slug`
+- `/tag/:name`
+- `/sitemap.xml`
+- `/sitemap-index.xml`
+- `/robots.txt`
+
+Worker JSON APIs include:
+
+- `GET /api/health`
+- `GET /api/home`
+- `GET /api/books`
+- `GET /api/books/:id`
+- `GET /api/categories`
+- `GET /api/category/:slug`
+- `GET /api/search`
 
 ## Adding New Books
 
-**Manual:** Add entries to `data/mockData.ts` following the `Book` interface. New books should have the highest `id` (homepage sorts descending).
+Use `docs/new-book-publishing.md` as the canonical workflow.
 
-**Feishu Sync:** Add books to Feishu spreadsheet, then run `node scripts/sync_to_website.cjs` to auto-update `data/mockData.ts` and `public/sitemap.xml`.
+Key rules:
 
-**详细脚本文档**: 参见 [SKILLS.md](./SKILLS.md) 了解所有自动化脚本的使用方法。
+- Enrich missing metadata before publishing.
+- Do not hotlink Douban cover URLs.
+- Upload covers with the global `image-host-upload` skill or `scripts/lib/image_host_upload.cjs`.
+- Add the local record to `data/mockData.ts`.
+- Publish the record to D1 with `scripts/publish_book_to_d1.mjs`.
+- Verify production search, detail API, detail HTML, and cover URL.
 
-## Environment Variables
+Useful commands:
 
-- `BAIDU_PUSH_TOKEN`: Required for `npm run push:baidu`
-- Feishu credentials are configured in `scripts/sync_to_website.cjs`
-- PicList (image upload) runs on `127.0.0.1:36677`
+```bash
+node /Users/zcy/.codex/skills/image-host-upload/scripts/upload-image.mjs --check
+node /Users/zcy/.codex/skills/image-host-upload/scripts/upload-image.mjs /absolute/path/to/cover.jpg --json
+node scripts/publish_book_to_d1.mjs --id <book-id> --dry-run
+CLOUDFLARE_API_TOKEN=... node scripts/publish_book_to_d1.mjs --id <book-id> --remote
+```
 
-## Automation Scripts
+Do not put Cloudflare tokens in docs, commits, or chat. If a token is exposed, tell the user to revoke and recreate it.
 
-Key scripts for book management (see [SKILLS.md](./SKILLS.md) for details):
+Maintained Douban scripts require Feishu configuration through environment variables:
 
-| Script | Purpose |
-|--------|---------|
-| `scrape_douban.cjs` | Scrape single book from Douban → Feishu |
-| `scrape_douban_list.cjs` | Scrape entire Douban list → Feishu |
-| `update_download_links.cjs` | Update download links in Feishu |
-| `sync_to_website.cjs` | Sync books with links to mockData.ts |
-| `enrich_books_from_douban.cjs` | Enrich missing fields from Douban |
+```bash
+FEISHU_APP_ID=... FEISHU_APP_SECRET=... FEISHU_WIKI_TOKEN=... FEISHU_SHEET_ID=... node scripts/scrape_douban.cjs "书名"
+```
 
-## Legacy
+## Editing Guidance
 
-`legacy_backup/` contains the original Vite + React SPA codebase. It is excluded from ESLint and not part of the active project.
-
-## Skills & Scripts
-
-See [SKILLS.md](./SKILLS.md) for reusable automation scripts:
-
-- `scrape_douban.cjs` - Scrape single book from Douban
-- `scrape_douban_list.cjs` - Scrape Douban lists
-- `update_download_links.cjs` - Update download links in Feishu
-- `sync_to_website.cjs` - Sync books to mockData.ts
-- `enrich_books_from_douban.cjs` - Enrich book info from Douban
+- Treat `worker/`, `db/`, `lib/data-access/`, `lib/utils.ts`, and maintained scripts as the active production surface.
+- Keep escaping in `worker/templates.ts` intact for any database-rendered text.
+- Preserve canonical, robots meta, OpenGraph, Twitter Card, Book JSON-LD, Breadcrumb JSON-LD, and ItemList JSON-LD when changing HTML routes.
+- Do not restore deleted Next.js, React, Tailwind, Vercel, or legacy Feishu sync paths as part of routine fixes.

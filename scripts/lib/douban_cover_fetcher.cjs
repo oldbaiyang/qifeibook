@@ -24,47 +24,9 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
+const { uploadToImageHost } = require('./image_host_upload.cjs');
 
-const PICLIST_API = 'http://127.0.0.1:36677/upload';
 const TEMP_DIR = path.join(__dirname, '..', 'temp_covers_fetcher');
-
-/**
- * 上传图片到本地 PicList 图床
- * @param {string} imagePath - 图片文件绝对路径
- * @returns {Promise<string>} CDN URL
- */
-function uploadToPicList(imagePath) {
-  return new Promise((resolve, reject) => {
-    const absPath = path.resolve(imagePath);
-    const body = JSON.stringify({ list: [absPath] });
-    const req = http.request(PICLIST_API, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) },
-      timeout: 60000,
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const result = JSON.parse(data);
-          if (result.fullResult && result.fullResult[0]) {
-            const first = result.fullResult[0];
-            resolve(typeof first === 'string' ? first : first.imgUrl || null);
-          } else if (result.success && result.result && result.result[0]) {
-            resolve(result.result[0]);
-          } else {
-            reject(new Error(`PicList 返回异常: ${data.slice(0, 200)}`));
-          }
-        } catch (e) { reject(e); }
-      });
-    });
-    req.on('error', reject);
-    req.on('timeout', () => { req.destroy(); reject(new Error('PicList 上传超时')); });
-    req.write(body);
-    req.end();
-  });
-}
 
 /**
  * 批量获取豆瓣封面并上传到图床
@@ -155,7 +117,7 @@ async function fetchDoubanCovers(books, options = {}) {
 
         if (upload) {
           try {
-            result.cdnUrl = await uploadToPicList(imgPath);
+            result.cdnUrl = await uploadToImageHost(imgPath);
             log(`  图床: ${result.cdnUrl}`);
           } catch (err) {
             result.error = `上传失败: ${err.message}`;
@@ -241,4 +203,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { fetchDoubanCovers, uploadToPicList };
+module.exports = { fetchDoubanCovers, uploadToImageHost };

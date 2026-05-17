@@ -1,33 +1,32 @@
 {
-  "name": "next_app",
+  "name": "qifeibook",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "cf:version": "node scripts/run_wrangler_local.mjs --version",
+    "cf:dev": "node scripts/run_wrangler_local.mjs dev",
+    "cf:deploy": "node scripts/run_wrangler_local.mjs deploy",
+    "db:export-sql": "node scripts/export_books_to_sql.mjs",
+    "db:migrate:local": "node scripts/run_wrangler_local.mjs d1 migrations apply qifeibook --local",
+    "db:seed:local": "node scripts/run_wrangler_local.mjs d1 execute qifeibook --local --file ./db/seed/books.sql",
+    "db:setup:local": "node scripts/setup_local_d1.mjs",
+    "seo:smoke": "node scripts/seo_smoke_check.mjs",
+    "seo:data-quality": "node scripts/report_data_quality.mjs",
+    "seo:keyword-backfill": "node scripts/generate_keyword_backfill_sql.mjs",
     "push:baidu": "node scripts/push-baidu.js",
     "push:baidu:priority": "node scripts/push-baidu-priority.js"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "lucide-react": "^0.475.0",
-    "next": "16.1.6",
-    "playwright": "^1.58.2",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "playwright": "^1.58.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "eslint-plugin-react-refresh": "^0.5.0",
     "globals": "^17.3.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8.59.3"
   }
 }

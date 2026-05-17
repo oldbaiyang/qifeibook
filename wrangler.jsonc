@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "qifeibook",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-04-29",
+  "workers_dev": true,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "qifeibook.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.qifeibook.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/",
+      "/search",
+      "/api/*",
+      "/book/*",
+      "/category/*",
+      "/sitemap.xml",
+      "/robots.txt"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "qifeibook",
+      "database_id": "85829f2e-86fb-40d8-8b32-f9db64e56c00",
+      "preview_database_id": "DB",
+      "migrations_dir": "./db/migrations"
+    }
+  ]
+}

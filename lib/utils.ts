@@ -7,6 +7,35 @@ interface BreadcrumbItem {
     url: string;
 }
 
+interface BookJsonLdInput {
+    title: string;
+    author: string;
+    description: string;
+    cover: string;
+    publishYear: string;
+    year: string;
+    category: string;
+    format: string;
+    rating?: number | string;
+}
+
+const SITE_URL = 'https://qifeibook.com';
+
+function toAbsoluteSiteUrl(value: string, fallbackPath: string): string {
+    const normalizedValue = value?.trim() || fallbackPath;
+
+    try {
+        return new URL(normalizedValue, SITE_URL).toString();
+    } catch {
+        return new URL(fallbackPath, SITE_URL).toString();
+    }
+}
+
+function cleanJsonLdDescription(value: string, maxLength: number = 500): string {
+    const cleanText = value.replace(/\s+/g, ' ').trim();
+    return cleanText.length > maxLength ? cleanText.slice(0, maxLength) : cleanText;
+}
+
 /**
  * 生成 WebSite JSON-LD 结构化数据（包含 SearchAction）
  */
@@ -15,11 +44,11 @@ export function generateWebsiteJsonLd() {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         'name': '棋飞书库',
-        'url': 'https://qifeibook.com',
+        'url': SITE_URL,
         'description': '免费电子书下载网站，提供小说、文学、历史、科幻等各类电子书资源',
         'potentialAction': {
             '@type': 'SearchAction',
-            'target': 'https://qifeibook.com/search?q={search_term_string}',
+            'target': `${SITE_URL}/search?q={search_term_string}`,
             'query-input': 'required name=search_term_string'
         }
     };
@@ -96,11 +125,11 @@ export function generateBreadcrumbJsonLd(items: BreadcrumbItem[]) {
 /**
  * 生成图书的 JSON-LD 结构化数据
  */
-export function generateBookJsonLd(book: any, bookId: string) {
+export function generateBookJsonLd(book: BookJsonLdInput, bookId: string) {
     // 解析文件格式
     const formats = book.format ? book.format.split(',').map((f: string) => f.trim().toUpperCase()) : ['EPUB'];
 
-    const baseData: Record<string, any> = {
+    const baseData: Record<string, unknown> = {
         '@context': 'https://schema.org',
         '@type': 'Book',
         'name': book.title,
@@ -108,11 +137,11 @@ export function generateBookJsonLd(book: any, bookId: string) {
             '@type': 'Person',
             'name': book.author
         },
-        'description': book.description,
-        'image': book.cover,
+        'description': cleanJsonLdDescription(book.description),
+        'image': toAbsoluteSiteUrl(book.cover, '/default-cover.svg'),
         'datePublished': book.publishYear || book.year,
         'inLanguage': 'zh-CN',
-        'url': `https://qifeibook.com/book/${bookId}`,
+        'url': `${SITE_URL}/book/${bookId}`,
         'publisher': {
             '@type': 'Organization',
             'name': '棋飞书库'

@@ -13,16 +13,29 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# cloudflare local state
+.wrangler/
+.wrangler-state/
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+.cache/
+.claude/
+.npm-cache/
+.opencode/
+.venv/
+.vite/
+.vscode/
+__pycache__/
+temp/
+temp_covers/
+db/seed/*.sql
+data/mockData.ts.backup
 
 # debug
 npm-debug.log*
@@ -38,6 +51,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 .env
-scripts/douban_feishu/venv/bin/python scripts/update_feishu_status.py
+
+# local virtual environments and generated script state
+scripts/douban_feishu/venv/
+scripts/**/__pycache__/
