@@ -1128,6 +1128,26 @@ function renderDownloadCards(book: BookDetailResponse): string {
     .join("");
 }
 
+function getDownloadProviderLabel(link: { name: string; provider?: string }): string {
+  if (link.provider === "baidu" || link.name.includes("百度")) return "百度网盘";
+  if (link.provider === "quark" || link.name.includes("夸克")) return "夸克网盘";
+  if (link.provider === "aliyun" || link.name.includes("阿里")) return "阿里云盘";
+  if (link.provider === "xunlei" || link.name.includes("迅雷")) return "迅雷网盘";
+  return link.name.trim() || "网盘";
+}
+
+function getDownloadMetaPhrase(book: BookDetailResponse): string {
+  const providers = Array.from(
+    new Set(
+      book.downloadLinks
+        .filter((link) => link.url && link.url !== "0")
+        .map(getDownloadProviderLabel),
+    ),
+  );
+
+  return providers.length > 0 ? `${providers.join("、")}免费下载` : "电子书详情与内容简介";
+}
+
 function renderCategoryPanel(categories: CategorySummary[]): string {
   const featuredCategories = categories.slice(0, FEATURED_CATEGORY_LIMIT);
   const remainingCategories = categories.slice(FEATURED_CATEGORY_LIMIT);
@@ -1437,7 +1457,7 @@ export function renderBookPage(book: BookDetailResponse): string {
     ? book.description
     : `${book.title}电子书详情页，包含作者、分类、格式与下载导航信息。`;
   const description = normalizeMetaDescription(
-    `《${book.title}》${book.author}著。${descriptionIntro.slice(0, 120)} 支持EPUB、MOBI、PDF格式，夸克网盘、百度网盘免费高速下载。`,
+    `《${book.title}》${book.author}著。${descriptionIntro.slice(0, 120)} 支持EPUB、MOBI、PDF格式，${getDownloadMetaPhrase(book)}。`,
   );
   const bookJsonLd = generateBookJsonLd(book, String(book.id));
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([

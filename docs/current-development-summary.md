@@ -1,6 +1,6 @@
 # 当前开发总结
 
-更新时间：2026-05-17
+更新时间：2026-05-18
 
 ## 1. 当前线上架构
 
@@ -43,6 +43,18 @@ node scripts/run_wrangler_local.mjs --version
 ```
 
 `seo:data-quality` 当前仍会报告既有数据质量项，例如个别空封面、空下载链接和重复书名作者组合；这些是数据修复事项，不影响本次生产路径清理。
+
+### 1.2 2026-05-18 数据质量与搜索优化记录
+
+本轮优化聚焦三个小范围生产问题：
+
+- 搜索排序从单纯 FTS `bm25` 改为优先书名完全匹配、书名包含、作者匹配、关键词匹配，再回退到 FTS 排名。
+- 书籍详情页 meta description 根据真实下载源生成，不再固定写“夸克网盘、百度网盘”。
+- 数据质量修复：删除旧重复记录 `霸王别姬` ID `869`，保留较新 ID `896`；`小姐日记` ID `768` 使用站内默认封面兜底，并删除无效夸克链接 `url: "0"`。
+
+已知保留问题：
+
+- `三国史` ID `862` 暂无下载链接，本轮按决策只记录问题，不下架、不改 noindex，后续拿到可用下载地址后再更新。
 
 ## 2. 已完成的重构内容
 
@@ -230,23 +242,31 @@ npm run cf:deploy
 
 最近一次已验证通过的 Worker 部署：
 
-- Cloudflare Worker Version ID：`be61685a-7ff5-4f3e-bc94-91f349f30a31`
-- 部署日期：2026-05-17
-- 验证内容：生产 `/api/health` 正常，`/api/search?q=瓦尔登湖` 返回 `id=1010`，`/book/1010` 输出 Book JSON-LD 和 `og:image`。
+- Cloudflare Worker Version ID：`ef35a497-6be4-466b-a6bf-0c2a17e91390`
+- 部署日期：2026-05-18
+- 验证内容：生产 `/api/search?q=霸王别姬` 不再返回旧重复 ID `869`，`/api/books/768` 已修复封面和下载源，`/book/1011` 输出真实下载源 meta description。
 
 上一已知稳定版本：
+
+- Cloudflare Worker Version ID：`be61685a-7ff5-4f3e-bc94-91f349f30a31`
+- 验证内容：生产 `/api/health` 正常，`/api/search?q=瓦尔登湖` 返回 `id=1010`，`/book/1010` 输出 Book JSON-LD 和 `og:image`。
+
+更早稳定版本：
 
 - Cloudflare Worker Version ID：`7ee2260d-4a42-45b5-8939-b4f5c65713fe`
 - 验证内容：首页、详情页、搜索页、分页、作者页、标签页、sitemap、robots.txt 均已按 Worker SEO 输出生效。
 
 最近一次已验证通过的远程 D1 数据更新：
 
-- 日期：2026-04-30
-- 执行内容：远程 D1 关键词回填，SQL 来源为 `db/seed/keywords_backfill.remote.sql`。
-- 执行结果：610 条查询成功，写入 609 行。
-- D1 bookmark：`0000006b-00000036-0000505c-350fd5610c32dfaef31dfb7cd8c7f8c2`
-- 生产验证：`https://qifeibook.com/sitemap.xml` 当前包含 768 个 `<loc>` URL，并包含标签 URL。
-- 生产验证：`https://qifeibook.com/tag/网络小说` 输出 `index,follow`、canonical 正确，并展示 361 本相关书籍。
+- 日期：2026-05-18
+- 执行内容：远程 D1 upsert `小姐日记` ID `768`；删除重复旧记录 `霸王别姬` ID `869`；重建 `books_fts` 并更新分类计数。
+- D1 bookmark：`00001435-0000000c-0000506f-3149ff6453a3539407e1a1029c94a077`
+- 生产验证：`/api/books/768` 只保留百度网盘下载源并使用默认封面；`/api/search?q=霸王别姬` 不再返回 ID `869`。
+
+历史 D1 验证：
+
+- 2026-04-30 远程 D1 关键词回填成功，SQL 来源为 `db/seed/keywords_backfill.remote.sql`；执行结果为 610 条查询成功、写入 609 行；D1 bookmark 为 `0000006b-00000036-0000505c-350fd5610c32dfaef31dfb7cd8c7f8c2`。
+- `https://qifeibook.com/tag/网络小说` 输出 `index,follow`、canonical 正确，并展示 361 本相关书籍。
 
 ## 5. 当前注意事项
 

@@ -572,11 +572,30 @@ export async function searchBooks(
         JOIN books b ON b.id = CAST(f.rowid AS INTEGER)
         JOIN categories c ON c.id = b.category_id
         WHERE books_fts MATCH ?
-        ORDER BY bm25(books_fts), b.id DESC
+        ORDER BY
+          CASE
+            WHEN b.title = ? THEN 0
+            WHEN b.title LIKE ? THEN 1
+            WHEN b.author = ? THEN 2
+            WHEN b.author LIKE ? THEN 3
+            WHEN b.keywords_json LIKE ? THEN 4
+            ELSE 5
+          END,
+          bm25(books_fts),
+          b.id DESC
         LIMIT ? OFFSET ?
       `,
     )
-    .bind(searchTerm, limit + 1, offset)
+    .bind(
+      searchTerm,
+      normalizedQuery,
+      `%${normalizedQuery}%`,
+      normalizedQuery,
+      `%${normalizedQuery}%`,
+      `%${normalizedQuery}%`,
+      limit + 1,
+      offset,
+    )
     .all<BookRow>();
 
   const totalRow = await db

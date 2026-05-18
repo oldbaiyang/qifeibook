@@ -1096,27 +1096,6 @@ export const books: Book[] = [
   },
 
   {
-    "id": 869,
-    "title": "霸王别姬",
-    "author": "李碧华",
-    "authorDetail": "李碧华",
-    "year": "",
-    "cover": "https://img.aqifei.top/img/2026/03/20260312154203492",
-    "description": "《霸王别姬》是李碧华创作的长篇小说，以京剧戏班为背景，讲述了自童年被卖入戏班的程蝶衣（又名小豆子）与段小楼（又名小石头）以及菊仙之间错综复杂的情感纠葛。程蝶衣自幼在关师傅的严格训练下学习扮演旦角，与段小楼共同成长并配对演出《霸王别姬》中的生旦角色，两人在舞台上生死相随，戏外却因菊仙的出现而产生单相思、嫉妒与报复。小说跨越1930年代至1980年代的中国动荡历史，穿插日本侵华、国内战争和新中国的政治变迁，深刻揭示封建礼教对个人的压迫、性别与身份的模糊、爱情与艺术的纠缠以及个体命运与时代洪流的冲突，呈现出人性扭曲与社会悲剧的沉重画卷。",
-    "category": "文学小说",
-    "downloadLinks": [
-        {
-          "name": "百度网盘",
-          "url": "https://pan.baidu.com/s/1KAlBOiifcwRSb5doLnXJcg?pwd=0000",
-          "code": "0000"
-        }
-    ],
-    "size": "",
-    "format": "EPUB",
-    "publishYear": ""
-  },
-
-  {
     "id": 870,
     "title": "重构",
     "author": "Martin Fowler",
@@ -9305,7 +9284,7 @@ export const books: Book[] = [
     "author": "爱你不久",
     "authorDetail": "九夜茴，网络作家，代表作《匆匆那年》《花开半夏》《私藏的情书》等。",
     "year": "",
-    "cover": "",
+    "cover": "https://qifeibook.com/default-cover.svg",
     "description": "我是一名小姐,全国都把做我这一行的人叫做「鸡」，因为只读到初中,所以到现在都不能理解为什么中国把做我这行的人比喻成「鸡」，还好,用简单的头脑想一下,十二生宵里面有鸡,证明中国的传统还是很喜欢鸡的,起码里面没有鸭.所以我也不想问人这个由来了. 「心情」是我最好的朋友,今天决定开始用网络记录这个朋友的行踪,给自己.我是个简单的人.文字也很简单.简单是因为不想太累.",
     "category": "网络小说",
     "downloadLinks": [
@@ -9313,10 +9292,6 @@ export const books: Book[] = [
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1NWN7VxExzFm-TQ-RHE76iQ?pwd=0000",
         "code": "0000"
-      },
-      {
-        "name": "夸克网盘",
-        "url": "0"
       }
     ],
     "size": "",

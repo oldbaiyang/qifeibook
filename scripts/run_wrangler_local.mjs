@@ -2,12 +2,15 @@ import { mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
+import dotenv from "dotenv";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(scriptDir, "..");
 const stateDir = resolve(rootDir, ".wrangler-state");
 const logDir = resolve(stateDir, "logs");
 const logFile = resolve(logDir, "wrangler.log");
+
+dotenv.config({ path: resolve(rootDir, ".env") });
 
 for (const directory of [stateDir, logDir]) {
   mkdirSync(directory, { recursive: true });
