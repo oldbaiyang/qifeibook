@@ -1,5 +1,6 @@
 import type { AuthorSummary, BookDetail, BookSummary, CategorySummary, DownloadLinkData, TagSummary } from "@/lib/data-access";
 
+import { getCanonicalCategoryName, getCategoryAliases, mergeCategorySummaries } from "./categories";
 import type {
   AuthorBooksResponse,
   BookDetailResponse,
@@ -64,13 +65,15 @@ const SEARCH_DEFAULT_LIMIT = 20;
 const SEARCH_MAX_LIMIT = 50;
 
 function mapBookRow(row: BookRow): BookSummary {
+  const categoryName = getCanonicalCategoryName(row.category_name);
+
   return {
     id: row.id,
     title: row.title,
     author: row.author,
     cover: row.cover,
-    category: row.category_name,
-    categorySlug: row.category_slug,
+    category: categoryName,
+    categorySlug: categoryName,
     year: row.year,
   };
 }
@@ -211,37 +214,61 @@ export async function getCategories(db: D1DatabaseLike): Promise<CategorySummary
     )
     .all<CategoryRow>();
 
-  return results.map((row) => ({
-    name: row.name,
-    slug: row.slug,
-    bookCount: row.book_count,
-  }));
+  return mergeCategorySummaries(
+    results.map((row) => ({
+      name: row.name,
+      slug: row.slug,
+      bookCount: row.book_count,
+    })),
+  );
 }
 
 export async function getCategoryBySlug(db: D1DatabaseLike, slug: string): Promise<CategorySummary | null> {
+  const aliases = getCategoryAliases(slug);
+  const placeholders = aliases.map(() => "?").join(", ");
   const row = await db
     .prepare(
       `
         SELECT
-          name,
-          slug,
-          book_count
+          SUM(book_count) AS book_count
         FROM categories
-        WHERE slug = ?
+        WHERE slug IN (${placeholders})
       `,
     )
-    .bind(slug)
-    .first<CategoryRow>();
+    .bind(...aliases)
+    .first<{ book_count: number | null }>();
 
-  if (!row) {
+  if (!row?.book_count) {
     return null;
   }
 
+  const name = getCanonicalCategoryName(slug);
   return {
-    name: row.name,
-    slug: row.slug,
+    name,
+    slug: name,
     bookCount: row.book_count,
   };
+}
+
+function buildCategoryWhereClause(slug: string, cursor?: number | null): { clause: string; values: unknown[] } {
+  const aliases = getCategoryAliases(slug);
+  const placeholders = aliases.map(() => "?").join(", ");
+
+  if (cursor) {
+    return {
+      clause: `WHERE c.slug IN (${placeholders}) AND b.id < ?`,
+      values: [...aliases, cursor],
+    };
+  }
+
+  return {
+    clause: `WHERE c.slug IN (${placeholders})`,
+    values: aliases,
+  };
+}
+
+function toLikePattern(value: string): string {
+  return `%${value.replaceAll("\\", "\\\\").replaceAll("%", "\\%").replaceAll("_", "\\_")}%`;
 }
 
 export async function getCategoryBooks(
@@ -256,11 +283,8 @@ export async function getCategoryBooks(
     return null;
   }
 
-  const whereClause = cursor
-    ? "WHERE c.slug = ? AND b.id < ?"
-    : "WHERE c.slug = ?";
-  const values = cursor ? [slug, cursor] : [slug];
-  const list = await queryBookRows(db, whereClause, values, limit);
+  const categoryFilter = buildCategoryWhereClause(slug, cursor);
+  const list = await queryBookRows(db, categoryFilter.clause, categoryFilter.values, limit);
 
   return {
     category,
@@ -281,7 +305,8 @@ export async function getCategoryBooksByOffset(
   }
 
   const offset = Math.max(page - 1, 0) * limit;
-  const list = await queryBookRowsByOffset(db, "WHERE c.slug = ?", [slug], limit, offset);
+  const categoryFilter = buildCategoryWhereClause(slug);
+  const list = await queryBookRowsByOffset(db, categoryFilter.clause, categoryFilter.values, limit, offset);
 
   return {
     category,
@@ -508,12 +533,12 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
             c.slug AS category_slug
           FROM books b
           JOIN categories c ON c.id = b.category_id
-          WHERE b.id != ? AND c.slug = ?
+          WHERE b.id != ? AND c.slug IN (${getCategoryAliases(detailRow.category_slug).map(() => "?").join(", ")})
           ORDER BY b.id DESC
           LIMIT 5
         `,
       )
-      .bind(id, detailRow.category_slug)
+      .bind(id, ...getCategoryAliases(detailRow.category_slug))
       .all<BookRow>(),
   ]);
 
@@ -551,12 +576,101 @@ export async function searchBooks(
     };
   }
 
-  const searchTerm = normalizedQuery
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((segment) => `${segment}*`)
-    .join(" ");
+  const searchSegments = normalizedQuery.match(/[\p{L}\p{N}_]+/gu)?.filter(Boolean) ?? [];
+  const searchTerm = searchSegments.map((segment) => `${segment}*`).join(" ");
 
+  if (!searchTerm) {
+    return {
+      query: normalizedQuery,
+      books: [],
+      total: 0,
+      nextCursor: null,
+      hasMore: false,
+    };
+  }
+
+  const shouldUseFts = searchSegments.every((segment) => [...segment].length > 1);
+  const likeQuery = toLikePattern(normalizedQuery);
+
+  if (!shouldUseFts) {
+    return searchBooksWithLike(db, normalizedQuery, offset, limit);
+  }
+
+  try {
+    const { results } = await db
+      .prepare(
+        `
+          SELECT
+            b.id,
+            b.title,
+            b.author,
+            b.cover,
+            b.year,
+            c.name AS category_name,
+            c.slug AS category_slug
+          FROM books_fts f
+          JOIN books b ON b.id = CAST(f.rowid AS INTEGER)
+          JOIN categories c ON c.id = b.category_id
+          WHERE books_fts MATCH ?
+          ORDER BY
+            CASE
+              WHEN b.title = ? THEN 0
+              WHEN b.title LIKE ? ESCAPE '\\' THEN 1
+              WHEN b.author = ? THEN 2
+              WHEN b.author LIKE ? ESCAPE '\\' THEN 3
+              WHEN b.keywords_json LIKE ? ESCAPE '\\' THEN 4
+              ELSE 5
+            END,
+            bm25(books_fts),
+            b.id DESC
+          LIMIT ? OFFSET ?
+        `,
+      )
+      .bind(
+        searchTerm,
+        normalizedQuery,
+        likeQuery,
+        normalizedQuery,
+        likeQuery,
+        likeQuery,
+        limit + 1,
+        offset,
+      )
+      .all<BookRow>();
+
+    const totalRow = await db
+      .prepare(
+        `
+          SELECT COUNT(*) AS total
+          FROM books_fts
+          WHERE books_fts MATCH ?
+        `,
+      )
+      .bind(searchTerm)
+      .first<{ total: number }>();
+
+    const hasMore = results.length > limit;
+    const items = results.slice(0, limit).map(mapBookRow);
+
+    return {
+      query: normalizedQuery,
+      books: items,
+      total: totalRow?.total ?? items.length,
+      hasMore,
+      nextCursor: hasMore ? offset + limit : null,
+    };
+  } catch {
+    return searchBooksWithLike(db, normalizedQuery, offset, limit);
+  }
+}
+
+async function searchBooksWithLike(
+  db: D1DatabaseLike,
+  normalizedQuery: string,
+  offset: number,
+  limit: number,
+): Promise<SearchResponse> {
+  const likeQuery = toLikePattern(normalizedQuery);
   const { results } = await db
     .prepare(
       `
@@ -568,31 +682,35 @@ export async function searchBooks(
           b.year,
           c.name AS category_name,
           c.slug AS category_slug
-        FROM books_fts f
-        JOIN books b ON b.id = CAST(f.rowid AS INTEGER)
+        FROM books b
         JOIN categories c ON c.id = b.category_id
-        WHERE books_fts MATCH ?
+        WHERE b.title LIKE ? ESCAPE '\\'
+          OR b.author LIKE ? ESCAPE '\\'
+          OR b.description LIKE ? ESCAPE '\\'
+          OR b.keywords_json LIKE ? ESCAPE '\\'
         ORDER BY
           CASE
             WHEN b.title = ? THEN 0
-            WHEN b.title LIKE ? THEN 1
+            WHEN b.title LIKE ? ESCAPE '\\' THEN 1
             WHEN b.author = ? THEN 2
-            WHEN b.author LIKE ? THEN 3
-            WHEN b.keywords_json LIKE ? THEN 4
+            WHEN b.author LIKE ? ESCAPE '\\' THEN 3
+            WHEN b.keywords_json LIKE ? ESCAPE '\\' THEN 4
             ELSE 5
           END,
-          bm25(books_fts),
           b.id DESC
         LIMIT ? OFFSET ?
       `,
     )
     .bind(
-      searchTerm,
+      likeQuery,
+      likeQuery,
+      likeQuery,
+      likeQuery,
       normalizedQuery,
-      `%${normalizedQuery}%`,
+      likeQuery,
       normalizedQuery,
-      `%${normalizedQuery}%`,
-      `%${normalizedQuery}%`,
+      likeQuery,
+      likeQuery,
       limit + 1,
       offset,
     )
@@ -602,11 +720,14 @@ export async function searchBooks(
     .prepare(
       `
         SELECT COUNT(*) AS total
-        FROM books_fts
-        WHERE books_fts MATCH ?
+        FROM books b
+        WHERE b.title LIKE ? ESCAPE '\\'
+          OR b.author LIKE ? ESCAPE '\\'
+          OR b.description LIKE ? ESCAPE '\\'
+          OR b.keywords_json LIKE ? ESCAPE '\\'
       `,
     )
-    .bind(searchTerm)
+    .bind(likeQuery, likeQuery, likeQuery, likeQuery)
     .first<{ total: number }>();
 
   const hasMore = results.length > limit;

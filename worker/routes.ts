@@ -16,6 +16,7 @@ import {
   getTags,
   searchBooks,
 } from "./db";
+import { getCanonicalCategoryPath, isCategoryAlias } from "./categories";
 import {
   SITEMAP_BOOK_PAGE_SIZE,
   TAG_INDEX_MIN_BOOKS,
@@ -65,6 +66,13 @@ function parsePositiveIntegerSegment(value: string | null): number | null {
 
 function parsePageNumber(value: string | null): number | null {
   return parsePositiveIntegerSegment(value);
+}
+
+function redirectToPath(request: Request, path: string): Response {
+  const redirectUrl = new URL(request.url);
+  redirectUrl.pathname = path;
+  redirectUrl.search = "";
+  return Response.redirect(redirectUrl.toString(), 301);
 }
 
 async function handleApiHome(request: Request, env: Env): Promise<Response> {
@@ -513,6 +521,10 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
           });
         }
 
+        if (isCategoryAlias(slug)) {
+          return redirectToPath(request, `${getCanonicalCategoryPath(slug)}/page/${page}`);
+        }
+
         return await handleCategoryHtml(slug, env, page);
       }
 
@@ -522,6 +534,10 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
           status: 404,
           headers: { "Content-Type": "text/html; charset=utf-8" },
         });
+      }
+
+      if (isCategoryAlias(slug)) {
+        return redirectToPath(request, getCanonicalCategoryPath(slug));
       }
 
       return await handleCategoryHtml(slug, env);

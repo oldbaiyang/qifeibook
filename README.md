@@ -37,6 +37,7 @@ SEO 与数据质量：
 ```bash
 npm run seo:smoke
 npm run seo:data-quality
+npm run site:regression
 npm run seo:keyword-backfill
 ```
 
@@ -68,6 +69,14 @@ CLOUDFLARE_API_TOKEN=... node scripts/publish_book_to_d1.mjs --id <book-id> --re
 - D1 database_id：`85829f2e-86fb-40d8-8b32-f9db64e56c00`
 
 生产页面和 API 都读取 D1。只修改 `data/mockData.ts` 不会让线上出现新书，必须继续执行 `scripts/publish_book_to_d1.mjs --remote`。
+
+## 当前生产能力摘要
+
+- 搜索使用 D1 FTS，并对特殊字符、单字词和 FTS 异常提供 `LIKE` 兜底，避免用户输入导致 500。
+- 分类页会合并常见别名和错别字分类，例如 `心理力志` 会 301 到 `心理励志`。
+- 首页首屏卡片、下拉加载、分页入口和 SEO pagination 同时保留；缺失年份的图书不再显示 `-`。
+- 全站 head 包含 favicon、Apple touch icon、web manifest、图床 preconnect，以及 AdSense 发布商脚本。
+- `npm run site:regression` 会检查线上关键回归点，包括搜索特殊字符、图标/manifest、AdSense、分类重定向和缺失年份展示。
 
 ## 文档
 

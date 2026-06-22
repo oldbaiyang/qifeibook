@@ -72,12 +72,20 @@ function renderLayout({
 
       gtag('config', 'G-3P6YQRFTHE');
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6967766161116772" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <meta name="robots" content="${escapeHtml(robots)}" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://img.aqifei.top" crossorigin />
+    <link rel="dns-prefetch" href="//img.aqifei.top" />
+    <meta name="theme-color" content="#2563eb" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="${SITE_NAME}" />
     <meta property="og:title" content="${escapeHtml(title)}" />
@@ -810,6 +818,14 @@ function renderLayout({
         color: #94a3b8;
         background: #f8fafc;
       }
+      .pager.is-infinite-active::before {
+        content: "也可按页浏览";
+        width: 100%;
+        text-align: center;
+        color: #94a3b8;
+        font-size: 12px;
+        font-weight: 500;
+      }
       .load-more-status {
         display: inline-flex;
         align-items: center;
@@ -1002,7 +1018,7 @@ function renderPagination({
       ? `<a class="pager-link pager-next" href="${escapeHtml(getPagedPath(basePath, currentPage + 1))}" rel="next">下一页</a>`
       : '<span class="pager-link is-disabled">下一页</span>';
 
-  return `<nav class="pager" aria-label="分页导航">${prevLink}<div class="pager-pages">${pageLinks}</div>${nextLink}</nav>`;
+  return `<nav id="catalog-pager" class="pager" aria-label="分页导航">${prevLink}<div class="pager-pages">${pageLinks}</div>${nextLink}</nav>`;
 }
 
 function renderPaginationHead(basePath: string, currentPage: number, totalPages: number): string {
@@ -1027,13 +1043,14 @@ function renderTagHref(tag: string): string {
 function renderBookListItems(books: BookSummary[]): string {
   return books
     .map(
-      (book) => `<article>
+      (book, index) => `<article>
   <a class="book-card" href="/book/${book.id}" aria-label="查看《${escapeHtml(book.title)}》详情">
     <div class="book-card-cover">
       <img
         src="${escapeHtml(book.cover || DEFAULT_COVER)}"
         alt="${escapeHtml(book.title)}封面"
-        loading="lazy"
+        loading="${index < 2 ? "eager" : "lazy"}"
+        ${index < 2 ? 'fetchpriority="high"' : ""}
         decoding="async"
         referrerpolicy="no-referrer"
         onerror="this.onerror=null;this.src='${DEFAULT_COVER}'"
@@ -1044,7 +1061,7 @@ function renderBookListItems(books: BookSummary[]): string {
       <p class="book-card-author">${escapeHtml(book.author)}</p>
       <div class="book-card-meta">
         <span class="book-card-tag">${escapeHtml(book.category || "未分类")}</span>
-        ${book.year ? `<span class="book-card-year">${escapeHtml(book.year)}</span>` : '<span class="book-card-year">-</span>'}
+        ${book.year ? `<span class="book-card-year">${escapeHtml(book.year)}</span>` : ""}
       </div>
     </div>
   </a>
@@ -1250,6 +1267,7 @@ export function renderHomePage(payload: {
         const grid = document.getElementById("home-book-grid");
         const sentinel = document.getElementById("home-load-sentinel");
         const status = document.getElementById("home-load-status");
+        const pager = document.getElementById("catalog-pager");
 
         if (!grid || !sentinel || !status) {
           return;
@@ -1281,7 +1299,7 @@ export function renderHomePage(payload: {
         };
 
         const renderBookCard = (book) => {
-          const year = book.year ? '<span class="book-card-year">' + escapeHtml(book.year) + "</span>" : '<span class="book-card-year">-</span>';
+          const year = book.year ? '<span class="book-card-year">' + escapeHtml(book.year) + "</span>" : "";
           return '<article><a class="book-card" href="/book/' + book.id + '" aria-label="查看《' + escapeHtml(book.title) + '》详情"><div class="book-card-cover"><img src="' + escapeHtml(book.cover || "${DEFAULT_COVER}") + '" alt="' + escapeHtml(book.title) + '封面" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\\'${DEFAULT_COVER}\\'" /></div><div class="book-card-body"><h3 class="book-card-title">' + escapeHtml(book.title) + '</h3><p class="book-card-author">' + escapeHtml(book.author) + '</p><div class="book-card-meta"><span class="book-card-tag">' + escapeHtml(book.category || "未分类") + '</span>' + year + "</div></div></a></article>";
         };
 
@@ -1320,6 +1338,7 @@ export function renderHomePage(payload: {
             const payload = await response.json();
             if (Array.isArray(payload.books) && payload.books.length > 0) {
               grid.insertAdjacentHTML("beforeend", payload.books.map(renderBookCard).join(""));
+              pager?.classList.add("is-infinite-active");
             }
 
             nextCursor = payload.nextCursor ?? null;
@@ -1495,6 +1514,7 @@ export function renderBookPage(book: BookDetailResponse): string {
             <img
               src="${escapeHtml(book.cover || DEFAULT_COVER)}"
               alt="${escapeHtml(book.title)}封面"
+              fetchpriority="high"
               decoding="async"
               referrerpolicy="no-referrer"
               onerror="this.onerror=null;this.src='${DEFAULT_COVER}'"

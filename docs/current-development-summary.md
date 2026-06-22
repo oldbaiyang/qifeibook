@@ -1,6 +1,6 @@
 # 当前开发总结
 
-更新时间：2026-05-18
+更新时间：2026-06-22
 
 ## 1. 当前线上架构
 
@@ -55,6 +55,19 @@ node scripts/run_wrangler_local.mjs --version
 已知保留问题：
 
 - `三国史` ID `862` 暂无下载链接，本轮按决策只记录问题，不下架、不改 noindex，后续拿到可用下载地址后再更新。
+
+### 1.3 2026-06-22 站点体检与广告上线记录
+
+本轮优化来自一次完整线上体检，聚焦搜索稳定性、分类治理、静态资源、首页体验和广告脚本接入：
+
+- 搜索输入增加安全处理：用户输入会先被拆成安全 FTS token；单字词、特殊字符和 FTS 异常会回退到转义后的 `LIKE` 搜索，避免 `'`、`%`、`[美]`、`<script>...` 等输入触发 500。
+- 新增分类归并规则：`worker/categories.ts` 维护分类别名，例如 `心理力志 -> 心理励志`、`小说文学 -> 文学小说`、`科普读物/科普百科 -> 科普`、`网络文学 -> 网络小说`。旧分类 URL 会 301 到规范分类。
+- 首页和列表卡片不再为缺失年份显示 `-`；首屏前两张封面使用 `loading="eager"` 和 `fetchpriority="high"`。
+- 首页无限滚动加载后，分页导航保留给爬虫和用户按页浏览，同时增加轻量提示，减少“无限滚动 + 分页”的理解成本。
+- 全站 HTML head 新增 favicon、Apple touch icon、`site.webmanifest`、图床 `preconnect` / `dns-prefetch`。
+- 全站 HTML head 已加入 Google AdSense 发布商脚本：`ca-pub-6967766161116772`。
+- Worker 现在先接管所有请求；未知 HTML 路径会输出站内 404 页面，静态资源仍由 Workers Assets 提供。
+- 新增 `npm run site:regression`，用于检查搜索特殊字符、HTML 转义、图标/manifest、AdSense、分类重定向和缺失年份展示。
 
 ## 2. 已完成的重构内容
 
@@ -126,6 +139,7 @@ SEO 与数据质量脚本：
 
 - `npm run seo:smoke`
 - `npm run seo:data-quality`
+- `npm run site:regression`
 - `npm run seo:keyword-backfill`
 
 关键词与标签页数据说明：
@@ -216,6 +230,8 @@ Worker 侧数据库查询集中在 `worker/db.ts`，主要能力包括：
 - 已新增标签页：`/tag/:name`、`/tag/:name/page/:page`。
 - 标签页索引策略：至少 3 本书且名称有效才进入 sitemap；薄标签页可渲染但输出 `noindex,follow`。
 - 图书详情页关键词会渲染为可点击标签链接。
+- 全站 head 输出 favicon、Apple touch icon、web manifest、图床预连接和 AdSense 发布商脚本。
+- 未知 HTML 路径输出站内 404 页面，robots 为 `noindex,follow`。
 
 当前 sitemap 策略：
 
@@ -232,6 +248,7 @@ Worker 侧数据库查询集中在 `worker/db.ts`，主要能力包括：
 npm run typecheck
 npm run lint
 npm run seo:smoke
+npm run site:regression -- --base https://qifeibook.com
 ```
 
 Cloudflare 部署命令：
@@ -242,11 +259,23 @@ npm run cf:deploy
 
 最近一次已验证通过的 Worker 部署：
 
+- Cloudflare Worker Version ID：`cfe5d769-f96e-4ae4-bd71-e1030d861ec5`
+- 部署日期：2026-06-22
+- 验证内容：生产全站 head 已包含 AdSense 脚本 `ca-pub-6967766161116772`；`npm run site:regression -- --base https://qifeibook.com` 通过，覆盖搜索特殊字符、HTML 转义、图标/manifest、AdSense、分类别名重定向和缺失年份展示。
+
+上一已知稳定版本：
+
+- Cloudflare Worker Version ID：`06be54fd-7028-49ea-a65b-21e225acc8ae`
+- 部署日期：2026-06-22
+- 验证内容：搜索特殊字符不再 500；分类别名归并和 301 生效；favicon、Apple touch icon、web manifest、站内 404、首页缺失年份隐藏和首屏封面优先级生效。
+
+更早稳定版本：
+
 - Cloudflare Worker Version ID：`ef35a497-6be4-466b-a6bf-0c2a17e91390`
 - 部署日期：2026-05-18
 - 验证内容：生产 `/api/search?q=霸王别姬` 不再返回旧重复 ID `869`，`/api/books/768` 已修复封面和下载源，`/book/1011` 输出真实下载源 meta description。
 
-上一已知稳定版本：
+历史稳定版本：
 
 - Cloudflare Worker Version ID：`be61685a-7ff5-4f3e-bc94-91f349f30a31`
 - 验证内容：生产 `/api/health` 正常，`/api/search?q=瓦尔登湖` 返回 `id=1010`，`/book/1010` 输出 Book JSON-LD 和 `og:image`。
@@ -278,6 +307,7 @@ npm run cf:deploy
 - 对外页面的结构性改动应同时检查 SEO HTML 输出。
 - 部署前至少执行 `npm run typecheck` 和 `npm run lint`。
 - 涉及 SEO 路由时同步执行 `npm run seo:smoke`。
+- 涉及搜索、首页、图标、分类或广告脚本时同步执行 `npm run site:regression -- --base https://qifeibook.com`。
 - 涉及关键词、标签或导入数据时同步执行 `npm run seo:data-quality`。
 
 ## 6. 后续建议
