@@ -28,7 +28,6 @@ import {
   renderBookSitemapXml,
   renderCategoryPage,
   renderCategorySitemapXml,
-  renderFlatSitemapXml,
   renderHomePage,
   renderNotFoundPage,
   renderRobotsTxt,
@@ -258,7 +257,11 @@ async function handleTagHtml(name: string, env: Env, page = 1): Promise<Response
 
 async function handleHomeHtml(env: Env, page = 1): Promise<Response> {
   const db = requireDb(env);
-  const [categories, totalBooks] = await Promise.all([getCategories(db), getBookCount(db)]);
+  const [categories, totalBooks, hotTags] = await Promise.all([
+    getCategories(db),
+    getBookCount(db),
+    getTags(db, 5, 20),
+  ]);
   const totalPages = getTotalPages(totalBooks, HTML_PAGE_SIZE);
 
   if (page > totalPages) {
@@ -274,6 +277,7 @@ async function handleHomeHtml(env: Env, page = 1): Promise<Response> {
     new Response(
       renderHomePage({
         categories,
+        tags: hotTags,
         books: list.books,
         totalBooks,
         nextCursor: list.nextCursor,
@@ -289,14 +293,23 @@ async function handleHomeHtml(env: Env, page = 1): Promise<Response> {
   );
 }
 
-async function handleSearchHtml(request: Request, env: Env): Promise<Response> {
+async function handleSearchHtml(request: Request, env: Env, page = 1): Promise<Response> {
   const url = new URL(request.url);
   const query = url.searchParams.get("q")?.trim() ?? "";
   const db = requireDb(env);
+  const offset = Math.max(page - 1, 0) * HTML_PAGE_SIZE;
   const [categories, payload] = await Promise.all([
     getCategories(db),
-    query ? searchBooks(db, query, 0, 20) : Promise.resolve({ query: "", books: [], total: 0, nextCursor: null, hasMore: false }),
+    query ? searchBooks(db, query, offset, HTML_PAGE_SIZE) : Promise.resolve({ query: "", books: [], total: 0, nextCursor: null, hasMore: false }),
   ]);
+
+  const totalPages = query ? Math.max(1, Math.ceil(payload.total / HTML_PAGE_SIZE)) : 1;
+  if (page > 1 && page > totalPages) {
+    return new Response(renderNotFoundPage("未找到该搜索页", "当前搜索结果页不存在或暂时不可用。"), {
+      status: 404,
+      headers: { "Content-Type": "text/html; charset=utf-8" },
+    });
+  }
 
   return withCacheHeaders(
     new Response(
@@ -305,6 +318,8 @@ async function handleSearchHtml(request: Request, env: Env): Promise<Response> {
         query,
         books: payload.books,
         total: payload.total,
+        currentPage: page,
+        totalPages,
       }),
       {
         headers: { "Content-Type": "text/html; charset=utf-8" },
@@ -320,23 +335,6 @@ async function handleSitemapIndex(env: Env): Promise<Response> {
 
   return withCacheHeaders(
     new Response(renderSitemapIndexXml({ bookCount }), {
-      headers: { "Content-Type": "application/xml; charset=utf-8" },
-    }),
-    "public, max-age=1800, stale-while-revalidate=3600",
-  );
-}
-
-async function handleFlatSitemap(env: Env): Promise<Response> {
-  const db = requireDb(env);
-  const [categories, authors, tags, books] = await Promise.all([
-    getCategories(db),
-    getAuthors(db),
-    getTags(db, TAG_INDEX_MIN_BOOKS),
-    getBookSitemapEntries(db, 1, 50000),
-  ]);
-
-  return withCacheHeaders(
-    new Response(renderFlatSitemapXml({ categories, authors: authors.filter(isIndexableAuthor), tags: tags.filter(isIndexableTag), books }), {
       headers: { "Content-Type": "application/xml; charset=utf-8" },
     }),
     "public, max-age=1800, stale-while-revalidate=3600",
@@ -422,6 +420,13 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
   const url = new URL(request.url);
   const { hostname, pathname } = url;
 
+  // 去掉非根路径的尾斜杠，避免 /category/小说/ 与 /category/小说 共存造成重复内容
+  if (pathname !== "/" && pathname.endsWith("/")) {
+    const trimmed = new URL(request.url);
+    trimmed.pathname = pathname.replace(/\/+$/, "") || "/";
+    return Response.redirect(trimmed.toString(), 301);
+  }
+
   try {
     if (hostname === "www.qifeibook.com") {
       const redirectUrl = new URL(request.url);
@@ -448,7 +453,8 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
     }
 
     if (pathname === "/search") {
-      return await handleSearchHtml(request, env);
+      const requestedPage = parsePageNumber(url.searchParams.get("page"));
+      return await handleSearchHtml(request, env, requestedPage ?? 1);
     }
 
     if (pathname === "/api/health") {
@@ -598,7 +604,7 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
     }
 
     if (pathname === "/sitemap.xml") {
-      return await handleFlatSitemap(env);
+      return await handleSitemapIndex(env);
     }
 
     if (pathname === "/sitemap-index.xml") {

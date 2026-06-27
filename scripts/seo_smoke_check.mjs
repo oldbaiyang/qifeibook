@@ -116,7 +116,7 @@ async function main() {
     checkHtml(pages[1]),
     checkHtml(pages[2], { robots: "noindex,follow" }),
     ...(pages[3] ? [checkHtml(pages[3])] : []),
-    checkXml(pages[4], /<urlset[\s>]/i),
+    checkXml(pages[4], /<sitemapindex[\s>]/i),
     checkXml(pages[5], /<sitemapindex[\s>]/i),
     checkXml(pages[6], /<urlset[\s>]/i),
     checkXml(pages[7], /<urlset[\s>]/i),

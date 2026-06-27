@@ -1,9 +1,9 @@
-import { generateBookJsonLd, generateBreadcrumbJsonLd, generateWebsiteJsonLd } from "@/lib/utils";
+import { combineJsonLdGraph, generateBookJsonLd, generateBreadcrumbJsonLd, generateWebsiteJsonLd } from "@/lib/utils";
 
 import type { AuthorSummary, BookSummary, CategorySummary, TagSummary } from "@/lib/data-access";
 
 import type { BookDetailResponse } from "./types";
-import { escapeHtml } from "./utils";
+import { escapeHtml, isThinBook } from "./utils";
 
 const SITE_NAME = "棋飞书库";
 const SITE_URL = "https://qifeibook.com";
@@ -14,6 +14,33 @@ export const SITEMAP_BOOK_PAGE_SIZE = 5000;
 export const AUTHOR_INDEX_MIN_BOOKS = 2;
 export const TAG_INDEX_MIN_BOOKS = 3;
 const GENERIC_AUTHOR_NAMES = new Set(["多人", "佚名", "匿名", "不详", "未知", "无名氏", "作者不详"]);
+const GENERIC_KEYWORDS = new Set(["小说", "电子书", "下载", "epub", "txt", "pdf", "mobi", "kindle", "免费", "资源"]);
+const BOOK_TITLE_MAX_LENGTH = 60;
+
+function pickDisplayKeywords(keywords: readonly string[], maxCount = 2): string[] {
+  const seen = new Set<string>();
+  const picked: string[] = [];
+  for (const keyword of keywords) {
+    const trimmed = keyword.trim();
+    if (!trimmed) continue;
+    const key = trimmed.toLowerCase();
+    if (GENERIC_KEYWORDS.has(key) || seen.has(key)) continue;
+    seen.add(key);
+    picked.push(trimmed);
+    if (picked.length >= maxCount) break;
+  }
+  return picked;
+}
+
+function formatBookPageTitle(bookTitle: string, author: string, keywords: readonly string[]): string {
+  const base = `《${bookTitle}》${author}`;
+  const keywordSegment = keywords.length > 0 ? keywords.join("") : "";
+  const full = keywordSegment ? `${base}_${keywordSegment}电子书免费下载_棋飞书库` : `${base}_EPUB/MOBI/PDF免费下载_棋飞书库`;
+  if ([...full].length <= BOOK_TITLE_MAX_LENGTH) {
+    return full;
+  }
+  return `${base.slice(0, Math.max(0, BOOK_TITLE_MAX_LENGTH - 5))}…_棋飞书库`;
+}
 
 export function isIndexableAuthor(author: AuthorSummary): boolean {
   const normalized = author.name.trim();
@@ -45,6 +72,11 @@ function renderJsonLd(data: unknown): string {
   return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
 }
 
+function renderPageIntro(content: string | undefined | null, fallback: string): string {
+  const text = (content ?? "").trim() || fallback;
+  return `<section class="page-intro" style="margin: 12px 0 24px; color: #4b5563; line-height: 1.8; font-size: 15px;"><p>${escapeHtml(text)}</p></section>`;
+}
+
 function renderLayout({
   title,
   description,
@@ -52,6 +84,9 @@ function renderLayout({
   body,
   extraHead = "",
   robots = "index,follow",
+  ogType = "website",
+  ogImage,
+  twitterSite,
 }: {
   title: string;
   description: string;
@@ -59,7 +94,12 @@ function renderLayout({
   body: string;
   extraHead?: string;
   robots?: string;
+  ogType?: "website" | "book" | "article";
+  ogImage?: string;
+  twitterSite?: string;
 }): string {
+  const resolvedOgImage = ogImage || `${SITE_URL}/favicon-512.png`;
+  const resolvedTwitterSite = twitterSite || "@qifeibook";
   return `<!doctype html>
 <html lang="zh-CN">
   <head>
@@ -86,14 +126,18 @@ function renderLayout({
     <link rel="preconnect" href="https://img.aqifei.top" crossorigin />
     <link rel="dns-prefetch" href="//img.aqifei.top" />
     <meta name="theme-color" content="#2563eb" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="${escapeHtml(ogType)}" />
     <meta property="og:site_name" content="${SITE_NAME}" />
+    <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonical)}" />
+    <meta property="og:image" content="${escapeHtml(resolvedOgImage)}" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="${escapeHtml(resolvedTwitterSite)}" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
+    <meta name="twitter:image" content="${escapeHtml(resolvedOgImage)}" />
     ${extraHead}
     <style>
       :root {
@@ -972,7 +1016,12 @@ function getPagedPath(basePath: string, page: number): string {
     return basePath;
   }
 
-  return basePath === "/" ? `/page/${page}` : `${basePath}/page/${page}`;
+  const queryIndex = basePath.indexOf("?");
+  const pathPart = queryIndex === -1 ? basePath : basePath.slice(0, queryIndex);
+  const queryPart = queryIndex === -1 ? "" : basePath.slice(queryIndex);
+
+  const pagedPath = pathPart === "/" ? `/page/${page}` : `${pathPart}/page/${page}`;
+  return `${pagedPath}${queryPart}`;
 }
 
 function renderPagination({
@@ -1240,6 +1289,7 @@ function renderSiteHeader(categories: CategorySummary[], searchQuery = ""): stri
 
 export function renderHomePage(payload: {
   categories: CategorySummary[];
+  tags: TagSummary[];
   books: BookSummary[];
   totalBooks: number;
   nextCursor: number | null;
@@ -1260,6 +1310,7 @@ export function renderHomePage(payload: {
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([{ name: "首页", url: canonical }]);
   const websiteJsonLd = generateWebsiteJsonLd();
   const itemListJsonLd = generateItemListJsonLd(payload.books, canonical);
+  const homeGraphJsonLd = combineJsonLdGraph(websiteJsonLd, breadcrumbJsonLd, itemListJsonLd);
   const initialStatus = payload.hasMore ? "下拉到底部自动加载更多图书" : "已展示全部图书";
   const loadMoreScript = `
     <script>
@@ -1383,6 +1434,22 @@ export function renderHomePage(payload: {
       </div>
       <div class="catalog-badge">持续更新中</div>
     </section>
+    ${
+      payload.tags.length
+        ? `<section class="home-hot-tags" style="margin: 8px 0 24px;">
+      <h2 class="section-title">热门标签</h2>
+      <div class="detail-tags">
+        ${payload.tags
+          .slice(0, 20)
+          .map(
+            (tag) =>
+              `<a class="detail-tag" href="${escapeHtml(renderTagHref(tag.name))}">${escapeHtml(tag.name)}</a>`,
+          )
+          .join("")}
+      </div>
+    </section>`
+        : ""
+    }
     <section
       id="home-book-grid"
       class="book-grid"
@@ -1406,9 +1473,7 @@ export function renderHomePage(payload: {
     body,
     extraHead: [
       renderPaginationHead("/", payload.currentPage, payload.totalPages),
-      renderJsonLd(websiteJsonLd),
-      renderJsonLd(breadcrumbJsonLd),
-      renderJsonLd(itemListJsonLd),
+      renderJsonLd(homeGraphJsonLd),
     ].join("\n"),
   });
 }
@@ -1418,14 +1483,17 @@ export function renderSearchPage(payload: {
   query: string;
   books: BookSummary[];
   total: number;
+  currentPage: number;
+  totalPages: number;
 }): string {
   const normalizedQuery = payload.query.trim();
+  const safeQuery = escapeHtml(normalizedQuery);
   const canonical = `${SITE_URL}/search`;
   const title = normalizedQuery
-    ? `搜索“${normalizedQuery}”_棋飞书库`
+    ? `搜索“${safeQuery}”_棋飞书库`
     : "搜索书籍_棋飞书库";
   const description = normalizedQuery
-    ? `搜索“${normalizedQuery}”的结果，共找到 ${payload.total} 本相关图书。`
+    ? `搜索“${safeQuery}”的结果，共找到 ${payload.total} 本相关图书。`
     : "在棋飞书库中按书名、作者或关键词搜索电子书。";
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "首页", url: `${SITE_URL}/` },
@@ -1457,7 +1525,16 @@ export function renderSearchPage(payload: {
           : '<div class="empty">请输入搜索关键词。</div>'
       }
     </section>
+    ${
+      normalizedQuery && payload.totalPages > 1
+        ? renderPagination({ basePath: `/search?q=${encodeURIComponent(normalizedQuery)}`, currentPage: payload.currentPage, totalPages: payload.totalPages })
+        : ""
+    }
   `;
+
+  const extraHead = payload.currentPage > 1 && payload.totalPages > 1
+    ? renderPaginationHead(`/search?q=${encodeURIComponent(normalizedQuery)}`, payload.currentPage, payload.totalPages)
+    : "";
 
   return renderLayout({
     title,
@@ -1465,13 +1542,14 @@ export function renderSearchPage(payload: {
     canonical,
     body,
     robots: "noindex,follow",
-    extraHead: renderJsonLd(breadcrumbJsonLd),
+    extraHead: [extraHead, renderJsonLd(breadcrumbJsonLd)].filter(Boolean).join("\n"),
   });
 }
 
 export function renderBookPage(book: BookDetailResponse): string {
   const canonical = `${SITE_URL}/book/${book.id}`;
-  const title = `《${book.title}》${book.author}_EPUB/MOBI/PDF免费下载_棋飞书库`;
+  const displayKeywords = pickDisplayKeywords(book.keywords);
+  const title = formatBookPageTitle(book.title, book.author, displayKeywords);
   const descriptionIntro = book.description
     ? book.description
     : `${book.title}电子书详情页，包含作者、分类、格式与下载导航信息。`;
@@ -1487,7 +1565,6 @@ export function renderBookPage(book: BookDetailResponse): string {
   const extraHead = `
     ${renderJsonLd(bookJsonLd)}
     ${renderJsonLd(breadcrumbJsonLd)}
-    <meta property="og:image" content="${escapeHtml(toSiteUrl(book.cover))}" />
   `;
 
   const body = `
@@ -1498,7 +1575,7 @@ export function renderBookPage(book: BookDetailResponse): string {
     ])}
     <section class="hero detail-hero">
       <div class="detail-kicker">${escapeHtml(book.category)} · 电子书详情</div>
-      <h1 class="detail-title">${escapeHtml(book.title)}</h1>
+      <h1 class="detail-title">《${escapeHtml(book.title)}》${escapeHtml(book.author)}</h1>
       <div class="detail-meta">
         <span class="detail-meta-pill"><b>作者</b><a href="${escapeHtml(renderAuthorHref(book.author))}">${escapeHtml(book.author)}</a></span>
         <span class="detail-meta-pill"><b>分类</b><a href="/category/${escapeHtml(book.categorySlug)}">${escapeHtml(book.category)}</a></span>
@@ -1514,6 +1591,8 @@ export function renderBookPage(book: BookDetailResponse): string {
             <img
               src="${escapeHtml(book.cover || DEFAULT_COVER)}"
               alt="${escapeHtml(book.title)}封面"
+              width="280"
+              height="392"
               fetchpriority="high"
               decoding="async"
               referrerpolicy="no-referrer"
@@ -1592,7 +1671,9 @@ export function renderBookPage(book: BookDetailResponse): string {
     canonical,
     body,
     extraHead,
-    robots: !book.description && book.downloadLinks.length === 0 ? "noindex,follow" : "index,follow",
+    robots: isThinBook(book) ? "noindex,follow" : "index,follow",
+    ogType: "book",
+    ogImage: toSiteUrl(book.cover),
   });
 }
 
@@ -1629,6 +1710,7 @@ export function renderCategoryPage(
         <span>第 ${pagination.currentPage} / ${pagination.totalPages} 页</span>
       </div>
     </section>
+    ${renderPageIntro(category.description, `${category.name}分类精选电子书，涵盖该主题下${category.bookCount}本高质量图书的下载导航，覆盖 EPUB、MOBI、PDF 等常见格式。`)}
     <section class="book-grid">
       ${books.length ? renderBookListItems(books) : '<div class="empty">当前分类暂无图书</div>'}
     </section>
@@ -1677,6 +1759,7 @@ export function renderAuthorPage(
         <span>第 ${pagination.currentPage} / ${pagination.totalPages} 页</span>
       </div>
     </section>
+    ${renderPageIntro(author.description, `${author.name}全部作品电子书合集：共收录 ${author.bookCount} 本图书，全部支持 EPUB、MOBI、PDF 格式免费下载导航。`)}
     <section class="book-grid">
       ${books.length ? renderBookListItems(books) : '<div class="empty">当前作者暂无图书</div>'}
     </section>
@@ -1726,6 +1809,7 @@ export function renderTagPage(
         <span>第 ${pagination.currentPage} / ${pagination.totalPages} 页</span>
       </div>
     </section>
+    ${renderPageIntro(tag.description, `“${tag.name}”相关电子书合集：精选 ${tag.bookCount} 本图书，全部支持 EPUB、MOBI、PDF 格式免费下载导航。`)}
     <section class="book-grid">
       ${books.length ? renderBookListItems(books) : '<div class="empty">当前标签暂无图书</div>'}
     </section>
@@ -1759,7 +1843,7 @@ export function renderNotFoundPage(title: string, message: string): string {
 }
 
 export function renderRobotsTxt(): string {
-  return `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+  return `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /temp/\nDisallow: /_next/\nDisallow: /search/\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 }
 
 function renderUrlEntry(url: string, lastmod?: string): string {

@@ -16,6 +16,7 @@ interface BookJsonLdInput {
     year: string;
     category: string;
     format: string;
+    keywords?: string[];
     rating?: number | string;
 }
 
@@ -51,6 +52,23 @@ export function generateWebsiteJsonLd() {
             'target': `${SITE_URL}/search?q={search_term_string}`,
             'query-input': 'required name=search_term_string'
         }
+    };
+}
+
+/**
+ * 把多个 JSON-LD 节点合并到一个 @graph 容器中，
+ * 避免在页面 head 中发出多个 <script type="application/ld+json">。
+ */
+export function combineJsonLdGraph(
+    ...nodes: Array<Record<string, unknown>>
+): Record<string, unknown> {
+    return {
+        '@context': 'https://schema.org',
+        '@graph': nodes.map((node) => {
+            const rest = { ...node };
+            delete (rest as Record<string, unknown>)['@context'];
+            return rest;
+        })
     };
 }
 
@@ -142,24 +160,14 @@ export function generateBookJsonLd(book: BookJsonLdInput, bookId: string) {
         'datePublished': book.publishYear || book.year,
         'inLanguage': 'zh-CN',
         'url': `${SITE_URL}/book/${bookId}`,
-        'publisher': {
-            '@type': 'Organization',
-            'name': '棋飞书库'
-        },
         'genre': book.category,
         'bookFormat': 'EBook',
-        'encodingFormat': formats,
-        'offers': {
-            '@type': 'Offer',
-            'price': '0',
-            'priceCurrency': 'CNY',
-            'availability': 'https://schema.org/InStock',
-            'seller': {
-                '@type': 'Organization',
-                'name': '棋飞书库'
-            }
-        }
+        'encodingFormat': formats
     };
+
+    if (book.keywords && book.keywords.length > 0) {
+        baseData.keywords = book.keywords.join(', ');
+    }
 
     // 只有当 book.rating 存在时才添加 aggregateRating
     if (book.rating) {

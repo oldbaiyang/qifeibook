@@ -47,16 +47,19 @@ interface CategoryRow {
   name: string;
   slug: string;
   book_count: number;
+  description: string | null;
 }
 
 interface AuthorRow {
   name: string;
   book_count: number;
+  description: string | null;
 }
 
 interface TagRow {
   name: string;
   book_count: number;
+  description: string | null;
 }
 
 const DEFAULT_LIST_LIMIT = 20;
@@ -207,7 +210,8 @@ export async function getCategories(db: D1DatabaseLike): Promise<CategorySummary
         SELECT
           name,
           slug,
-          book_count
+          book_count,
+          description
         FROM categories
         ORDER BY book_count DESC, name ASC
       `,
@@ -219,6 +223,7 @@ export async function getCategories(db: D1DatabaseLike): Promise<CategorySummary
       name: row.name,
       slug: row.slug,
       bookCount: row.book_count,
+      description: row.description ?? undefined,
     })),
   );
 }
@@ -230,13 +235,14 @@ export async function getCategoryBySlug(db: D1DatabaseLike, slug: string): Promi
     .prepare(
       `
         SELECT
-          SUM(book_count) AS book_count
+          SUM(book_count) AS book_count,
+          MAX(description) AS description
         FROM categories
         WHERE slug IN (${placeholders})
       `,
     )
     .bind(...aliases)
-    .first<{ book_count: number | null }>();
+    .first<{ book_count: number | null; description: string | null }>();
 
   if (!row?.book_count) {
     return null;
@@ -247,6 +253,7 @@ export async function getCategoryBySlug(db: D1DatabaseLike, slug: string): Promi
     name,
     slug: name,
     bookCount: row.book_count,
+    description: row.description ?? undefined,
   };
 }
 
@@ -319,12 +326,11 @@ export async function getAuthors(db: D1DatabaseLike): Promise<AuthorSummary[]> {
     .prepare(
       `
         SELECT
-          author AS name,
-          COUNT(*) AS book_count
-        FROM books
-        WHERE TRIM(author) != ''
-        GROUP BY author
-        ORDER BY book_count DESC, author ASC
+          name,
+          book_count,
+          description
+        FROM authors
+        ORDER BY book_count DESC, name ASC
       `,
     )
     .all<AuthorRow>();
@@ -332,6 +338,7 @@ export async function getAuthors(db: D1DatabaseLike): Promise<AuthorSummary[]> {
   return results.map((row) => ({
     name: row.name,
     bookCount: row.book_count,
+    description: row.description ?? undefined,
   }));
 }
 
@@ -340,11 +347,11 @@ export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise
     .prepare(
       `
         SELECT
-          author AS name,
-          COUNT(*) AS book_count
-        FROM books
-        WHERE author = ?
-        GROUP BY author
+          name,
+          book_count,
+          description
+        FROM authors
+        WHERE name = ?
       `,
     )
     .bind(name)
@@ -357,6 +364,7 @@ export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise
   return {
     name: row.name,
     bookCount: row.book_count,
+    description: row.description ?? undefined,
   };
 }
 
@@ -381,32 +389,26 @@ export async function getAuthorBooksByOffset(
   };
 }
 
-export async function getTags(db: D1DatabaseLike, minBookCount = 1): Promise<TagSummary[]> {
-  const { results } = await db
-    .prepare(
-      `
-        SELECT
-          keyword AS name,
-          COUNT(DISTINCT book_id) AS book_count
-        FROM (
-          SELECT
-            b.id AS book_id,
-            TRIM(CAST(j.value AS TEXT)) AS keyword
-          FROM books b,
-          json_each(CASE WHEN json_valid(b.keywords_json) THEN b.keywords_json ELSE '[]' END) j
-          WHERE TRIM(CAST(j.value AS TEXT)) != ''
-        )
-        GROUP BY keyword
-        HAVING COUNT(DISTINCT book_id) >= ?
-        ORDER BY book_count DESC, keyword ASC
-      `,
-    )
-    .bind(minBookCount)
-    .all<TagRow>();
+export async function getTags(db: D1DatabaseLike, minBookCount = 1, limit?: number): Promise<TagSummary[]> {
+  const query = `
+    SELECT
+      name,
+      book_count,
+      description
+    FROM tags
+    WHERE book_count >= ?
+    ORDER BY book_count DESC, name ASC
+    ${typeof limit === "number" ? "LIMIT ?" : ""}
+  `;
+  const stmt = db.prepare(query);
+  const { results } = typeof limit === "number"
+    ? await stmt.bind(minBookCount, limit).all<TagRow>()
+    : await stmt.bind(minBookCount).all<TagRow>();
 
   return results.map((row) => ({
     name: row.name,
     bookCount: row.book_count,
+    description: row.description ?? undefined,
   }));
 }
 
@@ -415,17 +417,11 @@ export async function getTagByName(db: D1DatabaseLike, name: string): Promise<Ta
     .prepare(
       `
         SELECT
-          keyword AS name,
-          COUNT(DISTINCT book_id) AS book_count
-        FROM (
-          SELECT
-            b.id AS book_id,
-            TRIM(CAST(j.value AS TEXT)) AS keyword
-          FROM books b,
-          json_each(CASE WHEN json_valid(b.keywords_json) THEN b.keywords_json ELSE '[]' END) j
-          WHERE TRIM(CAST(j.value AS TEXT)) = ?
-        )
-        GROUP BY keyword
+          name,
+          book_count,
+          description
+        FROM tags
+        WHERE name = ?
       `,
     )
     .bind(name)
@@ -438,6 +434,7 @@ export async function getTagByName(db: D1DatabaseLike, name: string): Promise<Ta
   return {
     name: row.name,
     bookCount: row.book_count,
+    description: row.description ?? undefined,
   };
 }
 
@@ -465,11 +462,8 @@ export async function getTagBooksByOffset(
       c.slug AS category_slug
     FROM books b
     JOIN categories c ON c.id = b.category_id
-    WHERE EXISTS (
-      SELECT 1
-      FROM json_each(CASE WHEN json_valid(b.keywords_json) THEN b.keywords_json ELSE '[]' END) j
-      WHERE TRIM(CAST(j.value AS TEXT)) = ?
-    )
+    JOIN book_tags bt ON bt.book_id = b.id
+    WHERE bt.tag_name = ?
     ORDER BY b.id DESC
     LIMIT ? OFFSET ?
   `;

@@ -29,16 +29,19 @@ export interface CategorySummary {
   name: string;
   slug: string;
   bookCount: number;
+  description?: string;
 }
 
 export interface AuthorSummary {
   name: string;
   bookCount: number;
+  description?: string;
 }
 
 export interface TagSummary {
   name: string;
   bookCount: number;
+  description?: string;
 }
 
 export interface BooksPageData {

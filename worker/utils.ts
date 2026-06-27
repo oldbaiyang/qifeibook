@@ -40,6 +40,18 @@ export function notFound(message = "Not Found"): Response {
   return json({ ok: false, message }, { status: 404 });
 }
 
+/**
+ * 判定一本图书是否为"薄内容"——描述太短且无下载链接。
+ * 用于决定是否对该书详情页发出 noindex meta。
+ */
+export function isThinBook(book: {
+  description?: string | null;
+  downloadLinks: ReadonlyArray<unknown>;
+}): boolean {
+  const stripped = (book.description ?? "").trim();
+  return stripped.length < 100 && book.downloadLinks.length === 0;
+}
+
 export function badRequest(message: string): Response {
   return json({ ok: false, message }, { status: 400 });
 }
