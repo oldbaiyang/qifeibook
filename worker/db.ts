@@ -762,3 +762,86 @@ export async function getBookSitemapEntries(
     lastmod: row.updated_at || row.created_at || undefined,
   }));
 }
+
+/**
+ * 给 sitemap 用的扩展版查询：额外带 description + updatedAt。
+ * 通过关联子查询取该分类/作者/标签下最近一本书的 updated_at，
+ * 只在生成 sitemap 时调用，避免给每页加载增加开销。
+ */
+export async function getCategoriesForSitemap(db: D1DatabaseLike): Promise<CategorySummary[]> {
+  const { results } = await db
+    .prepare(
+      `
+        SELECT
+          c.name,
+          c.slug,
+          c.book_count,
+          c.description,
+          (SELECT MAX(b.updated_at) FROM books b WHERE b.category_id = c.id) AS updated_at
+        FROM categories c
+        ORDER BY c.book_count DESC, c.name ASC
+      `,
+    )
+    .all<CategoryRow & { updated_at: string | null }>();
+
+  return results.map((row) => ({
+    name: row.name,
+    slug: row.slug,
+    bookCount: row.book_count,
+    description: row.description ?? undefined,
+    updatedAt: row.updated_at ?? undefined,
+  }));
+}
+
+export async function getAuthorsForSitemap(db: D1DatabaseLike): Promise<AuthorSummary[]> {
+  const { results } = await db
+    .prepare(
+      `
+        SELECT
+          a.name,
+          a.book_count,
+          a.description,
+          (SELECT MAX(b.updated_at) FROM books b WHERE b.author = a.name) AS updated_at
+        FROM authors a
+        ORDER BY a.book_count DESC, a.name ASC
+      `,
+    )
+    .all<AuthorRow & { updated_at: string | null }>();
+
+  return results.map((row) => ({
+    name: row.name,
+    bookCount: row.book_count,
+    description: row.description ?? undefined,
+    updatedAt: row.updated_at ?? undefined,
+  }));
+}
+
+export async function getTagsForSitemap(db: D1DatabaseLike, minBookCount = 1): Promise<TagSummary[]> {
+  const { results } = await db
+    .prepare(
+      `
+        SELECT
+          t.name,
+          t.book_count,
+          t.description,
+          (
+            SELECT MAX(b.updated_at)
+            FROM book_tags bt
+            JOIN books b ON b.id = bt.book_id
+            WHERE bt.tag_name = t.name
+          ) AS updated_at
+        FROM tags t
+        WHERE t.book_count >= ?
+        ORDER BY t.book_count DESC, t.name ASC
+      `,
+    )
+    .bind(minBookCount)
+    .all<TagRow & { updated_at: string | null }>();
+
+  return results.map((row) => ({
+    name: row.name,
+    bookCount: row.book_count,
+    description: row.description ?? undefined,
+    updatedAt: row.updated_at ?? undefined,
+  }));
+}

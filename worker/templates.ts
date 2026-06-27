@@ -1902,7 +1902,7 @@ ${body}
 
 export function renderCategorySitemapXml(categories: CategorySummary[]): string {
   const body = categories
-    .map((category) => renderUrlEntry(`${SITE_URL}/category/${encodeURIComponent(category.slug)}`))
+    .map((category) => renderUrlEntry(`${SITE_URL}/category/${encodeURIComponent(category.slug)}`, category.updatedAt))
     .join("");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -1913,7 +1913,7 @@ ${body}
 
 export function renderAuthorSitemapXml(authors: AuthorSummary[]): string {
   const body = authors
-    .map((author) => renderUrlEntry(`${SITE_URL}${renderAuthorHref(author.name)}`))
+    .map((author) => renderUrlEntry(`${SITE_URL}${renderAuthorHref(author.name)}`, author.updatedAt))
     .join("");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -1924,7 +1924,7 @@ ${body}
 
 export function renderTagSitemapXml(tags: TagSummary[]): string {
   const body = tags
-    .map((tag) => renderUrlEntry(`${SITE_URL}${renderTagHref(tag.name)}`))
+    .map((tag) => renderUrlEntry(`${SITE_URL}${renderTagHref(tag.name)}`, tag.updatedAt))
     .join("");
 
   return `<?xml version="1.0" encoding="UTF-8"?>

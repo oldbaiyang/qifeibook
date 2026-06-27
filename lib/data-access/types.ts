@@ -30,18 +30,21 @@ export interface CategorySummary {
   slug: string;
   bookCount: number;
   description?: string;
+  updatedAt?: string;
 }
 
 export interface AuthorSummary {
   name: string;
   bookCount: number;
   description?: string;
+  updatedAt?: string;
 }
 
 export interface TagSummary {
   name: string;
   bookCount: number;
   description?: string;
+  updatedAt?: string;
 }
 
 export interface BooksPageData {

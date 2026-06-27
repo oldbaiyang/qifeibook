@@ -2,18 +2,20 @@ import {
   clampListLimit,
   clampSearchLimit,
   getAuthorBooksByOffset,
-  getAuthors,
+  getAuthorsForSitemap,
   getBookSitemapEntries,
   getBookCount,
   getBookDetail,
   getBooks,
   getBooksByOffset,
   getCategories,
+  getCategoriesForSitemap,
   getCategoryBooks,
   getCategoryBooksByOffset,
   getHomeBooks,
   getTagBooksByOffset,
   getTags,
+  getTagsForSitemap,
   searchBooks,
 } from "./db";
 import { getCanonicalCategoryPath, isCategoryAlias } from "./categories";
@@ -352,7 +354,7 @@ async function handleStaticSitemap(): Promise<Response> {
 
 async function handleCategorySitemap(env: Env): Promise<Response> {
   const db = requireDb(env);
-  const categories = await getCategories(db);
+  const categories = await getCategoriesForSitemap(db);
 
   return withCacheHeaders(
     new Response(renderCategorySitemapXml(categories), {
@@ -364,7 +366,7 @@ async function handleCategorySitemap(env: Env): Promise<Response> {
 
 async function handleAuthorSitemap(env: Env): Promise<Response> {
   const db = requireDb(env);
-  const authors = await getAuthors(db);
+  const authors = await getAuthorsForSitemap(db);
 
   return withCacheHeaders(
     new Response(renderAuthorSitemapXml(authors.filter(isIndexableAuthor)), {
@@ -376,7 +378,7 @@ async function handleAuthorSitemap(env: Env): Promise<Response> {
 
 async function handleTagSitemap(env: Env): Promise<Response> {
   const db = requireDb(env);
-  const tags = await getTags(db, TAG_INDEX_MIN_BOOKS);
+  const tags = await getTagsForSitemap(db, TAG_INDEX_MIN_BOOKS);
 
   return withCacheHeaders(
     new Response(renderTagSitemapXml(tags.filter(isIndexableTag)), {
