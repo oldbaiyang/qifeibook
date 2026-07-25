@@ -2,6 +2,9 @@ const DEFAULT_BASE_URL = "http://localhost:8787";
 const DEFAULT_MAX_BOOKS = 500;
 const PAGE_LIMIT = 50;
 const DETAIL_BATCH_SIZE = 10;
+const SHORT_DESCRIPTION_LENGTH = 100;
+const SHORT_AUTHOR_DETAIL_LENGTH = 80;
+const GENERIC_KEYWORDS = new Set(["小说", "电子书", "下载", "epub", "txt", "pdf", "mobi", "kindle", "免费", "资源"]);
 
 function getArg(name, fallback) {
   const index = process.argv.indexOf(name);
@@ -72,9 +75,29 @@ function sample(items, limit = 20) {
   return items.slice(0, limit);
 }
 
+function compactText(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function isHttpUrl(value) {
+  try {
+    const url = new URL(String(value || ""));
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function isValidCoverUrl(value) {
+  const cover = String(value || "").trim();
+  return cover.startsWith("/") || isHttpUrl(cover);
+}
+
 function getKeywordStats(details) {
   const keywordCounts = new Map();
   const booksWithKeywords = [];
+  let genericKeywordUsages = 0;
+  let keywordUsages = 0;
 
   for (const book of details) {
     const keywords = Array.isArray(book.keywords) ? book.keywords.filter((keyword) => String(keyword || "").trim()) : [];
@@ -85,6 +108,10 @@ function getKeywordStats(details) {
 
     for (const keyword of keywords) {
       const normalizedKeyword = String(keyword).trim();
+      keywordUsages += 1;
+      if (GENERIC_KEYWORDS.has(normalizedKeyword.toLowerCase())) {
+        genericKeywordUsages += 1;
+      }
       keywordCounts.set(normalizedKeyword, (keywordCounts.get(normalizedKeyword) ?? 0) + 1);
     }
   }
@@ -99,6 +126,8 @@ function getKeywordStats(details) {
     emptyKeywords: sample(details.filter((book) => !booksWithKeywords.includes(book.id)).map((book) => book.id)),
     uniqueKeywords: keywordCounts.size,
     indexableKeywords: topKeywords.filter((keyword) => keyword.count >= 3).length,
+    genericKeywordUsages,
+    genericKeywordUsageRate: keywordUsages === 0 ? 0 : Number((genericKeywordUsages / keywordUsages).toFixed(4)),
     topKeywords: sample(topKeywords, 20),
   };
 }
@@ -116,15 +145,35 @@ function analyze(books, details) {
   const duplicateTitleAuthor = [...duplicateGroups.entries()]
     .filter(([, ids]) => ids.length > 1)
     .map(([key, ids]) => ({ key, ids }));
+  const shortDescriptions = details
+    .filter((book) => compactText(book.description).length > 0 && compactText(book.description).length < SHORT_DESCRIPTION_LENGTH)
+    .map((book) => ({ id: book.id, length: compactText(book.description).length }));
+  const shortAuthorDetails = details
+    .filter((book) => compactText(book.authorDetail).length > 0 && compactText(book.authorDetail).length < SHORT_AUTHOR_DETAIL_LENGTH)
+    .map((book) => ({ id: book.id, length: compactText(book.authorDetail).length }));
+  const thinBooks = details
+    .filter((book) => compactText(book.description).length < SHORT_DESCRIPTION_LENGTH && (!Array.isArray(book.downloadLinks) || book.downloadLinks.length === 0))
+    .map((book) => book.id);
+  const invalidDownloadLinks = details.flatMap((book) => {
+    const links = Array.isArray(book.downloadLinks) ? book.downloadLinks : [];
+    return links
+      .filter((link) => !isHttpUrl(link.url))
+      .map((link) => ({ id: book.id, name: link.name, url: link.url }));
+  });
 
   return {
     scannedSummaries: books.length,
     scannedDetails: details.length,
     emptyCovers: sample(books.filter((book) => !book.cover).map((book) => book.id)),
+    invalidCoverUrls: sample(books.filter((book) => book.cover && !isValidCoverUrl(book.cover)).map((book) => ({ id: book.id, cover: book.cover }))),
     missingCategories: sample(books.filter((book) => !book.category || !book.categorySlug).map((book) => book.id)),
     shortTitles: sample(books.filter((book) => String(book.title || "").trim().length < 2).map((book) => book.id)),
     emptyDescriptions: sample(details.filter((book) => !String(book.description || "").trim()).map((book) => book.id)),
+    shortDescriptions: sample(shortDescriptions),
+    shortAuthorDetails: sample(shortAuthorDetails),
+    thinBooks: sample(thinBooks),
     emptyDownloadLinks: sample(details.filter((book) => !Array.isArray(book.downloadLinks) || book.downloadLinks.length === 0).map((book) => book.id)),
+    invalidDownloadLinks: sample(invalidDownloadLinks),
     keywordStats: getKeywordStats(details),
     duplicateTitleAuthor: sample(duplicateTitleAuthor),
   };

@@ -27,7 +27,7 @@ function extractBooksArray(sourceText) {
     throw new Error("Unable to locate exported books array in data/mockData.ts");
   }
 
-  const arrayStart = sourceText.indexOf("[", markerIndex);
+  const arrayStart = sourceText.indexOf("[", markerIndex + marker.length);
   const arrayEnd = sourceText.lastIndexOf("];");
 
   if (arrayStart === -1 || arrayEnd === -1) {

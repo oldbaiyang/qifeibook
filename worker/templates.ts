@@ -2,12 +2,11 @@ import { combineJsonLdGraph, generateBookJsonLd, generateBreadcrumbJsonLd, gener
 
 import type { AuthorSummary, BookSummary, CategorySummary, TagSummary } from "@/lib/data-access";
 
+import { getCanonicalAuthorName } from "./authors";
+import { DEFAULT_COVER, SITE_NAME, SITE_URL } from "./site";
 import type { BookDetailResponse } from "./types";
 import { escapeHtml, isThinBook } from "./utils";
 
-const SITE_NAME = "棋飞书库";
-const SITE_URL = "https://qifeibook.com";
-const DEFAULT_COVER = "/default-cover.svg";
 const FEATURED_CATEGORY_LIMIT = 8;
 const HOME_PAGE_BATCH_SIZE = 20;
 export const SITEMAP_BOOK_PAGE_SIZE = 5000;
@@ -69,7 +68,13 @@ function toSiteUrl(value: string, fallbackPath = DEFAULT_COVER): string {
 }
 
 function renderJsonLd(data: unknown): string {
-  return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+  const json = JSON.stringify(data)
+    .replaceAll("<", "\\u003c")
+    .replaceAll(">", "\\u003e")
+    .replaceAll("&", "\\u0026")
+    .replaceAll("\u2028", "\\u2028")
+    .replaceAll("\u2029", "\\u2029");
+  return `<script type="application/ld+json">${json}</script>`;
 }
 
 function renderPageIntro(content: string | undefined | null, fallback: string): string {
@@ -118,11 +123,13 @@ function renderLayout({
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <meta name="robots" content="${escapeHtml(robots)}" />
+    <meta name="msvalidate.01" content="7126514F462E856D669B8D40EE237E2F" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="${SITE_NAME} LLM guide" />
     <link rel="preconnect" href="https://img.aqifei.top" crossorigin />
     <link rel="dns-prefetch" href="//img.aqifei.top" />
     <meta name="theme-color" content="#2563eb" />
@@ -369,6 +376,61 @@ function renderLayout({
         color: #1d4ed8;
         font-size: 13px;
         font-weight: 600;
+        white-space: nowrap;
+      }
+      .partner-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 20px;
+        margin: 0 0 24px;
+        padding: 18px 20px;
+        border: 1px solid #bfdbfe;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+        box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
+      }
+      .partner-card:hover {
+        border-color: #93c5fd;
+        box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+      }
+      .partner-card:focus-visible {
+        outline: 3px solid rgba(37, 99, 235, 0.28);
+        outline-offset: 3px;
+      }
+      .partner-card-content {
+        min-width: 0;
+      }
+      .partner-card-kicker {
+        display: block;
+        margin-bottom: 3px;
+        color: #2563eb;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .partner-card-title {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.35;
+      }
+      .partner-card-description {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .partner-card-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 12px;
+        background: var(--primary);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
         white-space: nowrap;
       }
       .title { margin: 0 0 8px; font-size: 30px; line-height: 1.2; }
@@ -955,6 +1017,14 @@ function renderLayout({
         .catalog-head h1 {
           font-size: 28px;
         }
+        .partner-card {
+          grid-template-columns: 1fr;
+          gap: 14px;
+          padding: 16px;
+        }
+        .partner-card-action {
+          width: 100%;
+        }
         .detail-hero {
           padding: 20px 18px;
         }
@@ -1020,6 +1090,12 @@ function getPagedPath(basePath: string, page: number): string {
   const pathPart = queryIndex === -1 ? basePath : basePath.slice(0, queryIndex);
   const queryPart = queryIndex === -1 ? "" : basePath.slice(queryIndex);
 
+  if (pathPart === "/search") {
+    const params = new URLSearchParams(queryPart ? queryPart.slice(1) : "");
+    params.set("page", String(page));
+    return `${pathPart}?${params.toString()}`;
+  }
+
   const pagedPath = pathPart === "/" ? `/page/${page}` : `${pathPart}/page/${page}`;
   return `${pagedPath}${queryPart}`;
 }
@@ -1082,7 +1158,7 @@ function renderPaginationHead(basePath: string, currentPage: number, totalPages:
 }
 
 function renderAuthorHref(author: string): string {
-  return `/author/${encodeURIComponent(author)}`;
+  return `/author/${encodeURIComponent(getCanonicalAuthorName(author))}`;
 }
 
 function renderTagHref(tag: string): string {
@@ -1212,6 +1288,87 @@ function getDownloadMetaPhrase(book: BookDetailResponse): string {
   );
 
   return providers.length > 0 ? `${providers.join("、")}免费下载` : "电子书详情与内容简介";
+}
+
+function getBookDownloadProviders(book: BookDetailResponse): string {
+  const providers = Array.from(
+    new Set(
+      book.downloadLinks
+        .filter((link) => link.url && link.url !== "0")
+        .map(getDownloadProviderLabel),
+    ),
+  );
+
+  return providers.length > 0 ? providers.join("、") : "网盘";
+}
+
+function getBookFaqItems(book: BookDetailResponse): Array<{ question: string; answer: string }> {
+  const descriptionAnswer = book.description
+    ? normalizeMetaDescription(book.description, 220)
+    : `《${book.title}》是${book.author}的${book.category}类电子书，本页整理了作者、分类、格式和下载导航信息。`;
+  const formatAnswer = book.format
+    ? `《${book.title}》页面标注的电子书格式为 ${book.format}${book.size ? `，文件大小约 ${book.size}` : ""}。`
+    : `《${book.title}》页面提供电子书下载导航，具体格式请以下载页展示为准。`;
+  const keywordPhrase = pickDisplayKeywords(book.keywords, 3).join("、") || book.category;
+  const relatedTitles = book.relatedBooks.slice(0, 4).map((item) => `《${item.title}》`).join("、");
+  const items = [
+    {
+      question: `《${book.title}》讲什么？`,
+      answer: descriptionAnswer,
+    },
+    {
+      question: `《${book.title}》适合谁阅读？`,
+      answer: `《${book.title}》适合关注${keywordPhrase}、${book.category}以及${book.author}作品的读者阅读。`,
+    },
+    {
+      question: `《${book.title}》电子书有哪些格式？`,
+      answer: formatAnswer,
+    },
+    {
+      question: `《${book.title}》在哪里下载？`,
+      answer: `本页提供《${book.title}》的${getBookDownloadProviders(book)}下载导航${book.downloadLinks.some((link) => link.code) ? "，部分链接附有提取码" : ""}。`,
+    },
+  ];
+
+  if (relatedTitles) {
+    items.push({
+      question: `类似《${book.title}》的书有哪些？`,
+      answer: `可以继续浏览本站推荐的${relatedTitles}等相关图书。`,
+    });
+  }
+
+  return items;
+}
+
+function getBookFaqJsonLd(book: BookDetailResponse): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: getBookFaqItems(book).map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+function renderBookFaqSection(book: BookDetailResponse): string {
+  return `<section class="detail-panel" style="margin-top: 32px;">
+    <h2 class="section-title">常见问题</h2>
+    <div class="book-faq-list" style="display: grid; gap: 14px;">
+      ${getBookFaqItems(book)
+        .map(
+          (item) => `<article class="book-faq-item" style="display: grid; gap: 6px;">
+        <h3 style="margin: 0; font-size: 17px; line-height: 1.45;">${escapeHtml(item.question)}</h3>
+        <p style="margin: 0; color: var(--muted); line-height: 1.8;">${escapeHtml(item.answer)}</p>
+      </article>`,
+        )
+        .join("")}
+    </div>
+  </section>`;
 }
 
 function renderCategoryPanel(categories: CategorySummary[]): string {
@@ -1450,6 +1607,24 @@ export function renderHomePage(payload: {
     </section>`
         : ""
     }
+    ${
+      payload.currentPage === 1
+        ? `<a
+      class="partner-card"
+      href="https://qifeidoc.com/"
+      target="_blank"
+      rel="noopener"
+      aria-label="访问棋飞纪录片"
+    >
+      <span class="partner-card-content">
+        <span class="partner-card-kicker">棋飞站点推荐</span>
+        <strong class="partner-card-title">棋飞纪录片</strong>
+        <span class="partner-card-description">精选纪录片下载导航，发现自然、历史与人文佳作。</span>
+      </span>
+      <span class="partner-card-action">去看纪录片</span>
+    </a>`
+        : ""
+    }
     <section
       id="home-book-grid"
       class="book-grid"
@@ -1557,6 +1732,7 @@ export function renderBookPage(book: BookDetailResponse): string {
     `《${book.title}》${book.author}著。${descriptionIntro.slice(0, 120)} 支持EPUB、MOBI、PDF格式，${getDownloadMetaPhrase(book)}。`,
   );
   const bookJsonLd = generateBookJsonLd(book, String(book.id));
+  const faqJsonLd = getBookFaqJsonLd(book);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "首页", url: `${SITE_URL}/` },
     { name: book.category, url: `${SITE_URL}/category/${encodeURIComponent(book.categorySlug)}` },
@@ -1564,6 +1740,7 @@ export function renderBookPage(book: BookDetailResponse): string {
   ]);
   const extraHead = `
     ${renderJsonLd(bookJsonLd)}
+    ${renderJsonLd(faqJsonLd)}
     ${renderJsonLd(breadcrumbJsonLd)}
   `;
 
@@ -1657,6 +1834,7 @@ export function renderBookPage(book: BookDetailResponse): string {
         </section>
       </div>
     </section>
+    ${renderBookFaqSection(book)}
     <section style="margin-top: 32px;">
       <h2 class="section-title">你可能还喜欢</h2>
       <div class="book-grid">
@@ -1843,7 +2021,53 @@ export function renderNotFoundPage(title: string, message: string): string {
 }
 
 export function renderRobotsTxt(): string {
-  return `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /temp/\nDisallow: /_next/\nDisallow: /search/\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+  return `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /temp/\nDisallow: /_next/\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\nSitemap: ${SITE_URL}/sitemap-index.xml\nHost: qifeibook.com\n`;
+}
+
+export function renderLlmsTxt(payload: { categories: CategorySummary[]; tags: TagSummary[] }): string {
+  const categories = payload.categories
+    .slice(0, 20)
+    .map((category) => `- [${category.name}](${SITE_URL}/category/${encodeURIComponent(category.slug)}): ${category.bookCount} books`)
+    .join("\n");
+  const tags = payload.tags
+    .slice(0, 30)
+    .map((tag) => `- [${tag.name}](${SITE_URL}${renderTagHref(tag.name)}): ${tag.bookCount} books`)
+    .join("\n");
+
+  return `# ${SITE_NAME}
+
+${SITE_NAME} is a Chinese ebook directory and download navigation site. It provides book detail pages, author pages, category pages, tag pages, and crawlable XML sitemaps for discovery.
+
+## Primary URLs
+
+- [Home](${SITE_URL}/): newest books and site search
+- [Flat sitemap](${SITE_URL}/sitemap.xml): canonical indexable URLs
+- [Sitemap index](${SITE_URL}/sitemap-index.xml): split XML sitemaps
+- [Robots](${SITE_URL}/robots.txt): crawler access policy
+
+## Search And Discovery
+
+- Site search: ${SITE_URL}/search?q={query}
+- Book detail URLs: ${SITE_URL}/book/{id}
+- Category URLs: ${SITE_URL}/category/{category}
+- Author URLs: ${SITE_URL}/author/{author}
+- Tag URLs: ${SITE_URL}/tag/{tag}
+
+## Popular Categories
+
+${categories || "- No categories available"}
+
+## Popular Tags
+
+${tags || "- No tags available"}
+
+## Content Notes
+
+- Pages are in Simplified Chinese.
+- Book pages include title, author, category, format, cover, description, author bio when available, download navigation, and related books.
+- Search result pages are intentionally noindex,follow; use canonical book, category, author, and tag pages for citation.
+- Download links that point to third-party netdisk providers use nofollow on outbound links.
+`;
 }
 
 function renderUrlEntry(url: string, lastmod?: string): string {

@@ -18,6 +18,7 @@ import {
   getTagsForSitemap,
   searchBooks,
 } from "./db";
+import { getCanonicalAuthorName } from "./authors";
 import { getCanonicalCategoryPath, isCategoryAlias } from "./categories";
 import {
   SITEMAP_BOOK_PAGE_SIZE,
@@ -30,7 +31,9 @@ import {
   renderBookSitemapXml,
   renderCategoryPage,
   renderCategorySitemapXml,
+  renderFlatSitemapXml,
   renderHomePage,
+  renderLlmsTxt,
   renderNotFoundPage,
   renderRobotsTxt,
   renderSearchPage,
@@ -203,7 +206,7 @@ async function handleCategoryHtml(slug: string, env: Env, page = 1): Promise<Res
   );
 }
 
-async function handleAuthorHtml(name: string, env: Env, page = 1): Promise<Response> {
+async function handleAuthorHtml(request: Request, name: string, env: Env, page = 1): Promise<Response> {
   const db = requireDb(env);
   const payload = await getAuthorBooksByOffset(db, name, page, HTML_PAGE_SIZE);
 
@@ -212,6 +215,12 @@ async function handleAuthorHtml(name: string, env: Env, page = 1): Promise<Respo
       status: 404,
       headers: { "Content-Type": "text/html; charset=utf-8" },
     });
+  }
+
+  const canonicalName = getCanonicalAuthorName(payload.author.name);
+  if (canonicalName !== name) {
+    const path = page > 1 ? `/author/${encodeURIComponent(canonicalName)}/page/${page}` : `/author/${encodeURIComponent(canonicalName)}`;
+    return redirectToPath(request, path);
   }
 
   const totalPages = getTotalPages(payload.author.bookCount, HTML_PAGE_SIZE);
@@ -343,10 +352,59 @@ async function handleSitemapIndex(env: Env): Promise<Response> {
   );
 }
 
+async function handleFlatSitemap(env: Env): Promise<Response> {
+  const db = requireDb(env);
+  const bookCount = await getBookCount(db);
+  const [categories, authors, tags, books] = await Promise.all([
+    getCategoriesForSitemap(db),
+    getAuthorsForSitemap(db),
+    getTagsForSitemap(db, TAG_INDEX_MIN_BOOKS),
+    getBookSitemapEntries(db, 1, bookCount),
+  ]);
+
+  return withCacheHeaders(
+    new Response(
+      renderFlatSitemapXml({
+        categories,
+        authors: authors.filter(isIndexableAuthor),
+        tags: tags.filter(isIndexableTag),
+        books,
+      }),
+      {
+        headers: { "Content-Type": "application/xml; charset=utf-8" },
+      },
+    ),
+    "public, max-age=1800, stale-while-revalidate=3600",
+  );
+}
+
 async function handleStaticSitemap(): Promise<Response> {
   return withCacheHeaders(
     new Response(renderStaticSitemapXml(), {
       headers: { "Content-Type": "application/xml; charset=utf-8" },
+    }),
+    "public, max-age=1800, stale-while-revalidate=3600",
+  );
+}
+
+async function handleLlmsTxt(env: Env): Promise<Response> {
+  let categories: Awaited<ReturnType<typeof getCategories>> = [];
+  let tags: Awaited<ReturnType<typeof getTags>> = [];
+
+  if (env.DB) {
+    try {
+      [categories, tags] = await Promise.all([
+        getCategories(env.DB),
+        getTags(env.DB, TAG_INDEX_MIN_BOOKS, 30),
+      ]);
+    } catch (error) {
+      console.warn("Failed to load llms.txt dynamic data:", error);
+    }
+  }
+
+  return withCacheHeaders(
+    new Response(renderLlmsTxt({ categories, tags }), {
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
     }),
     "public, max-age=1800, stale-while-revalidate=3600",
   );
@@ -459,6 +517,22 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
       return await handleSearchHtml(request, env, requestedPage ?? 1);
     }
 
+    const searchPageTail = getRouteTail(pathname, "/search/page");
+    if (searchPageTail) {
+      const page = parsePageNumber(searchPageTail);
+      if (!page || page === 1) {
+        const redirectUrl = new URL(request.url);
+        redirectUrl.pathname = "/search";
+        redirectUrl.searchParams.delete("page");
+        return Response.redirect(redirectUrl.toString(), 301);
+      }
+
+      const redirectUrl = new URL(request.url);
+      redirectUrl.pathname = "/search";
+      redirectUrl.searchParams.set("page", String(page));
+      return Response.redirect(redirectUrl.toString(), 301);
+    }
+
     if (pathname === "/api/health") {
       return json({
         ok: true,
@@ -564,7 +638,7 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
           });
         }
 
-        return await handleAuthorHtml(name, env, page);
+        return await handleAuthorHtml(request, name, env, page);
       }
 
       const name = decodePathSegment(authorTail).trim();
@@ -575,7 +649,7 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
         });
       }
 
-      return await handleAuthorHtml(name, env);
+      return await handleAuthorHtml(request, name, env);
     }
 
     const tagTail = getRouteTail(pathname, "/tag");
@@ -606,7 +680,7 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
     }
 
     if (pathname === "/sitemap.xml") {
-      return await handleSitemapIndex(env);
+      return await handleFlatSitemap(env);
     }
 
     if (pathname === "/sitemap-index.xml") {
@@ -615,6 +689,10 @@ export async function handleWorkerRoute(request: Request, env: Env): Promise<Res
 
     if (pathname === "/sitemaps/static.xml") {
       return await handleStaticSitemap();
+    }
+
+    if (pathname === "/llms.txt") {
+      return await handleLlmsTxt(env);
     }
 
     if (pathname === "/sitemaps/categories.xml") {

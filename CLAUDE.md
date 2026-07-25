@@ -43,9 +43,23 @@ npm run db:seed:local
 SEO and data quality:
 
 ```bash
-npm run seo:smoke
-npm run seo:data-quality
-npm run seo:keyword-backfill
+npm run seo:smoke              # Smoke test Worker SEO HTML/XML routes
+npm run seo:data-quality       # Report API data quality and keyword coverage
+npm run seo:keyword-backfill   # Generate keyword backfill SQL from data/mockData.ts
+npm run site:regression        # Verify production regression points (icons, adsense, search, etc.)
+```
+
+Baidu push (legacy, still wired):
+
+```bash
+npm run push:baidu
+npm run push:baidu:priority
+```
+
+One-shot new book (download + enrich + publish):
+
+```bash
+npm run book:publish -- --title "书名" --url "https://pan.baidu.com/s/xxx?pwd=0000" --code 0000
 ```
 
 No test framework is currently configured. Run at least `npm run typecheck` and `npm run lint` before claiming code changes are complete.
@@ -54,12 +68,15 @@ No test framework is currently configured. Run at least `npm run typecheck` and 
 
 Worker code:
 
-- `worker/index.ts`: Worker entry
-- `worker/routes.ts`: route dispatcher
-- `worker/db.ts`: D1 queries
-- `worker/templates.ts`: SEO HTML templates and inline styles
-- `worker/types.ts`: Worker-facing types
-- `worker/utils.ts`: response, escaping, cache, and parsing helpers
+- `worker/index.ts`: Worker entry. Runs `handleWorkerRoute` first, then falls back to `env.ASSETS` for static files. Returns a 404 HTML page when a static path is missing and the client accepts HTML.
+- `worker/routes.ts`: route dispatcher. Strips trailing slashes, redirects `www` to apex, normalizes category aliases, and routes both HTML and `/api/*` paths.
+- `worker/db.ts`: D1 queries and pagination/search helpers.
+- `worker/templates.ts`: SEO HTML templates, JSON-LD builders, sitemap XML, robots.txt, and inline page styles.
+- `worker/types.ts`: Worker-facing types (env, DTOs).
+- `worker/utils.ts`: response, escaping, cache, and parsing helpers.
+- `worker/authors.ts`: canonical author name lookup (strips bracket prefixes like `[美]`, normalizes whitespace) used for `/author/:name` redirects.
+- `worker/categories.ts`: canonical category path/alias helpers used for `/category/:slug` 301 redirects (e.g. `心理力志` → `心理励志`).
+- `worker/site.ts`: small shared site metadata (canonical host, ad client id, image host preconnect) consumed by templates.
 
 Shared types and helpers:
 
@@ -80,14 +97,15 @@ Local source data:
 Worker-rendered HTML includes:
 
 - `/`
-- `/search`
 - `/page/:page`
+- `/search`
 - `/book/:id`
-- `/author/:name`
-- `/category/:slug`
-- `/tag/:name`
-- `/sitemap.xml`
-- `/sitemap-index.xml`
+- `/author/:name` and `/author/:name/page/:page`
+- `/category/:slug` and `/category/:slug/page/:page` (with 301 for known aliases)
+- `/tag/:name` and `/tag/:name/page/:page`
+- `/sitemap.xml` (flat GSC-compatible urlset)
+- `/sitemap-index.xml` and `/sitemaps/{static,categories,authors,tags}.xml`, `/sitemaps/books-N.xml`
+- `/llms.txt`
 - `/robots.txt`
 
 Worker JSON APIs include:
@@ -120,6 +138,7 @@ node /Users/zcy/.codex/skills/image-host-upload/scripts/upload-image.mjs --check
 node /Users/zcy/.codex/skills/image-host-upload/scripts/upload-image.mjs /absolute/path/to/cover.jpg --json
 node scripts/publish_book_to_d1.mjs --id <book-id> --dry-run
 CLOUDFLARE_API_TOKEN=... node scripts/publish_book_to_d1.mjs --id <book-id> --remote
+npm run book:publish -- --title "书名" --url "<download-url>" --code 0000   # one-shot: fetch + enrich + publish
 ```
 
 Do not put Cloudflare tokens in docs, commits, or chat. If a token is exposed, tell the user to revoke and recreate it.
@@ -128,6 +147,12 @@ Maintained Douban scripts require Feishu configuration through environment varia
 
 ```bash
 FEISHU_APP_ID=... FEISHU_APP_SECRET=... FEISHU_WIKI_TOKEN=... FEISHU_SHEET_ID=... node scripts/scrape_douban.cjs "书名"
+```
+
+EPUB download helper (extracts candidate links from a landing page and saves the first valid EPUB to `downloads/`):
+
+```bash
+node scripts/download_epub.mjs --url "https://example.com/land-page"
 ```
 
 ## Editing Guidance

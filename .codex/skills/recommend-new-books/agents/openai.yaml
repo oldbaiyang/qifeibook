@@ -1,0 +1,4 @@
+interface:
+  display_name: "推荐新增书"
+  short_description: "为 qifeibook 筛选未收录且近期搜索热度高的中文书。"
+  default_prompt: "推荐新增书"

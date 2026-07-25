@@ -16,6 +16,7 @@
     "seo:data-quality": "node scripts/report_data_quality.mjs",
     "site:regression": "node scripts/site_regression_check.mjs",
     "seo:keyword-backfill": "node scripts/generate_keyword_backfill_sql.mjs",
+    "book:publish": "node scripts/add_and_publish_book.mjs",
     "push:baidu": "node scripts/push-baidu.js",
     "push:baidu:priority": "node scripts/push-baidu-priority.js"
   },

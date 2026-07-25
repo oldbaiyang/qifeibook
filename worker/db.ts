@@ -1,5 +1,6 @@
 import type { AuthorSummary, BookDetail, BookSummary, CategorySummary, DownloadLinkData, TagSummary } from "@/lib/data-access";
 
+import { getAuthorLookupNames, getCanonicalAuthorName } from "./authors";
 import { getCanonicalCategoryName, getCategoryAliases, mergeCategorySummaries } from "./categories";
 import type {
   AuthorBooksResponse,
@@ -278,6 +279,10 @@ function toLikePattern(value: string): string {
   return `%${value.replaceAll("\\", "\\\\").replaceAll("%", "\\%").replaceAll("_", "\\_")}%`;
 }
 
+function escapeLikeValue(value: string): string {
+  return value.replaceAll("\\", "\\\\").replaceAll("%", "\\%").replaceAll("_", "\\_");
+}
+
 export async function getCategoryBooks(
   db: D1DatabaseLike,
   slug: string,
@@ -343,6 +348,21 @@ export async function getAuthors(db: D1DatabaseLike): Promise<AuthorSummary[]> {
 }
 
 export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise<AuthorSummary | null> {
+  const lookupNames = getAuthorLookupNames(name);
+  const canonicalName = getCanonicalAuthorName(name);
+  const escapedCanonicalName = escapeLikeValue(canonicalName);
+  const lookupPatterns = [
+    `[%] ${escapedCanonicalName}`,
+    `[%]${escapedCanonicalName}`,
+    `【%】 ${escapedCanonicalName}`,
+    `【%】${escapedCanonicalName}`,
+    `（%） ${escapedCanonicalName}`,
+    `（%）${escapedCanonicalName}`,
+    `(%) ${escapedCanonicalName}`,
+    `(%)${escapedCanonicalName}`,
+  ];
+  const exactPlaceholders = lookupNames.map(() => "?").join(", ");
+  const patternClauses = lookupPatterns.map(() => "name LIKE ? ESCAPE '\\'").join(" OR ");
   const row = await db
     .prepare(
       `
@@ -351,20 +371,57 @@ export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise
           book_count,
           description
         FROM authors
-        WHERE name = ?
+        WHERE name IN (${exactPlaceholders}) OR ${patternClauses}
+        ORDER BY CASE WHEN name = ? THEN 0 ELSE 1 END
+        LIMIT 1
       `,
     )
-    .bind(name)
+    .bind(...lookupNames, ...lookupPatterns, canonicalName)
     .first<AuthorRow>();
+  const authorFilter = buildAuthorWhereClause(canonicalName);
+  const countRow = await db
+    .prepare(`SELECT COUNT(*) AS total FROM books b WHERE ${authorFilter.clause}`)
+    .bind(...authorFilter.values)
+    .first<{ total: number }>();
+  const bookCount = countRow?.total ?? 0;
 
-  if (!row) {
+  if (!row && bookCount === 0) {
     return null;
   }
 
   return {
-    name: row.name,
-    bookCount: row.book_count,
-    description: row.description ?? undefined,
+    name: canonicalName,
+    bookCount: bookCount || row?.book_count || 0,
+    description: row?.description ?? undefined,
+  };
+}
+
+function buildAuthorWhereClause(name: string): { clause: string; values: unknown[] } {
+  const canonicalName = getCanonicalAuthorName(name);
+  const escaped = escapeLikeValue(canonicalName);
+  return {
+    clause: [
+      "b.author = ?",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+      "b.author LIKE ? ESCAPE '\\'",
+    ].join(" OR "),
+    values: [
+      canonicalName,
+      `[%] ${escaped}`,
+      `[%]${escaped}`,
+      `【%】 ${escaped}`,
+      `【%】${escaped}`,
+      `（%） ${escaped}`,
+      `（%）${escaped}`,
+      `(%) ${escaped}`,
+      `(%)${escaped}`,
+    ],
   };
 }
 
@@ -381,7 +438,8 @@ export async function getAuthorBooksByOffset(
   }
 
   const offset = Math.max(page - 1, 0) * limit;
-  const list = await queryBookRowsByOffset(db, "WHERE b.author = ?", [name], limit, offset);
+  const authorFilter = buildAuthorWhereClause(author.name);
+  const list = await queryBookRowsByOffset(db, `WHERE ${authorFilter.clause}`, authorFilter.values, limit, offset);
 
   return {
     author,
@@ -510,6 +568,20 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
     return null;
   }
 
+  const keywords = mapKeywords(detailRow.keywords_json);
+  const categoryAliases = getCategoryAliases(detailRow.category_slug);
+  const categoryPlaceholders = categoryAliases.map(() => "?").join(", ");
+  const tagPlaceholders = keywords.map(() => "?").join(", ");
+  const tagExistsSql = keywords.length
+    ? `EXISTS (SELECT 1 FROM book_tags bt WHERE bt.book_id = b.id AND bt.tag_name IN (${tagPlaceholders}))`
+    : "0";
+  const relatedWhereSql = keywords.length
+    ? `b.author = ? OR c.slug IN (${categoryPlaceholders}) OR ${tagExistsSql}`
+    : `b.author = ? OR c.slug IN (${categoryPlaceholders})`;
+  const relatedBindValues = keywords.length
+    ? [detailRow.author, ...keywords, id, detailRow.author, ...categoryAliases, ...keywords]
+    : [detailRow.author, id, detailRow.author, ...categoryAliases];
+
   const [downloadLinks, relatedBooks] = await Promise.all([
     db.prepare("SELECT name, url, code, provider FROM download_links WHERE book_id = ? ORDER BY id ASC")
       .bind(id)
@@ -524,15 +596,17 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
             b.cover,
             b.year,
             c.name AS category_name,
-            c.slug AS category_slug
+            c.slug AS category_slug,
+            b.author = ? AS same_author,
+            ${tagExistsSql} AS same_tag
           FROM books b
           JOIN categories c ON c.id = b.category_id
-          WHERE b.id != ? AND c.slug IN (${getCategoryAliases(detailRow.category_slug).map(() => "?").join(", ")})
-          ORDER BY b.id DESC
+          WHERE b.id != ? AND (${relatedWhereSql})
+          ORDER BY same_author DESC, same_tag DESC, b.id DESC
           LIMIT 5
         `,
       )
-      .bind(id, ...getCategoryAliases(detailRow.category_slug))
+      .bind(...relatedBindValues)
       .all<BookRow>(),
   ]);
 
@@ -543,7 +617,7 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
     format: detailRow.format,
     size: detailRow.size,
     publishYear: detailRow.publish_year,
-    keywords: mapKeywords(detailRow.keywords_json),
+    keywords,
     downloadLinks: downloadLinks.results.map(mapDownloadLink),
   };
 
@@ -784,13 +858,21 @@ export async function getCategoriesForSitemap(db: D1DatabaseLike): Promise<Categ
     )
     .all<CategoryRow & { updated_at: string | null }>();
 
-  return results.map((row) => ({
-    name: row.name,
-    slug: row.slug,
-    bookCount: row.book_count,
-    description: row.description ?? undefined,
-    updatedAt: row.updated_at ?? undefined,
-  }));
+  const merged = new Map<string, CategorySummary>();
+  for (const row of results) {
+    const canonicalName = getCanonicalCategoryName(row.name);
+    const current = merged.get(canonicalName);
+    const updatedAt = [current?.updatedAt, row.updated_at ?? undefined].filter(Boolean).sort().at(-1);
+    merged.set(canonicalName, {
+      name: canonicalName,
+      slug: canonicalName,
+      bookCount: (current?.bookCount ?? 0) + row.book_count,
+      description: current?.description ?? row.description ?? undefined,
+      updatedAt,
+    });
+  }
+
+  return [...merged.values()].sort((left, right) => right.bookCount - left.bookCount || left.name.localeCompare(right.name, "zh-CN"));
 }
 
 export async function getAuthorsForSitemap(db: D1DatabaseLike): Promise<AuthorSummary[]> {

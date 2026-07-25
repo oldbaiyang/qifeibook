@@ -1,6 +1,6 @@
 # 当前开发总结
 
-更新时间：2026-06-22
+更新时间：2026-06-27
 
 ## 1. 当前线上架构
 
@@ -69,6 +69,37 @@ node scripts/run_wrangler_local.mjs --version
 - Worker 现在先接管所有请求；未知 HTML 路径会输出站内 404 页面，静态资源仍由 Workers Assets 提供。
 - 新增 `npm run site:regression`，用于检查搜索特殊字符、HTML 转义、图标/manifest、AdSense、分类重定向和缺失年份展示。
 
+### 1.4 2026-06-27 SEO 元数据表与作者/标签页修复
+
+本轮新增 SEO 元数据实体表，并修复了新书发布后作者/标签页 404 的问题：
+
+- 新增 D1 migration `db/migrations/0002_seo_meta.sql`，创建以下表：
+  - `authors`：作者实体表，主键为 `name`，包含 `book_count` 和 `description`。
+  - `tags`：标签实体表，主键为 `name`，包含 `book_count` 和 `description`。
+  - `book_tags`：书↔标签多对多关联表。
+  - `categories` 表新增 `description` 字段。
+- 新增 `scripts/backfill_seo_meta.mjs` 脚本，用于从 `books` 表回填 authors/tags/book_tags 数据。
+- 修复脚本使用 `INSERT ... ON CONFLICT ... DO UPDATE` 语法，支持更新已有作者/标签的 `book_count`（原 `INSERT OR IGNORE` 不会更新已有记录）。
+- 修复脚本使用 `--command` 逐条执行 SQL（wrangler 不支持多语句 SQL 文件）。
+- 更新 `.codex/skills/qifeibook-publish-book/SKILL.md`，在新书发布流程中添加 backfill 步骤。
+
+当前发布新书的完整流程：
+
+1. 收集/补全书籍元数据
+2. 处理封面（上传到 img.aqifei.top）
+3. 更新本地 `data/mockData.ts`
+4. 发布到 D1：`node scripts/publish_book_to_d1.mjs --id <id> --remote`
+5. **回填 SEO 元数据：`node scripts/backfill_seo_meta.mjs --remote`**
+6. 验证生产环境（搜索、详情、作者页、标签页）
+7. 提交代码
+
+生产环境验证结果（2026-06-27）：
+
+- 新增书籍 ID 1053-1060 已发布到 D1
+- 作者页面恢复正常：渤海小吏、猫腻、乔叶、孙甘露、杨志军、刘亮程、魏微
+- 标签页面恢复正常：唐宋之变、宝水、庆余年等
+- 已有标签 book_count 正确更新：历史人文 26→29
+
 ## 2. 已完成的重构内容
 
 ### 2.1 Cloudflare Worker 路由
@@ -110,14 +141,20 @@ HTML 页面由 `worker/templates.ts` 直出，保留 SEO 所需的 title、descr
 
 ### 2.2 D1 数据库与数据导入
 
-已建立 D1 schema，migration 位于 `db/migrations/0001_init.sql`。
+已建立 D1 schema，migration 位于 `db/migrations/` 目录：
+
+- `0001_init.sql`：基础表结构
+- `0002_seo_meta.sql`：SEO 元数据表
 
 当前表结构包括：
 
 - `books`
-- `categories`
+- `categories`（含 `description` 字段）
 - `download_links`
 - `books_fts`
+- `authors`（作者实体表，name 为主键）
+- `tags`（标签实体表，name 为主键）
+- `book_tags`（书↔标签多对多关联）
 
 已建立的关键索引包括：
 
@@ -126,6 +163,10 @@ HTML 页面由 `worker/templates.ts` 直出，保留 SEO 所需的 title、descr
 - `idx_books_id_desc`
 - `idx_books_slug`
 - `idx_download_links_book_id`
+- `idx_authors_book_count`
+- `idx_tags_book_count`
+- `idx_book_tags_tag`
+- `idx_book_tags_book`
 
 已有脚本支持从现有书籍数据导出 SQL 并初始化本地 D1：
 
@@ -141,12 +182,14 @@ SEO 与数据质量脚本：
 - `npm run seo:data-quality`
 - `npm run site:regression`
 - `npm run seo:keyword-backfill`
+- `node scripts/backfill_seo_meta.mjs --local|--remote`
 
 关键词与标签页数据说明：
 
 - `scripts/seo_keywords.mjs` 定义了分类与内容关键词的派生规则。
 - `scripts/export_books_to_sql.mjs` 已接入关键词派生逻辑，导出的 `books.keywords_json` 和 `books_fts.keywords` 会带上派生关键词。
 - `scripts/generate_keyword_backfill_sql.mjs` 会生成本地事务版与远程 D1 安全版关键词回填 SQL。
+- `scripts/backfill_seo_meta.mjs` 从 `books` 表回填 authors/tags/book_tags 数据，使用 `ON CONFLICT DO UPDATE` 保证幂等。
 - `db/seed/*.sql` 为生成产物，已被 `.gitignore` 忽略，需要时通过脚本重新生成。
 
 ### 2.3 数据访问层
@@ -229,6 +272,8 @@ Worker 侧数据库查询集中在 `worker/db.ts`，主要能力包括：
 - 作者页索引策略：至少 2 本书才 `index,follow`；泛作者名如 `佚名`、`匿名`、`未知`、`多人` 以及纯国家/标签括号名如 `[美]` 不进入可索引 sitemap。
 - 已新增标签页：`/tag/:name`、`/tag/:name/page/:page`。
 - 标签页索引策略：至少 3 本书且名称有效才进入 sitemap；薄标签页可渲染但输出 `noindex,follow`。
+- 分类、作者、标签页 description 由 `backfill_seo_meta.mjs` 自动生成（基于书名/作者/分类聚合）。
+- sitemap 中分类/作者/标签条目带 `lastmod` 时间戳，便于搜索引擎识别更新。
 - 图书详情页关键词会渲染为可点击标签链接。
 - 全站 head 输出 favicon、Apple touch icon、web manifest、图床预连接和 AdSense 发布商脚本。
 - 未知 HTML 路径输出站内 404 页面，robots 为 `noindex,follow`。
@@ -263,6 +308,12 @@ npm run cf:deploy
 - 部署日期：2026-06-22
 - 验证内容：生产全站 head 已包含 AdSense 脚本 `ca-pub-6967766161116772`；`npm run site:regression -- --base https://qifeibook.com` 通过，覆盖搜索特殊字符、HTML 转义、图标/manifest、AdSense、分类别名重定向和缺失年份展示。
 
+最近一次 SEO 元数据验证（2026-06-27）：
+
+- 新增作者页面验证：`/author/渤海小吏`、`/author/猫腻`、`/author/乔叶`、`/author/孙甘露`、`/author/杨志军`、`/author/刘亮程`、`/author/魏微` 均返回 200。
+- 新增标签页面验证：`/tag/唐宋之变`、`/tag/宝水`、`/tag/庆余年`、`/tag/食南之徒`、`/tag/千里江山图`、`/tag/雪山大地`、`/tag/本巴`、`/tag/烟霞里` 均返回 200。
+- 已有标签计数验证：`/tag/历史人文` 显示 29 本（修复前为 26 本）。
+
 上一已知稳定版本：
 
 - Cloudflare Worker Version ID：`06be54fd-7028-49ea-a65b-21e225acc8ae`
@@ -287,6 +338,13 @@ npm run cf:deploy
 
 最近一次已验证通过的远程 D1 数据更新：
 
+- 日期：2026-06-27
+- 执行内容：运行 `backfill_seo_meta.mjs --remote` 回填 authors/tags/book_tags 表。
+- 执行结果：authors 写入 523 行，book_tags 写入 256 行，tags 写入 581 行。
+- 生产验证：新书作者页（渤海小吏、猫腻、乔叶等）返回 200；新书标签页（唐宋之变、宝水、庆余年等）返回 200；历史人文标签 book_count 从 26 更新为 29。
+
+上一次 D1 数据更新：
+
 - 日期：2026-05-18
 - 执行内容：远程 D1 upsert `小姐日记` ID `768`；删除重复旧记录 `霸王别姬` ID `869`；重建 `books_fts` 并更新分类计数。
 - D1 bookmark：`00001435-0000000c-0000506f-3149ff6453a3539407e1a1029c94a077`
@@ -304,6 +362,8 @@ npm run cf:deploy
 - 继续开发时，优先修改 `worker/`、`lib/data-access/`、`db/` 和相关脚本。
 - 不要恢复已删除的 Next.js / React / Tailwind / Vercel 路径；如需新前端，应作为新的架构决策单独评估。
 - 新书发布以 `docs/new-book-publishing.md` 为准，封面上传使用全局 `image-host-upload`。
+- 新书发布到 D1 后，**必须**运行 `node scripts/backfill_seo_meta.mjs --remote` 回填作者/标签数据，否则新作者和新标签的页面会返回 404。
+- 批量发布新书时，每本书发布后只需运行一次 backfill（无需每本都跑）。
 - 对外页面的结构性改动应同时检查 SEO HTML 输出。
 - 部署前至少执行 `npm run typecheck` 和 `npm run lint`。
 - 涉及 SEO 路由时同步执行 `npm run seo:smoke`。

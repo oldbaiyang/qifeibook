@@ -1,0 +1,4 @@
+interface:
+  display_name: "Get Book Cover"
+  short_description: "Fetch, upload, and verify qifeibook cover URLs"
+  default_prompt: "Use $get-book-cover to fetch and upload a cover for 书名."
