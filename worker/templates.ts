@@ -1,9 +1,9 @@
-import { combineJsonLdGraph, generateBookJsonLd, generateBreadcrumbJsonLd, generateWebsiteJsonLd } from "@/lib/utils";
+import { combineJsonLdGraph, generateBookJsonLd, generateBreadcrumbJsonLd, generateWebsiteJsonLd, getCurrentYear } from "@/lib/utils";
 
 import type { AuthorSummary, BookSummary, CategorySummary, TagSummary } from "@/lib/data-access";
 
 import { getCanonicalAuthorName } from "./authors";
-import { DEFAULT_COVER, SITE_NAME, SITE_URL } from "./site";
+import { DEFAULT_COVER, SITE_NAME, SITE_URL, CONTACT_EMAIL } from "./site";
 import type { BookDetailResponse } from "./types";
 import { escapeHtml, isThinBook } from "./utils";
 
@@ -1046,12 +1046,30 @@ function renderLayout({
           gap: 12px;
         }
       }
+      .site-footer {
+        max-width: 1120px;
+        margin: 8px auto 0;
+        padding: 20px 16px 40px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.75;
+        text-align: center;
+      }
+      .site-footer-text { margin: 0 0 8px; }
+      .site-footer-copy { margin: 0; font-size: 12px; }
+      .site-footer a { color: var(--muted); text-decoration: underline; }
+      .site-footer a:hover { color: var(--primary); }
     </style>
   </head>
   <body>
     <main class="page">
       ${body}
     </main>
+    <footer class="site-footer">
+      <p class="site-footer-text">${SITE_NAME}是一个书籍、电子书分享的资源网站。本网站资源来源于网络，仅供交流和学习使用，请在下载后24小时内删除。本站资源版权归原作者所有，请购买正版资源。如有侵权，请联系我们，会第一时间下架处理，联系邮箱：<a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a></p>
+      <p class="site-footer-copy">© ${getCurrentYear()} ${SITE_NAME} · qifeibook.com</p>
+    </footer>
   </body>
 </html>`;
 }
