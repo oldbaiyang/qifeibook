@@ -1486,16 +1486,15 @@ export function renderHomePage(payload: {
   const websiteJsonLd = generateWebsiteJsonLd();
   const itemListJsonLd = generateItemListJsonLd(payload.books, canonical);
   const homeGraphJsonLd = combineJsonLdGraph(websiteJsonLd, breadcrumbJsonLd, itemListJsonLd);
-  const initialStatus = payload.hasMore ? "下拉到底部自动加载更多图书" : "已展示全部图书";
+  const initialStatus = payload.hasMore ? "点击加载更多图书" : "已展示全部图书";
   const loadMoreScript = `
     <script>
       (() => {
         const grid = document.getElementById("home-book-grid");
-        const sentinel = document.getElementById("home-load-sentinel");
         const status = document.getElementById("home-load-status");
         const pager = document.getElementById("catalog-pager");
 
-        if (!grid || !sentinel || !status) {
+        if (!grid || !status) {
           return;
         }
 
@@ -1519,7 +1518,9 @@ export function renderHomePage(payload: {
           }
 
           status.textContent = text;
-          if (mode === "error") {
+          if (mode === "idle") {
+            status.classList.add("is-clickable");
+          } else if (mode === "error") {
             status.classList.add("is-clickable");
           }
         };
@@ -1529,17 +1530,9 @@ export function renderHomePage(payload: {
           return '<article><a class="book-card" href="/book/' + book.id + '" aria-label="查看《' + escapeHtml(book.title) + '》详情"><div class="book-card-cover"><img src="' + escapeHtml(book.cover || "${DEFAULT_COVER}") + '" alt="' + escapeHtml(book.title) + '封面" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\\'${DEFAULT_COVER}\\'" /></div><div class="book-card-body"><h3 class="book-card-title">' + escapeHtml(book.title) + '</h3><p class="book-card-author">' + escapeHtml(book.author) + '</p><div class="book-card-meta"><span class="book-card-tag">' + escapeHtml(book.category || "未分类") + '</span>' + year + "</div></div></a></article>";
         };
 
-        const observer = new IntersectionObserver((entries) => {
-          const entry = entries[0];
-          if (entry && entry.isIntersecting) {
-            void loadMore();
-          }
-        }, { rootMargin: "360px 0px" });
-
         const stopLoading = (finalText) => {
           hasMore = false;
           grid.dataset.hasMore = "false";
-          observer.disconnect();
           setStatus(finalText, "done");
         };
 
@@ -1564,7 +1557,6 @@ export function renderHomePage(payload: {
             const payload = await response.json();
             if (Array.isArray(payload.books) && payload.books.length > 0) {
               grid.insertAdjacentHTML("beforeend", payload.books.map(renderBookCard).join(""));
-              pager?.classList.add("is-infinite-active");
             }
 
             nextCursor = payload.nextCursor ?? null;
@@ -1575,7 +1567,7 @@ export function renderHomePage(payload: {
             if (!hasMore) {
               stopLoading("已展示全部图书");
             } else {
-              setStatus("继续下拉，自动加载更多", "idle");
+              setStatus("点击加载更多图书", "idle");
             }
           } catch (error) {
             console.error("Failed to load more books:", error);
@@ -1586,15 +1578,15 @@ export function renderHomePage(payload: {
         };
 
         status.addEventListener("click", () => {
-          if (status.classList.contains("is-clickable")) {
+          if (!isLoading && hasMore) {
             void loadMore();
           }
         });
 
-        if (hasMore && nextCursor) {
-          observer.observe(sentinel);
+        if (!hasMore || !nextCursor) {
+          setStatus("已展示全部图书", "done");
         } else {
-          stopLoading("已展示全部图书");
+          setStatus("点击加载更多图书", "idle");
         }
       })();
     </script>
