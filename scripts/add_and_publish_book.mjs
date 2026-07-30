@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { execFileSync, spawn } from "node:child_process";
 
 import { deriveBookKeywords } from "./seo_keywords.mjs";
+import { UNIFIED_DOWNLOAD_URL } from "../lib/unified-download.mjs";
 
 const require = createRequire(import.meta.url);
 const { uploadToImageHost } = require("./lib/image_host_upload.cjs");
@@ -79,7 +80,7 @@ function parseArgs(argv) {
   }
 
   if (!args.url && !args.dryRun) {
-    throw new Error("Provide --url <download-url>. Use --dry-run to preview a metadata draft without publishing.");
+    args.url = UNIFIED_DOWNLOAD_URL;
   }
 
   return args;

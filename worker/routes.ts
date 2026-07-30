@@ -42,7 +42,8 @@ import {
   renderTagPage,
   renderTagSitemapXml,
 } from "./templates";
-import type { Env } from "./types";
+import { UNIFIED_DOWNLOAD_URL } from "../lib/unified-download.mjs";
+import type { BookDetailResponse, Env } from "./types";
 import { badRequest, decodePathSegment, internalError, json, notFound, parseInteger, withCacheHeaders } from "./utils";
 
 function requireDb(env: Env) {
@@ -54,6 +55,16 @@ function requireDb(env: Env) {
 }
 
 const HTML_PAGE_SIZE = 20;
+
+function withUnifiedDownloadUrl(detail: BookDetailResponse): BookDetailResponse {
+  return {
+    ...detail,
+    downloadLinks: detail.downloadLinks.map((link) => ({
+      ...link,
+      url: UNIFIED_DOWNLOAD_URL,
+    })),
+  };
+}
 
 function getTotalPages(totalItems: number, pageSize: number): number {
   return Math.max(1, Math.ceil(totalItems / pageSize));
@@ -108,12 +119,13 @@ async function handleApiBooks(request: Request, env: Env): Promise<Response> {
 
 async function handleApiBookDetail(id: number, env: Env): Promise<Response> {
   const db = requireDb(env);
-  const detail = await getBookDetail(db, id);
+  const storedDetail = await getBookDetail(db, id);
 
-  if (!detail) {
+  if (!storedDetail) {
     return notFound("Book not found");
   }
 
+  const detail = withUnifiedDownloadUrl(storedDetail);
   return withCacheHeaders(json(detail), "public, max-age=300, stale-while-revalidate=600");
 }
 
@@ -162,15 +174,16 @@ async function handleApiSearch(request: Request, env: Env): Promise<Response> {
 
 async function handleBookHtml(id: number, env: Env): Promise<Response> {
   const db = requireDb(env);
-  const detail = await getBookDetail(db, id);
+  const storedDetail = await getBookDetail(db, id);
 
-  if (!detail) {
+  if (!storedDetail) {
     return new Response(renderNotFoundPage("未找到该书籍", "当前书籍不存在或已下线。"), {
       status: 404,
       headers: { "Content-Type": "text/html; charset=utf-8" },
     });
   }
 
+  const detail = withUnifiedDownloadUrl(storedDetail);
   return withCacheHeaders(
     new Response(renderBookPage(detail), {
       headers: { "Content-Type": "text/html; charset=utf-8" },
