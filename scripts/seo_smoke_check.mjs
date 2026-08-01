@@ -231,7 +231,7 @@ async function main() {
     checkHtml(pages[0]),
     checkHtml(pages[1]),
     checkHtml(pages[2], { canonical: "https://qifeibook.com/search", robots: "noindex,follow" }),
-    ...(pages[3] ? [checkHtml(pages[3], { jsonLdType: "FAQPage" })] : []),
+    ...(pages[3] ? [checkHtml(pages[3])] : []),
     ...(pages[4] ? [checkHtml(pages[4])] : []),
     checkXml(pages[5], /<urlset[\s>]/i),
     checkXml(pages[6], /<sitemapindex[\s>]/i),

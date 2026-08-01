@@ -1,13 +1,13 @@
 ---
 name: recommend-new-books
-description: Use in the qifeibook project when the user asks "推荐新增书", asks for books to add, or needs 10 Chinese-language book recommendations that were published before 2020, are not already collected on qifeibook.com, have strong recent Google/search interest, can be found in Z-Library, and do not involve Chinese politics.
+description: Use in the qifeibook project when the user asks "推荐新增书", asks for books to add, or needs Chinese-language book recommendations that are not already collected on qifeibook.com, have strong recent Google/search interest, can be found on Douban with clear bibliographic metadata, and do not involve Chinese politics.
 ---
 
 # Recommend New Books
 
 ## Overview
 
-Use this workflow to recommend 10 Chinese-language books worth adding to qifeibook. The final list must exclude books already collected on production qifeibook, must be published before 2020, must be findable in Z-Library, must not involve Chinese politics, and should be justified with recent search-demand signals.
+Use this workflow to recommend Chinese-language books worth adding to qifeibook. The final list must exclude books already collected on production qifeibook, must be findable on Douban with clear bibliographic metadata, must not involve Chinese politics, and should be justified with recent search-demand signals.
 
 ## Required Workflow
 
@@ -19,7 +19,7 @@ Use this workflow to recommend 10 Chinese-language books worth adding to qifeibo
    - Search result prominence for exact titles plus author names.
 3. Build a candidate pool larger than 10 books. Prefer:
    - Chinese originals, Chinese-language books, or Chinese translations with active mainland/Taiwan/Hong Kong reader interest.
-   - Pre-2020 books with current search demand, reissued classics with current discussion, or books connected to high-interest authors/topics.
+   - Books with current search demand, reissued classics with current discussion, or books connected to high-interest authors/topics.
    - Titles with clear metadata: title, author, edition or publisher signal, and a source URL.
    - Broad-audience, high-search-demand books first: popular fiction, psychology, self-help, parenting, health, finance, business, education, art/lifestyle, and famous general nonfiction.
    - Do not let programming, programmer, software engineering, or narrow technical books dominate the list. Unless the user explicitly asks for technical books, include at most 10% technical/programming titles in a recommendation batch, and prefer zero when enough broader high-demand candidates are available.
@@ -27,15 +27,15 @@ Use this workflow to recommend 10 Chinese-language books worth adding to qifeibo
    - Do not recommend books whose main topic is Chinese political history, Chinese political institutions, party-state governance, contemporary China politics, Chinese public policy, Chinese democracy/democratization, political movements, dissidents, censorship, state power, ideology, or sensitive political events.
    - Also exclude biographies, memoirs, reportage, histories, or essays when the main selling point is analysis of Chinese political life or Chinese state-society relations.
    - It is acceptable to recommend non-political Chinese literature, general culture, language, art, philosophy, business, psychology, science, technology, and world history books when China politics is not a central topic.
-5. Verify publication time before recommending a candidate:
-   - Accept only books whose target Chinese edition or clearly matching source edition was published before 2020.
-   - If the original book was published before 2020 but the only Chinese edition found is 2020 or later, exclude it unless the user explicitly allows original publication year.
-   - Prefer candidates with an explicit year from Douban, publisher pages, library records, or Z-Library metadata.
-6. Verify Z-Library availability before recommending a candidate:
-   - Search Z-Library by exact Chinese title plus author when possible.
-   - Accept a candidate only when the search result clearly matches the same book or a Chinese edition/translation of the same work.
-   - Prefer results with usable bibliographic signals such as title, author, language, year, publisher, file format, or cover.
-   - Do not download files as part of recommendation. Do not include Z-Library download links in the final recommendation unless the user explicitly asks for links and the local policy permits it.
+5. Verify Douban availability before recommending a candidate:
+   - Search Douban by exact Chinese title plus author when possible.
+   - Accept a candidate only when a Douban book subject clearly matches the same book or a Chinese edition/translation of the same work.
+   - Prefer results with usable bibliographic signals such as title, author, publisher, publication year, ISBN, rating/review count, summary, or cover.
+   - Treat unclear first-result matches, edition collisions, and title-only matches as not eligible until the exact Douban subject is confirmed.
+6. Record publication time as metadata when available:
+   - Publication year is no longer a hard filter.
+   - Prefer candidates with an explicit year from Douban, publisher pages, library records, or other reliable bibliographic sources.
+   - If the year is unclear but Douban clearly identifies the book, mark the year as `豆瓣可查，年份待核`.
 7. Exclude qifeibook books. Check both production and local data because production and the working tree can differ:
 
 ```bash
@@ -72,14 +72,14 @@ Start with one concise caveat: exact Google search volumes are not public unless
 
 Then provide a table:
 
-| 优先级 | 书名 | 作者 | 出版时间 | Z-Library核验 | 推荐理由 |
+| 优先级 | 书名 | 作者 | 出版时间 | 豆瓣核验 | 推荐理由 |
 |---|---|---|---|---|---|
 
 For each row:
 
 - Link the title to a source page when available.
-- Include the verified pre-2020 publication year or edition year in `出版时间`.
-- Mark `Z-Library核验` as a short status, for example `可查到，中文/EPUB` or `可查到，中文译本`.
+- Include the Douban or edition publication year when available in `出版时间`.
+- Mark `豆瓣核验` as a short status, for example `可查到，中文书目` or `可查到，中文译本`.
 - Keep the reason short and SEO-oriented.
 - Mention the strongest heat signal: famous author, current issue, chart/list presence, or active recent book discussion.
 
@@ -88,9 +88,9 @@ After the table, add a short recommendation for which 3-5 titles to publish firs
 ## Quality Rules
 
 - Do not recommend books found on qifeibook production or in local source data.
-- Do not recommend books published in 2020 or later. Treat unknown publication year as not eligible until verified.
-- Do not recommend books involving Chinese politics, even if they otherwise satisfy publication year, Z-Library, and search-demand rules.
-- Do not recommend books that cannot be found in Z-Library with a clear bibliographic match.
+- Do not exclude books only because they were published in 2020 or later.
+- Do not recommend books involving Chinese politics, even if they otherwise satisfy Douban and search-demand rules.
+- Do not recommend books that cannot be found on Douban with a clear bibliographic match.
 - Do not rely only on memory for recent popularity; browse.
 - Do not claim exact Google search volume unless using a real source that reports it.
 - Prefer books that are likely publishable on qifeibook: identifiable cover, author, description, year, and category.

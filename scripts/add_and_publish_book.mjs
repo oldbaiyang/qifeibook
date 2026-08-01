@@ -35,6 +35,7 @@ function parseArgs(argv) {
     force: false,
     skipMetadata: false,
     skipCoverUpload: false,
+    metadataQuery: "",
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -67,6 +68,8 @@ function parseArgs(argv) {
       args.skipMetadata = true;
     } else if (arg === "--skip-cover-upload") {
       args.skipCoverUpload = true;
+    } else if (arg === "--metadata-query") {
+      args.metadataQuery = argv[++index] ?? "";
     } else {
       throw new Error(`Unknown argument: ${arg}`);
     }
@@ -378,7 +381,7 @@ async function buildBook(args, existingBooks) {
 
   if (!args.skipMetadata) {
     try {
-      const suggestion = await fetchDoubanSuggestion(args.title);
+      const suggestion = await fetchDoubanSuggestion(args.metadataQuery || args.title);
       metadata = await fetchDoubanDetail(suggestion);
     } catch (error) {
       console.warn(`Metadata lookup failed, using fallback fields: ${error.message}`);

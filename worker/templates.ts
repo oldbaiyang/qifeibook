@@ -734,6 +734,72 @@ function renderLayout({
         display: grid;
         gap: 14px;
       }
+      .book-review-panel {
+        margin-top: 32px;
+        padding: 22px 24px;
+      }
+      .book-review-list {
+        display: grid;
+      }
+      .book-review-item {
+        display: grid;
+        gap: 10px;
+        padding: 18px 0;
+        border-bottom: 1px dashed #dbe4f0;
+      }
+      .book-review-item:first-child {
+        padding-top: 2px;
+      }
+      .book-review-item:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+      .book-review-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .book-review-meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-width: 0;
+      }
+      .book-review-platform {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #eff6ff;
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .book-review-score {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #fef3c7;
+        color: #92400e;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .book-review-date {
+        color: #64748b;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .book-review-text {
+        margin: 0;
+        color: #475569;
+        font-size: 15px;
+        line-height: 1.8;
+      }
       .grid {
         display: grid;
         grid-template-columns: 280px 1fr;
@@ -1041,6 +1107,14 @@ function renderLayout({
         .download-secondary {
           width: 100%;
         }
+        .book-review-panel {
+          padding: 18px 16px;
+        }
+        .book-review-head {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
         .book-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 12px;
@@ -1308,80 +1382,26 @@ function getDownloadMetaPhrase(book: BookDetailResponse): string {
   return providers.length > 0 ? `${providers.join("、")}免费下载` : "电子书详情与内容简介";
 }
 
-function getBookDownloadProviders(book: BookDetailResponse): string {
-  const providers = Array.from(
-    new Set(
-      book.downloadLinks
-        .filter((link) => link.url && link.url !== "0")
-        .map(getDownloadProviderLabel),
-    ),
-  );
-
-  return providers.length > 0 ? providers.join("、") : "网盘";
-}
-
-function getBookFaqItems(book: BookDetailResponse): Array<{ question: string; answer: string }> {
-  const descriptionAnswer = book.description
-    ? normalizeMetaDescription(book.description, 220)
-    : `《${book.title}》是${book.author}的${book.category}类电子书，本页整理了作者、分类、格式和下载导航信息。`;
-  const formatAnswer = book.format
-    ? `《${book.title}》页面标注的电子书格式为 ${book.format}${book.size ? `，文件大小约 ${book.size}` : ""}。`
-    : `《${book.title}》页面提供电子书下载导航，具体格式请以下载页展示为准。`;
-  const keywordPhrase = pickDisplayKeywords(book.keywords, 3).join("、") || book.category;
-  const relatedTitles = book.relatedBooks.slice(0, 4).map((item) => `《${item.title}》`).join("、");
-  const items = [
-    {
-      question: `《${book.title}》讲什么？`,
-      answer: descriptionAnswer,
-    },
-    {
-      question: `《${book.title}》适合谁阅读？`,
-      answer: `《${book.title}》适合关注${keywordPhrase}、${book.category}以及${book.author}作品的读者阅读。`,
-    },
-    {
-      question: `《${book.title}》电子书有哪些格式？`,
-      answer: formatAnswer,
-    },
-    {
-      question: `《${book.title}》在哪里下载？`,
-      answer: `本页提供《${book.title}》的${getBookDownloadProviders(book)}下载导航${book.downloadLinks.some((link) => link.code) ? "，部分链接附有提取码" : ""}。`,
-    },
-  ];
-
-  if (relatedTitles) {
-    items.push({
-      question: `类似《${book.title}》的书有哪些？`,
-      answer: `可以继续浏览本站推荐的${relatedTitles}等相关图书。`,
-    });
+function renderBookReviewSection(book: BookDetailResponse): string {
+  const reviews = book.reviews.slice(0, 10);
+  if (reviews.length === 0) {
+    return "";
   }
 
-  return items;
-}
-
-function getBookFaqJsonLd(book: BookDetailResponse): Record<string, unknown> {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: getBookFaqItems(book).map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-}
-
-function renderBookFaqSection(book: BookDetailResponse): string {
-  return `<section class="detail-panel" style="margin-top: 32px;">
-    <h2 class="section-title">常见问题</h2>
-    <div class="book-faq-list" style="display: grid; gap: 14px;">
-      ${getBookFaqItems(book)
+  return `<section class="detail-panel book-review-panel">
+    <h2 class="section-title">热门书评</h2>
+    <div class="book-review-list">
+      ${reviews
         .map(
-          (item) => `<article class="book-faq-item" style="display: grid; gap: 6px;">
-        <h3 style="margin: 0; font-size: 17px; line-height: 1.45;">${escapeHtml(item.question)}</h3>
-        <p style="margin: 0; color: var(--muted); line-height: 1.8;">${escapeHtml(item.answer)}</p>
+          (review) => `<article class="book-review-item">
+        <div class="book-review-head">
+          <div class="book-review-meta">
+            <a class="book-review-platform" href="${escapeHtml(review.sourceUrl)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(review.platform)}网友</a>
+            ${review.rating ? `<span class="book-review-score">★ ${escapeHtml(review.rating)}</span>` : ""}
+          </div>
+          ${review.date ? `<time class="book-review-date">${escapeHtml(review.date)}</time>` : ""}
+        </div>
+        <p class="book-review-text">${escapeHtml(review.content)}</p>
       </article>`,
         )
         .join("")}
@@ -1742,7 +1762,6 @@ export function renderBookPage(book: BookDetailResponse): string {
     `《${book.title}》${book.author}著。${descriptionIntro.slice(0, 120)} 支持EPUB、MOBI、PDF格式，${getDownloadMetaPhrase(book)}。`,
   );
   const bookJsonLd = generateBookJsonLd(book, String(book.id));
-  const faqJsonLd = getBookFaqJsonLd(book);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "首页", url: `${SITE_URL}/` },
     { name: book.category, url: `${SITE_URL}/category/${encodeURIComponent(book.categorySlug)}` },
@@ -1750,7 +1769,6 @@ export function renderBookPage(book: BookDetailResponse): string {
   ]);
   const extraHead = `
     ${renderJsonLd(bookJsonLd)}
-    ${renderJsonLd(faqJsonLd)}
     ${renderJsonLd(breadcrumbJsonLd)}
   `;
 
@@ -1844,7 +1862,7 @@ export function renderBookPage(book: BookDetailResponse): string {
         </section>
       </div>
     </section>
-    ${renderBookFaqSection(book)}
+    ${renderBookReviewSection(book)}
     <section style="margin-top: 32px;">
       <h2 class="section-title">你可能还喜欢</h2>
       <div class="book-grid">

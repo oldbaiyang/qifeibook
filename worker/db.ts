@@ -1,4 +1,4 @@
-import type { AuthorSummary, BookDetail, BookSummary, CategorySummary, DownloadLinkData, TagSummary } from "@/lib/data-access";
+import type { AuthorSummary, BookDetail, BookReviewData, BookSummary, CategorySummary, DownloadLinkData, TagSummary } from "@/lib/data-access";
 
 import { getAuthorLookupNames, getCanonicalAuthorName } from "./authors";
 import { getCanonicalCategoryName, getCategoryAliases, mergeCategorySummaries } from "./categories";
@@ -42,6 +42,14 @@ interface DownloadLinkRow {
   url: string;
   code: string | null;
   provider: string;
+}
+
+interface BookReviewRow {
+  platform: string;
+  rating: string | null;
+  review_date: string | null;
+  content: string;
+  source_url: string;
 }
 
 interface CategoryRow {
@@ -102,6 +110,37 @@ function mapDownloadLink(row: DownloadLinkRow): DownloadLinkData {
     code: row.code ?? undefined,
     provider: row.provider,
   };
+}
+
+function mapBookReview(row: BookReviewRow): BookReviewData {
+  return {
+    platform: row.platform,
+    rating: row.rating ?? undefined,
+    date: row.review_date ?? undefined,
+    content: row.content,
+    sourceUrl: row.source_url,
+  };
+}
+
+async function getBookReviews(db: D1DatabaseLike, bookId: number): Promise<BookReviewData[]> {
+  try {
+    const { results } = await db
+      .prepare(
+        `
+          SELECT platform, rating, review_date, content, source_url
+          FROM book_reviews
+          WHERE book_id = ?
+          ORDER BY sort_order ASC, id ASC
+          LIMIT 10
+        `,
+      )
+      .bind(bookId)
+      .all<BookReviewRow>();
+
+    return results.map(mapBookReview);
+  } catch {
+    return [];
+  }
 }
 
 async function queryBookRows(db: D1DatabaseLike, whereClause: string, values: unknown[], limit: number): Promise<BookListResponse> {
@@ -350,19 +389,26 @@ export async function getAuthors(db: D1DatabaseLike): Promise<AuthorSummary[]> {
 export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise<AuthorSummary | null> {
   const lookupNames = getAuthorLookupNames(name);
   const canonicalName = getCanonicalAuthorName(name);
-  const escapedCanonicalName = escapeLikeValue(canonicalName);
-  const lookupPatterns = [
-    `[%] ${escapedCanonicalName}`,
-    `[%]${escapedCanonicalName}`,
-    `【%】 ${escapedCanonicalName}`,
-    `【%】${escapedCanonicalName}`,
-    `（%） ${escapedCanonicalName}`,
-    `（%）${escapedCanonicalName}`,
-    `(%) ${escapedCanonicalName}`,
-    `(%)${escapedCanonicalName}`,
-  ];
+  // SQLite (D1) 对过长的 LIKE 模式会抛 "LIKE or GLOB pattern too complex"。
+  // 多作者字符串（含 `、`、`；` 等分隔符）或长字符串跳过 LIKE 回退，只按精确名匹配。
+  const skipLikeFallback = canonicalName.length >= 20 || /[、；;]/.test(canonicalName);
+  const lookupPatterns = skipLikeFallback
+    ? []
+    : [
+        `[%] ${escapeLikeValue(canonicalName)}`,
+        `[%]${escapeLikeValue(canonicalName)}`,
+        `【%】 ${escapeLikeValue(canonicalName)}`,
+        `【%】${escapeLikeValue(canonicalName)}`,
+        `（%） ${escapeLikeValue(canonicalName)}`,
+        `（%）${escapeLikeValue(canonicalName)}`,
+        `(%) ${escapeLikeValue(canonicalName)}`,
+        `(%)${escapeLikeValue(canonicalName)}`,
+      ];
   const exactPlaceholders = lookupNames.map(() => "?").join(", ");
   const patternClauses = lookupPatterns.map(() => "name LIKE ? ESCAPE '\\'").join(" OR ");
+  const whereClause = lookupPatterns.length
+    ? `WHERE name IN (${exactPlaceholders}) OR ${patternClauses}`
+    : `WHERE name IN (${exactPlaceholders})`;
   const row = await db
     .prepare(
       `
@@ -371,14 +417,16 @@ export async function getAuthorByName(db: D1DatabaseLike, name: string): Promise
           book_count,
           description
         FROM authors
-        WHERE name IN (${exactPlaceholders}) OR ${patternClauses}
+        ${whereClause}
         ORDER BY CASE WHEN name = ? THEN 0 ELSE 1 END
         LIMIT 1
       `,
     )
     .bind(...lookupNames, ...lookupPatterns, canonicalName)
     .first<AuthorRow>();
-  const authorFilter = buildAuthorWhereClause(canonicalName);
+  const authorFilter = skipLikeFallback
+    ? buildAuthorExactWhereClause(canonicalName)
+    : buildAuthorWhereClause(canonicalName);
   const countRow = await db
     .prepare(`SELECT COUNT(*) AS total FROM books b WHERE ${authorFilter.clause}`)
     .bind(...authorFilter.values)
@@ -425,6 +473,17 @@ function buildAuthorWhereClause(name: string): { clause: string; values: unknown
   };
 }
 
+function buildAuthorExactWhereClause(name: string): { clause: string; values: unknown[] } {
+  // 多作者 / 长字符串场景：IN 多种前缀变体以避免 LIKE 触发 SQLite 模式上限。
+  const c = name.trim();
+  const prefixes = ["", "[美] ", "[英] ", "[日] ", "[法] ", "[德] ", "[美]", "[英]", "[日]"];
+  const variants = Array.from(new Set(prefixes.map((p) => p + c)));
+  return {
+    clause: `b.author IN (${variants.map(() => "?").join(", ")})`,
+    values: variants,
+  };
+}
+
 export async function getAuthorBooksByOffset(
   db: D1DatabaseLike,
   name: string,
@@ -438,7 +497,9 @@ export async function getAuthorBooksByOffset(
   }
 
   const offset = Math.max(page - 1, 0) * limit;
-  const authorFilter = buildAuthorWhereClause(author.name);
+  const authorFilter = author.name.length >= 20 || /[、；;]/.test(author.name)
+    ? buildAuthorExactWhereClause(author.name)
+    : buildAuthorWhereClause(author.name);
   const list = await queryBookRowsByOffset(db, `WHERE ${authorFilter.clause}`, authorFilter.values, limit, offset);
 
   return {
@@ -582,10 +643,11 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
     ? [detailRow.author, ...keywords, id, detailRow.author, ...categoryAliases, ...keywords]
     : [detailRow.author, id, detailRow.author, ...categoryAliases];
 
-  const [downloadLinks, relatedBooks] = await Promise.all([
+  const [downloadLinks, reviews, relatedBooks] = await Promise.all([
     db.prepare("SELECT name, url, code, provider FROM download_links WHERE book_id = ? ORDER BY id ASC")
       .bind(id)
       .all<DownloadLinkRow>(),
+    getBookReviews(db, id),
     db
       .prepare(
         `
@@ -619,6 +681,7 @@ export async function getBookDetail(db: D1DatabaseLike, id: number): Promise<Boo
     publishYear: detailRow.publish_year,
     keywords,
     downloadLinks: downloadLinks.results.map(mapDownloadLink),
+    reviews,
   };
 
   return {

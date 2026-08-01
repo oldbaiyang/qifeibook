@@ -50,6 +50,7 @@ function toBookDetail(book: SourceBook): BookDetail {
     publishYear: book.publishYear,
     keywords: book.keywords ?? [],
     downloadLinks: book.downloadLinks.map(mapDownloadLink),
+    reviews: [],
   };
 }
 

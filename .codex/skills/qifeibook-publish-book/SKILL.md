@@ -1,11 +1,43 @@
 ---
 name: qifeibook-publish-book
-description: Use when adding, updating, batch publishing, syncing, or verifying books in the qifeibook project. Trigger when the user provides a book title, cover URL, download link, asks to publish books, update book metadata, update sitemap, asks why a book is not visible on qifeibook.com, or needs Cloudflare D1 publishing.
+description: Use when adding, updating, batch publishing, syncing, or verifying books in the qifeibook project. Trigger when the user provides a book title, cover URL, download link, asks to publish books, asks to publish N books without titles, update book metadata, update sitemap, asks why a book is not visible on qifeibook.com, or needs Cloudflare D1 publishing.
 ---
 
 # Qifeibook Publish Book
 
 This project publishes from Cloudflare D1. Editing `data/mockData.ts` alone is not enough for production visibility.
+
+Default download URL for new qifeibook books:
+
+```text
+https://pan.quark.cn/s/a7450333781d
+```
+
+When the user asks to publish books without per-book links, use this URL as the download link for every book. Do not add a default extraction code or extra download note unless the user provides one.
+
+## Recommend-And-Publish Flow
+
+When the user says `发布几本书`, `发布 N 本书`, or otherwise asks to publish books without providing exact titles, execute this combined workflow end to end:
+
+1. Recommend exactly the requested number of books:
+   - Use the `recommend-new-books` rules.
+   - Exclude books already on qifeibook production and local data.
+   - Require clear Douban bibliographic metadata.
+   - Keep current recommendation preferences: high search demand, non-Chinese-politics, non-technical unless requested, no bulky manga, no long serials.
+2. Get covers for those recommended books:
+   - Use the `get-book-cover` workflow.
+   - Verify exact title/author/edition where titles are ambiguous.
+   - Upload covers to the image host.
+   - Use only verified `https://img.aqifei.top/...` URLs in final book records.
+3. Publish those books:
+   - Use `npm run book:publish` sequentially.
+   - Use the default download URL `https://pan.quark.cn/s/a7450333781d` for every book unless the user provides per-book links.
+   - Do not add a default extraction code.
+   - Pass explicit `--author`, `--category`, `--year`, `--cover`, and `--metadata-query "书名 作者"` when available to avoid fuzzy metadata errors.
+4. Backfill and verify:
+   - Run remote SEO metadata backfill after the batch.
+   - Verify production search API, detail API, detail HTML, cover URL, unified download URL, and sitemap entries.
+   - Keep an ID ledger. If D1 publish succeeds but production verification reports `fetch failed`, verify that ID directly instead of rerunning the duplicate-protected add command.
 
 Prefer the automation script for normal new-book publishing:
 

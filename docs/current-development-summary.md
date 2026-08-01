@@ -357,6 +357,10 @@ npm run cf:deploy
 
 ## 5. 当前注意事项
 
+- 2026-07-26 已更新新书发布规范，其他 agent 应优先阅读 `docs/new-book-publishing.md`。当前“发布 N 本书”表示：推荐 N 本未收录高需求书、用豆瓣精确条目取封面并上传图床、用统一夸克链接发布、远端 D1 写入、SEO 回填、生产验证。
+- 当前统一下载地址来源于 `worker/site.ts` 的 `UNIFIED_DOWNLOAD_URL` 常量；用户没有提供单书链接时，所有新书使用这个地址，不默认添加提取码。
+- 封面必须和书名/版本一致。优先使用豆瓣精确 subject 的 `pic` 文件名改大图路径下载并上传；不要使用模糊搜索结果的第一张图。修错封面时只更新对应书的 `cover` 字段，再按 ID 发布到远端 D1。
+- 书评必须真实可核验。D1 表 `book_reviews`、迁移 `db/migrations/0003_book_reviews.sql`、导入脚本 `scripts/import_book_reviews.mjs` 已加入；没有真实来源 URL 的书评不得展示，页面会在没有 `reviews` 时隐藏“热门书评”模块。
 - `data/mockData.ts` 仍保留为历史数据源和导入来源，不应再作为线上页面运行时数据库使用。
 - 线上页面当前以 Worker + D1 为准。
 - 继续开发时，优先修改 `worker/`、`lib/data-access/`、`db/` 和相关脚本。

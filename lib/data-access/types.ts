@@ -5,6 +5,14 @@ export interface DownloadLinkData {
   provider: string;
 }
 
+export interface BookReviewData {
+  platform: string;
+  rating?: string;
+  date?: string;
+  content: string;
+  sourceUrl: string;
+}
+
 export interface BookSummary {
   id: number;
   title: string;
@@ -23,6 +31,7 @@ export interface BookDetail extends BookSummary {
   publishYear: string;
   keywords: string[];
   downloadLinks: DownloadLinkData[];
+  reviews: BookReviewData[];
 }
 
 export interface CategorySummary {
