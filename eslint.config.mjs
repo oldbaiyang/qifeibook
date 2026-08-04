@@ -21,6 +21,7 @@ const eslintConfig = defineConfig([
     ".wrangler/**",
     ".wrangler-state/**",
     "node_modules/**",
+    "tmp/**",
     "*.json",
   ]),
 ]);
