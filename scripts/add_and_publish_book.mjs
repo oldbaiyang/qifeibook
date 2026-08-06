@@ -35,6 +35,7 @@ function parseArgs(argv) {
     force: false,
     skipMetadata: false,
     skipCoverUpload: false,
+    skipPublish: false,
     metadataQuery: "",
   };
 
@@ -68,6 +69,8 @@ function parseArgs(argv) {
       args.skipMetadata = true;
     } else if (arg === "--skip-cover-upload") {
       args.skipCoverUpload = true;
+    } else if (arg === "--skip-publish") {
+      args.skipPublish = true;
     } else if (arg === "--metadata-query") {
       args.metadataQuery = argv[++index] ?? "";
     } else {
@@ -455,6 +458,11 @@ async function main() {
 
   await writeBookToSource(sourceText, book, arrayStart);
   console.log(`Added book ${book.id}: ${book.title}`);
+
+  if (args.skipPublish) {
+    console.log(`Skipped D1 publish for ${book.id}: ${book.title} (--skip-publish).`);
+    return;
+  }
 
   await publishBook(book.id, args.remote);
   console.log(`Published book ${book.id} to ${args.remote ? "remote" : "local"} D1.`);
